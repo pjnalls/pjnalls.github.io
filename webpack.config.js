@@ -5,14 +5,14 @@ const { AngularCompilerPlugin } = require('@ngtools/webpack');
 const config = {
   target: "web",
   entry: {
-    index: ['main.ts']
+    index: ['src/main.ts']
   },
   output: {
-    path: path.resolve(__dirname, './assets'),
+    path: path.resolve(__dirname, './src/assets'),
     filename: 'bundle.js'
   },
   devServer: {
-    publicPath: '/assets/',
+    publicPath: '/src/assets/',
     contentBase: path.resolve(__dirname, './'),
     watchContentBase: true,
     compress: true,
@@ -24,7 +24,7 @@ const config = {
     new webpack.NamedModulesPlugin(),
     new AngularCompilerPlugin({
         tsConfigPath: './tsconfig.json',
-        entryModule: './main'
+        entryModule: './src/main'
     })
   ],
   module: {
