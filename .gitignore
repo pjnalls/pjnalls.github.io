@@ -1,3 +1,4 @@
 # Ignore these files:
+
 # Ignore these folders:
-generated-angular-app
+node_modules/
