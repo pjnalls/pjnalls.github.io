@@ -3,14 +3,28 @@ h1 {
   font-size: 30px;
   line-height: 0px;
   margin-bottom: 0px;
+  font-weight: 500;
 }
 
-a {
-  font-size: 15px;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-* {
-  background-color: #1f1f1f;
+div {
+  background-color: #413f44;
+  height: 45px;
+  img {
+    width: 17px;
+    height: auto;
+    margin-top: 5px;
+    margin-right: 90px;
+    position: relative;
+    top: 4.5px;
+  }
+  a {
+    line-height: 45px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 90px;
+  }
+  a.last-option {
+    margin-right: 0; 
+  }
 }

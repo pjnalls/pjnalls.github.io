@@ -28,13 +28,28 @@ module.exports = {
                     { loader: 'sass-loader', options: { sourceMap: true } }
                 ],
                 include: helpers.root('src', 'app')
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: [
+                    'file-loader',
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            disable: true
+                        }
+                    }
+                ]
             }
         ]
     },
     plugins: [
         new CleanWebpackPlugin(
-            helpers.root('dist'), { root: helpers.root(), verbose: true }),
-
+            helpers.root('dist'), 
+            { 
+                root: helpers.root(), 
+                verbose: true 
+        }),
         new HtmlWebpackPlugin({
             template: 'src/index.html'
         })
