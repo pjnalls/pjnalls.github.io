@@ -7,7 +7,7 @@ import { IntroService } from './intro/shared/intro.service';
     template: `
         <intro></intro>
         `,
-    styleUrls: ['./app.component.css'],
+    styleUrls: ['./app.component.scss'],
     providers: [IntroService]
 })
 export class AppComponent {}
