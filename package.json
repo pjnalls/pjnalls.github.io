@@ -12,12 +12,13 @@
   "scripts": {
     "webpack-dev": "cross-env NODE_ENV=development webpack --mode development",
     "webpack-prod": "cross-env NODE_ENV=production webpack --mode production",
-    "build:dev": "webpack-dev-server --inline --hot --progress --port 8080",
+    "build:dev": "webpack-dev-server --inline --hot --progress --port 8080 --open",
     "build:prod": "npm run build:clean && ngc && npm run webpack-prod && npm run build:clean",
     "build:clean": "del-cli 'src/**/*.js' 'src/**/*.js.map' 'src/**/*.ngsummary.json' 'src/**/*.metadata.json' 'src/**/**/*.ngfactory.ts' 'src/**/*.ngstyle.ts' 'src/**/*.shim.ts'",
     "serve": "lite-server"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
     "@ngtools/webpack": "^7.2.3",
     "@types/core-js": "^2.5.0",
     "@types/node": "^10.12.18",

@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 
-import { IntroService } from './intro/shared/intro.service';
-
 @Component({
-    selector: 'app',
-    template: `
-        <intro></intro>
-        `,
-    styleUrls: ['./app.component.scss'],
-    providers: [IntroService]
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
-export class AppComponent {}
+
+export class AppComponent {
+    name = 'Preston Nalls';
+}
