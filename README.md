@@ -2,9 +2,9 @@
 
 This is my personal homepage.
 
-## Developer Tools Used
+## Technical Description
 
-This is an Angular 7 application with Webpack 4 configurations. TypeScript, Babel, and Sass - along with conventional HTML, CSS, and JavaScript - are other front-end technologies used in this repository.
+This is an Angular 7 web application with Webpack 4 asset management and configurations. TypeScript, Babel, and Sass - along with conventional HTML, CSS, and JavaScript - are other front-end technologies used in this repository.
 
 ## Reference
 
