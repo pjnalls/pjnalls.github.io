@@ -8,4 +8,4 @@ This is an Angular 7 web application with Webpack 4 asset management and configu
 
 ## Reference
 
-Initial workspace and file structure setup provided by [this repository](https://github.com/samteb/Angular-7-Webpack-4)
+Initial workspace and file structure setup cas be accessed at [this repository](https://github.com/samteb/Angular-7-Webpack-4).
