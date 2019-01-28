@@ -1,9 +1,34 @@
-h1 {
+h1.name {
   color: #dddddd;
   font-size: 30px;
   line-height: 0px;
   margin-bottom: 0px;
+  margin-top: 22.5px;
   font-weight: 500;
+  -webkit-animation: slide-up-fade-in ease-out 0.75s;
+  animation: slide-up-fade-in ease-out 0.75s;
+}
+
+@-webkit-keyframes slide-up-fade-in {
+  from {
+          margin-top: 30px;
+          opacity: 0;
+       }
+  to {
+        margin-top: 22.5px;
+        opacity: 1;
+      }
+}
+
+@keyframes slide-up-fade-in {
+  from {
+    margin-top: 30px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
 }
 
 div {
