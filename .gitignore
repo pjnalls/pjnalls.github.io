@@ -33,6 +33,9 @@ testem.log
 /e2e/*.js
 /e2e/*.map
 
-#System Files
+# system files
 .DS_Store
 Thumbs.db
+
+# images
+src/app/assets/ui-tools/logos/
