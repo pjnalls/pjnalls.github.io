@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MenuRoutingModule } from './menu-routing.module';
-import { MenuComponent } from './components/menu/menu.component';
+import { BioRoutingModule } from './bio-routing.module';
+import { BioComponent } from './components/bio/bio.component';
 
 @NgModule({
     declarations: [
-        MenuComponent
+        BioComponent
     ],
     imports: [
         CommonModule,
-        MenuRoutingModule
+        BioRoutingModule
     ],
     providers: []
 })

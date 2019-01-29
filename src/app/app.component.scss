@@ -11,7 +11,7 @@ h1.name {
 
 @-webkit-keyframes slide-up-fade-in {
   from {
-    margin-top: 30px;
+    margin-top: 60px;
     opacity: 0;
   }
   to {
@@ -22,7 +22,7 @@ h1.name {
 
 @keyframes slide-up-fade-in {
   from {
-    margin-top: 30px;
+    margin-top: 60px;
     opacity: 0;
   }
   to {
@@ -34,20 +34,23 @@ h1.name {
 div {
   background-color: #413f44;
   height: 45px;
-  img {
-    width: 17px;
-    height: auto;
-    margin-top: 5px;
-    margin-right: 90px;
-    position: relative;
-    top: 4.5px;
-  }
   a {
     line-height: 45px;
     font-size: 15px;
     text-decoration: none;
     color: #ffffff;
     margin-right: 90px;
+  }
+  a.image-option {
+    margin-right: 0;
+    img {
+      width: 17px;
+      height: auto;
+      margin-top: 5px;
+      margin-right: 90px;
+      position: relative;
+      top: 4.5px;
+    }
   }
   a.last-option {
     margin-right: 0; 

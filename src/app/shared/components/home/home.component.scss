@@ -10,7 +10,7 @@ h1.header {
 
  @-webkit-keyframes slide-up-fade-in {
   from {
-    margin-top: 40px;
+    margin-top: 66.6px;
     opacity: 0;
   }
   to {
@@ -21,7 +21,7 @@ h1.header {
 
 @keyframes slide-up-fade-in {
   from {
-    margin-top: 40px;
+    margin-top: 66.6px;
     opacity: 0;
   }
   to {
@@ -31,11 +31,14 @@ h1.header {
 }
 
 img {
-  position: relative;
+  position: fixed;
   z-index: -9999;
-  top: -150px;
-  -webkit-animation: fade-in-img ease-in-out 2s;
-  animation: fade-in-img ease-in-out 2s;
+  right: 0;
+  left: 0;
+  margin: 5% auto;
+  top: 120px;
+  -webkit-animation: fade-in-img ease-out 1.5s;
+  animation: fade-in-img ease-out 1.5s;
 }
 
  @-webkit-keyframes fade-in-img {
