@@ -38,4 +38,5 @@ testem.log
 Thumbs.db
 
 # images
-src/app/assets/ui-tools/logos/
+src/assets/front-end-tools/logos/
+
