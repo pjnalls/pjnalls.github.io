@@ -5,7 +5,7 @@ import { HomeComponent } from './shared/components/home/home.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'bio', loadChildren: './modules/menu/menu.module#MenuModule' }
+    { path: 'bio', loadChildren: './modules/bio/bio.module#MenuModule' }
 ];
 
 @NgModule({
