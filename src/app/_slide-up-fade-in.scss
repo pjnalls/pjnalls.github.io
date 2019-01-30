@@ -1,0 +1,21 @@
+@-webkit-keyframes slide-up-fade-in {
+  from {
+    margin-top: 66.6px;
+    opacity: 0;
+  }  
+  to {
+    margin-top: 22.5px;
+    opacity: 1;
+  }
+}
+  
+@keyframes slide-up-fade-in {
+  from {
+    margin-top: 66.6px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 22.5px;
+    opacity: 1;
+  }
+}

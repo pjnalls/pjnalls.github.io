@@ -7,29 +7,6 @@ h1.header {
  -webkit-animation: slide-up-fade-in ease-out 1s;
  animation: slide-up-fade-in ease-out 1s;
 }
-
- @-webkit-keyframes slide-up-fade-in {
-  from {
-    margin-top: 66.6px;
-    opacity: 0;
-  }
-  to {
-    margin-top: 22.5px;
-    opacity: 1;
-  }
-}
-
-@keyframes slide-up-fade-in {
-  from {
-    margin-top: 66.6px;
-    opacity: 0;
-  }
-  to {
-    margin-top: 22.5px;
-    opacity: 1;
-  }
-}
-
 img {
   position: fixed;
   z-index: -9999;
@@ -37,24 +14,9 @@ img {
   left: 0;
   margin: 5% auto;
   top: 120px;
-  -webkit-animation: fade-in-img ease-out 1.5s;
-  animation: fade-in-img ease-out 1.5s;
+  -webkit-animation: fade-in ease-out 1.5s;
+  animation: fade-in ease-out 1.5s;
 }
 
- @-webkit-keyframes fade-in-img {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in-img {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+@import '../../../slide-up-fade-in';
+@import '../../../fade-in'
