@@ -9,27 +9,7 @@ h1.name {
   animation: slide-up-fade-in ease-out 0.75s;
 }
 
-@-webkit-keyframes slide-up-fade-in {
-  from {
-    margin-top: 60px;
-    opacity: 0;
-  }
-  to {
-    margin-top: 22.5px;
-    opacity: 1;
-  }
-}
-
-@keyframes slide-up-fade-in {
-  from {
-    margin-top: 60px;
-    opacity: 0;
-  }
-  to {
-    margin-top: 22.5px;
-    opacity: 1;
-  }
-}
+@import 'slide-up-fade-in';
 
 div.navbar {
   background-color: #413f44;
@@ -40,6 +20,8 @@ div.navbar {
     text-decoration: none;
     color: #ffffff;
     margin-right: 90px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
   }
   a.image-option {
     margin-right: 0;
@@ -51,6 +33,13 @@ div.navbar {
       position: relative;
       top: 4.5px;
     }
+  }
+  a.active {
+    color: #bbbbbb;
+  }
+  a:hover {
+    color: #bbbbbb;
+    cursor: pointer;
   }
   a.last-option {
     margin-right: 0; 

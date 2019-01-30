@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { routerTransition } from './animations';
 
 @Component({
@@ -11,5 +11,7 @@ import { routerTransition } from './animations';
 })
 
 export class AppComponent {
-    name = 'Preston Nalls';
+    name: string = 'Preston Nalls';
+    href: string = location.href;
+    pgurl: string = this.href.substr(this.href.lastIndexOf('/'), this.href.length);
 }
