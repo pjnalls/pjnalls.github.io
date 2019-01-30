@@ -1,11 +1,13 @@
-<div>
+<div class="navbar">
   <a class="image-option" routerLink="/"><img src="../assets/p-logo/p-icon_300x320.png"></a>
-  <a routerLink="/">Home</a>
-  <a routerLink="/bio">Bio</a>
+  <a routerLink="/" routerLinkActive="active">Home</a>
+  <a routerLink="/bio" routerLinkActive="active">Bio</a>
   <a>Resume</a>
   <a>Portfolio</a>
   <a class="last-option">Contact</a>
 </div>
 <br /><br /><br />
 <h1 class="name">{{name}}</h1>
-<router-outlet></router-outlet>
+<div [@routerTransition]="page.activatedRouteData.state">
+  <router-outlet #page="outlet"></router-outlet>
+</div>
