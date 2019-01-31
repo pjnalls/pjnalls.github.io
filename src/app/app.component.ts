@@ -13,5 +13,5 @@ import { routerTransition } from './animations';
 export class AppComponent {
     name: string = 'Preston Nalls';
     href: string = location.href;
-    pgurl: string = this.href.substr(this.href.lastIndexOf('/'), this.href.length);
+    pageUrl: string = this.href.substr(this.href.lastIndexOf('/'), this.href.length);
 }

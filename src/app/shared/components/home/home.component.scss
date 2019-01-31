@@ -14,8 +14,11 @@ img {
   left: 0;
   margin: 5% auto;
   top: 120px;
-  -webkit-animation: fade-in ease-out 1.5s;
-  animation: fade-in ease-out 1.5s;
+  opacity: 0;
+  -webkit-animation: fade-in ease-out 1.5s forwards;
+  -webkit-animation-delay: 1.333s;
+  animation: fade-in ease-out 1.5s forwards;
+  animation-delay: 1.333s;
 }
 
 @import '../../../slide-up-fade-in';
