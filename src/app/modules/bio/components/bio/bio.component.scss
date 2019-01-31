@@ -3,8 +3,8 @@ div {
   height: auto;
   margin: 25px auto;
   text-align: left;
-  -webkit-animation: slide-up-fade-in ease-out 0.75s;
-  animation: slide-up-fade-in ease-out 0.75s;
+  -webkit-animation: slide-up-fade-in ease-out 0.75s forwards;
+  animation: slide-up-fade-in ease-out 0.75s forwards;
 
   @import '../../../../slide-up-fade-in';
   
