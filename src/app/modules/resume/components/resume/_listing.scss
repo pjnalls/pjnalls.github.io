@@ -1,0 +1,24 @@
+div.container {
+    width: 750px;
+    height: auto;
+    margin: 25px auto;
+    display: flex;
+    div.column-split {
+      width: 90px;
+    }
+    div.column-1, div.column-2{
+      width: 340px;
+      height: auto;
+      word-wrap: break-word;
+      display: inline-block;
+      hr {
+        border-color: #999999; 
+      }
+      h2 {
+        text-align: left;
+        color: #ffffff;
+        font-weight: 500;
+      }
+    }
+  }
+  
