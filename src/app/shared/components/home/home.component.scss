@@ -13,8 +13,10 @@ img {
   right: 0;
   left: 0;
   margin: 5% auto;
-  top: 120px;
+  top: 200px;
   opacity: 0;
+  width: 1000px;
+  height: auto;
   -webkit-animation: fade-in ease-out 1.5s forwards;
   -webkit-animation-delay: 1.333s;
   animation: fade-in ease-out 1.5s forwards;
