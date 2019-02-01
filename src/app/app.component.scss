@@ -14,7 +14,7 @@ h1.name {
 div.navbar {
   background-color: #413f44;
   height: 45px;
-  a {
+  a.lg-options {
     line-height: 45px;
     font-size: 15px;
     text-decoration: none;
@@ -43,5 +43,100 @@ div.navbar {
   }
   a.last-option {
     margin-right: 0; 
+  }
+}
+
+.collapsible-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  div.navbar {
+    a.lg-options {
+      display: none;
+    }
+    a.image-option {
+      margin-right: 0;
+      img {
+        width: 17px;
+        height: auto;
+        margin: auto;
+        position: relative;
+        top: 12.5px;
+      }
+    }
+  }
+  ul, li, a.sm-options {
+    text-align: left;
+  }
+  a.sm-options {
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+  }
+  a.active {
+    color: #bbbbbb;
+  }
+  a:hover {
+    color: #bbbbbb;
+    cursor: pointer;
+  }
+  .container {
+    cursor: pointer;
+    position: relative;
+    top: -38px;
+    left: -15px;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.333s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+    transform: rotate(-45deg) translate(-4px, 6px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 { 
+    -webkit-transform: rotate(45deg) translate(-5px, -8px);
+    transform: rotate(45deg) translate(-5px, -8px);
+  }
+
+  .menu-content {
+    padding: 6.67px 0 6.67px 0;
+  }
+  .collapsible-menu {
+    background-color: #121212;
+    padding: 0 30px;
+    color: #ffffff;
+    display: block;
+  }
+  .collapsible-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .collapsible-menu a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .collapsible-menu {
+    height: 180px;
+  }
+  .change .menu-content {
+    display: none;
+    height: 0;
+  }
+  .collapsible-menu.change {
+    height: 0;
   }
 }

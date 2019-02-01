@@ -1,9 +1,24 @@
 <div class="navbar">
   <a class="image-option" routerLink="/"><img src="../assets/p-logo/p-icon_300x320.png"></a>
-  <a #bio class="{{ pageUrl === '/bio' ? 'active' : '' }}" routerLink="/bio" routerLinkActive="active">Bio</a>
-  <a>Resume</a>
-  <a>Portfolio</a>
-  <a class="last-option">Contact</a>
+  <a #bio class="{{ pageUrl === '/bio' ? 'active' : '' }} lg-options" routerLink="/bio" routerLinkActive="active">Bio</a>
+  <a class="lg-options">Resume</a>
+  <a class="lg-options">Portfolio</a>
+  <a class="lg-options last-option">Contact</a>
+</div>
+<div class="collapsible-menu" onclick="this.classList.toggle('change');">
+  <div class="container" onclick="this.classList.toggle('change');">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <div class="menu-content">
+      <ul>
+        <li><a #bio class="{{ pageUrl === '/bio' ? 'active' : '' }} sm-options" routerLink="/bio" routerLinkActive="active">Bio</a></li>
+        <li><a class="sm-options">Resume</a></li>
+        <li><a class="sm-options">Portfolio</a></li>
+        <li><a class="sm-options last-option">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 <br /><br /><br />
 <h1 class="name">{{name}}</h1>
