@@ -12,7 +12,7 @@ module.exports = webpackMerge(commonConfig, {
     mode: 'production',
     output: {
         path: helpers.root('dist'),
-        publicPath: '/pjnalls.github.io/',
+        publicPath: 'dist/',
         filename: '[hash].js',
         chunkFilename: '[id].[hash].chunk.js'
     },
