@@ -1,10 +1,12 @@
 <div class="navbar">
   <a class="image-option" routerLink="/"><img src="../assets/p-logo/p-icon_300x320.png"></a>
+  <a #home class="lg-options home" routerLink="/" routerLinkActive="active">Home</a>
   <a #bio class="{{ pageUrl === '/bio' ? 'active' : '' }} lg-options" routerLink="/bio" routerLinkActive="active">Bio</a>
   <a #resume class="{{ pageUrl === '/resume' ? 'active' : '' }} lg-options" routerLink="/resume" routerLinkActive="active">Résumé</a>
   <a #portfolio class="{{ pageUrl === '/portfolio' ? 'active' : '' }} lg-options" 
      routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
-  <a class="lg-options last-option">Contact</a>
+  <a #contact class="{{ pageUrl === '/contact' ? 'active' : '' }} lg-options" 
+     routerLink="/contact" routerLinkActive="active">Contact</a>
 </div>
 <div class="collapsible-menu" onclick="this.classList.toggle('change');">
   <div class="container" onclick="this.classList.toggle('change');">
@@ -29,7 +31,9 @@
                routerLink="/portfolio" 
                routerLinkActive="active">Portfolio</a></li>
             <hr/>
-        <li><a class="sm-options last-option">Contact</a></li>
+        <li><a #resume class="{{ pageUrl === '/contact' ? 'active' : '' }} sm-options" 
+               routerLink="/contact" 
+               routerLinkActive="active">Contact</a></li>
       </ul>
     </div>
   </div>

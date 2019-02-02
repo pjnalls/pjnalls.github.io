@@ -44,16 +44,17 @@ div.navbar {
   a.last-option {
     margin-right: 0; 
   }
+  a.home {
+    color: #ffffff;
+  }
+  a.home.active {
+    color: #ffffff;
+  }
 }
 
 .collapsible-menu {
   display: none;
 }
-
-.home {
-  color: #ffffff;
-}
-
 hr {
   opacity: 0;
   border-color: #8a8a8a;
