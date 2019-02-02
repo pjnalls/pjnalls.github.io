@@ -1,9 +1,8 @@
 .calendar {
-    width: 800px;
     font-family: Helvetica, arial;
-    border: 1px solid #dddddd;
-    background: #dddddd;
+    border: 1px solid #DDDDDD;
     border-radius: 3px;
+    background-color: #ffffff;
     min-height: 243px;
     text-align: center;
     margin: 0 auto;
@@ -12,7 +11,7 @@
 .calendar-graph text.wday,
 .calendar-graph text.month {
     font-size: 10px;
-    fill: #555555 !important;
+    fill: #aaa;
 }
 
 .contrib-legend {
@@ -44,15 +43,14 @@
 
 .calendar-graph {
     padding: 5px 0 0;
-    height: 126px;
     text-align: center;
 }
 
 .contrib-column {
     padding: 15px 0;
     text-align: center;
-    border-left: 1px solid #555555;
-    border-top: 1px solid #555555;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
     font-size: 11px;
 }
 
