@@ -1,7 +1,7 @@
 <div class="navbar">
   <a class="image-option" routerLink="/"><img src="../assets/p-logo/p-icon_300x320.png"></a>
   <a #bio class="{{ pageUrl === '/bio' ? 'active' : '' }} lg-options" routerLink="/bio" routerLinkActive="active">Bio</a>
-  <a class="lg-options">Resume</a>
+  <a #resume class="{{ pageUrl === '/resume' ? 'active' : '' }} lg-options" routerLink="/resume" routerLinkActive="active">Résumé</a>
   <a class="lg-options">Portfolio</a>
   <a class="lg-options last-option">Contact</a>
 </div>
@@ -20,7 +20,7 @@
                routerLink="/bio" 
                routerLinkActive="active">Bio</a></li>
             <hr/>
-        <li><a class="sm-options">Resume</a></li>
+        <li><a class="sm-options">Résumé</a></li>
             <hr/>
         <li><a class="sm-options">Portfolio</a></li>
             <hr/>
