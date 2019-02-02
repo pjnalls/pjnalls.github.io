@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ResumeComponent } from './components/resume/resume.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 const appRoutes: Routes = [
-    { path: '', component: ResumeComponent }
+    { path: '', component: PortfolioComponent }
 ];
 
 @NgModule({
@@ -16,4 +16,5 @@ const appRoutes: Routes = [
     ]
 })
 
-export class ResumeRoutingModule {}
+
+export class PortfolioRoutingModule {}

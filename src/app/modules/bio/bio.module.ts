@@ -15,4 +15,4 @@ import { BioComponent } from './components/bio/bio.component';
     providers: []
 })
 
-export class MenuModule {}
+export class BioModule {}

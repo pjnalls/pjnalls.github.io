@@ -2,7 +2,8 @@
   <a class="image-option" routerLink="/"><img src="../assets/p-logo/p-icon_300x320.png"></a>
   <a #bio class="{{ pageUrl === '/bio' ? 'active' : '' }} lg-options" routerLink="/bio" routerLinkActive="active">Bio</a>
   <a #resume class="{{ pageUrl === '/resume' ? 'active' : '' }} lg-options" routerLink="/resume" routerLinkActive="active">Résumé</a>
-  <a class="lg-options">Portfolio</a>
+  <a #portfolio class="{{ pageUrl === '/portfolio' ? 'active' : '' }} lg-options" 
+     routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
   <a class="lg-options last-option">Contact</a>
 </div>
 <div class="collapsible-menu" onclick="this.classList.toggle('change');">
@@ -20,9 +21,13 @@
                routerLink="/bio" 
                routerLinkActive="active">Bio</a></li>
             <hr/>
-        <li><a class="sm-options">Résumé</a></li>
+        <li><a #resume class="{{ pageUrl === '/resume' ? 'active' : '' }} sm-options" 
+               routerLink="/resume" 
+               routerLinkActive="active">Résumé</a></li>
             <hr/>
-        <li><a class="sm-options">Portfolio</a></li>
+        <li><a #resume class="{{ pageUrl === '/portfolio' ? 'active' : '' }} sm-options" 
+               routerLink="/portfolio" 
+               routerLinkActive="active">Portfolio</a></li>
             <hr/>
         <li><a class="sm-options last-option">Contact</a></li>
       </ul>

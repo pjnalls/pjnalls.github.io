@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './shared/components/home/home.component';
 import { BioComponent } from './modules/bio/components/bio/bio.component';
 import { ResumeComponent } from './modules/resume/components/resume/resume.component';
+import { PortfolioComponent } from './modules/portfolio/components/portfolio/portfolio.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { ResumeComponent } from './modules/resume/components/resume/resume.compo
         AppComponent,
         HomeComponent,
         BioComponent,
-        ResumeComponent
+        ResumeComponent,
+        PortfolioComponent
     ],
     imports: [
         BrowserModule,

@@ -15,4 +15,4 @@ import { ResumeComponent } from './components/resume/resume.component';
     providers: []
 })
 
-export class MenuModule {}
+export class ResumeModule {}
