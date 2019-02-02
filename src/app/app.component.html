@@ -12,9 +12,18 @@
     <div class="bar3"></div>
     <div class="menu-content">
       <ul>
-        <li><a #bio class="{{ pageUrl === '/bio' ? 'active' : '' }} sm-options" routerLink="/bio" routerLinkActive="active">Bio</a></li>
+        <li><a class="sm-options home" 
+               routerLink="/" 
+               routerLinkActive="active">Home</a></li>
+            <hr/>
+        <li><a #bio class="{{ pageUrl === '/bio' ? 'active' : '' }} sm-options" 
+               routerLink="/bio" 
+               routerLinkActive="active">Bio</a></li>
+            <hr/>
         <li><a class="sm-options">Resume</a></li>
+            <hr/>
         <li><a class="sm-options">Portfolio</a></li>
+            <hr/>
         <li><a class="sm-options last-option">Contact</a></li>
       </ul>
     </div>

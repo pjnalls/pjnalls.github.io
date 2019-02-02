@@ -50,6 +50,17 @@ div.navbar {
   display: none;
 }
 
+.home {
+  color: #ffffff;
+}
+
+hr {
+  opacity: 0;
+  border-color: #8a8a8a;
+  width: 515px;
+  align-content: left;
+}
+
 @media only screen and (max-width: 700px) {
   div.navbar {
     a.lg-options {
@@ -72,8 +83,14 @@ div.navbar {
   a.sm-options {
     color: #ffffff;
     text-decoration: none;
-    -webkit-transition: color 0.5s;
-    transition: color 0.5s;
+    opacity: 0;
+    -webkit-transition: color 0.5s, opacity 0.333s;
+    transition: color 0.5s, opacity 0.333s;
+  }
+  ul {
+    margin-top: -180px;
+    -webkit-transition: margin-top 0.333s;
+    transition: margin-top 0.333s;
   }
   a.active {
     color: #bbbbbb;
@@ -81,6 +98,24 @@ div.navbar {
   a:hover {
     color: #bbbbbb;
     cursor: pointer;
+  }
+  a.home {
+    color: #ffffff;
+  }
+  a.home.active {
+    color: #ffffff;
+  }
+  hr {
+    opacity: 0;
+  }
+  .change .menu-content ul hr {
+    opacity: 1;
+  }
+  .change .menu-content ul li a {
+    opacity: 1;
+  }
+  .change .menu-content ul {
+    margin-top: 15px;
   }
   .container {
     cursor: pointer;
@@ -119,6 +154,8 @@ div.navbar {
     padding: 0 30px;
     color: #ffffff;
     display: block;
+    height: 0;
+    transition: height ease-out 0.333s;
   }
   .collapsible-menu ul {
     list-style-type: none;
@@ -129,14 +166,10 @@ div.navbar {
     padding: 10px;
     text-decoration: none;
   }
-  .collapsible-menu {
-    height: 180px;
-  }
   .change .menu-content {
-    display: none;
-    height: 0;
+    display: block;
   }
   .collapsible-menu.change {
-    height: 0;
+    height: 295px;
   }
 }
