@@ -6,7 +6,7 @@ div {
   -webkit-animation: slide-up-fade-in ease-out 0.75s forwards;
   animation: slide-up-fade-in ease-out 0.75s forwards;
 
-  @import '../../../../slide-up-fade-in';
+  @import '../../../../_slide-up-fade-in.scss';
   
   h2 {
     font-weight: 500;
@@ -24,7 +24,7 @@ div {
     animation-delay: 0.75s;
   }
 
-  @import 'page-slide-up-fade-in';
+  @import './_page-slide-up-fade-in.scss';
 }
 
 

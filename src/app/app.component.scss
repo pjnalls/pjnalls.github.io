@@ -9,7 +9,7 @@ h1.name {
   animation: slide-up-fade-in ease-out 0.75s;
 }
 
-@import 'slide-up-fade-in';
+@import './_slide-up-fade-in.scss';
 
 div.navbar {
   background-color: #413f44;
