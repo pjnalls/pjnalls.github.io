@@ -52,9 +52,9 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            filename: './index.html',
+            /*filename: './index.html',
             chunksSortMode: 'none',
-            chunks: 'all'
+            chunks: 'all'*/
         })
     ]
 };
