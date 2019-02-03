@@ -7,9 +7,7 @@ const isDev = process.env.NODE_ENV !== 'production';
 
 module.exports = {
     entry: {
-        vendor: './src/vendor.ts',
-        polyfills: './src/polyfills.ts',
-        main: isDev ? './src/main.ts' : './src/main.aot.ts'
+        main: './src/main.ts'
     },
     resolve: {
         extensions: ['.ts', '.js']
