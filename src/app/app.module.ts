@@ -1,5 +1,4 @@
-import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { NgModule, Compiler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +13,7 @@ import { HomeComponent } from './shared/components/home/home.component';
         BrowserModule,
         AppRoutingModule
     ],
-    providers: [],
+    providers: [ Compiler ],
     bootstrap: [
         AppComponent
     ]
