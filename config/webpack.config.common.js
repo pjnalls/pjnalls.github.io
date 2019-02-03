@@ -3,11 +3,13 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const helpers = require('./helpers');
-const isDev = process.env.NODE_ENV !== 'production';
+//const isDev = process.env.NODE_ENV !== 'production';
 
 module.exports = {
     entry: {
-        main: './src/main.ts'
+        vendor: './src/vendor.ts',
+        polyfills: './src/polyfills.ts',
+        main: './src/main.ts' 
     },
     resolve: {
         extensions: ['.ts', '.js']

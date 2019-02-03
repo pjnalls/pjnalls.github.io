@@ -17,6 +17,10 @@ module.exports = webpackMerge(commonConfig, {
     },
     optimization: {
         noEmitOnErrors: true,
+        splitChunks: {
+            chunks: 'all'
+        },
+        runtimeChunk: 'single',
         minimizer: [
             new OptimizeCSSAssetsPlugin({
                 cssProcessor: cssnano,
