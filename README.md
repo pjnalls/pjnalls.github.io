@@ -4,7 +4,7 @@ This is my personal homepage currently in development. Design inspired by Apple'
 
 ## Technical Description
 
-This is an Angular 7 web application with Webpack 4 asset management and configurations. TypeScript, Babel, and Sass - along with conventional HTML, CSS, and JavaScript - are other front-end technologies used in this repository.
+This is an Angular 7 web application with Webpack 4 module bundling and configurations. npm (Node.js), TypeScript, Babel, and Sass - along with conventional HTML, CSS, and JavaScript - are other front-end technologies used in this repository.
 
 ## Reference
 
