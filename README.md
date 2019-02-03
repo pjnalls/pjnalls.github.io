@@ -1,4 +1,4 @@
-# Preston Nalls' Home Page (pjnalls.github.io)
+# Preston Nalls' Homepage (pjnalls.github.io)
 
 This is my personal. Design inspired by Apple's MacBook Pro promotional web page which can be accessed [here](https://www.apple.com/macbook-pro/).
 
