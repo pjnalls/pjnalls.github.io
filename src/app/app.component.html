@@ -3,8 +3,8 @@
   <a #home class="lg-options home" routerLink="/" routerLinkActive="active">Home</a>
   <a #bio class="{{ pageUrl === '/bio' ? 'active' : '' }} lg-options" routerLink="/bio" routerLinkActive="active">Bio</a>
   <a #resume class="{{ pageUrl === '/resume' ? 'active' : '' }} lg-options" routerLink="/resume" routerLinkActive="active">Résumé</a>
-  <a #portfolio class="{{ pageUrl === '/portfolio' ? 'active' : '' }} lg-options" 
-     routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+  <a #projects class="{{ pageUrl === '/projects' ? 'active' : '' }} lg-options" 
+     routerLink="/projects" routerLinkActive="active">Projects</a>
   <a #contact class="{{ pageUrl === '/contact' ? 'active' : '' }} lg-options" 
      routerLink="/contact" routerLinkActive="active">Contact</a>
 </div>
@@ -27,11 +27,11 @@
                routerLink="/resume" 
                routerLinkActive="active">Résumé</a></li>
             <hr/>
-        <li><a #resume class="{{ pageUrl === '/portfolio' ? 'active' : '' }} sm-options" 
-               routerLink="/portfolio" 
-               routerLinkActive="active">Portfolio</a></li>
+        <li><a #projects class="{{ pageUrl === '/projects' ? 'active' : '' }} sm-options" 
+               routerLink="/projects" 
+               routerLinkActive="active">Projects</a></li>
             <hr/>
-        <li><a #resume class="{{ pageUrl === '/contact' ? 'active' : '' }} sm-options" 
+        <li><a #contact class="{{ pageUrl === '/contact' ? 'active' : '' }} sm-options" 
                routerLink="/contact" 
                routerLinkActive="active">Contact</a></li>
       </ul>

@@ -2,12 +2,12 @@ import { Component, ViewChild, Renderer2, OnInit, Inject, ElementRef } from '@an
 import { DOCUMENT } from '@angular/common';
 
 @Component({
-    selector: 'portfolio-page',
-    templateUrl: './portfolio.component.html',
-    styleUrls: ['./portfolio.component.scss']
+    selector: 'projects-page',
+    templateUrl: './projects.component.html',
+    styleUrls: ['./projects.component.scss']
 })
 
-export class PortfolioComponent implements OnInit{
+export class ProjectsComponent implements OnInit{
     anchorDate: Date = new Date('December 25, 2018');
     today: Date = new Date();
     diff: number = Math.abs(this.today.getTime() - this.anchorDate.getTime());

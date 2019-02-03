@@ -7,7 +7,7 @@ const appRoutes: Routes = [
     { path: '', component: HomeComponent, data: { state: 'HomePage'} },
     { path: 'bio', loadChildren: './modules/bio/bio.module#BioModule', data: { state: 'BioPage'} },
     { path: 'resume', loadChildren: './modules/resume/resume.module#ResumeModule', data: { state: 'ResumePage'} },
-    { path: 'portfolio', loadChildren: './modules/portfolio/portfolio.module#PortfolioModule', data: { state: 'PortfolioPage'} },
+    { path: 'projects', loadChildren: './modules/projects/projects.module#ProjectsModule', data: { state: 'ProjectsPage'} },
     { path: 'contact', loadChildren: './modules/contact/contact.module#ContactModule', data: { state: 'ContactPage'} }
 ];
 
