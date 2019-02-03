@@ -24,4 +24,17 @@ img {
 }
 
 @import '../../../_slide-up-fade-in.scss';
-@import '../../../_fade-in.scss'
+@import '../../../_fade-in.scss';
+
+@media only screen and (max-width: 700px) {
+  h1.header {
+    font-size: 37.5px;
+    line-height: 50px;
+  }
+  img {
+    width: 450px;
+    height: auto;
+    top: 275px;
+    left: -15px;
+  }
+}
