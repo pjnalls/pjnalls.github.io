@@ -41,6 +41,7 @@ src/assets/front-end-tools/logos/
 
 # generated files
 src/**/*.js
+!src/vendor/IonicaBizau/github-calendar/dist/*.js
 src/**/*.js.map
 src/**/*.ngsummary.json
 src/**/*.metadata.json

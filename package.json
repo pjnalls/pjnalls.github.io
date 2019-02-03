@@ -14,7 +14,7 @@
     "webpack-prod": "cross-env NODE_ENV=production webpack --mode production",
     "build:dev": "webpack-dev-server --inline --hot --progress --port 8080 --open",
     "build:prod": "npm run build:clean && ngc && npm run webpack-prod && npm run build:clean && mv dist/index.html index.html",
-    "build:clean": "rimraf index.html src/**/*.js src/**/*.js.map src/**/*.ngsummary.json src/**/*.metadata.json src/**/**/*.ngfactory.ts src/**/*.ngstyle.ts src/**/*.shim.ts",
+    "build:clean": "rimraf index.html src/**/*.js src/**/*.js.map src/**/*.ngsummary.json src/**/*.metadata.json src/**/**/*.ngfactory.ts src/**/*.ngstyle.ts src/**/*.shim.ts && cp backup/github-calendar.min.js src/vendor/IonicaBizau/github-calendar/dist/github-calendar.min.js",
     "serve": "lite-server",
     "deploy": "gh-pages -d dist"
   },
