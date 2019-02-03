@@ -27,12 +27,16 @@ div {
   @import './_page-slide-up-fade-in.scss';
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 815px) {
   div {
     margin: 15px;
     width: 95%;
     img {
       width: 680px;
+    }
+    h2 {
+      margin-bottom: 10px;
+      font-size: 25px;
     }
   }
 }
