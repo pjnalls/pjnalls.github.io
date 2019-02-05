@@ -14,6 +14,17 @@ div {
     margin-bottom: 10px;
     font-size: 35px;
   }
+  .page-1, .page-2 {
+    margin: 0;
+    background-color: #fafafa;
+    height: auto;
+    width: 750px;
+    color: #1f1f1f;
+    padding: 15px;
+    .container {
+      margin: 22.5px;
+    }
+  }
   img {
     width: 800px;
     height: auto;
@@ -31,8 +42,9 @@ div {
   div {
     margin: 15px;
     width: 95%;
-    img {
-      width: 680px;
+    img, .page-1, .page-2 {
+      margin: 0;
+      width: 500px;
     }
     h2 {
       margin-bottom: 10px;
