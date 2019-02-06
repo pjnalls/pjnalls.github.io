@@ -8,10 +8,6 @@ import { DOCUMENT } from '@angular/common';
 })
 
 export class ProjectsComponent implements OnInit{
-    anchorDate: Date = new Date('December 25, 2018');
-    today: Date = new Date();
-    diff: number = Math.abs(this.today.getTime() - this.anchorDate.getTime());
-    dayDiff: number = Math.ceil(this.diff/(1000 * 60 * 60 * 24));
 
     constructor(private _renderer2: Renderer2, @Inject(DOCUMENT) private _document: any) {}
     @ViewChild('calendar') calendar: ElementRef
