@@ -14,6 +14,9 @@ h1.name {
 div.navbar {
   background-color: #413f44;
   height: 45px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
   a.lg-options {
     line-height: 45px;
     font-size: 15px;
@@ -22,6 +25,9 @@ div.navbar {
     margin-right: 90px;
     -webkit-transition: color 0.5s;
     transition: color 0.5s;
+  }
+  a.last-option {
+    margin-right: 0;
   }
   a.image-option {
     margin-right: 0;
@@ -58,6 +64,7 @@ div.navbar {
 hr {
   opacity: 0;
   border-color: #8a8a8a;
+  width: 500px;
 }
 
 @media only screen and (max-width: 815px) {
@@ -118,9 +125,10 @@ hr {
   }
   .container {
     cursor: pointer;
-    position: relative;
-    top: -38px;
-    left: -15px;
+    position: fixed;
+    top: 7.5px;
+    left: 15px;
+    z-index: 10000;
   }
 
   .bar1, .bar2, .bar3 {
@@ -149,6 +157,10 @@ hr {
     padding: 6.67px 0 6.67px 0;
   }
   .collapsible-menu {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    top: 45px;
     background-color: #121212;
     padding: 0 30px;
     color: #ffffff;
@@ -169,6 +181,6 @@ hr {
     display: block;
   }
   .collapsible-menu.change {
-    height: 600px;
+    height: 100%;
   }
 }
