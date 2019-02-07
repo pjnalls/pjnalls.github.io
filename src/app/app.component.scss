@@ -64,7 +64,9 @@ div.navbar {
 hr {
   opacity: 0;
   border-color: #8a8a8a;
-  width: 500px;
+  width: 750px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
 }
 
 @media only screen and (max-width: 815px) {
@@ -84,7 +86,7 @@ hr {
     }
   }
   ul, li, a.sm-options {
-    text-align: left;
+    text-align: left;   
   }
   a.sm-options {
     color: #ffffff;
