@@ -56,6 +56,17 @@ div.navbar {
   a.home.active {
     color: #ffffff;
   }
+  a {
+    img {
+      opacity: 1;
+      transition: opacity 0.333s;
+    }
+  }
+  a.active{
+    img {
+      opacity: 0.5;
+    }
+  }
 }
 
 .collapsible-menu {
@@ -64,9 +75,9 @@ div.navbar {
 hr {
   opacity: 0;
   border-color: #8a8a8a;
-  width: 750px;
-  margin-left: 10px !important;
-  margin-right: 10px !important;
+  width: 900px;
+  margin-left: -20px;
+  margin-right: 0;
 }
 
 @media only screen and (max-width: 815px) {
@@ -85,8 +96,9 @@ hr {
       }
     }
   }
-  ul, li, a.sm-options {
-    text-align: left;   
+  ul, li, a.sm-options, .menu-content {
+    text-align: left;
+    width: 100%;   
   }
   a.sm-options {
     color: #ffffff;

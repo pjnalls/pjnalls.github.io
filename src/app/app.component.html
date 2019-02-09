@@ -1,10 +1,10 @@
 <div class="navbar">
-  <a class="image-option" routerLink="/"><img src="../assets/p-logo/p-icon_300x320.png"></a>
-  <a #home class="lg-options home" routerLink="/" routerLinkActive="active">Home</a>
-  <a #bio class="{{ pageUrl === '/bio' ? 'active' : '' }} lg-options" routerLink="/bio" routerLinkActive="active">Bio</a>
-  <a #resume class="{{ pageUrl === '/resume' ? 'active' : '' }} lg-options" routerLink="/resume" routerLinkActive="active">Résumé</a>
-  <a #projects class="{{ pageUrl === '/projects' ? 'active' : '' }} lg-options" 
-     routerLink="/projects" routerLinkActive="active">Projects</a>
+  <a class="image-option" routerLink="/">
+    <img src="../assets/p-logo/p-icon_300x320.png"></a>
+  <a #home class="lg-options" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+  <a #bio class="lg-options" routerLink="/bio" routerLinkActive="active">Bio</a>
+  <a #resume class="lg-options" routerLink="/resume" routerLinkActive="active">Résumé</a>
+  <a #projects class=" lg-options" routerLink="/projects" routerLinkActive="active">Projects</a>
   <a #contact class="{{ pageUrl === '/contact' ? 'active' : '' }} lg-options last-option" 
      routerLink="/contact" routerLinkActive="active">Contact</a>
 </div>
@@ -16,23 +16,24 @@
     <div class="menu-content">
       <br /><br />
       <ul>
-        <li><a class="sm-options home" 
+        <li><a class="sm-options" 
                routerLink="/" 
-               routerLinkActive="active">Home</a></li>
+               routerLinkActive="active"
+               [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
             <hr/>
-        <li><a #bio class="{{ pageUrl === '/bio' ? 'active' : '' }} sm-options" 
+        <li><a #bio class="sm-options" 
                routerLink="/bio" 
                routerLinkActive="active">Bio</a></li>
             <hr/>
-        <li><a #resume class="{{ pageUrl === '/resume' ? 'active' : '' }} sm-options" 
+        <li><a #resume class="sm-options" 
                routerLink="/resume" 
                routerLinkActive="active">Résumé</a></li>
             <hr/>
-        <li><a #projects class="{{ pageUrl === '/projects' ? 'active' : '' }} sm-options" 
+        <li><a #projects class="sm-options" 
                routerLink="/projects" 
                routerLinkActive="active">Projects</a></li>
             <hr/>
-        <li><a #contact class="{{ pageUrl === '/contact' ? 'active' : '' }} sm-options" 
+        <li><a #contact class="sm-options" 
                routerLink="/contact" 
                routerLinkActive="active">Contact</a></li>
       </ul>
