@@ -17,7 +17,7 @@ div {
   .page-1, .page-2 {
     margin: 0;
     background-color: #fafafa;
-    height: auto;
+    height: 1125px;
     width: 750px;
     color: #1f1f1f;
     padding: 15px;
@@ -38,7 +38,7 @@ div {
           margin-left: -10px;
         }
         .resume-hr {
-          width: 83%;
+          width: 100%;
           margin-left: 0;
           margin-right: auto;
           border-color: #1f1f1f;
@@ -69,7 +69,45 @@ div {
     width: 95%;
     img, .page-1, .page-2 {
       margin: 0;
-      width: 500px;
+      width: 550px;
+      height: 1650px;
+      padding: 15px;
+      .container {
+        margin: 10px;
+        .column, .full-column {
+          width: 20%;
+        }
+        .full-column {
+          width: 95%;
+        }
+      }
+    }
+    h2 {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div {
+    margin: 15px;
+    width: 95%;
+    word-break: break-word;
+    img, .page-1, .page-2 {
+      margin: 0;
+      width: 400px;
+      height: 2375px;
+      padding: 15px;
+      .container {
+        margin: 10px;
+        .column, .full-column {
+          width: 30%;
+        }
+        .full-column {
+          width: 95%;
+        }
+      }
     }
     h2 {
       margin-bottom: 10px;
