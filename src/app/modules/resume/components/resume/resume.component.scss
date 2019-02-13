@@ -17,7 +17,7 @@ div {
   .page-1, .page-2 {
     margin: 0;
     background-color: #fafafa;
-    height: 1125px;
+    height: 1200px;
     width: 750px;
     color: #1f1f1f;
     padding: 15px;
@@ -70,12 +70,13 @@ div {
     img, .page-1, .page-2 {
       margin: 0;
       width: 550px;
-      height: 1650px;
+      height: 1750px;
       padding: 15px;
       .container {
         margin: 10px;
         .column, .full-column {
-          width: 20%;
+          width: 26%;
+          margin-right: 22.5px;
         }
         .full-column {
           width: 95%;
@@ -97,12 +98,13 @@ div {
     img, .page-1, .page-2 {
       margin: 0;
       width: 400px;
-      height: 2375px;
+      height: 2750px;
       padding: 15px;
       .container {
         margin: 10px;
         .column, .full-column {
-          width: 30%;
+          width: 35%;
+          margin-right: 25px;
         }
         .full-column {
           width: 95%;
