@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'resume-page',
     styleUrls: ['./resume.component.scss'],
-    /// Template code in below for .gitattributes purposes.
+    // Template code added below for .gitattributes purposes.
     template: `
     <div>
         <br />
