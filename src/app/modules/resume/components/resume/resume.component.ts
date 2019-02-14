@@ -73,7 +73,7 @@ import { Component } from '@angular/core';
                 <ul>
                 <li>Develop ASP.NET MVC, clinical applications with Microsoft tech stack in an Agile environment
                 </li>
-                <li>Enhance UI via HTML, CSS, vanilla JavaScript, Knockout.js, Ember.js, CoffeeScript, and Razor
+                <li>Enhance UI via HTML, CSS, JavaScript, Knockout.js, Ember.js, CoffeeScript, Handlebars.js, and Razor
                 </li>
                 <li>Implement RESTful APIs in C# controllers using LINQ for CRUD operations on a database
                 </li>
@@ -101,7 +101,7 @@ import { Component } from '@angular/core';
                 <li><b>Frameworks, Libraries, and Other Tools Used for Project</b></li>
                 <ul>
                     <li>ASP.NET MVC, LINQ, Dapper, Unit Testing, Razor</li>
-                    <li>Knockout.js, Ember.js, Emblem.js, CoffeeScript, jQuery, Ajax, Bootstrap, Node.js, npm, Bower.js, Grunt.js</li>
+                    <li>Knockout.js, Ember.js, Emblem.js, CoffeeScript, Handlebars.js, jQuery, Ajax, Bootstrap, Node.js, npm, Bower.js, Grunt.js</li>
                     <li>Microsoft SQL Server 2014</li>
                     <li>Git, Visual Studio 2017, Azure DevOps Server (TFS), SonarQube</li>
                 </ul>
