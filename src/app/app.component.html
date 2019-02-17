@@ -4,8 +4,8 @@
   <a #home class="lg-options" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
   <a #bio class="lg-options" routerLink="/bio" routerLinkActive="active">Bio</a>
   <a #resume class="lg-options" routerLink="/resume" routerLinkActive="active">Résumé</a>
-  <a #projects class=" lg-options" routerLink="/projects" routerLinkActive="active">Projects</a>
-  <a #contact class="{{ pageUrl === '/contact' ? 'active' : '' }} lg-options last-option" 
+  <a #projects class="lg-options" routerLink="/projects" routerLinkActive="active">Projects</a>
+  <a #contact class="lg-options last-option" 
      routerLink="/contact" routerLinkActive="active">Contact</a>
 </div>
 <div class="collapsible-menu" onclick="this.classList.toggle('change');">
