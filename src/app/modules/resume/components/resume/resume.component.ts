@@ -71,7 +71,7 @@ import { Component } from '@angular/core';
                 <span><b>.NET Developer at Syntel --- (Nov. 2018 ― Present)</b></span>
                 <hr class="resume-hr"/>
                 <ul>
-                <li>Develop ASP.NET MVC, clinical applications with Microsoft tech stack in an Agile environment
+                <li>Develop ASP.NET MVC, .NET Framework applications with Microsoft tech stack in an Agile environment
                 </li>
                 <li>Enhance UI via HTML, CSS, JavaScript, Knockout.js, Ember.js, CoffeeScript, Handlebars.js, and Razor
                 </li>
@@ -100,7 +100,7 @@ import { Component } from '@angular/core';
                 <br />
                 <li><b>Frameworks, Libraries, and Other Tools Used for Project</b></li>
                 <ul>
-                    <li>ASP.NET MVC, LINQ, Dapper, Unit Testing, Razor</li>
+                    <li>ASP.NET MVC, .NET Framework, NuGet, LINQ, Dapper, Entity Framework, Unit Testing, Razor</li>
                     <li>Knockout.js, Ember.js, Emblem.js, CoffeeScript, Handlebars.js, jQuery, Ajax, Bootstrap, Node.js, npm, Bower.js, Grunt.js</li>
                     <li>Microsoft SQL Server 2014</li>
                     <li>Git, Visual Studio 2017, Azure DevOps Server (TFS), SonarQube</li>
@@ -113,7 +113,7 @@ import { Component } from '@angular/core';
                 <ul>
                 <li>Developed programmatic Salesforce solutions by contributing custom Lightning Components, HTML, CSS, JavaScript, SOQL and Apex
                 </li>
-                <li>Provided declarative Salesforce solutions by contributingworkflows, advanced formulas, designing custom objects, field and relationships
+                <li>Provided declarative Salesforce solutions by contributing workflows, advanced formulas, designing custom objects, field and relationships
                 </li>
                 <li>Lead development team throughout the Salesforce development lifecycle
                 </li>
