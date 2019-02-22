@@ -85,15 +85,15 @@ import { Component } from '@angular/core';
           </li>
           <li>Write unit testing methods in Visual Studios to yield + and - test results for new C# code written
           </li>
-          <li>Participate in Scrums to update fellow developers and leads, QA, business, and product analysts
+          <li>Participate in daily Scrums to update developers, leads, and QA/business/product analysts
           </li>
           <li>Proactively communicate with product analysts to clarify requirements then providing solutions
           </li>
-          <li>Consistently keep 100% coverage for new C# code I introduce into the clinical application
+          <li>Consistently keep 100% coverage for new C# code I introduce into the clinical applications
           </li>
           <li>Track bugs, vulnerabilities, and other issues in projects via the code analysis tool SonarQube
           </li>
-          <li>Install/manage Node module/Bower component dependencies with npm and Bower.js
+          <li>Install/manage Node module/Bower component/NuGet dependencies with npm/Bower.js/VS
           </li>
           <li>Use Grunt as a task runner ― modifying, enhancing, and running Gruntfiles from the front-end
           </li>
