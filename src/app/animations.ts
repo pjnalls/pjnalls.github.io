@@ -2,18 +2,19 @@ import { transition, query, group, animate, trigger, style } from "@angular/anim
 
 export function fadeInAnimation() {
   return trigger('routerTransition', [
-      transition('HomePage <=> BioPage', [    
-        query(':enter, :leave', style({ position: 'fixed', left: 0, right: 0, opacity: 1 })),
+      transition('* => *', [    
+        query(':enter, :leave', style({ position: 'fixed', left: 0, right: 0, opacity: 1 }), { optional: true }),
         group([ 
           query(':enter', [
-            style({ opacity:0 }),
-            animate('333ms', style({ opacity:1 }))
-          ]),
+            style({ opacity: 0, top: 225 }),
+            animate('500ms', style({ opacity: 1, top: 120 }))            
+          ], { optional: true }),
           query(':leave', [
-            style({ opacity:1 }),
-            animate('333ms', style({ opacity:0 }))]),
+            style({ opacity: 1, top: 120 }),
+            animate('500ms', style({ opacity: 0, top: 250 }))
+          ], { optional: true }),
         ])
-      ])
+      ]),
     ])
 }
 
