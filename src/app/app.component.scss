@@ -5,8 +5,8 @@ h1.name {
   margin-bottom: 0px;
   margin-top: 22.5px;
   font-weight: 500;
-  -webkit-animation: slide-up-fade-in ease-out 0.75s;
-  animation: slide-up-fade-in ease-out 0.75s;
+  -webkit-animation: fade-in ease-out 1.5s;
+  animation: fade-in ease-out 1.5s;
 }
 
 @import './_slide-up-fade-in.scss';
