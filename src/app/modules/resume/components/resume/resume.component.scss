@@ -3,8 +3,8 @@ div {
   height: auto;
   margin: 25px auto;
   text-align: left;
-  -webkit-animation: slide-up-fade-in ease-out 0.75s forwards;
-  animation: slide-up-fade-in ease-out 0.75s forwards;
+  -webkit-animation: slide-up-fade-in ease-out 1s forwards;
+  animation: slide-up-fade-in ease-out 1s forwards;
 
   @import '../../../../_slide-up-fade-in.scss';
   
@@ -18,7 +18,7 @@ div {
     margin: 0;
     background-color: #fafafa;
     height: 1200px;
-    width: 750px;
+    width: 100%;
     color: #1f1f1f;
     padding: 15px;
     .container {
@@ -50,26 +50,15 @@ div {
       }
     }
   }
-  img {
-    width: 800px;
-    height: auto;
-    opacity: 0;
-    -webkit-animation: page-slide-up-fade-in ease-out 0.5s forwards;
-    -webkit-animation-delay: 0.75s;
-    animation: page-slide-up-fade-in ease-out 0.5s forwards;
-    animation-delay: 0.75s;
-  }
-
   @import './_page-slide-up-fade-in.scss';
 }
 
 @media only screen and (max-width: 815px) {
   div {
     margin: 15px;
-    width: 95%;
+    width: 600px;
     img, .page-1, .page-2 {
       margin: 0;
-      width: 550px;
       height: 1750px;
       padding: 15px;
       .container {
@@ -93,11 +82,10 @@ div {
 @media only screen and (max-width: 600px) {
   div {
     margin: 15px;
-    width: 95%;
+    width: 450px;
     word-break: break-word;
     img, .page-1, .page-2 {
       margin: 0;
-      width: 400px;
       height: 2750px;
       padding: 15px;
       .container {

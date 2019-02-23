@@ -73,7 +73,8 @@ import { Component } from '@angular/core';
           <ul>
           <li>Develop ASP.NET MVC, .NET Framework apps with Microsoft tech stack in an Agile environment
           </li>
-          <li>Enhance UI via HTML, CSS, JavaScript, Knockout.js, Ember.js, CoffeeScript, Handlebars.js, Bootstrap and Razor
+          <li>Enhance UI via HTML, CSS, Bootstrap, JavaScript, Knockout.js, Ember.js, CoffeeScript,
+           Handlebars.js, Bootstrap and Razor
           </li>
           <li>Implement RESTful APIs in C# controllers using LINQ for CRUD operations on a database
           </li>
@@ -89,13 +90,13 @@ import { Component } from '@angular/core';
           </li>
           <li>Proactively communicate with product analysts to clarify requirements then providing solutions
           </li>
-          <li>Consistently keep 100% coverage for new C# code I introduce into the clinical applications
+          <li>Consistently keep 100% coverage of new C# code I introduce into the main clinical application
           </li>
           <li>Track bugs, vulnerabilities, and other issues in projects via the code analysis tool SonarQube
           </li>
           <li>Install/manage Node module/Bower component/NuGet dependencies with npm/Bower.js/VS
           </li>
-          <li>Use Grunt as a task runner ― modifying, enhancing, and running Gruntfiles from the front-end
+          <li>Use Grunt as a task runner/module bundler ― modifying/enhancing/running Gruntfiles
           </li>
           <br />
           <li><b>Frameworks, Libraries, and Other Tools Used for Projects</b></li>
@@ -103,7 +104,7 @@ import { Component } from '@angular/core';
             <li>ASP.NET MVC, .NET Framework, NuGet, LINQ, Dapper, Entity Framework, Unit Testing, Razor</li>
             <li>Knockout.js, Ember.js, Emblem.js, CoffeeScript, Handlebars.js, jQuery, Ajax, Bootstrap, Node.js, npm, Bower.js, Grunt.js</li>
             <li>Microsoft SQL Server 2014</li>
-            <li>Git, Visual Studio 2017, Azure DevOps Server (TFS), SonarQube</li>
+            <li>Git, Visual Studio (2013, 2017), Azure DevOps Server (TFS), SonarQube</li>
           </ul>
           </ul>
         </div>
