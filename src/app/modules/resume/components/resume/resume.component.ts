@@ -24,7 +24,7 @@ import { Component } from '@angular/core';
           <li>C#</li>
           <li>SQL/T-SQL</li>
           </ul>
-          <span><b>Frameworks/Libraries</b></span>
+          <span><b>Frameworks & Libraries</b></span>
           <hr class="resume-hr"/>
           <ul>
           <li>Angular (TypeScript)</li>

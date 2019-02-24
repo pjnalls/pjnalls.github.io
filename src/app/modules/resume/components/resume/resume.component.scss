@@ -1,5 +1,5 @@
 div {
-  width: 800px;
+  width: 750px;
   height: auto;
   margin: 25px auto;
   text-align: left;
@@ -53,13 +53,13 @@ div {
   @import './_page-slide-up-fade-in.scss';
 }
 
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 830px) {
   div {
     margin: 15px;
-    width: 600px;
+    width: 525px;
     img, .page-1, .page-2 {
       margin: 0;
-      height: 1750px;
+      height: 2250px;
       padding: 15px;
       .container {
         margin: 10px;
@@ -82,7 +82,7 @@ div {
 @media only screen and (max-width: 600px) {
   div {
     margin: 15px;
-    width: 450px;
+    width: 400px;
     word-break: break-word;
     img, .page-1, .page-2 {
       margin: 0;
@@ -95,7 +95,7 @@ div {
           margin-right: 25px;
         }
         .full-column {
-          width: 95%;
+          width: 92.5%;
         }
       }
     }
