@@ -134,7 +134,7 @@ import { Component } from '@angular/core';
     <div class="page-2">
       <div class="container">
         <div class="full-column">
-          <span><b>C# Developer Intern at HCA --- (Dec. 2017 ― May. 2018)</b></span>
+          <span><b>C# Developer Intern at HCA --- (Dec. 2017 ― May 2018)</b></span>
           <hr class="resume-hr"/>
           <ul>
           <li>Fixed Angular.js/HTML/CSS/C# issues (500+ bugs & 7k+ code smells) to increase code quality
