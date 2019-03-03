@@ -80,7 +80,7 @@ import { Component } from '@angular/core';
           </li>
           <li>Design SQL queries to capture electronic medical records (EMRs) from multiple database tables
           </li>
-          <li>Create/alter T-SQL functions to add/modify SQL logic called in scripts in .NET MVC application
+          <li>Create/alter T-SQL functions to add/modify SQL logic called in scripts for clinical apps
           </li>
           <li>Create/manage/build branches in Azure DevOps, and test/merge code into master
           </li>
@@ -99,8 +99,9 @@ import { Component } from '@angular/core';
           <li>Use Grunt as a task runner/module bundler ― modifying/enhancing/running Gruntfiles
           </li>
           <br />
-          <li><b>Frameworks, Libraries, and Other Tools Used for Projects</b></li>
+          <li><b>Languages, Frameworks, Libraries, and Other Tools Used for Projects</b></li>
           <ul>
+            <li>JavaScript, HTML, CSS, C#, SQL/T-SQL</li>
             <li>ASP.NET MVC, .NET Framework, NuGet, LINQ, Dapper, Entity Framework, Unit Testing, Razor</li>
             <li>Knockout.js, Ember.js, Emblem.js, CoffeeScript, Handlebars.js, jQuery, Ajax, Bootstrap, Node.js, npm, Bower.js, Grunt.js</li>
             <li>Microsoft SQL Server 2014</li>
