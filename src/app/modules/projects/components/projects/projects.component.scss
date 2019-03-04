@@ -11,7 +11,7 @@ div {
   h2, h1 {
     font-weight: 500;
   }
-  h2, p {
+  h2, p, h3 {
     color: #aaaaaa;
   }
 
@@ -46,6 +46,12 @@ div {
   a:hover {
     color: #555555;
     cursor: pointer;
+  }
+
+  h3.calendar-error {
+    display: none;
+    font-size: 30px;
+    font-weight: 400;
   }
 }
 
