@@ -13,23 +13,32 @@ export class ProjectsComponent implements OnInit{
     @ViewChild('calendar') calendar: ElementRef
 
     public ngOnInit() {
-        
-        let s = this._renderer2.createElement('script');
+        try {
+            let s = this._renderer2.createElement('script');
 
-        s.type = 'text/javascript';
-        s.src = 'src/vendor/IonicaBizau/github-calendar/dist/github-calendar.min.js';
-        this._renderer2.appendChild(this.calendar.nativeElement, s);
+            s.type = 'text/javascript';
+            s.src = 'src/vendor/IonicaBizau/github-calendar/dist/github-calendar.min.js';
+            this._renderer2.appendChild(this.calendar.nativeElement, s);
 
-        s = this._renderer2.createElement('link');
+            s = this._renderer2.createElement('link');
 
-        s.rel = 'stylesheet';
-        s.href='src/vendor/IonicaBizau/github-calendar/dist/github-calendar.css';
-        this._renderer2.appendChild(this.calendar.nativeElement, s);
-        
-        s = this._renderer2.createElement('link');
+            s.rel = 'stylesheet';
+            s.href='src/vendor/IonicaBizau/github-calendar/dist/github-calendar.css';
+            this._renderer2.appendChild(this.calendar.nativeElement, s);
+            
+            s = this._renderer2.createElement('link');
 
-        s.rel = 'stylesheet';
-        s.href='src/vendor/IonicaBizau/github-calendar/dist/github-calendar-responsive.css';
-        this._renderer2.appendChild(this.calendar.nativeElement, s);
+            s.rel = 'stylesheet';
+            s.href='src/vendor/IonicaBizau/github-calendar/dist/github-calendar-responsive.css';
+            this._renderer2.appendChild(this.calendar.nativeElement, s);           
+        } 
+        catch(error) 
+        {
+            let githubCalendar: HTMLDivElement = <HTMLDivElement>document.getElementById('calendar');
+            let calendarError: HTMLElement = document.getElementById('calendar-error');
+
+            githubCalendar.style.display = 'none';
+            calendarError.style.display = 'block';
+        }
     }
 }
