@@ -39,7 +39,6 @@ Thumbs.db
 
 # images
 src/assets/front-end-tools/logos/
-*.png
 
 # generated files
 src/**/*.js
