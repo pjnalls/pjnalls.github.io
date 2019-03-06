@@ -55,12 +55,17 @@ div {
 
 @media only screen and (max-width: 830px) {
   div {
-    margin: 15px;
-    width: 525px;
+    width: 100%;
+    h2 {
+      margin: 15px;
+    }
     img, .page-1, .page-2 {
       margin: 0;
+      width: 100%;
       height: 2250px;
       padding: 15px;
+      display: inline-block;
+      overflow: hidden;
       .container {
         margin: 10px;
         .column, .full-column {
@@ -81,9 +86,10 @@ div {
 
 @media only screen and (max-width: 600px) {
   div {
-    margin: 15px;
-    width: 365px;
-    word-break: break-word;
+    h2 {
+      margin: 15px;
+    }
+    width: 100%;
     img, .page-1, .page-2 {
       margin: 0;
       height: 2750px;
