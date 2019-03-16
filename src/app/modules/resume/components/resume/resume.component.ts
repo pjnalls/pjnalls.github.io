@@ -84,7 +84,7 @@ import { Component } from '@angular/core';
           </li>
           <li>Create/manage/build branches in Azure DevOps, and test/merge code into master
           </li>
-          <li>Write unit testing methods in Visual Studios to yield + and - test results for new C# code written
+          <li>Write unit testing methods in Visual Studio to yield + and - test results for new C# code written
           </li>
           <li>Participate in daily Scrums to update developers, leads, and QA/business/product analysts
           </li>
