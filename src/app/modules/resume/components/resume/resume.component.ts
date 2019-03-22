@@ -103,7 +103,8 @@ import { Component } from '@angular/core';
           <ul>
             <li>JavaScript, HTML, CSS, C#, SQL/T-SQL</li>
             <li>ASP.NET MVC, .NET Framework, NuGet, LINQ, Dapper, Entity Framework, MSTest (C# Testing Framework), Razor</li>
-            <li>Knockout.js, Ember.js, Emblem.js, CoffeeScript, Handlebars.js, jQuery, Ajax, Bootstrap, Node.js, npm, nvm, Bower.js, Grunt.js</li>
+            <li>Knockout.js, Ember.js, Emblem.js, CoffeeScript, Handlebars.js, jQuery, Ajax, Bootstrap, Node.js, 
+            npm, nvm, Bower.js, Grunt.js, Jest (JavaScript Testing Framework)</li>
             <li>Microsoft SQL Server 2014</li>
             <li>Git, Visual Studio (2013, 2017), Azure DevOps Server (TFS), SonarQube</li>
           </ul>
