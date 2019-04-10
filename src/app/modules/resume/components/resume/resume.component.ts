@@ -36,7 +36,7 @@ import { Component } from '@angular/core';
           <span><b>CLI/IDE/CD/CI Tools</b></span>
           <hr class="resume-hr"/>
           <ul>
-          <li>Webpack</li>
+          <li>Angular CLI</li>
           <li>npm (Node.js)</li>
           <li>nvm (Node.js)</li>
           <li>Git</li>
