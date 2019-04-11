@@ -4,7 +4,7 @@ This is my personal website. Design inspired by Apple's MacBook Pro promotional 
 
 ## Technical Description
 
-This is an Angular 7 web application with Webpack 4 module bundling and configurations. npm (Node.js), TypeScript, Babel, and Sass - along with conventional HTML, CSS, and JavaScript - are other front-end technologies used in this repository.
+This is an Angular 7 web application with Webpack 4 module bundling and configurations. npm (Node.js), TypeScript, Babel, Sass, and HTML5 templates were also used in this repository.
 
 ## Reference
 
