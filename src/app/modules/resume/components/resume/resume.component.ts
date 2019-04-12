@@ -86,7 +86,7 @@ import { Component } from '@angular/core';
           </li>
           <li>Write unit testing methods in Visual Studio to yield + and - test results for new C# code written
           </li>
-          <li>Participate in daily Scrums to update developers, leads, and QA/business/product analysts
+          <li>Participate in daily Scrums to update developers, leads, QA, and product analysts
           </li>
           <li>Proactively communicate with product analysts to clarify requirements then providing solutions
           </li>
