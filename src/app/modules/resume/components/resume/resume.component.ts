@@ -74,7 +74,7 @@ import { Component } from '@angular/core';
           <li>Develop ASP.NET MVC, .NET Framework apps with Microsoft tech stack in an Agile environment
           </li>
           <li>Enhance UI via HTML, CSS, Bootstrap, JavaScript, Knockout.js, Ember.js, CoffeeScript,
-           Handlebars.js, Bootstrap and Razor
+           Handlebars.js, jQuery, Ajax, and Razor
           </li>
           <li>Implement RESTful APIs in C# controllers using LINQ for CRUD operations on a database
           </li>
