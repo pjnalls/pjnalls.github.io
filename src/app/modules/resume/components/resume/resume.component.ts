@@ -98,7 +98,7 @@ import { Component } from '@angular/core';
           </li>
           <li>Use Grunt as a task runner/module bundler ― modifying/enhancing/running Gruntfiles
           </li>
-          <li>Developed/documented/lead Jest (JavaSscript testing), Visual Studio, & SonarQube integrations
+          <li>Developed/documented/lead Jest (JavaScript testing), Visual Studio, & SonarQube integrations
           </li>
           <br />
           <li><b>Languages, Frameworks, Libraries, and Other Tools Used for Projects</b></li>
