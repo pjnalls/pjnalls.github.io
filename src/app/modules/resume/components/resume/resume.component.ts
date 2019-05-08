@@ -88,7 +88,7 @@ import { Component } from '@angular/core';
           </li>
           <li>Participate in daily Scrums to update developers, leads, QA, and product analysts
           </li>
-          <li>Proactively communicate with product analysts to clarify requirements then providing solutions
+          <li>Proactively communicate with product analysts for clarifying requirements and providing solutions
           </li>
           <li>Consistently keep 100% coverage of new C# code I introduce into the main clinical application
           </li>
@@ -97,6 +97,8 @@ import { Component } from '@angular/core';
           <li>Install/manage Node module/Bower component/NuGet dependencies with npm/Bower.js/VS
           </li>
           <li>Use Grunt as a task runner/module bundler ― modifying/enhancing/running Gruntfiles
+          </li>
+          <li>Developed/documented/lead Jest (JavaSscript testing), Visual Studio, & SonarQube integrations
           </li>
           <br />
           <li><b>Languages, Frameworks, Libraries, and Other Tools Used for Projects</b></li>
