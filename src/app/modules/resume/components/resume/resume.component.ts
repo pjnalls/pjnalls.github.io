@@ -94,7 +94,7 @@ import { Component } from '@angular/core';
           </li>
           <li>Track bugs, vulnerabilities, and other issues in projects via the code analysis tool SonarQube
           </li>
-          <li>Install/manage Node module/Bower component/NuGet dependencies with npm/Bower.js/VS
+          <li>Install/manage Node module (Node.js)/NuGet dependencies with npm/Visual Studio
           </li>
           <li>Use Grunt as a task runner/module bundler ― modifying/enhancing/running Gruntfiles
           </li>
