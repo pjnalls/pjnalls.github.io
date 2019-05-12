@@ -33,7 +33,7 @@ import { Component } from '@angular/core';
           </ul>
         </div>
         <div class="column">
-          <span><b>CLI/IDE/CD/CI Tools</b></span>
+          <span><b>CLI/IDE/CI/CD Tools</b></span>
           <hr class="resume-hr"/>
           <ul>
           <li>Angular CLI</li>
@@ -44,9 +44,10 @@ import { Component } from '@angular/core';
           <li>Visual Studio Code</li>
           <li>Visual Studio Enterprise</li>
           <li>Azure DevOps (TFS)</li>
-          <li>Git Bash</li>
-          <li>GNU Bash</li>
-          <li>PowerShell/cmd (Windows)</li>
+          <li>Git (GNU) Bash</li>
+          <li>Karma (Test Runner)</li>
+          <li>Jasmine (TDD)</li>
+          <li>Jest (TDD)</li>
           </ul>
         </div>
         <div class="column">
