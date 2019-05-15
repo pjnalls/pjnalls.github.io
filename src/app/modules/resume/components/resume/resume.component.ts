@@ -69,7 +69,7 @@ import { Component } from '@angular/core';
         </div>
         <h3>PROFESSIONAL EXPERIENCE</h3>
         <div class="full-column">
-          <span><b>.NET Developer at Syntel --- (Nov. 2018 ― Present)</b></span>
+          <span><b>.NET Developer at Atos Syntel, Inc. --- (Nov. 2018 ― Present)</b></span>
           <hr class="resume-hr"/>
           <ul>
           <li>Develop ASP.NET MVC, .NET Framework apps with Microsoft tech stack in an Agile environment
@@ -180,6 +180,50 @@ import { Component } from '@angular/core';
             <li>Cumulative GPA: 3.48/4.0</li>
             <li>Computer Science GPA: 3.6/4.0</li>
             <li>Graduation Date: May 2018</li>
+            <li>Courses:</li>
+            <br />
+            <table>
+              <tr>
+                <th>Course Name</th>
+                <th>Grade</th>
+              </tr>
+              <tr>
+                <td>Algorithms and Data Structures</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>Calculus II</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>Calculus-Based Probability and Statistics</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>Elements of Linear Algebra</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>Introduction to Computer Systems</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>Java: Android</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>Software Engineering</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>Theory of Programming Languages</td>
+                <td>B+</td>
+              </tr>
+              <tr>
+                <td>Web Technologies</td>
+                <td>B+</td>
+              </tr>
+            </table>
             <br /><br />
             <li><b>Major: </b>Electronic Media Communication, Animation Concentration (B.S.)</li>
             <br />
