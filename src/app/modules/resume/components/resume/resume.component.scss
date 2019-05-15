@@ -43,6 +43,26 @@ div {
           margin-right: auto;
           border-color: #1f1f1f;
         }
+        ul {
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            th {
+              background-color: #454545;
+              color: #ffffff;
+            }
+            tr:hover, tr:nth-child(even):hover {
+              background-color: #dddddd;
+            }
+            tr:nth-child(even) {
+              background-color: #f2f2f2;
+            }
+            td, th {
+              border: solid 1px #dddddd;
+              padding: 8px;
+            }
+          }
+        }
       }
       .full-column {
         width: 700px;
