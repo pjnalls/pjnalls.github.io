@@ -1,12 +1,27 @@
 <div class="navbar">
   <a class="image-option" routerLink="/">
     <img src="../assets/p-logo/p-icon_300x320.png"></a>
-  <a #home class="lg-options" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-  <a #bio class="lg-options" routerLink="/bio" routerLinkActive="active">Bio</a>
-  <a #resume class="lg-options" routerLink="/resume" routerLinkActive="active">Résumé</a>
-  <a #projects class="lg-options" routerLink="/projects" routerLinkActive="active">Projects</a>
-  <a #contact class="lg-options last-option" 
-     routerLink="/contact" routerLinkActive="active">Contact</a>
+  <a #home class="lg-options" 
+    routerLink="/" 
+    routerLinkActive="active" 
+    [routerLinkActiveOptions]="{ exact: true }">Home</a>
+  <a #bio class="lg-options" 
+    routerLink="/bio" 
+    routerLinkActive="active">Bio</a>
+  <a #resume class="lg-options" 
+    routerLink="/resume" 
+    routerLinkActive="active">Résumé</a>
+  <a #projects class="lg-options" 
+    routerLink="/projects" 
+    routerLinkActive="active">Projects</a>
+  <a #contact class="lg-options" 
+    routerLink="/contact" 
+    routerLinkActive="active">Contact</a>
+  <a #english class="lg-options last-option"
+    routerLinkActive="active">ENG</a> 
+  <span> | </span> 
+  <a #japanese class="lg-options last-option japanese-font-family"
+     routerLinkActive="active">日本語</a>
 </div>
 <div class="collapsible-menu" onclick="this.classList.toggle('change');">
   <div class="container" onclick="this.classList.toggle('change');">
