@@ -9,6 +9,10 @@ h1.name {
   animation: fade-in ease-out 1.5s;
 }
 
+.japanese-font-family {
+  font-family: 'MS PGothic', sans-serif;
+} 
+
 @import './_slide-up-fade-in.scss';
 
 div.navbar {
@@ -67,6 +71,10 @@ div.navbar {
       opacity: 0.5;
     }
   }
+  span {
+    color: white;
+  }
+  
 }
 
 .collapsible-menu {
