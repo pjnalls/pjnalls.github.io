@@ -91,7 +91,7 @@ hr {
 
 @media only screen and (max-width: 815px) {
   div.navbar {
-    a.lg-options {
+    a.lg-options, span {
       display: none;
     }
     a.image-option {
