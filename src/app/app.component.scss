@@ -105,11 +105,11 @@ hr {
       }
     }
   }
-  ul, li, a.sm-options, .menu-content {
+  ul, li, .sm-options, .menu-content {
     text-align: left;
     width: 100%;   
   }
-  a.sm-options {
+  .sm-options {
     color: #ffffff;
     text-decoration: none;
     opacity: 0;
@@ -196,7 +196,7 @@ hr {
     padding: 0;
   }
   .collapsible-menu a {
-    display:block;
+    display: block;
     padding: 10px;
     text-decoration: none;
   }
