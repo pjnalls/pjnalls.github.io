@@ -17,7 +17,10 @@
   <a #contact class="lg-options" 
     routerLink="/contact" 
     routerLinkActive="active">Contact</a>
-  <a #japanese class="lg-options last-option japanese-font-family"
+  <a #english class="lg-options last-option"
+    routerLinkActive="active">English</a>
+  <a #japanese class="lg-options last-option 
+                      japanese-font-family"
      routerLinkActive="active">日本語</a>
 </div>
 <div class="collapsible-menu" onclick="this.classList.toggle('change');">
@@ -49,6 +52,8 @@
                routerLink="/contact" 
                routerLinkActive="active">Contact</a></li>
             <hr/>
+        <li><a #english class="sm-options"
+              routerLinkActive="active">English</a></li>
         <li><a #japanese class="sm-options japanese-font-family"
               routerLinkActive="active">日本語</a></li>
       </ul>
