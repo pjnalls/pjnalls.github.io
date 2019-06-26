@@ -1,26 +1,62 @@
 <div class="navbar">
   <a class="image-option" routerLink="/">
-    <img src="../assets/p-logo/p-icon_300x320.png"></a>
-  <a #home class="lg-options" 
-    routerLink="/" 
-    routerLinkActive="active" 
-    [routerLinkActiveOptions]="{ exact: true }">Home</a>
-  <a #bio class="lg-options" 
-    routerLink="/bio" 
-    routerLinkActive="active">Bio</a>
-  <a #resume class="lg-options" 
-    routerLink="/resume" 
-    routerLinkActive="active">Résumé</a>
-  <a #projects class="lg-options" 
-    routerLink="/projects" 
-    routerLinkActive="active">Projects</a>
-  <a #contact class="lg-options" 
-    routerLink="/contact" 
-    routerLinkActive="active">Contact</a>
-  <a #english class="lg-options last-option"
-    routerLinkActive="active">English</a>
-  <a #japanese class="lg-options last-option jpn-font"
-    routerLinkActive="active">日本語</a>
+    <img src="../assets/p-logo/p-icon_300x320.png">
+  </a>
+  
+  <span *ngIf="lang === 'en'" class="en-font">
+    <a #home class="lg-options" 
+      routerLink="/" 
+      routerLinkActive="active" 
+      [routerLinkActiveOptions]="{ exact: true }">Home
+    </a>
+    <a #bio class="lg-options" 
+      routerLink="/bio" 
+      routerLinkActive="active">Bio
+    </a>
+    <a #resume class="lg-options" 
+      routerLink="/resume" 
+      routerLinkActive="active">Résumé
+    </a>
+    <a #projects class="lg-options" 
+      routerLink="/projects" 
+      routerLinkActive="active">Projects
+    </a>
+    <a #contact class="lg-options" 
+      routerLink="/contact" 
+      routerLinkActive="active">Contact
+    </a>
+    <a #japanese class="lg-options last-option jp-font"
+      routerLinkActive="active"
+      (click)="changeLanguageToJp();">日本語
+    </a>
+  </span>
+  <span *ngIf="lang === 'jp'" class="jp-font">
+    <a #home class="lg-options-jp" 
+      routerLink="/" 
+      routerLinkActive="active" 
+      [routerLinkActiveOptions]="{ exact: true }">ホーム
+    </a>
+    <a #bio class="lg-options-jp" 
+      routerLink="/bio" 
+      routerLinkActive="active">自己紹介
+    </a>
+    <a #resume class="lg-options-jp" 
+      routerLink="/resume" 
+      routerLinkActive="active">履歴書
+    </a>
+    <a #projects class="lg-options-jp" 
+      routerLink="/projects" 
+      routerLinkActive="active">プロジェクト
+    </a>
+    <a #contact class="lg-options-jp" 
+      routerLink="/contact" 
+      routerLinkActive="active">連絡先
+    </a>
+    <a #english class="lg-options last-option en-font"
+      routerLinkActive="active"
+      (click)="changeLanguageToEn();">English
+    </a>
+  </span>
 </div>
 <div class="collapsible-menu" onclick="this.classList.toggle('change');">
   <div class="container" onclick="this.classList.toggle('change');">
