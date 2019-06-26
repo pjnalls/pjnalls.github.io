@@ -9,9 +9,13 @@ h1.name {
   animation: fade-in ease-out 1.5s;
 }
 
-.jpn-font {
-  font-family: 'MS PGothic', sans-serif;
-} 
+.jp-font {
+  font-family: 'Meiryo', sans-serif;
+}
+
+.en-font {
+  font-family: 'Roboto', Helvetica, Arial sans-serif;
+}
 
 @import './_slide-up-fade-in.scss';
 
@@ -27,6 +31,15 @@ div.navbar {
     text-decoration: none;
     color: #ffffff;
     margin-right: 90px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+  }
+  a.lg-options-jp {
+    line-height: 45px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 75.5px;
     -webkit-transition: color 0.5s;
     transition: color 0.5s;
   }
