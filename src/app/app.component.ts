@@ -12,4 +12,15 @@ import { routerTransition } from './animations';
 
 export class AppComponent {
     name: string = 'Preston Nalls';
+    lang: string = 'en';
+
+    // Change language settings to Japanese
+    changeLanguageToJp() {
+        this.lang = 'jp'
+    }
+
+    // Change language settings to English
+    changeLanguageToEn() {
+        this.lang = 'en'
+    }
 }
