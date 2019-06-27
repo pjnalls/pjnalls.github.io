@@ -3,7 +3,7 @@
     <img src="../assets/p-logo/p-icon_300x320.png">
   </a>
   
-  <span *ngIf="lang === 'en'" class="en-font">
+  <span *ngIf="language === 'en'" class="en-font">
     <a #home class="lg-options" 
       routerLink="/" 
       routerLinkActive="active" 
@@ -30,7 +30,7 @@
       (click)="changeLanguageToJp();">日本語
     </a>
   </span>
-  <span *ngIf="lang === 'jp'" class="jp-font">
+  <span *ngIf="language === 'jp'" class="jp-font">
     <a #home class="lg-options-jp" 
       routerLink="/" 
       routerLinkActive="active" 
