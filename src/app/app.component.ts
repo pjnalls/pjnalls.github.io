@@ -14,39 +14,22 @@ import { LanguageService } from './language.service';
 
 export class AppComponent {
     name: string = 'Preston Nalls';
-
-    
-    constructor(private languageService: LanguageService) {}
     language: string = 'en';
     
-    ngOnInit(): void {
-        this.languageService.languageSetting$
-            .subscribe(
-                language => {
-                    this.languageService.setLanguage(language);
-                }
-            );
+    constructor(private languageService: LanguageService) {
+        this.languageService.setLanguage(this.language)
     }
+    
 
     // Change language settings to Japanese
     changeLanguageToJp() {
         this.language = 'jp';
-        this.languageService.languageSetting$
-            .subscribe(
-                language => {
-                    this.languageService.setLanguage(language);
-                }
-            );
+        this.languageService.setLanguage(this.language)
     }
 
     // Change language settings to English
     changeLanguageToEn() {
-        this.language = 'en'
-        this.languageService.languageSetting$
-            .subscribe(
-                language => {
-                    this.languageService.setLanguage(language);
-                }
-            );
+        this.language = 'en';
+        this.languageService.setLanguage(this.language);
     }
 }
