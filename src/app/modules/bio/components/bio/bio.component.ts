@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../../../../language.service';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'bio-page',
@@ -6,4 +8,12 @@ import { Component } from '@angular/core';
     styleUrls: ['./bio.component.scss']
 })
 
-export class BioComponent {}
+export class BioComponent {
+    language: string = '';
+    subscription: Subscription;
+
+    constructor(languageService: LanguageService) {
+        this.subscription = languageService.languageSetting$
+            .subscribe(lang => this.language = lang);
+    }
+}
