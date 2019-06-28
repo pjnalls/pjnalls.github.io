@@ -3,7 +3,7 @@
     <img src="../assets/p-logo/p-icon_300x320.png">
   </a>
   
-  <span *ngIf="language === 'en'" class="en-font">
+  <span *ngIf="language === 'en'">
     <a #home class="lg-options" 
       routerLink="/" 
       routerLinkActive="active" 
@@ -25,12 +25,12 @@
       routerLink="/contact" 
       routerLinkActive="active">Contact
     </a>
-    <a #japanese class="lg-options last-option jp-font"
+    <a #japanese class="lg-options last-option"
       routerLinkActive="active"
       (click)="changeLanguageToJp();">日本語
     </a>
   </span>
-  <span *ngIf="language === 'jp'" class="jp-font">
+  <span *ngIf="language === 'jp'">
     <a #home class="lg-options-jp" 
       routerLink="/" 
       routerLinkActive="active" 
@@ -52,7 +52,7 @@
       routerLink="/contact" 
       routerLinkActive="active">連絡先
     </a>
-    <a #english class="lg-options last-option en-font"
+    <a #english class="lg-options last-option"
       routerLinkActive="active"
       (click)="changeLanguageToEn();">English
     </a>
@@ -89,7 +89,7 @@
             <hr/>
         <li><a #english class="sm-options"
               routerLinkActive="active">English</a></li>
-        <li><a #japanese class="sm-options jpn-font"
+        <li><a #japanese class="sm-options"
               routerLinkActive="active">日本語</a></li>
       </ul>
     </div>
