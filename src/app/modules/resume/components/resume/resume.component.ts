@@ -240,7 +240,7 @@ import { Subscription } from 'rxjs';
   <div *ngIf="language === 'jp'">
     <br />
     <h2>
-    履歴書（英日翻訳）
+    履歴書
     </h2>
     <div class="page-1">
       <div class="container">
