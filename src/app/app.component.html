@@ -58,8 +58,11 @@
     </a>
   </span>
 </div>
-<div class="collapsible-menu" onclick="this.classList.toggle('change');">
-  <div class="container" onclick="this.classList.toggle('change');">
+<div class="collapsible-menu"
+    onclick="var classList = this.classList;
+            classList.toggle('change');">
+  <div class="container" 
+    onclick="this.classList.toggle('change');">
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
@@ -89,7 +92,7 @@
             <hr/>
         <li><a #japanese class="sm-options"
               routerLinkActive="active"
-              (click)="changeLanguageToJp()">日本語</a></li>
+              (click)="changeLanguageToJp();">日本語</a></li>
       </ul>
       <ul *ngIf="language === 'jp'">
           <li><a class="sm-options" 
