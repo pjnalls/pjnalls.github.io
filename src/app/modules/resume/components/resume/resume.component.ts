@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, OnDestroy } from '@angular/core';
+import { LanguageService } from '../../../../language.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'resume-page',
   styleUrls: ['./resume.component.scss'],
   // Template code added below for .gitattributes purposes.
   template: `
-  <div>
+  <div *ngIf="language === 'en'">
     <br />
     <h2>
     Professional Résumé
@@ -235,7 +237,133 @@ import { Component } from '@angular/core';
       </div>
     </div>
   </div>
+  <div *ngIf="language === 'jp'">
+    <br />
+    <h2>
+    履歴書（英日翻訳）
+    </h2>
+    <div class="page-1">
+      <div class="container">
+        <h3>学歴</h3>
+        <div class="full-column">
+          <span><b>2007年8月：ミドルテネシー州立大学（MTSU）入学</b></span>
+          <hr class="resume-hr"/>
+          <ul>
+            <li><b>2008年8月：</b>関西外国語大学　留学</li>
+            <li><b>2010年5月：</b>電子メディア・コミュニケーション（2次元と3次元アニメーション分野）専攻</li>
+            <li><b>2012年6月：</b>福島大学10日間東日本大震災復興支援ボランティアプログラム　留学</li>
+            <li><b>2012年12月：</b>MTSU卒業</li>
+            <br/>
+            <li><b>2015年8月：</b>計算機科学（プロフェショナル・プログラム、ABET公認）専攻</li>
+            <li><b>2018年5月：</b>MTSU再卒業（計算機科学GPA：3.6／4.0）</li>
+          </ul>
+        </div>
+        <br/><br/>
+        <h3>職歴</h3>
+        <div class="full-column">
+          <span><b>2017年5月：</b>UnitedHealth Group（ユナイテッド・ヘルス）入社
+          <br/>技術開発プログラム (TDP) インターンシップ (ソフトウエアエンジニアリング)</span>
+          <br/><span><b>2017年8月</b>：インターンシップの完了により退職</span>
+        </div>
+        <br/>
+        <div class="full-column">
+          <span><b>2017年12月：</b>HCA（ホスピタルコーポレーション・オブ・アメリカ）入社
+          <br/>C#開発インターンシップ</span>
+          <br/><span><b>2018年5月：</b>インターンシップの完了により退職</span>
+        </div>
+        <br/>
+        <div class="full-column">
+          <span><b>2018月6月：</b>Schneider Electric（シュナイダーエレクトリック）入社
+          <br/>アプリケーション開発</span>
+          <br/>
+          <span><b>2018月11月：</b>.NET開発経験希望により退職</span>
+        </div>
+        <br/>
+        <div class="full-column">
+          <span><b>2018年11月：</b>Atos Syntel, Inc.（アトス・センテル）入社
+          <br/>.NET開発</span>
+        </div>
+        <br/><br/>
+        <h3>特技</h3>   
+        <div class="column">
+          <span><b>プログラミング言語</b></span>
+          <hr class="resume-hr"/>
+          <ul>
+          <li>JavaScript (ES5/ES6)</li>
+          <li>TypeScript</li>
+          <li>Sass (SCSS)</li>
+          <li>HTML/CSS</li>
+          <li>C#</li>
+          <li>SQL/T-SQL</li>
+          </ul>
+          <span><b>フレームワークと<br/>ライブラリ</b></span>
+          <hr class="resume-hr"/>
+          <ul>
+          <li>Angular (TypeScript)</li>
+          <li>ASP.NET MVC (C#)</li>
+          <li>MSTest (C#ユニットテスト)</li>
+          </ul>
+        </div>
+        <div class="column">
+          <span><b>CLI/IDE/CI/CDツール</b></span>
+          <hr class="resume-hr"/>
+          <ul>
+          <li>Angular CLI</li>
+          <li>npm (Node.js)</li>
+          <li>nvm (Node.js)</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Visual Studio Code</li>
+          <li>Visual Studio Enterprise</li>
+          <li>Azure DevOps (TFS)</li>
+          <li>Git (GNU) Bash</li>
+          <li>Karma (テスト実行)</li>
+          <li>Jasmine <br/>(テスト駆動開発)</li>
+          <li>Jest <br/>(テスト駆動開発)</li>
+          </ul>
+        </div>
+        <div class="column">
+          <span><b>オペレーティング<br/>システム</b></span>
+          <hr class="resume-hr"/>
+          <ul>
+          <li>Windows</li>
+          <li>GNU/Linux</li>
+          <li>OS X</li>
+          </ul>
+          <span><b>自然言語</b></span>
+          <hr class="resume-hr"/>
+          <ul>
+          <li>英語（ネイティブ）</li>
+          <li>日本語
+          <br/>(日能試2級合格)</li>
+          <li>中国語 (初級)</li>
+          <li>スペイン語 (初級)</li>
+          </ul>
+        </div>
+      </div>
+    </div>  
+  </div>
   `
 })
 
-export class ResumeComponent {}
+export class ResumeComponent implements OnChanges, OnDestroy {
+  language: string;
+  subscription: Subscription;
+
+  constructor(private languageService: LanguageService) { 
+      this.subscription = this.languageService.languageSetting$
+          .subscribe(
+              language => {
+                  this.language = language;
+              }
+          );
+  }
+
+  ngOnChanges() {
+      this.subscription;
+  }
+
+  ngOnDestroy() {
+      this.subscription.unsubscribe();
+  }
+}
