@@ -65,7 +65,7 @@
     <div class="bar3"></div>
     <div class="menu-content">
       <br /><br />
-      <ul>
+      <ul *ngIf="language === 'en'">
         <li><a class="sm-options" 
                routerLink="/" 
                routerLinkActive="active"
@@ -87,11 +87,36 @@
                routerLink="/contact" 
                routerLinkActive="active">Contact</a></li>
             <hr/>
-        <li><a #english class="sm-options"
-              routerLinkActive="active">English</a></li>
         <li><a #japanese class="sm-options"
-              routerLinkActive="active">日本語</a></li>
+              routerLinkActive="active"
+              (click)="changeLanguageToJp()">日本語</a></li>
       </ul>
+      <ul *ngIf="language === 'jp'">
+          <li><a class="sm-options" 
+                 routerLink="/" 
+                 routerLinkActive="active"
+                 [routerLinkActiveOptions]="{ exact: true }">ホーム</a></li>
+              <hr/>
+          <li><a #bio class="sm-options" 
+                 routerLink="/bio" 
+                 routerLinkActive="active">自己紹介</a></li>
+              <hr/>
+          <li><a #resume class="sm-options" 
+                 routerLink="/resume" 
+                 routerLinkActive="active">履歴書</a></li>
+              <hr/>
+          <li><a #projects class="sm-options" 
+                 routerLink="/projects" 
+                 routerLinkActive="active">プロジェクト</a></li>
+              <hr/>
+          <li><a #contact class="sm-options" 
+                 routerLink="/contact" 
+                 routerLinkActive="active">連絡先</a></li>
+              <hr/>
+          <li><a #english class="sm-options"
+                routerLinkActive="active"
+                (click)="changeLanguageToEn();">English</a></li>
+        </ul>
     </div>
   </div>
 </div>
