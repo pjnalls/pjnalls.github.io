@@ -1,5 +1,7 @@
-import { Component, ViewChild, Renderer2, OnInit, Inject, ElementRef } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { Component, ViewChild, Renderer2, ElementRef } from '@angular/core';
+import { OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { LanguageService } from '../../../../language.service';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'projects-page',
@@ -7,9 +9,23 @@ import { DOCUMENT } from '@angular/common';
     styleUrls: ['./projects.component.scss']
 })
 
-export class ProjectsComponent implements OnInit{
+export class ProjectsComponent implements OnInit, OnChanges, OnDestroy{
+    language: string = 'en';
+    subscription: Subscription;
 
-    constructor(private _renderer2: Renderer2, @Inject(DOCUMENT) private _document: any) {}
+    ngOnChanges() {
+        this.subscription;
+    }
+
+    constructor(private _renderer2: Renderer2, private languageService: LanguageService) {
+        this.subscription = this.languageService.languageSetting$
+            .subscribe(
+                language => {
+                    this.language = language;
+                }
+            );
+    }
+
     @ViewChild('calendar') calendar: ElementRef
 
     public ngOnInit() {
@@ -40,5 +56,9 @@ export class ProjectsComponent implements OnInit{
             githubCalendar.style.display = 'none';
             calendarError.style.display = 'block';
         }
+    }
+
+    ngOnDestroy() {
+        this.subscription.unsubscribe();
     }
 }
