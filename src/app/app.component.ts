@@ -14,23 +14,27 @@ import { LanguageService } from './language.service';
 
 export class AppComponent implements OnInit, DoCheck {
     name: string = 'Preston Nalls';
-    language: string = 'en';
+    language: string;
     
     constructor(private languageService: LanguageService) {}
 
     ngOnInit() {
-        this.language = 'en';
+        sessionStorage.getItem('language') === null ? 
+            this.language = 'en' :
+            this.language = sessionStorage.getItem('language');
     }
 
     // Change language settings to Japanese
     changeLanguageToJp() {
         this.language = 'jp';
+        sessionStorage.setItem('language', this.language);
         this.name = 'プレストン・ノールズ';
     }
 
     // Change language settings to English
     changeLanguageToEn() {
         this.language = 'en';
+        sessionStorage.setItem('language', this.language);
         this.name = 'Preston Nalls';
     }
 
