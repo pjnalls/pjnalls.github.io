@@ -10,7 +10,7 @@ export class LanguageService {
     // Observable string stream
     languageSetting$ = this.languageSettingSource.asObservable();
 
-    // Service message commands
+    // Service message commands  
     setLanguage(language: string) {
         this.languageSettingSource.next(language);
     }
