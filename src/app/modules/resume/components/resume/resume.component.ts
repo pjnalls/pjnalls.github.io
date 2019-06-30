@@ -263,20 +263,20 @@ import { Subscription } from 'rxjs';
         <div class="full-column">
           <span><b>2017年5月：</b>UnitedHealth Group（ユナイテッド・ヘルス）入社
           <br/>技術開発プログラム (TDP) インターンシップ (ソフトウエアエンジニアリング)</span>
-          <br/><span><b>2017年8月</b>：インターンシップの完了で退職</span>
+          <br/><span><b>2017年8月</b>：インターンシップ完了で退職</span>
         </div>
         <br/>
         <div class="full-column">
           <span><b>2017年12月：</b>HCA（ホスピタルコーポレーション・オブ・アメリカ）入社
           <br/>C#開発インターンシップ</span>
-          <br/><span><b>2018年5月：</b>インターンシップの完了で退職</span>
+          <br/><span><b>2018年5月：</b>インターンシップ完了で退職</span>
         </div>
         <br/>
         <div class="full-column">
           <span><b>2018月6月：</b>Schneider Electric（シュナイダーエレクトリック）入社
           <br/>アプリケーション開発</span>
           <br/>
-          <span><b>2018月11月：</b>.NET開発経験の希望で退職</span>
+          <span><b>2018月11月：</b>.NET開発職機会で退職</span>
         </div>
         <br/>
         <div class="full-column">
