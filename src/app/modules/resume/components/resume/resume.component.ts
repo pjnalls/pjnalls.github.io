@@ -335,7 +335,7 @@ import { Subscription } from 'rxjs';
           <ul>
           <li>英語（ネイティブ）</li>
           <li>日本語
-          <br/>(日能試2級合格)</li>
+          <br/>(2013年JLPT N2合格)</li>
           <li>中国語 (初級)</li>
           <li>スペイン語 (初級)</li>
           </ul>
