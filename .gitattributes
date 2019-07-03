@@ -1,2 +1,3 @@
 # Exclude a large HTML markup file from attributes
-app/modules/resume/components/resume/resume.component.html linguist-vendored
+src/app/modules/resume/components/resume/* linguist-vendored
+resume.component.html linguist-vendored=false
