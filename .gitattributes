@@ -1,0 +1,2 @@
+# Exclude a large HTML markup file from attributes
+Linguist::FileBlob.new("app/modules/resume/components/resume/resume.component.html").vendored? # => true
