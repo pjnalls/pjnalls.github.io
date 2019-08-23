@@ -29,7 +29,7 @@ export class ProjectsComponent implements OnInit, OnChanges, OnDestroy{
     @ViewChild('calendar') calendar: ElementRef
 
     public ngOnInit() {
-        try {
+        /* try {
             let s = this._renderer2.createElement('script');
 
             s.type = 'text/javascript';
@@ -56,6 +56,7 @@ export class ProjectsComponent implements OnInit, OnChanges, OnDestroy{
             githubCalendar.style.display = 'none';
             calendarError.style.display = 'block';
         }
+    */
     }
 
     ngOnDestroy() {
