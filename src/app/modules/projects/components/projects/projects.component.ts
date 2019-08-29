@@ -1,5 +1,5 @@
 import { Component, ViewChild, Renderer2, ElementRef } from '@angular/core';
-import { OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { OnChanges, OnDestroy } from '@angular/core';
 import { LanguageService } from '../../../../language.service';
 import { Subscription } from 'rxjs';
 
@@ -9,13 +9,9 @@ import { Subscription } from 'rxjs';
     styleUrls: ['./projects.component.scss']
 })
 
-export class ProjectsComponent implements OnInit, OnChanges, OnDestroy{
-    language: string = 'en';
+export class ProjectsComponent implements OnChanges, OnDestroy{
+    language: string;
     subscription: Subscription;
-
-    ngOnChanges() {
-        this.subscription;
-    }
 
     constructor(private _renderer2: Renderer2, private languageService: LanguageService) {
         this.subscription = this.languageService.languageSetting$
@@ -26,10 +22,10 @@ export class ProjectsComponent implements OnInit, OnChanges, OnDestroy{
             );
     }
 
-    @ViewChild('calendar') calendar: ElementRef
+    //@ViewChild('calendar') calendar: ElementRef
 
-    public ngOnInit() {
-        /* try {
+    /*public ngOnInit() {
+         try {
             let s = this._renderer2.createElement('script');
 
             s.type = 'text/javascript';
@@ -56,7 +52,11 @@ export class ProjectsComponent implements OnInit, OnChanges, OnDestroy{
             githubCalendar.style.display = 'none';
             calendarError.style.display = 'block';
         }
-    */
+    
+    }*/
+
+    ngOnChanges() {
+        this.subscription;
     }
 
     ngOnDestroy() {
