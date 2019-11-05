@@ -1,12 +1,12 @@
 # compiled output
-/tmp
+archived/tmp
 
 # dependencies
-/node_modules
-package-lock.json
+archived/node_modules
+archived/package-lock.json
 
 # IDEs and editors
-/.idea
+.idea
 .project
 .classpath
 .c9/
@@ -21,32 +21,33 @@ package-lock.json
 !.vscode/extensions.json
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage/*
-/libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
-package-lock.json
+archived/.sass-cache
+archived/connect.lock
+archived/coverage/*
+archived/libpeerconnection.log
+archived/npm-debug.log
+archived/testem.log
+archived/typings
+archived/package-lock.json
 
 # e2e
-/e2e/*.js
-/e2e/*.map
+archived/e2e/*.js
+archived/e2e/*.map
 
 # system files
 .DS_Store
 Thumbs.db
 
 # images
-src/assets/front-end-tools/logos/
+archived/src/assets/front-end-tools/logos/
 
 # generated files
-src/**/*.js
-!src/vendor/IonicaBizau/github-calendar/dist/*.js
-src/**/*.js.map
-src/**/*.ngsummary.json
-src/**/*.metadata.json
-src/**/**/*.ngfactory.ts
-src/**/*.ngstyle.ts
-src/**/*.shim.ts
+archived/src/**/*.js
+!archived/src/vendor/IonicaBizau/github-calendar/dist/*.js
+archived/src/**/*.js.map
+archived/src/**/*.ngsummary.json
+archived/src/**/*.metadata.json
+archived/src/**/**/*.ngfactory.ts
+archived/src/**/*.ngstyle.ts
+archived/src/**/*.shim.ts
+images/favicon.png

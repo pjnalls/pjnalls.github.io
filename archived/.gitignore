@@ -1,0 +1,52 @@
+# compiled output
+/tmp
+
+# dependencies
+/node_modules
+package-lock.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+package-lock.json
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# system files
+.DS_Store
+Thumbs.db
+
+# images
+src/assets/front-end-tools/logos/
+
+# generated files
+src/**/*.js
+!src/vendor/IonicaBizau/github-calendar/dist/*.js
+src/**/*.js.map
+src/**/*.ngsummary.json
+src/**/*.metadata.json
+src/**/**/*.ngfactory.ts
+src/**/*.ngstyle.ts
+src/**/*.shim.ts

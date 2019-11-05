@@ -1,0 +1,40 @@
+h1.header {
+ color: #ffffff;
+ font-size: 50px;
+ line-height: 65px;
+ margin-top: 22.5px;
+ font-weight: 500;
+ -webkit-animation: slide-up-fade-in ease-out 1s;
+ animation: slide-up-fade-in ease-out 1s;
+}
+img {
+  position: fixed;
+  z-index: -9999;
+  right: 0;
+  left: 0;
+  margin: 5% auto;
+  top: 200px;
+  opacity: 0;
+  width: 1000px;
+  height: auto;
+  -webkit-animation: fade-in ease-out 1.5s forwards;
+  -webkit-animation-delay: 1.333s;
+  animation: fade-in ease-out 1.5s forwards;
+  animation-delay: 1.333s;
+}
+
+@import '../../../_slide-up-fade-in.scss';
+@import '../../../_fade-in.scss';
+
+@media only screen and (max-width: 815px) {
+  h1.header {
+    font-size: 37.5px;
+    line-height: 50px;
+  }
+  img {
+    width: 450px;
+    height: auto;
+    top: 275px;
+    left: -15px;
+  }
+}

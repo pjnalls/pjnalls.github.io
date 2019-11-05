@@ -1,0 +1,3 @@
+# Set the language of 'resume.component.html'
+# to TypeScript to avoid setting main language to HTML
+src/app/modules/resume/components/resume/resume.component.html linguist-language=TypeScript
