@@ -29,7 +29,7 @@ export default function  Projects() {
         <ProjectItem
             title="pjnalls.com"
             description="My portfolio and blog website made seemlessly thanks to Astro with React integrations."
-            madeWith="Astro , React, Next.js, TypeScript, Tailwind CSS, and ❤️."
+            madeWith="Astro, React, Next.js, TypeScript, Tailwind CSS, and ❤️."
             backgroundImg={pDot}
             enableScreenshot={false}
             enableCode={false}
@@ -106,9 +106,9 @@ export default function  Projects() {
             backgroundImg={digitalRain}
             enableScreenshot={false}
             enableCode={true}
-            enableDemo={true}
-            demoLabel="View Project"
-            demoUrl="/digital-rain/index.html"
+            enableDemo={false}
+            demoLabel=""
+            demoUrl=""
             githubUrl="https://github.com/pjnalls/DigitalRain"
           />
           <ProjectItem
