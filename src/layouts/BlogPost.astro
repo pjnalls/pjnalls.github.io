@@ -28,10 +28,6 @@ const {
 				font-size: 2em;
 				margin: 0.25em 0 0;
 			}
-			hr {
-  				border-top: 1px solid #DDD;
-				margin: 1rem 0;
-			}
 		</style>
 	</head>
 
@@ -47,11 +43,12 @@ const {
 					/>
 				)}
 				<h1 class="title my-6 lg:text-[3rem] md:text-[2.667rem] text-[2.333rem]">{title}</h1>
+				<br/>
 				{pubDate && <time class="mb-3">{pubDate}</time>}
 				{updatedDate && <div>Last updated on <time class="mb-3">{updatedDate}</time></div>}
 				<br/>
-				<hr/>
 				<br/>
+				<hr/>
 				<slot />
 			</article>
 		</main>

@@ -168,7 +168,7 @@ export default function Navbar() {
                 Made with
               </span>
               <br />
-              React, Next.js, Tailwind CSS, Astro and ❤️.
+              Astro , React, Next.js, TypeScript, Tailwind CSS, and ❤️.
             </p>
             <div className="flex items-center my-2 pt-2 w-full">
               <a href="https://github.com/pjnalls/pjnalls" aria-label="GitHub">

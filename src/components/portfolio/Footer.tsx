@@ -10,7 +10,7 @@ export default function  Footer() {
           Made with
         </span>
         <br />
-        React, Next.js, Tailwind CSS, Astro and ❤️.
+        Astro , React, Next.js, TypeScript, Tailwind CSS, and ❤️.
       </p>
       <div className="flex items-center content-center justify-center my-2 pt-2 w-full">
         <Link href="https://github.com/pjnalls/pjnalls">

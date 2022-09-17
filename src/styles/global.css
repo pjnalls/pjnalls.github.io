@@ -74,11 +74,13 @@ body:before {
     @apply text-2xl sm:text-3xl;
   }
 
-  li {
+  li,
+  article * a {
     @apply cursor-pointer text-[#2e40e0] dark:text-[#9fa8ff];
   }
 
-  li:hover {
+  li:hover,
+  article * a:hover {
     @apply cursor-pointer text-[#0e20c0] dark:text-[#7f88df];
   }
 
@@ -87,10 +89,19 @@ body:before {
   }
 
   blockquote {
-    @apply text-[#3f4957] dark:text-[#ccd0d3] bg-black/20 px-4 py-2;
+    @apply text-[#2f3947] dark:text-[#ccd0d3] dark:bg-black/20 bg-black/10 px-4 py-2;
   }
 
   time {
-    @apply dark:text-[#bbc] text-[#556];
+    @apply dark:text-[#dde] text-[#556];
+  }
+
+  hr {
+    border-top: 1px solid #ddd;
+    margin: 1rem 0;
+  }
+
+  hr {
+    @apply border-t-slate-700 dark:border-t-slate-300
   }
 }
