@@ -82,32 +82,26 @@ export default function Navbar() {
           </a>
           <div>
             <ul className="hidden md:flex px-2 transition-all ease-in duration-300">
-              <a href="/">
-                <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                  Home
-                </li>
-              </a>
+              <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
+                <a href="/">Home</a>
+              </li>
 
-              <a href="/about">
-                <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                  About
-                </li>
-              </a>
-              <a href="/skills">
-                <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                  Skills
-                </li>
-              </a>
-              <a href="/projects">
-                <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                  Projects
-                </li>
-              </a>
-              <a href="/blog">
-                <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                  Blog
-                </li>
-              </a>
+              <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
+                <a href="/about">About</a>
+              </li>
+
+              <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
+                <a href="/skills">Skills</a>
+              </li>
+
+              <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
+                <a href="/projects">Projects</a>
+              </li>
+
+              <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
+                <a href="/blog">Blog</a>
+              </li>
+
               <li
                 onClick={() => handleDarkMode()}
                 className="darkModeToggle ml-10 text-sm uppercase text-[30px] hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in"
@@ -166,31 +160,26 @@ export default function Navbar() {
         </div>
         <div className="py-4 flex flex-col">
           <ul className="uppercase">
-            <a href="/">
-              <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
-                Home
-              </li>
-            </a>
-            <a href="/about">
-              <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
-                About
-              </li>
-            </a>
-            <a href="/skills">
-              <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
-                Skills
-              </li>
-            </a>
-            <a href="/projects">
-              <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
-                Projects
-              </li>
-            </a>
-            <a href="/blog">
-              <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
-                Blog
-              </li>
-            </a>
+            <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+              <a href="/">Home</a>
+            </li>
+
+            <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+              <a href="/about">About</a>
+            </li>
+
+            <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+              <a href="/skills">Skills</a>
+            </li>
+
+            <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+              <a href="/projects">Projects</a>
+            </li>
+
+            <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+              <a href="/blog">Blog</a>
+            </li>
+
             <li
               onClick={() => handleDarkMode()}
               className="darkModeToggle text-sm uppercase text-[30px] hover:text-slate-700 dark:hover:text-slate-300 py-4 transition-all duration-200 ease-in"
@@ -207,7 +196,7 @@ export default function Navbar() {
               React, Next.js, Tailwind CSS, Astro and ❤️.
             </p>
             <div className="flex items-center my-2 pt-2 w-full">
-              <a href="https://github.com/pjnalls/pjnalls">
+              <a href="https://github.com/pjnalls/pjnalls" aria-label="GitHub">
                 <div className="rounded-full shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
                   <FaGithub size="30px" />
                 </div>

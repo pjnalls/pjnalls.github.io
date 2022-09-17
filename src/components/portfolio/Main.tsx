@@ -19,7 +19,8 @@ export default function  Main() {
             own.
           </p>
           <div className="flex items-center justify-center max-w-[330px] m-auto py-4">
-            <a href="https://github.com/pjnalls/pjnalls">
+            <a href="https://github.com/pjnalls/pjnalls" aria-label="GitHub">
+              GitHub
               <div className="rounded-full shadow-lg shadow-slate-400 dark:shadow-slate-900/60 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
                 <FaGithub size="45px" />
               </div>

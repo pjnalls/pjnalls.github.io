@@ -21,37 +21,37 @@ export default function ProjectItem({
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full p-4 lg:px-10 md:px-6 px-5 leading-4 lg:leading-6 md:leading-4">
         <label
-          htmlFor="title"
+          htmlFor={title}
           className="pb-0 mb-0 drop-shadow-[0_3px_3px_rgba(0,0,0,0.333)]"
         >
           Title
         </label>
         <h3
-          id="title"
+          id={title}
           className="text-white pb-3 m-0 pt-0 leading-5 lg:leading-7 md:leading-5 font-semibold text-xl drop-shadow-[0_3px_3px_rgba(0,0,0,0.333)]"
         >
           {title}
         </h3>
         <label
-          htmlFor="description"
+          htmlFor={description}
           className="drop-shadow-[0_3px_3px_rgba(0,0,0,0.333)]"
         >
           Description
         </label>
         <p
-          id="description"
+          id={description}
           className=" text-white pb-3 drop-shadow-[0_3px_3px_rgba(0,0,0,0.333)]"
         >
           {description}
         </p>
         <label
-          htmlFor="made-with"
+          htmlFor={title + ': ' + madeWith}
           className="drop-shadow-[0_3px_3px_rgba(0,0,0,0.333)]"
         >
           Made with
         </label>
         <p
-          id="made-with"
+          id={title + ': ' + madeWith}
           className="text-white pb-1 drop-shadow-[0_3px_3px_rgba(0,0,0,0.333)]"
         >
           {madeWith}
