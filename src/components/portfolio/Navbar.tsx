@@ -58,9 +58,7 @@ export default function Navbar() {
 
     avoidFoucForDarkMode();
 
-    window.addEventListener('scroll', () => {
-      handleShadow;
-    });
+    window.addEventListener('scroll', () => handleShadow());
   }, []);
 
   return (
@@ -117,7 +115,10 @@ export default function Navbar() {
                 ◑
               </li>
             </ul>
-            <div onClick={() => navOpen.set(!$navOpen)} className="md:hidden z-[10] cursor-pointer hover:text-[#4f58ff] dark:hover:text-[#9fa8ff] hover:scale-110 transition-all ease-in duration-200">
+            <div
+              onClick={() => navOpen.set(!$navOpen)}
+              className="md:hidden z-[10] cursor-pointer hover:text-[#4f58ff] dark:hover:text-[#9fa8ff] hover:scale-110 transition-all ease-in duration-200"
+            >
               <AiOutlineMenu size={25} />
             </div>
           </div>
@@ -148,7 +149,10 @@ export default function Navbar() {
                 className="rounded-full cursor-pointer"
               />
             </a>
-            <div onClick={() => navOpen.set(!$navOpen)} className="rounded-full z-[11] shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110">
+            <div
+              onClick={() => navOpen.set(!$navOpen)}
+              className="rounded-full z-[11] shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110"
+            >
               <AiOutlineClose></AiOutlineClose>
             </div>
           </div>

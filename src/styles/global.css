@@ -20,7 +20,7 @@ body:before {
   height: 100vh;
   background-image: url('/assets/bg.jpg');
   position: fixed;
-  opacity: 0.1;
+  opacity: 0.09333;
   background-color: #1f2937;
   left: 0;
   top: 0;
@@ -74,11 +74,11 @@ body:before {
     @apply text-2xl sm:text-3xl;
   }
 
-  li, a {
+  li {
     @apply cursor-pointer text-[#2e40e0] dark:text-[#9fa8ff];
   }
 
-  li:hover, a:hover {
+  li:hover {
     @apply cursor-pointer text-[#0e20c0] dark:text-[#7f88df];
   }
 
@@ -87,6 +87,10 @@ body:before {
   }
 
   blockquote {
-    @apply text-[#3f4957] dark:text-[#ccd0d3] bg-black/20 px-4 py-2
+    @apply text-[#3f4957] dark:text-[#ccd0d3] bg-black/20 px-4 py-2;
+  }
+
+  time {
+    @apply dark:text-[#bbc] text-[#556];
   }
 }
