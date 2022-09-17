@@ -12,6 +12,8 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 );
 ---
 
+
+<script is:inline src="/resolve-fouc.js"></script>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
