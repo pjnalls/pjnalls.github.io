@@ -1,53 +1,19 @@
-# compiled output
-archived/tmp
+# build output
+dist/
 
 # dependencies
-archived/node_modules
-archived/package-lock.json
+node_modules/
 
-# IDEs and editors
-.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 
-# misc
-archived/.sass-cache
-archived/connect.lock
-archived/coverage/*
-archived/libpeerconnection.log
-archived/npm-debug.log
-archived/testem.log
-archived/typings
-archived/package-lock.json
+# environment variables
+.env
+.env.production
 
-# e2e
-archived/e2e/*.js
-archived/e2e/*.map
-
-# system files
+# macOS-specific files
 .DS_Store
-Thumbs.db
-
-# images
-archived/src/assets/front-end-tools/logos/
-
-# generated files
-archived/src/**/*.js
-!archived/src/vendor/IonicaBizau/github-calendar/dist/*.js
-archived/src/**/*.js.map
-archived/src/**/*.ngsummary.json
-archived/src/**/*.metadata.json
-archived/src/**/**/*.ngfactory.ts
-archived/src/**/*.ngstyle.ts
-archived/src/**/*.shim.ts
-images/favicon.png

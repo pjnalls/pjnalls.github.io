@@ -1,0 +1,217 @@
+import { useStore } from '@nanostores/react';
+
+import { useEffect } from 'react';
+
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai/index';
+import { FaGithub } from 'react-icons/fa/index';
+
+import { navOpen, navShadow } from '../../stores';
+import logo from '/assets/p.png';
+
+export default function Navbar() {
+  const $navOpen = useStore(navOpen);
+  const $navShadow = useStore(navShadow);
+
+  // spagehetti.js from https://tailwindcss.com/docs/dark-mode to avoid FOUC
+  const avoidFoucForDarkMode = () => {
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.getElementsByTagName('html').item(0)?.classList.add('dark');
+    } else {
+      document.getElementsByTagName('html').item(0)?.classList.remove('dark');
+    }
+
+    // Whenever the user explicitly chooses light mode
+    localStorage.theme = 'light';
+
+    // Whenever the user explicitly chooses dark mode
+    localStorage.theme = 'dark';
+
+    // Whenever the user explicitly chooses to respect the OS preference
+    localStorage.removeItem('theme');
+  };
+
+  const handleDarkMode = () => {
+    const htmlClassList = document
+      .getElementsByTagName('html')
+      .item(0)?.classList;
+
+    if (htmlClassList?.value.includes('dark')) {
+      htmlClassList?.remove('dark');
+    } else {
+      htmlClassList?.add('dark');
+    }
+  };
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY > 90) {
+        navShadow.set(true);
+      } else {
+        navShadow.set(false);
+      }
+    };
+
+    avoidFoucForDarkMode();
+
+    window.addEventListener('scroll', () => {
+      handleShadow;
+    });
+  }, []);
+
+  return (
+    <div className="transition-all ease-in duration-300">
+      <div
+        className={
+          $navShadow
+            ? 'fixed w-full z-[10] h-20 shadow-lg shadow-slate-600/40 dark:shadow-slate-900/60 bg-[#ecf0f3] dark:bg-[#1f2937] transition-all ease-in duration-500'
+            : 'fixed w-full z-[10] h-20 shadow-slate-600/40 bg-transparent transition-all ease-in duration-500'
+        }
+      >
+        <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16 transition-all ease-in duration-300">
+          <a href="/">
+            <img
+              src={logo}
+              alt="logo for pjnalls"
+              width={52}
+              height={52}
+              className="rounded-full cursor-pointer"
+            />
+          </a>
+          <div>
+            <ul className="hidden md:flex px-2 transition-all ease-in duration-300">
+              <a href="/">
+                <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
+                  Home
+                </li>
+              </a>
+
+              <a href="/about">
+                <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
+                  About
+                </li>
+              </a>
+              <a href="/skills">
+                <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
+                  Skills
+                </li>
+              </a>
+              <a href="/projects">
+                <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
+                  Projects
+                </li>
+              </a>
+              <a href="/blog">
+                <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
+                  Blog
+                </li>
+              </a>
+              <li
+                onClick={() => handleDarkMode()}
+                className="darkModeToggle ml-10 text-sm uppercase text-[30px] hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in"
+              >
+                ◑
+              </li>
+            </ul>
+            <div onClick={() => navOpen.set(!$navOpen)} className="md:hidden z-[10] cursor-pointer hover:text-[#4f58ff] dark:hover:text-[#9fa8ff] hover:scale-110 transition-all ease-in duration-200">
+              <AiOutlineMenu size={25} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className={
+          $navOpen
+            ? 'md:hidden fixed z-[100] left-0 top-0 w-full h-screen bg-[#1f2937]/70 transition-all ease-in duration-300'
+            : 'fixed z-[1] left-0 top-0 w-full h-screen bg-transition  transition-all ease-in duration-300'
+        }
+      ></div>
+      <div
+        className={
+          $navOpen
+            ? 'md:hidden fixed z-[101] left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#1f2937] p-10 transition-all ease-in duration-300'
+            : 'fixed z-[0] left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#1f2937] p-10 transition-all ease-in duration-300'
+        }
+      >
+        <div>
+          <div className="flex w-full items-center justify-between transition-all ease-in duration-300">
+            <a href="/">
+              <img
+                src={logo}
+                alt="logo for pjnalls"
+                width="54"
+                height="54"
+                className="rounded-full cursor-pointer"
+              />
+            </a>
+            <div onClick={() => navOpen.set(!$navOpen)} className="rounded-full z-[11] shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110">
+              <AiOutlineClose></AiOutlineClose>
+            </div>
+          </div>
+          <div className="border-b border-slate-400 my-4">
+            <p className="w-[100%] md:w-[80%] text-sm py-4 tracking-widest">
+              Designing and coding
+              <br />
+              UI/UX daily
+            </p>
+          </div>
+        </div>
+        <div className="py-4 flex flex-col">
+          <ul className="uppercase">
+            <a href="/">
+              <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+                Home
+              </li>
+            </a>
+            <a href="/about">
+              <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+                About
+              </li>
+            </a>
+            <a href="/skills">
+              <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+                Skills
+              </li>
+            </a>
+            <a href="/projects">
+              <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+                Projects
+              </li>
+            </a>
+            <a href="/blog">
+              <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+                Blog
+              </li>
+            </a>
+            <li
+              onClick={() => handleDarkMode()}
+              className="darkModeToggle text-sm uppercase text-[30px] hover:text-slate-700 dark:hover:text-slate-300 py-4 transition-all duration-200 ease-in"
+            >
+              ◑
+            </li>
+          </ul>
+          <div className="pt-16">
+            <p className="text-sm tracking-wider">
+              <span className="text-[#2e40e0] dark:text-[#9fa8ff] tracking-widest">
+                Made with
+              </span>
+              <br />
+              React, Next.js, Tailwind CSS, Astro and ❤️.
+            </p>
+            <div className="flex items-center my-2 pt-2 w-full">
+              <a href="https://github.com/pjnalls/pjnalls">
+                <div className="rounded-full shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
+                  <FaGithub size="30px" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
