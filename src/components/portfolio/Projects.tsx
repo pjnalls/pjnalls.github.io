@@ -2,7 +2,7 @@
 import forzenPrototypeMobile from "/assets/project-1.5.jpg";
 import forzenPrototypeDesktop from "/assets/project-1.5.b.jpg";
 
-import pDot from "/assets/p.png";
+import pDot from "/assets/p_1000x1000.jpg";
 import forzen from "/assets/project-1.jpg";
 import digitalRain from "/assets/project-2.jpg";
 import forzenPjnalls from "/assets/project-3.jpg";
