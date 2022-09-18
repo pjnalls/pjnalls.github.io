@@ -19,7 +19,6 @@
     "@nanostores/react": "^0.4.0",
     "astro": "^1.2.5",
     "nanostores": "^0.7.0",
-    "next": "^12.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",

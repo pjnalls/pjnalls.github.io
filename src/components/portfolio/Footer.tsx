@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { FaGithub } from "react-icons/fa/index";
 
 export default function  Footer() {
@@ -10,14 +8,14 @@ export default function  Footer() {
           Made with
         </span>
         <br />
-        Astro, React, Next.js, TypeScript, Tailwind CSS, and ❤️.
+        Astro, React, TypeScript, Tailwind CSS, and ❤️.
       </p>
       <div className="flex items-center content-center justify-center my-2 pt-2 w-full">
-        <Link href="https://github.com/pjnalls/pjnalls">
+        <a href="https://github.com/pjnalls/pjnalls" aria-label="GitHub">
           <div className="rounded-full shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
             <FaGithub size="30px" />
           </div>
-        </Link>
+        </a>
       </div>
     </footer>
   );
