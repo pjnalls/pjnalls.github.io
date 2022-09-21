@@ -1,58 +1,64 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 export interface Props {
-	content: {
-		title: string;
-		description: string;
-		pubDate?: string;
-		updatedDate?: string;
-		heroImage?: string;
-	};
+  content: {
+    title: string;
+    description: string;
+    pubDate?: string;
+    updatedDate?: string;
+    heroImage?: string;
+  };
 }
 
 const {
-	content: { title, description, pubDate, updatedDate, heroImage },
+  content: { title, description, pubDate, updatedDate, heroImage },
 } = Astro.props;
 ---
 
-
 <script is:inline src="/resolve-fouc.js"></script>
-<html lang="en">
-	<head>
-		<BaseHead title={`pjnalls | Blog | ${title}`} description={description} />
-		<style>
-			.title {
-				font-size: 2em;
-				margin: 0.25em 0 0;
-			}
-		</style>
-	</head>
 
-	<body>
-		<Header />
-		<main class="w-full h-screen relative z-[1] md:px-10 px-8">
-			<article class="max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36">
-				{heroImage && (
-					<img
-						src={heroImage}
-						alt=""
-						class="mx-auto w-full h-[33vh] object-cover object-bottom py-6"
-					/>
-				)}
-				<h1 class="title my-6 lg:text-[3rem] md:text-[2.667rem] text-[2.333rem]">{title}</h1>
-				<br/>
-				{pubDate && <time class="mb-3">{pubDate}</time>}
-				{updatedDate && <div>Last updated on <time class="mb-3">{updatedDate}</time></div>}
-				<hr/>
-				<slot />
-				<br />
-				<br />
-				<br />
-			</article>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseHead title={`pjnalls | Blog | ${title}`} description={description} />
+<style>
+  .title {
+    font-size: 2em;
+    margin: 0.25em 0 0;
+  }
+</style>
+
+<body>
+  <Header />
+  <main class="w-full h-screen relative z-[1] md:px-10 px-8">
+    <article class="max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36">
+      {
+        heroImage && (
+          <img
+            src={heroImage}
+            alt=""
+            class="mx-auto w-full h-[33vh] object-cover object-bottom py-6"
+          />
+        )
+      }
+      <h1 class="title my-6 lg:text-[3rem] md:text-[2.667rem] text-[2.333rem]">
+        {title}
+      </h1>
+      <br />
+      {pubDate && <time class="mb-3">{pubDate}</time>}
+      {
+        updatedDate && (
+          <div>
+            Last updated on <time class="mb-3">{updatedDate}</time>
+          </div>
+        )
+      }
+      <hr />
+      <slot />
+      <br />
+      <br />
+      <br />
+      <Footer />
+    </article>
+  </main>
+</body>
