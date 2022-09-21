@@ -17,9 +17,7 @@ const {
   content: { title, description, pubDate, updatedDate, heroImage },
 } = Astro.props;
 ---
-
 <script is:inline src="/resolve-fouc.js"></script>
-
 <BaseHead title={`pjnalls | Blog | ${title}`} description={description} />
 <style>
   .title {
