@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa/index";
 
 export default function  Main() {
   return (
-    <div id="main" className="w-full h-screen text-center relative z-[1]">
+    <div id="main" className="w-full lg:h-screen text-center relative z-[1]">
       <div className="max-w-[1240px] w-full h-[100%] mx-auto p-2 px-0 py-36 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm font-semibold tracking-widest text-slate-600 dark:text-slate-300">

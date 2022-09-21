@@ -45,7 +45,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 	</head>
 	<body>
 		<Header />
-		<main class="w-full h-screen text-center relative z-[1]">
+		<main class="w-full lg:h-screen text-center relative z-[1]">
 			<section class="md:px-10 max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36 flex justify-center items-center">
 				<ul>
 					{posts.map((post) => (
