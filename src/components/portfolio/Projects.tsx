@@ -105,11 +105,11 @@ export default function  Projects() {
             madeWith="HTML, SCSS, and ES6+ JavaScript"
             backgroundImg={digitalRain}
             enableScreenshot={false}
-            enableCode={true}
+            enableCode={false}
             enableDemo={false}
             demoLabel=""
             demoUrl=""
-            githubUrl="https://github.com/pjnalls/DigitalRain"
+            githubUrl=""
           />
           <ProjectItem
             title="Forzen.io | pjnalls"
