@@ -28,7 +28,7 @@ export default function About() {
           </p>
           <p className="py-2 text-black dark:text-white">
             I&apos;d like to show you my work rather than tell you about it, so{' '}
-            <a href="/#projects" className="py-2 font-semibold">
+            <a href="/projects" className="py-2 font-semibold">
               <span className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150">
                 please feel free to check out some of my latest projects.
               </span>
