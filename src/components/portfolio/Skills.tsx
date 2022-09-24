@@ -1,16 +1,14 @@
 // Import icons for all skills.
-import {
-  FaAngular,
-  FaReact,
-  FaFigma,
-  FaSass,
-} from "react-icons/fa/index";
+import { FaAngular, FaReact, FaFigma, FaSass } from 'react-icons/fa/index';
 import {
   SiTailwindcss,
   SiMaterialui,
   SiAdobephotoshop,
   SiJavascript,
-} from "react-icons/si/index";
+  SiNextdotjs,
+  SiTypescript,
+  SiMarkdown
+} from 'react-icons/si/index';
 
 export default function Skills() {
   return (
@@ -24,12 +22,51 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
+                <FaReact
+                  size="48px"
+                  className="mr-6 text-[#61dbfb] bg-[#1f2937] p-1 dark:p-0 dark:bg-transparent rounded-md"
+                />
+                <h3>React</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  93%{' '}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[93%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiNextdotjs
+                  size="48px"
+                  className="mr-6 text-[#000]  dark:bg-[#fff] rounded-full p-[-33px]
+                  dark:border-2 dark:border-white transition-all ease-in duration-200"
+                />
+                <h3>Next.js</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  89%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[89%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
                 <FaAngular size="48px" className="mr-6 text-[#c3002f]" />
                 <h3>Angular</h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  98%{" "}
+                  98%{' '}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
                   <div className="bg-[#9d8c66] w-[98%] h-[0.6rem]"></div>
@@ -45,29 +82,10 @@ export default function Skills() {
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  96%{" "}
+                  96%{' '}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
                   <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <FaReact
-                  size="48px"
-                  className="mr-6 text-[#61dbfb] bg-[#1f2937] p-1 dark:p-0 dark:bg-transparent rounded-md"
-                />
-                <h3>React</h3>
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  93%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[93%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
@@ -83,7 +101,7 @@ export default function Skills() {
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  96%{" "}
+                  96%{' '}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
                   <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
@@ -103,7 +121,7 @@ export default function Skills() {
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  95%{" "}
+                  95%{' '}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
                   <div className="bg-[#9d8c66] w-[95%] h-[0.6rem]"></div>
@@ -122,7 +140,7 @@ export default function Skills() {
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  92%{" "}
+                  92%{' '}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
                   <div className="bg-[#9d8c66] w-[92%] h-[0.6rem]"></div>
@@ -141,7 +159,7 @@ export default function Skills() {
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  96%{" "}
+                  96%{' '}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
                   <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
@@ -154,13 +172,12 @@ export default function Skills() {
               <div className="m-auto inline-flex justify-around items-center w-full">
                 <FaSass size="48px" className="mr-6 text-[#ce679a]" />
                 <h3>
-                  Sass
-                  <br /> (SCSS)
+                  Sass (SCSS)
                 </h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  95%{" "}
+                  95%{' '}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
                   <div className="bg-[#9d8c66] w-[95%] h-[0.6rem]"></div>
@@ -168,7 +185,27 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiMarkdown
+                  size="48px"
+                  className="mr-6 dark:text-[#fff] text-[#000] rounded-md"
+                />
+                <h3>
+                  Markdown
+                </h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  99%{' '}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[99%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
@@ -177,17 +214,36 @@ export default function Skills() {
                   className="mr-6 text-[#f0db4f] bg-[#323330]"
                 />
                 <h3>
-                  ES6+
-                  <br />
                   JavaScript
                 </h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  94%{" "}
+                  94%{' '}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
                   <div className="bg-[#9d8c66] w-[94%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiTypescript
+                  size="48px"
+                  className="mr-6 text-[#007acc] bg-[#fff] rounded-md"
+                />
+                <h3>
+                  TypeScript
+                </h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  90%{' '}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[90%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
