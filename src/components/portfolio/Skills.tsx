@@ -114,9 +114,9 @@ export default function Skills() {
               <div className="m-auto inline-flex justify-around items-center w-full">
                 <SiMaterialui size="48px" className="mr-6 text-[#007fff]" />
                 <h3>
-                  Material UI
-                  <br />
                   MUI
+                  <br />
+                  (Material UI)
                 </h3>
               </div>
               <div className="flex items-center justify-center">

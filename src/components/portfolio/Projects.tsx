@@ -2,6 +2,7 @@
 import forzenPrototypeMobile from "/assets/project-1.5.jpg";
 import forzenPrototypeDesktop from "/assets/project-1.5.b.jpg";
 
+import aSolid from "/assets/ng-solid-design.jpg";
 import pDot from "/assets/p_1000x1000.jpg";
 import forzen from "/assets/project-1.jpg";
 import digitalRain from "/assets/project-2.jpg";
@@ -26,6 +27,16 @@ export default function  Projects() {
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
+        <ProjectItem
+            title="A° SOLID"
+            description="An example Angular web app developed in phases with SOLID design principles — from monolithic to modular."
+            madeWith="Angular, SOLID Design, and Markdown"
+            backgroundImg={aSolid}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={false}
+            githubUrl="https://github.com/pjnalls/ng-solid-design"
+          />
         <ProjectItem
             title="pjnalls.com"
             description="My portfolio and blog website made seemlessly thanks to Astro with React integrations."
