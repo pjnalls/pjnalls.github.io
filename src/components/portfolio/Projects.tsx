@@ -39,7 +39,7 @@ export default function  Projects() {
           />
         <ProjectItem
             title="pjnalls.com"
-            description="My portfolio and blog website made seemlessly thanks to Astro with React integrations."
+            description="My portfolio and blog website made seamlessly thanks to Astro with React integrations."
             madeWith="Astro, React, TypeScript, Tailwind CSS, and ❤️."
             backgroundImg={pDot}
             enableScreenshot={false}
@@ -107,7 +107,7 @@ export default function  Projects() {
             enableCode={false}
             enableDemo={false}
             demoLabel=""
-            demoUrl="https://www.figma.com/proto/r4YnlPce6mSm8fsjbVclaW/Forzen.io-Prototype-(Mobile)?node-id=0%3A2&amp;scaling=contai&amp;page-id=0%3A1&amp;starting-point-node-id=0%3A2"
+            demoUrl=""
             githubUrl=""
           />
           <ProjectItem
