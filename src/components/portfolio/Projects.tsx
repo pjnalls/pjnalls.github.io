@@ -158,7 +158,7 @@ export default function  Projects() {
             enableDemo={true}
             demoLabel="View Gallery"
             demoUrl="https://forzen.io/jung-cauz/art.html"
-            githubUrl="https://github.com/pjnalls/scss-abstract-shape-art"
+            githubUrl="https://github.com/pjnalls?tab=repositories&q=scss-&type=&language=scss&sort="
           />
         </div>
       </div>

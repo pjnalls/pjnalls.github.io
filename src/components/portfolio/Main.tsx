@@ -11,7 +11,7 @@ export default function  Main() {
           <h1 className="py-4 text-slate-800 dark:text-[#ecf0f3]">
             Hi 👋, I&apos;m <span className="text-[#4f58fc] dark:text-[#9fa8ff]">pjnalls</span>
           </h1>
-          <h1 className="py-4 text-slate-800 dark:text-[#ecf0f3]">A UX-Engineer UI Consultant</h1>
+          <h1 className="py-4 text-slate-800 dark:text-[#ecf0f3]">An Angular, React Developer Consultant</h1>
           <p className="py-4 text-slate-800  dark:text-[#ecf0f3] max-w-[70%] m-auto">
             My focus on combining aesthetical yet functional UX design and
             efficient yet elegant UI code — is pivotal throughout the

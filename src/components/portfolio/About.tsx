@@ -8,8 +8,8 @@ export default function About() {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-slate-600 dark:text-slate-300/90">
-            As a self-described UX engineer currently working as a UI
-            consultant, I&apos;m equally involved in both the UI design and
+            As a self-described UX engineer currently working as an Angular developer
+            consultant with some career development opportunities for React work as well. I&apos;m equally involved in both the UI design and
             development spaces.
           </p>
           <p className="py-2 text-black dark:text-white">
