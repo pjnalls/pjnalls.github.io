@@ -1,3 +1,5 @@
+import React from "react";
+
 import { FaEye, FaSearchPlus, FaGithub } from 'react-icons/fa/index';
 
 export default function ProjectItem({

@@ -1,3 +1,5 @@
+import React from "react";
+
 import { FaGithub } from "react-icons/fa/index";
 
 export default function  Footer() {

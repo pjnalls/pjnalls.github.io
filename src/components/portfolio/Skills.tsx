@@ -1,4 +1,7 @@
-// Import icons for all skills.
+import React from 'react';
+
+
+/** Load icons for all skills. */
 import { FaAngular, FaReact, FaFigma, FaSass } from 'react-icons/fa/index';
 import {
   SiTailwindcss,

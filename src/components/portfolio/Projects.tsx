@@ -1,8 +1,12 @@
-// UX design projects
+import React from "react";
+
+/** Load images for design project. */
 import forzenPrototypeMobile from "/assets/project-1.5.jpg";
 import forzenPrototypeDesktop from "/assets/project-1.5.b.jpg";
+/** */
 
 import aSolid from "/assets/ng-solid-design.jpg";
+import forecast from "/assets/forecast.png";
 import pDot from "/assets/p_1000x1000.jpg";
 import forzen from "/assets/project-1.jpg";
 import digitalRain from "/assets/project-2.jpg";
@@ -15,19 +19,16 @@ import mceDesktop from "/assets/project-20220820.jpg";
 import ProjectItem from "./ProjectItem";
 import Footer from "./Footer";
 
-export default function  Projects() {
+export default function Projects() {
   return (
-    <div
-      id="projects"
-      className="w-full relative z-[1] lg:h-screen p-2"
-    >
+    <div id="projects" className="w-full relative z-[1] lg:h-screen p-2">
       <div className="max-w-[1000px] mx-auto px-2 py-36">
         <p className="text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
           Projects
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
-        <ProjectItem
+          <ProjectItem
             title="A° SOLID"
             description="An example Angular web app developed in phases with SOLID design principles — from monolithic to modular."
             madeWith="Angular, SOLID Design, and Markdown"
@@ -36,16 +37,6 @@ export default function  Projects() {
             enableCode={true}
             enableDemo={false}
             githubUrl="https://github.com/pjnalls/ng-solid-design"
-          />
-        <ProjectItem
-            title="pjnalls.com"
-            description="My portfolio and blog website made seamlessly thanks to Astro with React integrations."
-            madeWith="Astro, React, TypeScript, Tailwind CSS, and ❤️."
-            backgroundImg={pDot}
-            enableScreenshot={false}
-            enableCode={false}
-            enableDemo={false}
-            githubUrl=""
           />
           <ProjectItem
             title="Forzen.io (Mobile Prototype)"
@@ -83,6 +74,17 @@ export default function  Projects() {
             demoLabel="Open App"
             demoUrl="https://forzen.io"
             githubUrl=""
+          />
+          <ProjectItem
+            title="Halstown City's Weather Forecast"
+            description="Time series analysis and weather forecast via seasonal autoregression using mock data (work-in-progress)."
+            madeWith="Python, NumPy, pandas, and Matplotlib"
+            backgroundImg={forecast}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={false}
+            demoLabel=""
+            githubUrl="https://github.com/pjnalls/time_series_analysis_and_forecast"
           />
           <ProjectItem
             title="Minimalistic Code Editor (Desktop)"
@@ -159,6 +161,16 @@ export default function  Projects() {
             demoLabel="View Gallery"
             demoUrl="https://forzen.io/jung-cauz/art.html"
             githubUrl="https://github.com/pjnalls?tab=repositories&q=scss-&type=&language=scss&sort="
+          />
+          <ProjectItem
+            title="pjnalls.com"
+            description="My portfolio and blog website made seamlessly thanks to Astro with React integrations."
+            madeWith="Astro, React, TypeScript, Tailwind CSS, and ❤️."
+            backgroundImg={pDot}
+            enableScreenshot={false}
+            enableCode={false}
+            enableDemo={false}
+            githubUrl=""
           />
         </div>
       </div>
