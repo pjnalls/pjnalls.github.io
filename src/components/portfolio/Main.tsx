@@ -22,8 +22,8 @@ export default function Main() {
             functional design with efficient yet elegant frontend code.
             <br />
             <br />I also focus on continually learning in the
-            STEAM disciplines for better analytical and creative
-            abilities in both professional and personal projects.
+            STEAM disciplines to cultivate better analytical and creative
+            abilities for both professional and personal projects.
           </p>
           <div className="flex items-center justify-center max-w-[330px] m-auto py-4">
             <a href="https://github.com/pjnalls/pjnalls" aria-label="GitHub">
