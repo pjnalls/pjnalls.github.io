@@ -3,13 +3,22 @@ import React from "react";
 /** Load icons for all skills. */
 import { FaAngular, FaReact, FaFigma, FaSass } from "react-icons/fa/index";
 import {
-  SiTailwindcss,
-  SiMaterialui,
   SiAdobephotoshop,
+  SiArduino,
+  SiC,
+  SiCss3,
+  SiHtml5,
   SiJavascript,
-  SiNextdotjs,
-  SiTypescript,
+  SiJupyter,
+  SiMaterialui,
   SiMarkdown,
+  SiNextdotjs,
+  SiNumpy,
+  SiPandas,
+  SiPython,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
 } from "react-icons/si/index";
 
 export default function Skills() {
@@ -20,9 +29,11 @@ export default function Skills() {
           Skills
         </p>
         <h2 className="py-10">What I Can Do</h2>
-        <br/>
-        <h3 className="font-semibold text-2xl">Toolkit as a Frontend Developer Consultant</h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pb-10">
+        <br />
+        <h3 className="font-semibold text-2xl">
+          Toolkit as a Frontend Developer Consultant
+        </h3>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
@@ -61,6 +72,28 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiRedux
+                  size="48px"
+                  className="mr-6 text-[#61dafb] bg-[#1f2937] p-1 dark:p-0 dark:bg-transparent rounded-md"
+                />
+                <h3>
+                  Redux
+                  <br /> (NgRx)
+                </h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  91%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[91%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
                 <SiMarkdown
                   size="48px"
                   className="mr-6 dark:text-[#fff] text-[#000] rounded-md"
@@ -73,6 +106,44 @@ export default function Skills() {
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
                   <div className="bg-[#9d8c66] w-[99%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiHtml5
+                  size="48px"
+                  className="mr-6 text-[#e86126] rounded-md"
+                />
+                <h3>HTML</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  92%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[92%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiCss3
+                  size="48px"
+                  className="mr-6 text-[#2861e8] rounded-md"
+                />
+                <h3>CSS</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  91%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[91%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
@@ -104,10 +175,10 @@ export default function Skills() {
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  95%{" "}
+                  90%{" "}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[95%] h-[0.6rem]"></div>
+                  <div className="bg-[#9d8c66] w-[90%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
@@ -151,9 +222,11 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        <br/>
-        <h3 className="font-semibold text-2xl">Other Tools for Frontend Development</h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
+        <br />
+        <h3 className="font-semibold text-2xl">
+          Other Tools for Frontend Development
+        </h3>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10 mb-5">
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
@@ -244,6 +317,106 @@ export default function Skills() {
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
                   <div className="bg-[#9d8c66] w-[92%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 className="font-semibold text-2xl">Toolkit as Python/C Hobbyist</h3>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiPython size="48px" className="mr-6 text-[#4885b6]" />
+                <h3>Python</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  90%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[90%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 gap-4 justify-between items-center">
+            <div className="m-auto inline-flex justify-around items-center w-full">
+              <SiNumpy size="48px" className="mr-6 text-[#4d77cf]" />
+              <h3>NumPy</h3>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                92%{" "}
+              </div>
+              <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                <div className="bg-[#9d8c66] w-[92%] h-[0.6rem]"></div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiPandas
+                  size="48px"
+                  className="mr-6 text-[#000] dark:text-[#fff]"
+                />
+                <h3>pandas</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  87%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[87%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiJupyter size="48px" className="mr-6 text-[#f37726]" />
+                <h3>Jupyter Notebook</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  96%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiC size="48px" className="mr-6 text-[#5968ba]" />
+                <h3>C</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  -
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[0%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiArduino size="48px" className="mr-6 text-[#009298]" />
+                <h3>Arduino</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  -
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[0%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
