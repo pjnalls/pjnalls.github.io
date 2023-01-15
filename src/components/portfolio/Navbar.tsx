@@ -25,16 +25,17 @@ export default function Navbar() {
     }
   };
 
-  useEffect(() => {
-    const handleShadow = () => {
-      if (window.scrollY > 90) {
-        navShadow.set(true);
-      } else {
-        navShadow.set(false);
-      }
-    };
+  const handleNavShadow = () => {
+    if (window.scrollY > 90) {
+      navShadow.set(true);
+    } else {
+      navShadow.set(false);
+    }
+  };
 
-    window.addEventListener('scroll', () => handleShadow());
+  useEffect(() => {
+    handleNavShadow();
+    window.addEventListener('scroll', () => handleNavShadow());
   }, []);
 
   return (
