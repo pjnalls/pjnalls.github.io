@@ -24,13 +24,13 @@ import {
 export default function Skills() {
   return (
     <div id="skills" className="w-full relative z-[1] p-2 py-32">
-      <div className="max-w-[1000px] mx-auto flex flex-col justify-center h-full">
+      <div className="max-w-[1000px] mx-auto flex flex-col justify-center py-36 px-2">
         <p className="text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
           Skills
         </p>
-        <h2 className="py-10">What I Can Do</h2>
+        <h2 className="py-4">What I Can Do</h2>
         <br />
-        <h3 className="font-semibold text-2xl">
+        <h3 className="font-semibold text-2xl py-2">
           Toolkit as a Frontend Developer Consultant
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
@@ -322,7 +322,7 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        <h3 className="font-semibold text-2xl">Toolkit as Python/C Hobbyist</h3>
+        <h3 className="font-semibold text-2xl">Toolkit as a Python/C Hobbyist</h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">

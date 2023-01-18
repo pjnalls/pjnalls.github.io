@@ -17,11 +17,10 @@ import mceWeb from "/assets/project-20220817.jpg";
 import mceDesktop from "/assets/project-20220820.jpg";
 
 import ProjectItem from "./ProjectItem";
-import Footer from "./Footer";
 
 export default function Projects() {
   return (
-    <div id="projects" className="w-full relative z-[1] lg:h-screen p-2">
+    <div id="projects" className="w-full relative z-[1] p-2 py-32">
       <div className="max-w-[1000px] mx-auto px-2 py-36">
         <p className="text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
           Projects
@@ -174,7 +173,6 @@ export default function Projects() {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

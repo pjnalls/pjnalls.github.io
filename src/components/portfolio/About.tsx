@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div id="about" className="w-full lg:h-screen relative z-[1]">
+    <div id="about" className="w-full relative z-[1] p-2 py-32">
       <div className="max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36 flex justify-center items-center">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widestest text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">

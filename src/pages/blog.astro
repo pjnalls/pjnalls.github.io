@@ -20,9 +20,6 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
     list-style-type: none;
     padding: unset;
   }
-  ul li {
-    display: flex;
-  }
   ul li time {
     flex: 0 0 130px;
     font-style: italic;
@@ -33,6 +30,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 
   ul li a {
     transition: all 0.3s ease;
+    padding-left: 2rem;
   }
 
   ul li a:hover {
@@ -42,7 +40,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 
 <body>
   <Header />
-  <main class="w-full lg:h-screen text-center relative z-[1]">
+  <main class="w-full lg:h-screen relative z-[1]">
     <section
       class="md:px-10 max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36 flex justify-center items-center"
     >
