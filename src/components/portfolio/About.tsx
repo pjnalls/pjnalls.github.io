@@ -10,12 +10,11 @@ export default function About() {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-slate-600 dark:text-slate-300/90">
-            I'm a frontend developer and Angular consultant with some career
-            development experiences in React and other frontend technologies.
+          I'm a frontend developer providing Angular and React consulting along 
+          with other technologies for UI designs and implementations.
           </p>
           <p className="py-2 text-black dark:text-white">
-            Along with frontend development, I enjoy using Photoshop and Figma
-            for mockups, wireframes, prototypes, and other designs.
+            I enjoy using Photoshop and Figma for mockups, wireframes, prototypes, and other designs.
             <br/>
             <br />
             On the side as a hobby, I learn Python, data science, machine
