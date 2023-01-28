@@ -15,7 +15,9 @@ export default function Main() {
             <span className="text-[#4f58fc] dark:text-[#9fa8ff]">pjnalls</span>
           </h1>
           <h1 className="py-4 text-slate-800 dark:text-[#ecf0f3] text-4xl font-semibold">
-            A Frontend Developer Consultant and Python/C Hobbyist
+            A Frontend Developer Consultant,<br />
+            MS in Computer Science Incoming Postgraduate,<br/>
+            and Python/C Hobbyist
           </h1>
           <p className="py-4 text-slate-800  dark:text-[#ecf0f3] max-w-[70%] m-auto">
             My focus is on combining aesthetical, <br />
