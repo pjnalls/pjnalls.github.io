@@ -98,8 +98,8 @@ export default function Skills() {
                   className="mr-6 text-[#61dafb] bg-[#1f2937] p-1 dark:p-0 dark:bg-transparent rounded-md"
                 />
                 <h3>
-                  Redux
-                  <br /> (NgRx)
+                  Redux / 
+                  <br />NgRx
                 </h3>
               </div>
               <div className="flex items-center justify-center">

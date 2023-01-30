@@ -13,12 +13,12 @@ export default function About() {
           I'm a frontend developer providing Angular and React consulting along 
           with other technologies for UI designs and implementations.<br />
           Along with full-time consulting, I&apos;m also a postgraduate beginning 
-          a program for an MS in computer science in Summer 2023.
+          a program for an MS in computer science in summer of 2023.
           <br />
           </p>
           <p className="py-2 text-black dark:text-white">
             As a hobby, I learn Python, data science, machine
-            learning, and pure mathematics. I also started picking up C- and
+            learning, and pure mathematics. I also started picking up C and
             hardware programming for personal maker projects.
             <br />
             <br />
