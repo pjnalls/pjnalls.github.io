@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { useStore } from '@nanostores/react';
 
 import { useEffect } from 'react';
@@ -20,8 +20,10 @@ export default function Navbar() {
 
     if (htmlClassList?.value.includes('dark')) {
       htmlClassList?.remove('dark');
+      localStorage.theme = 'light';
     } else {
       htmlClassList?.add('dark');
+      localStorage.theme = 'dark';
     }
   };
 
@@ -43,8 +45,8 @@ export default function Navbar() {
       <div
         className={
           $navShadow
-            ? 'fixed w-full z-[10] h-20 shadow-lg shadow-slate-600/40 dark:shadow-slate-900/60 bg-[#ecf0f3] dark:bg-[#1f2937] transition-all ease-in duration-500'
-            : 'fixed w-full z-[10] h-20 shadow-slate-600/40 bg-transparent transition-all ease-in duration-500'
+            ? "fixed w-full z-[10] h-20 shadow-lg shadow-slate-600/40 dark:shadow-slate-900/60 bg-[#ecf0f3] dark:bg-[#1f2937] transition-all ease-in duration-500"
+            : "fixed w-full z-[10] h-20 shadow-slate-600/40 bg-transparent transition-all ease-in duration-500"
         }
       >
         <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16 transition-all ease-in duration-300">
@@ -98,15 +100,15 @@ export default function Navbar() {
       <div
         className={
           $navOpen
-            ? 'md:hidden fixed z-[100] left-0 top-0 w-full h-screen bg-[#1f2937]/70 transition-all ease-in duration-300'
-            : 'fixed z-[1] left-0 top-0 w-full h-screen bg-transition  transition-all ease-in duration-300'
+            ? "md:hidden fixed z-[100] left-0 top-0 w-full h-screen bg-[#1f2937]/70 transition-all ease-in duration-300"
+            : "fixed z-[1] left-0 top-0 w-full h-screen bg-transition  transition-all ease-in duration-300"
         }
       ></div>
       <div
         className={
           $navOpen
-            ? 'md:hidden fixed z-[101] left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#1f2937] p-10 transition-all ease-in duration-300'
-            : 'fixed z-[0] left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#1f2937] p-10 transition-all ease-in duration-300'
+            ? "md:hidden fixed z-[101] left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#1f2937] p-10 transition-all ease-in duration-300"
+            : "fixed z-[0] left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#1f2937] p-10 transition-all ease-in duration-300"
         }
       >
         <div>
