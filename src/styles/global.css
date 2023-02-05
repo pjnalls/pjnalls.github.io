@@ -14,11 +14,11 @@ body {
 
 html:before,
 body:before {
-  content: '';
-  content: '';
+  content: "";
+  content: "";
   width: 100%;
   height: 100vh;
-  background-image: url('/assets/bg.jpg');
+  background-image: url("/assets/bg.jpg");
   position: fixed;
   opacity: 0.05667;
   background-color: #1f2937;
@@ -102,6 +102,58 @@ body:before {
   }
 
   hr {
-    @apply border-t-slate-700 dark:border-t-slate-300
+    @apply border-t-slate-700 dark:border-t-slate-300;
   }
+
+  .left {
+    inset: 0 auto auto 0;
+    transform-origin: 100% 0;
+    transform: translate(-29.3%) rotate(-45deg);
+  }
+  .right {
+    inset: 0 0 auto auto;
+    transform-origin: 0 0;
+    transform: translate(29.3%) rotate(45deg);
+  }
+
+  /** ********************
+    *  Ribbon CSS: BEGIN
+    * ********************
+    *  Credit: Temani Afif
+    *  Original Article and Source Code Refrence: 
+    *  https://www.freecodecamp.org/news/make-a-css-only-ribbon/
+    *
+    */
+  .folded-ribbon {
+    --f: 10px; /* control the folded part*/
+    --r: 15px; /* control the ribbon shape */
+    --t: 10px; /* the top offset */
+
+    position: absolute;
+    inset: var(--t) calc(-1 * var(--f)) auto auto;
+    padding: 0 10px var(--f) calc(10px + var(--r));
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - var(--f)),
+      calc(100% - var(--f)) 100%,
+      calc(100% - var(--f)) calc(100% - var(--f)),
+      0 calc(100% - var(--f)),
+      var(--r) calc(50% - var(--f) / 2)
+    );
+    background: #4e60ff;
+    box-shadow: 0 calc(-1 * var(--f)) 0 inset #0005;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .new-release-box {
+    margin: 0;
+    background: transparent;
+    position: relative;
+  }
+  /** ****************** 
+   *   Ribbon CSS: END
+   *  ******************
+   */
 }

@@ -27,16 +27,21 @@ export default function Projects() {
         </p>
         <h2 className="py-4">What I&apos;ve Created</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
-          <ProjectItem
-            title="Spreang"
-            description={"A 3-day, remote React and Angular hackathon (\"coding fest\") for spring break (work-in-progress)."}
-            madeWith="Figma"
-            backgroundImg={spreang}
-            enableScreenshot={false}
-            enableCode={false}
-            enableDemo={false}
-            githubUrl=""
-          />
+          <div className="new-release-box">
+            <div className="folded-ribbon font-bold">NEW</div>
+            <ProjectItem
+              title="Spreang"
+              description={
+                'A 3-day, remote React and Angular hackathon ("coding fest") for spring break (work-in-progress).'
+              }
+              madeWith="Figma"
+              backgroundImg={spreang}
+              enableScreenshot={false}
+              enableCode={false}
+              enableDemo={false}
+              githubUrl=""
+            />
+          </div>
           <ProjectItem
             title="A° SOLID"
             description="An example Angular web app developed in phases with SOLID design principles — from monolithic to modular."
@@ -71,17 +76,20 @@ export default function Projects() {
             demoUrl="https://www.figma.com/proto/Wqz3rQJgEC9vJR03WRDnCB/Forzen.io-Prototype-(Desktop)?node-id=0%3A2&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=0%3A2"
             githubUrl=""
           />
-          <ProjectItem
-            title="Halstown City's Weather Forecast"
-            description="Time series analysis and weather forecast via seasonal autoregression using mock data (work-in-progress)."
-            madeWith="Python, NumPy, pandas, and Matplotlib"
-            backgroundImg={forecast}
-            enableScreenshot={false}
-            enableCode={true}
-            enableDemo={false}
-            demoLabel=""
-            githubUrl="https://github.com/pjnalls/time_series_analysis_and_forecast"
-          />
+          <div className="new-release-box">
+            <div className="folded-ribbon font-bold">NEW</div>
+            <ProjectItem
+              title="Halstown City's Weather Forecast"
+              description="Time series analysis and weather forecast via seasonal autoregression using mock data (work-in-progress)."
+              madeWith="Python, NumPy, pandas, and Matplotlib"
+              backgroundImg={forecast}
+              enableScreenshot={false}
+              enableCode={true}
+              enableDemo={false}
+              demoLabel=""
+              githubUrl="https://github.com/pjnalls/time_series_analysis_and_forecast"
+            />
+          </div>
           <ProjectItem
             title="Minimalistic Code Editor (Desktop)"
             description="A screenshot of a minimalistic code editor for Zenful coding
