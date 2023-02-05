@@ -245,6 +245,25 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiNx
+                  size="48px"
+                  className="mr-6 text-[#002F56] dark:text-[#48C4e5] dark:bg-transparent rounded-md"
+                />
+                <h3>Nx</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  89%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[89%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
                 <SiJest
                   size="48px"
                   className="mr-6 text-[#99425b] dark:bg-transparent rounded-md"
@@ -264,18 +283,14 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiNx
-                  size="48px"
-                  className="mr-6 text-[#002F56] dark:text-[#48C4e5] dark:bg-transparent rounded-md"
-                />
-                <h3>Nx</h3>
+                <h3>Enzyme</h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  89%{" "}
+                  92%{" "}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[Nx%] h-[0.6rem]"></div>
+                  <div className="bg-[#9d8c66] w-[92%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
