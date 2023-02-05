@@ -8,7 +8,7 @@ import forzenPrototypeDesktop from "/assets/project-1.5.b.jpg";
 import aSolid from "/assets/ng-solid-design.jpg";
 import forecast from "/assets/forecast.png";
 import pDot from "/assets/p_1000x1000.jpg";
-import forzen from "/assets/project-1.jpg";
+import spreang from "/assets/spreang.logo.png";
 import digitalRain from "/assets/project-2.jpg";
 import forzenPjnalls from "/assets/project-3.jpg";
 import forzenJungCauz from "/assets/project-4.jpg";
@@ -27,6 +27,16 @@ export default function Projects() {
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
+          <ProjectItem
+            title="Spreang"
+            description={"A 3-day, remote React and Angular hackathon (\"coding fest\") for spring break (work-in-progress)."}
+            madeWith="Figma"
+            backgroundImg={spreang}
+            enableScreenshot={false}
+            enableCode={false}
+            enableDemo={false}
+            githubUrl=""
+          />
           <ProjectItem
             title="A° SOLID"
             description="An example Angular web app developed in phases with SOLID design principles — from monolithic to modular."
@@ -59,19 +69,6 @@ export default function Projects() {
             enableDemo={true}
             demoLabel="Open Prototype"
             demoUrl="https://www.figma.com/proto/Wqz3rQJgEC9vJR03WRDnCB/Forzen.io-Prototype-(Desktop)?node-id=0%3A2&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=0%3A2"
-            githubUrl=""
-          />
-          <ProjectItem
-            title="Forzen.io"
-            description="A cross-browser web application for explorations into the sides of meditation and individuation
-            (work-in-progress)."
-            madeWith="React, Tailwind CSS, and Framer Motion"
-            backgroundImg={forzen}
-            enableScreenshot={false}
-            enableCode={false}
-            enableDemo={true}
-            demoLabel="Open App"
-            demoUrl="https://forzen.io"
             githubUrl=""
           />
           <ProjectItem
