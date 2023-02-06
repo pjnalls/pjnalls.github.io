@@ -1,18 +1,19 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
 
-import { SITE_BLOG_TITLE, SITE_BLOG_DESCRIPTION } from '../config';
+import { SITE_BLOG_TITLE, SITE_BLOG_DESCRIPTION } from "../config";
 
-import Footer from '../components/portfolio/Footer';
+import Footer from "../components/portfolio/Footer";
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
-const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
+const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
   (a, b) =>
     new Date(b.frontmatter.pubDate).valueOf() -
     new Date(a.frontmatter.pubDate).valueOf()
 );
 ---
+
 <script is:inline src="/resolve-fouc.js"></script>
 <BaseHead title={SITE_BLOG_TITLE} description={SITE_BLOG_DESCRIPTION} />
 <style>
@@ -42,24 +43,27 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
   <Header />
   <main class="w-full lg:h-screen relative z-[1]">
     <section
-      class="md:px-10 max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36 flex justify-center items-center"
+      class="px-4 md:px-10 max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36 flex justify-center items-center"
     >
       <ul>
         {
-          posts.map((post) => (
-            <li class="flex items-left">
-              <time datetime={post.frontmatter.pubDate}>
-                {new Date(post.frontmatter.pubDate).toLocaleDateString(
-                  'en-us',
-                  {
-                    year: 'numeric',
-                    month: 'short',
-                    day: 'numeric',
-                  }
-                )}
-              </time>
-              <a href={post.url}>{post.frontmatter.title}</a>
-            </li>
+          posts.map((post, i) => (
+            <>
+              <li class="flex items-left">
+                <time datetime={post.frontmatter.pubDate}>
+                  {new Date(post.frontmatter.pubDate).toLocaleDateString(
+                    "en-us",
+                    {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    }
+                  )}
+                </time>
+                <a href={post.url}>{post.frontmatter.title}</a>
+              </li>
+              {i !== posts.length - 1 && <hr />}
+            </>
           ))
         }
       </ul>
