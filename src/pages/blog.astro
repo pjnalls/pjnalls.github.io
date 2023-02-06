@@ -21,8 +21,9 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
     padding: unset;
   }
   ul li time {
-    flex: 0 0 130px;
     font-style: italic;
+    width: 130px;
+    padding-right: 2rem;
   }
   ul li a:visited {
     color: #996dff;
@@ -30,7 +31,6 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
 
   ul li a {
     transition: all 0.3s ease;
-    padding-left: 2rem;
   }
 
   ul li a:hover {
@@ -47,7 +47,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
       <ul>
         {
           posts.map((post) => (
-            <li>
+            <li class="flex items-left">
               <time datetime={post.frontmatter.pubDate}>
                 {new Date(post.frontmatter.pubDate).toLocaleDateString(
                   'en-us',
