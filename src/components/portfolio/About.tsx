@@ -10,20 +10,24 @@ export default function About() {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-slate-600 dark:text-slate-300/90">
-          I'm a frontend developer providing Angular and React consulting along 
-          with other technologies for UI designs and implementations.<br />
-          Along with full-time consulting, I&apos;m also a postgraduate beginning 
-          a program for an MS in computer science in summer of 2023.
-          <br />
+            I'm a frontend developer providing Angular and React consulting
+            along with other technologies for UI designs and implementations.
+            <br />
+            Along with full-time consulting, I&apos;m also a postgraduate
+            beginning a program for an MS in computer science in summer of 2023.
+            <br />
           </p>
           <p className="py-2 text-black dark:text-white">
-            As a hobby, I learn Python, data science, machine
-            learning, and pure mathematics. I also started picking up C and
-            hardware programming for personal maker projects.
+            As a hobby, I learn Python, data science, machine learning, and pure
+            mathematics. I also started picking up React Native for
+            cross-platform development to create apps for not only the web but
+            for native iOS and Android — to write the code only once and for it
+            to work across multiple devices.
             <br />
             <br />
             Work as a consultant and for personal pet projects feels like high
-            forms of creative expression, and I love to do the work that I do everyday.
+            forms of creative expression, and I love to do the work that I do
+            everyday.
           </p>
           <p className="py-2 text-black dark:text-white">
             I&apos;d like to show you my work rather than tell you about it, so{" "}
