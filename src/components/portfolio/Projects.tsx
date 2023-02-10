@@ -34,7 +34,7 @@ export default function Projects() {
             <ProjectItem
               title="Spreang"
               description={
-                'A 3-day, remote React and Angular hackathon ("coding fest") for spring break (work-in-progress).'
+                'A 3-day, remote React and Angular "hackathon" (coding fest) for spring break (work-in-progress).'
               }
               madeWith="Figma"
               backgroundImg={spreang}
@@ -44,16 +44,35 @@ export default function Projects() {
               githubUrl=""
             />
           </div>
-          <ProjectItem
-            title="A° SOLID"
-            description="An example Angular web app developed in phases with SOLID design principles — from monolithic to modular."
-            madeWith="Angular, SOLID Design, and Markdown"
-            backgroundImg={aSolid}
-            enableScreenshot={false}
-            enableCode={true}
-            enableDemo={false}
-            githubUrl="https://github.com/pjnalls/ng-solid-design"
-          />
+          <div className="new-release-box">
+            <div className="folded-ribbon font-bold">FAVORITE</div>
+            <ProjectItem
+              className="dark:hidden"
+              title="Forzen RN"
+              description="A React Native (RN) app for a self-help blog for educational purposes."
+              madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
+              backgroundImg={forzenAppMobileLight}
+              enableScreenshot={false}
+              enableCode={true}
+              enableDemo={true}
+              demoLabel="Open Demo"
+              demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-forzen-rn"
+              githubUrl="https://github.com/pjnalls/forzen-rn"
+            />
+            <ProjectItem
+              className="hidden dark:block"
+              title="Forzen RN"
+              description="A React Native (RN) app for a self-help blog for educational purposes."
+              madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
+              backgroundImg={forzenAppMobileDark}
+              enableScreenshot={false}
+              enableCode={true}
+              enableDemo={true}
+              demoLabel="Open Demo"
+              demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-forzen-rn"
+              githubUrl="https://github.com/pjnalls/forzen-rn"
+            />
+          </div>
           <ProjectItem
             title="Forzen.io (Mobile Prototype)"
             description="A live prototype of the mobile version of Forzen.io."
@@ -78,31 +97,16 @@ export default function Projects() {
             demoUrl="https://www.figma.com/proto/Wqz3rQJgEC9vJR03WRDnCB/Forzen.io-Prototype-(Desktop)?node-id=0%3A2&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=0%3A2"
             githubUrl=""
           />
+
           <ProjectItem
-            className="dark:hidden"
-            title="Forzen RN"
-            description="A React Native (RN) app for a self-help blog."
-            madeWith="React Native, React, TypeScript, Expo CLI, Expo Go"
-            backgroundImg={forzenAppMobileLight}
+            title="A° SOLID"
+            description="An example Angular web app developed in phases with SOLID design principles — from monolithic to modular."
+            madeWith="Angular, SOLID Design, and Markdown"
+            backgroundImg={aSolid}
             enableScreenshot={false}
             enableCode={true}
             enableDemo={false}
-            demoLabel="Open Demo"
-            demoUrl=""
-            githubUrl="https://github.com/pjnalls/forzen-rn"
-          />
-          <ProjectItem
-            className="hidden dark:block"
-            title="Forzen RN"
-            description="A React Native (RN) app for a self-help blog for educational purposes."
-            madeWith="React Native, React, TypeScript, Expo CLI, Expo Go"
-            backgroundImg={forzenAppMobileDark}
-            enableScreenshot={false}
-            enableCode={true}
-            enableDemo={true}
-            demoLabel="Open Demo"
-            demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-forzen-rn"
-            githubUrl="https://github.com/pjnalls/forzen-rn"
+            githubUrl="https://github.com/pjnalls/ng-solid-design"
           />
           <div className="new-release-box">
             <div className="folded-ribbon font-bold">NEW</div>
