@@ -1,21 +1,24 @@
 import React from "react";
 
-import { FaEye, FaSearchPlus, FaGithub } from 'react-icons/fa/index';
+import { FaEye, FaSearchPlus, FaGithub } from "react-icons/fa/index";
 
 export default function ProjectItem({
-  title = '',
-  description = '',
-  madeWith = '',
-  backgroundImg = '',
+  className = "",
+  title = "",
+  description = "",
+  madeWith = "",
+  backgroundImg = "",
   enableScreenshot = false,
   enableCode = false,
   enableDemo = false,
-  demoLabel = '',
-  demoUrl = '',
-  githubUrl = '',
+  demoLabel = "",
+  demoUrl = "",
+  githubUrl = "",
 }) {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-slate-400 dark:shadow-slate-900 rounded-xl group hover:bg-gradient-to-b from-[#4f58fc] to-[#2e40e0] bg-[#2e40e0] transition-all ease-in duration-500">
+    <div
+      className={`relative flex items-center justify-center h-auto w-full shadow-xl shadow-slate-400 dark:shadow-slate-900 rounded-xl group hover:bg-gradient-to-b from-[#4f58fc] to-[#2e40e0] bg-[#2e40e0] transition-all ease-in duration-500 ${className}`}
+    >
       <img
         className="rounded-xl group-hover:opacity-10 group-hover:blur-[1.333px]  transition-all ease-in duration-300 cursor-pointer"
         src={backgroundImg}
@@ -47,13 +50,13 @@ export default function ProjectItem({
           {description}
         </p>
         <label
-          htmlFor={title + ': ' + madeWith}
+          htmlFor={title + ": " + madeWith}
           className="drop-shadow-[0_3px_3px_rgba(0,0,0,0.333)]"
         >
           Made with
         </label>
         <p
-          id={title + ': ' + madeWith}
+          id={title + ": " + madeWith}
           className="text-white pb-1 drop-shadow-[0_3px_3px_rgba(0,0,0,0.333)]"
         >
           {madeWith}

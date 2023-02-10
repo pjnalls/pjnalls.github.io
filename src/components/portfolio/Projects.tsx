@@ -3,6 +3,8 @@ import React from "react";
 /** Load images for design project. */
 import forzenPrototypeMobile from "/assets/project-1.5.jpg";
 import forzenPrototypeDesktop from "/assets/project-1.5.b.jpg";
+import forzenAppMobileLight from "/assets/forzen-rn-light.jpg";
+import forzenAppMobileDark from "/assets/forzen-rn-dark.jpg";
 /** */
 
 import aSolid from "/assets/ng-solid-design.jpg";
@@ -75,6 +77,32 @@ export default function Projects() {
             demoLabel="Open Prototype"
             demoUrl="https://www.figma.com/proto/Wqz3rQJgEC9vJR03WRDnCB/Forzen.io-Prototype-(Desktop)?node-id=0%3A2&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=0%3A2"
             githubUrl=""
+          />
+          <ProjectItem
+            className="dark:hidden"
+            title="Forzen RN"
+            description="A React Native (RN) app for a self-help blog."
+            madeWith="React Native, React, TypeScript, Expo CLI, Expo Go"
+            backgroundImg={forzenAppMobileLight}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={false}
+            demoLabel="Open Demo"
+            demoUrl=""
+            githubUrl="https://github.com/pjnalls/forzen-rn"
+          />
+          <ProjectItem
+            className="hidden dark:block"
+            title="Forzen RN"
+            description="A React Native (RN) app for a self-help blog for educational purposes."
+            madeWith="React Native, React, TypeScript, Expo CLI, Expo Go"
+            backgroundImg={forzenAppMobileDark}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={true}
+            demoLabel="Open Demo"
+            demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-forzen-rn"
+            githubUrl="https://github.com/pjnalls/forzen-rn"
           />
           <div className="new-release-box">
             <div className="folded-ribbon font-bold">NEW</div>
