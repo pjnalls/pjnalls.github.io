@@ -3,9 +3,11 @@ import React from "react";
 /** Load images for design project. */
 import forzenPrototypeMobile from "/assets/project-1.5.jpg";
 import forzenPrototypeDesktop from "/assets/project-1.5.b.jpg";
+/** */
 import forzenAppMobileLight from "/assets/forzen-rn-light.jpg";
 import forzenAppMobileDark from "/assets/forzen-rn-dark.jpg";
-/** */
+import memomalistAppMobileLight from "/assets/memomalist-rn-light.jpg";
+import memomalistAppMobileDark from "/assets/memomalist-rn-dark.jpg";
 
 import aSolid from "/assets/ng-solid-design.jpg";
 import forecast from "/assets/forecast.png";
@@ -42,6 +44,35 @@ export default function Projects() {
               enableCode={false}
               enableDemo={false}
               githubUrl=""
+            />
+          </div>
+          <div className="new-release-box">
+            <div className="folded-ribbon font-bold">NEW</div>
+            <ProjectItem
+              className="dark:hidden"
+              title="Memomalist"
+              description="/\ˈmeməˌmələst/ [noun]: A minimalistic, simple spaced-repetition cross-platform application for memorization. Made with React Native and the Fibonacci sequence."
+              madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
+              backgroundImg={memomalistAppMobileLight}
+              enableScreenshot={false}
+              enableCode={true}
+              enableDemo={true}
+              demoLabel="Open Demo"
+              demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
+              githubUrl="https://github.com/pjnalls/memomalist"
+            />
+            <ProjectItem
+              className="hidden dark:block"
+              title="Memomalist"
+              description="/\ˈmeməˌmələst/ [noun]: A minimalistic, simple spaced-repetition cross-platform application for memorization. Made with React Native and the Fibonacci sequence."
+              madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
+              backgroundImg={memomalistAppMobileDark}
+              enableScreenshot={false}
+              enableCode={true}
+              enableDemo={true}
+              demoLabel="Open Demo"
+              demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
+              githubUrl="https://github.com/pjnalls/memomalist"
             />
           </div>
           <div className="new-release-box">
