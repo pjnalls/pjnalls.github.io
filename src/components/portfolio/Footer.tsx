@@ -14,7 +14,7 @@ export default function  Footer() {
       </p>
       <div className="flex items-center content-center justify-center my-2 pt-2 w-full">
         <a href="https://github.com/pjnalls/pjnalls" aria-label="GitHub">
-          <div className="rounded-full shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
+          <div className="text-[#000] dark:text-[#fff] rounded-full shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
             <FaGithub size="30px" />
           </div>
         </a>
