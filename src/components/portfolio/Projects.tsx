@@ -12,7 +12,8 @@ import memomalistAppMobileDark from "/assets/memomalist-rn-dark.jpg";
 import aSolid from "/assets/ng-solid-design.jpg";
 import forecast from "/assets/forecast.png";
 import pDot from "/assets/p_1000x1000.jpg";
-import spreang from "/assets/spreang.logo.png";
+import spreangLight from "/assets/spreang.logo.png";
+import spreangDark from "/assets/spreang.logo.dark.png";
 import digitalRain from "/assets/project-2.jpg";
 import forzenPjnalls from "/assets/project-3.jpg";
 import forzenJungCauz from "/assets/project-4.jpg";
@@ -34,12 +35,26 @@ export default function Projects() {
           <div className="new-release-box">
             <div className="folded-ribbon font-bold">NEW</div>
             <ProjectItem
+              className="dark:hidden"
               title="Spreang"
               description={
-                'A 3-day, remote React and Angular "hackathon" (coding fest) for spring break (work-in-progress).'
+                'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
               }
               madeWith="Figma"
-              backgroundImg={spreang}
+              backgroundImg={spreangLight}
+              enableScreenshot={false}
+              enableCode={false}
+              enableDemo={false}
+              githubUrl=""
+            />
+            <ProjectItem
+              className="hidden dark:block"
+              title="Spreang"
+              description={
+                'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
+              }
+              madeWith="Figma"
+              backgroundImg={spreangDark}
               enableScreenshot={false}
               enableCode={false}
               enableDemo={false}
