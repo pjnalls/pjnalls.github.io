@@ -27,20 +27,20 @@ import ProjectItem from "./ProjectItem";
 
 export default function Projects() {
   return (
-    <div id="projects" className="w-full relative z-[1] p-2 py-32">
+    <div id="projects" className="w-full relative z-[1] p-2">
       <div className="max-w-[1000px] mx-auto px-2 py-36">
         <p className="text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
           Projects
         </p>
         <h2 className="py-4">What I&apos;ve Created</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
-          <div className="new-release-box">
+          <div className="new-release-box" id="careercron">
             <div className="folded-ribbon font-bold">IN-PROGRESS</div>
             <ProjectItem
               className="dark:hidden"
               title="CareerCron"
               description={
-                "(Work-in-Progress) A career aide and guide that is there for you anytime, anywhere — One small goal after the next. ⌛💻📲"
+                "(Work-in-Progress) Career aide and guide that is there for you anytime, anywhere... ⌛💻📲."
               }
               madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
               backgroundImg={ccLight}
@@ -55,7 +55,7 @@ export default function Projects() {
               className="hidden dark:block"
               title="CareerCron"
               description={
-                "(Work-in-Progress) A career aide and guide that is there for you anytime, anywhere — One small goal after the next. ⌛💻📲"
+                "(Work-in-Progress) Career aide and guide that is there for you anytime, anywhere... ⌛💻📲."
               }
               madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
               backgroundImg={ccDark}
@@ -99,8 +99,8 @@ export default function Projects() {
           <ProjectItem
             className="dark:hidden"
             title="Memomalist"
-            description="/\ˈmeməˌmələst/ [noun]: A minimalistic, simple spaced-repetition cross-platform application for memorization. Made with React Native and the Fibonacci sequence."
-            madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
+            description="/\ˈmeməˌmələst/ [noun]: A minimalistic spaced-repetition application for memorization."
+            madeWith="React Native, React, TypeScript, Fibonacci Sequence, and Expo"
             backgroundImg={memomalistAppMobileLight}
             enableScreenshot={false}
             enableCode={true}
@@ -112,8 +112,8 @@ export default function Projects() {
           <ProjectItem
             className="hidden dark:block"
             title="Memomalist"
-            description="/\ˈmeməˌmələst/ [noun]: A minimalistic, simple spaced-repetition cross-platform application for memorization. Made with React Native and the Fibonacci sequence."
-            madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
+            description="/\ˈmeməˌmələst/ [noun]: A minimalistic spaced-repetition application for memorization."
+            madeWith="React Native, React, TypeScript, Fibonacci Sequence, and Expo"
             backgroundImg={memomalistAppMobileDark}
             enableScreenshot={false}
             enableCode={true}
@@ -126,7 +126,7 @@ export default function Projects() {
             className="dark:hidden"
             title="Forzen RN"
             description="A React Native (RN) app for a self-help blog for educational purposes."
-            madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
+            madeWith="React Native, React, TypeScript, and Expo"
             backgroundImg={forzenAppMobileLight}
             enableScreenshot={false}
             enableCode={true}
@@ -139,7 +139,7 @@ export default function Projects() {
             className="hidden dark:block"
             title="Forzen RN"
             description="A React Native (RN) app for a self-help blog for educational purposes."
-            madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
+            madeWith="React Native, React, TypeScript, and Expo"
             backgroundImg={forzenAppMobileDark}
             enableScreenshot={false}
             enableCode={true}
@@ -175,7 +175,7 @@ export default function Projects() {
 
           <ProjectItem
             title="A° SOLID"
-            description="An example Angular web app developed in phases with SOLID design principles — from monolithic to modular."
+            description="An example Angular web app developed in phases with SOLID design principles."
             madeWith="Angular, SOLID Design, and Markdown"
             backgroundImg={aSolid}
             enableScreenshot={false}
@@ -186,8 +186,8 @@ export default function Projects() {
           <div className="new-release-box">
             <div className="folded-ribbon font-bold">NEW</div>
             <ProjectItem
-              title="Halstown City's Weather Forecast"
-              description="Time series analysis and weather forecast via seasonal autoregression using mock data (work-in-progress)."
+              title="Halstown City's Forecast"
+              description="Time series analysis / weather forecast via seasonal autoregression."
               madeWith="Python, NumPy, pandas, and Matplotlib"
               backgroundImg={forecast}
               enableScreenshot={false}
