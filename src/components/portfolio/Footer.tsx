@@ -2,15 +2,20 @@ import React from "react";
 
 import { FaGithub } from "react-icons/fa/index";
 
-export default function  Footer() {
+export default function Footer() {
   return (
-    <footer id="footer" className="w-full relative text-center z-[1] hidden md:block py-6 pb-24">
+    <footer
+      id="footer"
+      className="w-full relative text-center z-[1] hidden md:block py-6 pb-24"
+    >
       <p className="text-sm tracking-wider">
         <span className="text-[#2e40e0] dark:text-[#9fa8ff] tracking-widest">
           Made with
         </span>
         <br />
         Astro, React, TypeScript, Tailwind CSS, and ❤️.
+        <br />
+        <br />© Copyright 2022–2023 Preston Nalls
       </p>
       <div className="flex items-center content-center justify-center my-2 pt-2 w-full">
         <a href="https://github.com/pjnalls/pjnalls" aria-label="GitHub">
@@ -21,4 +26,4 @@ export default function  Footer() {
       </div>
     </footer>
   );
-};
+}

@@ -12,12 +12,13 @@ export default function Main() {
           </p>
           <h1 className="py-4 text-slate-800 dark:text-[#ecf0f3]">
             Hi 👋, I&apos;m{" "}
-            <span className="text-[#4f58fc] dark:text-[#9fa8ff]">pjnalls</span>
+            <span className="text-[#4f58fc] dark:text-[#9fa8ff]">Preston</span>
           </h1>
           <h1 className="py-4 text-slate-800 dark:text-[#ecf0f3] text-4xl font-semibold">
-            A Frontend Developer Consultant,<br />
-            MS in Computer Science Incoming Postgraduate,<br/>
-            and Python/C Hobbyist
+          Frontend Developer •<br />
+          Creator of CareerCron •<br />
+          MS in Computer Science Postgrad •<br />
+          Python/C Hobbyist
           </h1>
           <p className="py-4 text-slate-800  dark:text-[#ecf0f3] max-w-[70%] m-auto">
             My focus is on combining aesthetical, <br />

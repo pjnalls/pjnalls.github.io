@@ -4,6 +4,7 @@ import React from "react";
 import forzenPrototypeMobile from "/assets/project-1.5.jpg";
 import forzenPrototypeDesktop from "/assets/project-1.5.b.jpg";
 /** */
+import cc from "/assets/cc.png";
 import forzenAppMobileLight from "/assets/forzen-rn-light.jpg";
 import forzenAppMobileDark from "/assets/forzen-rn-dark.jpg";
 import memomalistAppMobileLight from "/assets/memomalist-rn-light.jpg";
@@ -33,6 +34,21 @@ export default function Projects() {
         <h2 className="py-4">What I&apos;ve Created</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
           <div className="new-release-box">
+            <div className="folded-ribbon font-bold">IN-PROGRESS</div>
+            <ProjectItem
+              title="CareerCron"
+              description={
+                "(Work-in-Progress) A career aide and guide that is there for you anytime, anywhere — One small goal after the next. ⌛💻📲"
+              }
+              madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
+              backgroundImg={cc}
+              enableScreenshot={false}
+              enableCode={true}
+              enableDemo={false}
+              githubUrl="https://github.com/pjnalls/careercron"
+            />
+          </div>
+          <div className="new-release-box">
             <div className="folded-ribbon font-bold">NEW</div>
             <ProjectItem
               className="dark:hidden"
@@ -61,64 +77,58 @@ export default function Projects() {
               githubUrl=""
             />
           </div>
-          <div className="new-release-box">
-            <div className="folded-ribbon font-bold">NEW</div>
-            <ProjectItem
-              className="dark:hidden"
-              title="Memomalist"
-              description="/\ˈmeməˌmələst/ [noun]: A minimalistic, simple spaced-repetition cross-platform application for memorization. Made with React Native and the Fibonacci sequence."
-              madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
-              backgroundImg={memomalistAppMobileLight}
-              enableScreenshot={false}
-              enableCode={true}
-              enableDemo={true}
-              demoLabel="Open Demo"
-              demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
-              githubUrl="https://github.com/pjnalls/memomalist"
-            />
-            <ProjectItem
-              className="hidden dark:block"
-              title="Memomalist"
-              description="/\ˈmeməˌmələst/ [noun]: A minimalistic, simple spaced-repetition cross-platform application for memorization. Made with React Native and the Fibonacci sequence."
-              madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
-              backgroundImg={memomalistAppMobileDark}
-              enableScreenshot={false}
-              enableCode={true}
-              enableDemo={true}
-              demoLabel="Open Demo"
-              demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
-              githubUrl="https://github.com/pjnalls/memomalist"
-            />
-          </div>
-          <div className="new-release-box">
-            <div className="folded-ribbon font-bold">FAVORITE</div>
-            <ProjectItem
-              className="dark:hidden"
-              title="Forzen RN"
-              description="A React Native (RN) app for a self-help blog for educational purposes."
-              madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
-              backgroundImg={forzenAppMobileLight}
-              enableScreenshot={false}
-              enableCode={true}
-              enableDemo={true}
-              demoLabel="Open Demo"
-              demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-forzen-rn"
-              githubUrl="https://github.com/pjnalls/forzen-rn"
-            />
-            <ProjectItem
-              className="hidden dark:block"
-              title="Forzen RN"
-              description="A React Native (RN) app for a self-help blog for educational purposes."
-              madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
-              backgroundImg={forzenAppMobileDark}
-              enableScreenshot={false}
-              enableCode={true}
-              enableDemo={true}
-              demoLabel="Open Demo"
-              demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-forzen-rn"
-              githubUrl="https://github.com/pjnalls/forzen-rn"
-            />
-          </div>
+          <ProjectItem
+            className="dark:hidden"
+            title="Memomalist"
+            description="/\ˈmeməˌmələst/ [noun]: A minimalistic, simple spaced-repetition cross-platform application for memorization. Made with React Native and the Fibonacci sequence."
+            madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
+            backgroundImg={memomalistAppMobileLight}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={true}
+            demoLabel="Open Demo"
+            demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
+            githubUrl="https://github.com/pjnalls/memomalist"
+          />
+          <ProjectItem
+            className="hidden dark:block"
+            title="Memomalist"
+            description="/\ˈmeməˌmələst/ [noun]: A minimalistic, simple spaced-repetition cross-platform application for memorization. Made with React Native and the Fibonacci sequence."
+            madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
+            backgroundImg={memomalistAppMobileDark}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={true}
+            demoLabel="Open Demo"
+            demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
+            githubUrl="https://github.com/pjnalls/memomalist"
+          />
+          <ProjectItem
+            className="dark:hidden"
+            title="Forzen RN"
+            description="A React Native (RN) app for a self-help blog for educational purposes."
+            madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
+            backgroundImg={forzenAppMobileLight}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={true}
+            demoLabel="Open Demo"
+            demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-forzen-rn"
+            githubUrl="https://github.com/pjnalls/forzen-rn"
+          />
+          <ProjectItem
+            className="hidden dark:block"
+            title="Forzen RN"
+            description="A React Native (RN) app for a self-help blog for educational purposes."
+            madeWith="React Native, React, TypeScript, Expo CLI, Expo Go, and Expo Snack"
+            backgroundImg={forzenAppMobileDark}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={true}
+            demoLabel="Open Demo"
+            demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-forzen-rn"
+            githubUrl="https://github.com/pjnalls/forzen-rn"
+          />
           <ProjectItem
             title="Forzen.io (Mobile Prototype)"
             description="A live prototype of the mobile version of Forzen.io."
