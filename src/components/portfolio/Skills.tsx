@@ -33,9 +33,31 @@ export default function Skills() {
         <h2 className="py-4">What I Can Do</h2>
         <br />
         <h3 className="font-semibold text-2xl py-2 text-center">
-          💼 Toolkit as a Frontend Developer Consultant
+          💼 Toolkit as a Frontend Developer
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
+          <div className="new-release-box hover:scale-110 transition-all ease-in">
+            <div className="folded-ribbon font-bold">TOP</div>
+            <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl cursor-pointer ease duration-200">
+              <div className="grid grid-cols-1 gap-4 justify-between items-center">
+                <div className="m-auto inline-flex justify-around items-center w-full">
+                  <FaReact
+                    size="48px"
+                    className="mr-6 text-[#61dbfb] bg-[#1f2937] p-1 dark:p-0 dark:bg-transparent rounded-md"
+                  />
+                  <h3>React Native</h3>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                    99%{" "}
+                  </div>
+                  <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                    <div className="bg-[#9d8c66] w-[99%] h-[0.6rem]"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
@@ -324,28 +346,6 @@ export default function Skills() {
           ⚒️ Other Tools for Frontend Development
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10 mb-5">
-          <div className="new-release-box hover:scale-110 transition-all ease-in">
-            <div className="folded-ribbon font-bold">FAVORITE</div>
-            <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl cursor-pointer ease duration-200">
-              <div className="grid grid-cols-1 gap-4 justify-between items-center">
-                <div className="m-auto inline-flex justify-around items-center w-full">
-                  <FaReact
-                    size="48px"
-                    className="mr-6 text-[#61dbfb] bg-[#1f2937] p-1 dark:p-0 dark:bg-transparent rounded-md"
-                  />
-                  <h3>React Native</h3>
-                </div>
-                <div className="flex items-center justify-center">
-                  <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                    95%{" "}
-                  </div>
-                  <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                    <div className="bg-[#9d8c66] w-[95%] h-[0.6rem]"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">

@@ -4,7 +4,7 @@ import profilePicture from "/assets/profile-picture.png";
 export default function About() {
   return (
     <div id="about" className="w-full relative z-[1] p-2">
-      <div className="max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36 md:flex justify-center items-center">
+      <div className="max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36 md:flex justify-center">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widestest text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
             About
@@ -19,12 +19,16 @@ export default function About() {
             <br />
           </p>
           <p className="py-2 text-black dark:text-white">
-            Recently, I've begin an open-source, cross-platform project called
-            CareerCron, "a career aide and guide that is there for you anytime,
-            anywhere — one small goal after the next". We use MERN, React
-            Native, and TypeScript technologies for truly fullstack, web, iOS,
-            and Android developer, development-team and, most importantly, user
-            experiences.
+            Recently, I've begin an open-source, cross-platform project called{" "}
+            <a href="/projects#careercron">
+              <span className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150">
+                CareerCron
+              </span>
+            </a>
+            , "a career aide and guide that is there for you anytime, anywhere —
+            one small goal after the next". We use MERN, React Native, and
+            TypeScript technologies for truly fullstack, web, iOS, and Android
+            developer, development-team and, most importantly, user experiences.
             <br />
             <br />
             As a hobby, I learn Python, data science, machine learning, and pure
@@ -48,7 +52,11 @@ export default function About() {
           </p>
         </div>
         <div className="col-span-2 p-[3.333rem]">
-          <img className=" rounded-[50%]" alt="Preston's portrait" src={profilePicture} />
+          <img
+            className=" rounded-[50%]"
+            alt="Preston's portrait"
+            src={profilePicture}
+          />
         </div>
       </div>
     </div>
