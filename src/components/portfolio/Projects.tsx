@@ -4,7 +4,8 @@ import React from "react";
 import forzenPrototypeMobile from "/assets/project-1.5.jpg";
 import forzenPrototypeDesktop from "/assets/project-1.5.b.jpg";
 /** */
-import cc from "/assets/cc.png";
+import ccLight from "/assets/cc.main.png";
+import ccDark from "/assets/cc.main-dark.png";
 import forzenAppMobileLight from "/assets/forzen-rn-light.jpg";
 import forzenAppMobileDark from "/assets/forzen-rn-dark.jpg";
 import memomalistAppMobileLight from "/assets/memomalist-rn-light.jpg";
@@ -36,15 +37,33 @@ export default function Projects() {
           <div className="new-release-box">
             <div className="folded-ribbon font-bold">IN-PROGRESS</div>
             <ProjectItem
+              className="dark:hidden"
               title="CareerCron"
               description={
                 "(Work-in-Progress) A career aide and guide that is there for you anytime, anywhere — One small goal after the next. ⌛💻📲"
               }
               madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
-              backgroundImg={cc}
+              backgroundImg={ccLight}
               enableScreenshot={false}
               enableCode={true}
-              enableDemo={false}
+              enableDemo={true}
+              demoLabel="See Progress"
+              demoUrl="https://careercron.com/"
+              githubUrl="https://github.com/pjnalls/careercron"
+            />
+            <ProjectItem
+              className="hidden dark:block"
+              title="CareerCron"
+              description={
+                "(Work-in-Progress) A career aide and guide that is there for you anytime, anywhere — One small goal after the next. ⌛💻📲"
+              }
+              madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
+              backgroundImg={ccDark}
+              enableScreenshot={false}
+              enableCode={true}
+              enableDemo={true}
+              demoLabel="See Progress"
+              demoUrl="https://careercron.com/"
               githubUrl="https://github.com/pjnalls/careercron"
             />
           </div>

@@ -20,9 +20,10 @@ export default function About() {
           <p className="py-2 text-black dark:text-white">
             Recently, I've begin an open-source, cross-platform project called
             CareerCron, "a career aide and guide that is there for you anytime,
-            anywhere — One small goal after the next". We use MERN, React
+            anywhere — one small goal after the next". We use MERN, React
             Native, and TypeScript technologies for truly fullstack, web, iOS,
-            and Android developer and, most importantly, user experiences.
+            and Android developer, development-team and, most importantly, user
+            experiences.
             <br />
             <br />
             As a hobby, I learn Python, data science, machine learning, and pure
