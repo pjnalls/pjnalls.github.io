@@ -19,12 +19,14 @@ export default function About() {
             <br />
           </p>
           <p className="py-2 text-black dark:text-white">
-            Recently, I've begin an open-source, cross-platform project called{" "}
-            <a href="/projects#careercron">
-              <span className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150">
-                CareerCron
-              </span>
-            </a>
+            Recently, I've began an open-source, cross-platform project called{" "}
+            <strong>
+              <a href="/projects#careercron">
+                <span className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150">
+                  CareerCron
+                </span>
+              </a>
+            </strong>
             , "a career aide and guide that is there for you anytime, anywhere —
             one small goal after the next". We use MERN, React Native, and
             TypeScript technologies for truly fullstack, web, iOS, and Android
@@ -53,6 +55,7 @@ export default function About() {
         </div>
         <div className="col-span-2 p-[3.333rem]">
           <img
+            id="preston"
             className=" rounded-[50%]"
             alt="Preston's portrait"
             src={profilePicture}

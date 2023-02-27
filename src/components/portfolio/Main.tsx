@@ -12,7 +12,11 @@ export default function Main() {
           </p>
           <h1 className="py-4 text-slate-800 dark:text-[#ecf0f3]">
             Hi 👋, I&apos;m{" "}
-            <span className="text-[#4f58fc] dark:text-[#9fa8ff]">Preston</span>
+            <a href="/about">
+              <span className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150">
+                Preston
+              </span>
+            </a>
           </h1>
           <h2 className="py-4 text-slate-800 dark:text-[#ecf0f3] md:text-3xl text-lg font-semibold">
             Frontend Developer •<br />
