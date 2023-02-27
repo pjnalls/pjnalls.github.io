@@ -1,13 +1,14 @@
-import React from 'react';
-import { useStore } from '@nanostores/react';
+import React from "react";
+import { useStore } from "@nanostores/react";
 
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai/index';
-import { FaGithub } from 'react-icons/fa/index';
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai/index";
+import { FaGithub } from "react-icons/fa/index";
+import { FiDownload } from "react-icons/fi/index";
 
-import { navOpen, navShadow } from '../../stores';
-import logo from '/assets/p.png';
+import { navOpen, navShadow } from "../../stores";
+import logo from "/assets/p.png";
 
 export default function Navbar() {
   const $navOpen = useStore(navOpen);
@@ -15,15 +16,15 @@ export default function Navbar() {
 
   const handleDarkMode = () => {
     const htmlClassList = document
-      .getElementsByTagName('html')
+      .getElementsByTagName("html")
       .item(0)?.classList;
 
-    if (htmlClassList?.value.includes('dark')) {
-      htmlClassList?.remove('dark');
-      localStorage.theme = 'light';
+    if (htmlClassList?.value.includes("dark")) {
+      htmlClassList?.remove("dark");
+      localStorage.theme = "light";
     } else {
-      htmlClassList?.add('dark');
-      localStorage.theme = 'dark';
+      htmlClassList?.add("dark");
+      localStorage.theme = "dark";
     }
   };
 
@@ -37,7 +38,7 @@ export default function Navbar() {
 
   useEffect(() => {
     handleNavShadow();
-    window.addEventListener('scroll', () => handleNavShadow());
+    window.addEventListener("scroll", () => handleNavShadow());
   }, []);
 
   return (
@@ -81,6 +82,14 @@ export default function Navbar() {
                 <a href="/blog">Blog</a>
               </li>
 
+              <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
+                <a
+                  className="flex items-center"
+                  href="/assets/Resume - Frontend Developer - Preston Nalls - 20230227.docx"
+                >
+                  <span className="mr-1">RESUME </span> <FiDownload />
+                </a>
+              </li>
               <li
                 onClick={() => handleDarkMode()}
                 className="darkModeToggle ml-10 text-sm uppercase text-[30px] hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in"
@@ -152,11 +161,17 @@ export default function Navbar() {
             <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
               <a href="/projects">Projects</a>
             </li>
-
             <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
               <a href="/blog">Blog</a>
             </li>
-
+            <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+              <a
+                className="flex items-center"
+                href="/assets/Resume - Frontend Developer - Preston Nalls - 20230227.docx"
+              >
+                <span className="mr-1">Resume </span> <FiDownload />
+              </a>
+            </li>
             <li
               onClick={() => handleDarkMode()}
               className="darkModeToggle text-sm uppercase text-[30px] hover:text-slate-700 dark:hover:text-slate-300 py-4 transition-all duration-200 ease-in"
@@ -171,6 +186,8 @@ export default function Navbar() {
               </span>
               <br />
               Astro, React, TypeScript, Tailwind CSS, and ❤️.
+              <br />
+              <br />© Copyright 2022–2023 Preston Nalls
             </p>
             <div className="flex items-center my-2 pt-2 w-full">
               <a href="https://github.com/pjnalls/pjnalls" aria-label="GitHub">
