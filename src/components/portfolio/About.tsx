@@ -1,16 +1,17 @@
 import React from "react";
+import profilePicture from "/assets/profile-picture.png";
 
 export default function About() {
   return (
     <div id="about" className="w-full relative z-[1] p-2 py-32">
-      <div className="max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36 flex justify-center items-center">
+      <div className="max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36 md:flex justify-center items-center">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widestest text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
             About
           </p>
-          <h2 className="py-4">Who I Am</h2>
+          <h2 className="py-4">Who I am</h2>
           <p className="py-2 text-slate-600 dark:text-slate-300/90">
-            I'm a frontend developer providing Angular and React consulting
+            I'm a frontend developer providing React and Angular consulting
             along with other technologies for UI designs and implementations.
             <br />
             Along with full-time consulting, I&apos;m also a postgraduate
@@ -45,6 +46,9 @@ export default function About() {
               </span>
             </a>
           </p>
+        </div>
+        <div className="col-span-2 p-[3.333rem]">
+          <img className=" rounded-[50%]" alt="Preston's portrait" src={profilePicture} />
         </div>
       </div>
     </div>
