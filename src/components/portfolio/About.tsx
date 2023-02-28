@@ -36,8 +36,8 @@ export default function About() {
             As a hobby, I learn Python, data science, machine learning, and pure
             mathematics. I also started picking up React Native for
             cross-platform development to create apps for not only the web but
-            for native iOS and Android — to write the code only once and for it
-            to work across multiple devices.
+            for native iOS and Android devices — to write the code only once and for it
+            to work across multiple platforms.
             <br />
             <br />
             Work as a consultant and for personal pet projects feels like high
