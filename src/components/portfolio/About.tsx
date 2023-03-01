@@ -4,7 +4,7 @@ import profilePicture from "/assets/profile-picture.png";
 export default function About() {
   return (
     <div id="about" className="w-full relative z-[1] p-2">
-      <div className="max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36 md:flex justify-center">
+      <div className="max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36 md:flex justify-center items-center">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widestest text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
             About
@@ -27,10 +27,9 @@ export default function About() {
                 </span>
               </a>
             </strong>
-            , "a career aide and guide that is there for you anytime, anywhere —
-            one small goal after the next". We use MERN, React Native, and
-            TypeScript technologies for truly fullstack, web, iOS, and Android
-            developer, development-team and, most importantly, user experiences.
+            . We use MERN, React Native, and TypeScript technologies for truly
+            fullstack, web, iOS, and Android developer, development-team and,
+            most importantly, user experiences.
             <br />
             <br />
             As a hobby, I learn Python, data science, machine learning, and pure

@@ -17,6 +17,7 @@ export default function Main() {
                 Preston
               </span>
             </a>
+            .
           </h1>
           <h2 className="py-4 text-slate-800 dark:text-[#ecf0f3] md:text-3xl text-lg font-semibold">
             Frontend Developer •<br />
