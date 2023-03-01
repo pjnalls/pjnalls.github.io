@@ -236,7 +236,7 @@ export default function Projects() {
             githubUrl=""
           />
           <ProjectItem
-            title="Forzen.io | pjnalls"
+            title="Forzen.io • pjnalls"
             description="Forzen.io from the perspective of pjnalls, the engineer — the
             side of individuation."
             madeWith="HTML, SCSS, and ES6+ JavaScript"
@@ -249,7 +249,7 @@ export default function Projects() {
             githubUrl="https://github.com/forzen-dot-io/pjnalls"
           />
           <ProjectItem
-            title="Forzen.io | Jung Cauz"
+            title="Forzen.io • Jung Cauz"
             description="Forzen.io from the perspective of Jung Cauz, the artist — the
             side of meditation."
             madeWith="HTML, SCSS, and ES6+ JavaScript"

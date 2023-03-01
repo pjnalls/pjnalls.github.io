@@ -54,7 +54,7 @@ export default function Navbar() {
           <a href="/">
             <img
               src={logo}
-              alt="logo for pjnalls"
+              alt="logo for P.J. Nalls"
               width={52}
               height={52}
               className="rounded-full cursor-pointer"
