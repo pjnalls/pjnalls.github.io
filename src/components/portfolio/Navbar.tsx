@@ -85,7 +85,7 @@ export default function Navbar() {
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
                 <a
                   className="flex items-center"
-                  href="/assets/Resume - Frontend Developer - Preston Nalls - 20230227.docx"
+                  href="/assets/Frontend Developer Resume - Preston Nalls.docx"
                 >
                   <span className="mr-1">RESUME </span> <FiDownload />
                 </a>
@@ -167,7 +167,7 @@ export default function Navbar() {
             <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
               <a
                 className="flex items-center"
-                href="/assets/Resume - Frontend Developer - Preston Nalls - 20230227.docx"
+                href="/assets/Frontend Developer Resume - Preston Nalls.docx"
               >
                 <span className="mr-1">Resume </span> <FiDownload />
               </a>
