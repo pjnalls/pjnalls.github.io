@@ -276,7 +276,7 @@ export default function Projects() {
           <ProjectItem
             title="pjnalls.com"
             description="My portfolio and blog website made seamlessly thanks to Astro with React integrations."
-            madeWith="Astro, React, TypeScript, Tailwind CSS, and ❤️."
+            madeWith="React, TypeScript, Tailwind CSS, Astro and ❤️."
             backgroundImg={pDot}
             enableScreenshot={false}
             enableCode={false}

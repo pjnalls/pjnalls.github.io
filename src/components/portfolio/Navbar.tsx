@@ -152,26 +152,26 @@ export default function Navbar() {
           </div>
         </div>
         <div className="py-4 flex flex-col">
-          <ul className="uppercase">
-            <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+          <ul>
+            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in">
               <a href="/">Home</a>
             </li>
 
-            <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in">
               <a href="/about">About</a>
             </li>
 
-            <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in">
               <a href="/skills">Skills</a>
             </li>
 
-            <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in">
               <a href="/projects">Projects</a>
             </li>
-            <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in">
               <a href="/blog">Blog</a>
             </li>
-            <li className="py-3 text-sm hover:text-slate-700 dark:hover:text-slate-300 transition-all duration-200 ease-in">
+            <li className="py-3 text-sm origin-left hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in resume-option">
               <a
                 className="flex items-center"
                 href="/assets/Frontend Developer Resume - Preston Nalls.docx"
@@ -179,6 +179,10 @@ export default function Navbar() {
                 <span className="mr-1 uppercase">Resume </span>{" "}
                 <FiDownload fontSize={"1rem"} />
               </a>
+              <span className="hovercard drawer">
+                <span className="pointer drawer__pointer">👈</span>
+                <div className="tooltiptext">Download my resume here.</div>
+              </span>
             </li>
             <li
               onClick={() => handleDarkMode()}
@@ -193,7 +197,7 @@ export default function Navbar() {
                 Made with
               </span>
               <br />
-              Astro, React, TypeScript, Tailwind CSS, and ❤️.
+              React, TypeScript, Tailwind CSS, Astro and ❤️.
               <br />
               <br />© Copyright 2022–2023 Preston Nalls
             </p>
