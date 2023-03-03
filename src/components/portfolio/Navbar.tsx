@@ -10,6 +10,8 @@ import { FiDownload } from "react-icons/fi/index";
 import { navOpen, navShadow } from "../../stores";
 import logo from "/assets/p.png";
 
+import "./Navbar.css";
+
 export default function Navbar() {
   const $navOpen = useStore(navOpen);
   const $navShadow = useStore(navShadow);
@@ -82,13 +84,18 @@ export default function Navbar() {
                 <a href="/blog">Blog</a>
               </li>
 
-              <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
+              <li className="ml-10 text-sm hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in resume-option">
                 <a
                   className="flex items-center"
                   href="/assets/Frontend Developer Resume - Preston Nalls.docx"
                 >
-                  <span className="mr-1">RESUME </span> <FiDownload />
+                  <span className="mr-1 uppercase">Resume </span>{" "}
+                  <FiDownload fontSize={"1rem"} />
                 </a>
+                <span className="hovercard">
+                  <span className="pointer">👆</span>
+                  <div className="tooltiptext">Download my resume here.</div>
+                </span>
               </li>
               <li
                 onClick={() => handleDarkMode()}
@@ -169,7 +176,8 @@ export default function Navbar() {
                 className="flex items-center"
                 href="/assets/Frontend Developer Resume - Preston Nalls.docx"
               >
-                <span className="mr-1">Resume </span> <FiDownload />
+                <span className="mr-1 uppercase">Resume </span>{" "}
+                <FiDownload fontSize={"1rem"} />
               </a>
             </li>
             <li

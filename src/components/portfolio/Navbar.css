@@ -1,0 +1,40 @@
+.hovercard {
+  position: absolute;
+  opacity: 0;
+  z-index: 999;
+  left: 50%;
+  top: 49px;
+  padding: 1rem;
+  transform: translateX(-57.333%);
+}
+
+.pointer {
+  position: absolute;
+  top: -20px;
+  font-size: 2rem;
+  padding-left: 100px;
+}
+
+.resume-option {
+  position: relative;
+}
+
+.resume-option:hover .hovercard {
+  opacity: 1;
+  transition: all 0.333s ease;
+  transition-delay: 0.1s;
+}
+
+.tooltiptext {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ecf0f3;
+  box-shadow: 2.333px 2.333px 10px #2f394750;
+  padding: 18px;
+  border-radius: 5px;
+  color: #2f3947;
+  line-height: 15px;
+  transition: 1s;
+  width: max-content;
+}
