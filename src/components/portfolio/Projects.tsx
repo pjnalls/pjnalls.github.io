@@ -45,9 +45,9 @@ export default function Projects() {
               madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
               backgroundImg={ccLight}
               enableScreenshot={false}
-              enableCode={true}
+              enableCode={false}
               enableDemo={true}
-              demoLabel="See Progress"
+              demoLabel="View Promotion"
               demoUrl="https://careercron.com/"
               githubUrl="https://github.com/pjnalls/careercron"
             />
@@ -60,9 +60,9 @@ export default function Projects() {
               madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
               backgroundImg={ccDark}
               enableScreenshot={false}
-              enableCode={true}
+              enableCode={false}
               enableDemo={true}
-              demoLabel="See Progress"
+              demoLabel="View Promotion"
               demoUrl="https://careercron.com/"
               githubUrl="https://github.com/pjnalls/careercron"
             />
