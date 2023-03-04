@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa/index";
 import { FiDownload } from "react-icons/fi/index";
 
 import { navOpen, navShadow } from "../../stores";
-import logo from "/assets/p.png";
+import logo from "/assets/p.avif";
 
 import "./Navbar.css";
 

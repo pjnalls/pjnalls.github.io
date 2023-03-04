@@ -1,27 +1,27 @@
 import React from "react";
 
 /** Load images for design project. */
-import forzenPrototypeMobile from "/assets/project-1.5.jpg";
-import forzenPrototypeDesktop from "/assets/project-1.5.b.jpg";
+import forzenPrototypeMobile from "/assets/project-1.5.avif";
+import forzenPrototypeDesktop from "/assets/project-1.5.b.avif";
 /** */
-import ccLight from "/assets/cc.main.png";
-import ccDark from "/assets/cc.main-dark.png";
-import forzenAppMobileLight from "/assets/forzen-rn-light.jpg";
-import forzenAppMobileDark from "/assets/forzen-rn-dark.jpg";
-import memomalistAppMobileLight from "/assets/memomalist-rn-light.jpg";
-import memomalistAppMobileDark from "/assets/memomalist-rn-dark.jpg";
+import ccLight from "/assets/cc.main.avif";
+import ccDark from "/assets/cc.main-dark.avif";
+import forzenAppMobileLight from "/assets/forzen-rn-light.avif";
+import forzenAppMobileDark from "/assets/forzen-rn-dark.avif";
+import memomalistAppMobileLight from "/assets/memomalist-rn-light.avif";
+import memomalistAppMobileDark from "/assets/memomalist-rn-dark.avif";
 
-import aSolid from "/assets/ng-solid-design.jpg";
-import forecast from "/assets/forecast.png";
-import pDot from "/assets/p_1000x1000.jpg";
-import spreangLight from "/assets/spreang.logo.png";
-import spreangDark from "/assets/spreang.logo.dark.png";
-import digitalRain from "/assets/project-2.jpg";
-import forzenPjnalls from "/assets/project-3.jpg";
-import forzenJungCauz from "/assets/project-4.jpg";
-import scssArt from "/assets/project-6.jpg";
-import mceWeb from "/assets/project-20220817.jpg";
-import mceDesktop from "/assets/project-20220820.jpg";
+import aSolid from "/assets/ng-solid-design.avif";
+import forecast from "/assets/forecast.avif";
+import pDot from "/assets/p_700x700.avif";
+import spreangLight from "/assets/spreang.logo.avif";
+import spreangDark from "/assets/spreang.logo.dark.avif";
+import digitalRain from "/assets/project-2.avif";
+import forzenPjnalls from "/assets/project-3.avif";
+import forzenJungCauz from "/assets/project-4.avif";
+import scssArt from "/assets/project-6.avif";
+import mceWeb from "/assets/project-20220817.avif";
+import mceDesktop from "/assets/project-20220820.avif";
 
 import ProjectItem from "./ProjectItem";
 

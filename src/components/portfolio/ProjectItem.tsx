@@ -21,6 +21,8 @@ export default function ProjectItem({
     >
       <img
         className="rounded-xl group-hover:opacity-10 group-hover:blur-[1.333px]  transition-all ease-in duration-300 cursor-pointer"
+        width={"700px"}
+        height={"700px"}
         src={backgroundImg}
         alt="/"
       />

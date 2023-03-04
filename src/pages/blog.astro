@@ -14,60 +14,70 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
 );
 ---
 
-<script is:inline src="/resolve-fouc.js"></script>
-<BaseHead title={SITE_BLOG_TITLE} description={SITE_BLOG_DESCRIPTION} />
-<style>
-  ul {
-    list-style-type: none;
-    padding: unset;
-  }
-  ul li time {
-    font-style: italic;
-    width: 130px;
-    padding-right: 2rem;
-  }
-  ul li a:visited {
-    color: #996dff;
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script is:inline src="/resolve-fouc.js"></script>
+    <BaseHead title={SITE_BLOG_TITLE} description={SITE_BLOG_DESCRIPTION} />
 
-  ul li a {
-    transition: all 0.3s ease;
-  }
+    <style>
+      ul {
+        list-style-type: none;
+        padding: unset;
+      }
+      ul li {
+        padding: 1rem 0.5rem;
+      }
+      ul li:not(:last-child) {
+        border-bottom: solid 1.333px #696f9f;
+      }
+      ul li time {
+        font-style: italic;
+        width: 130px;
+        padding-right: 2rem;
+      }
+      ul li a:visited {
+        color: #996dff;
+      }
 
-  ul li a:hover {
-    transform: scale(1.05);
-  }
-</style>
+      ul li a {
+        transition: all 0.3s ease;
+      }
 
-<body>
-  <Header />
-  <main class="w-full lg:h-screen py-36 relative z-[1]">
-    <section
-      class="md:px-10 max-w-[1000px] w-full h-[100%] mx-auto p-2 px-3 flex justify-center items-center"
-    >
-      <ul>
-        {
-          posts.map((post, i) => (
-            <>
-              <li class="flex items-left">
-                <time datetime={post.frontmatter.pubDate}>
-                  {new Date(post.frontmatter.pubDate).toLocaleDateString(
-                    "en-us",
-                    {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    }
-                  )}
-                </time>
-                <a href={post.url}>{post.frontmatter.title}</a>
-              </li>
-              {i !== posts.length - 1 && <hr />}
-            </>
-          ))
-        }
-      </ul>
-    </section>
-  </main>
-  <Footer />
-</body>
+      ul li a:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main class="w-full lg:h-screen py-36 relative z-[1]">
+      <section
+        class="md:px-10 max-w-[1000px] w-full h-[100%] mx-auto p-2 px-3 flex justify-center items-center"
+      >
+        <ul>
+          {
+            posts.map((post, i) => (
+              <>
+                <li class="flex items-left">
+                  <time datetime={post.frontmatter.pubDate}>
+                    {new Date(post.frontmatter.pubDate).toLocaleDateString(
+                      "en-us",
+                      {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      }
+                    )}
+                  </time>
+                  <a href={post.url}>{post.frontmatter.title}</a>
+                </li>
+              </>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

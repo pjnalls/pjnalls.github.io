@@ -1,5 +1,5 @@
 import React from "react";
-import profilePicture from "/assets/profile-picture.png";
+import profilePicture from "/assets/profile-picture.avif";
 
 export default function About() {
   return (
@@ -53,6 +53,8 @@ export default function About() {
           <img
             id="preston"
             className=" rounded-[50%]"
+            width={"640px"}
+            height={"640px"}
             alt="Preston's portrait"
             src={profilePicture}
           />
