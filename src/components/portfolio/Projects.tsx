@@ -124,7 +124,7 @@ export default function Projects() {
           />
           <ProjectItem
             className="dark:hidden"
-            title="Forzen RN"
+            title="F⍛rzen RN"
             description="A React Native (RN) app for a self-help blog for educational purposes."
             madeWith="React Native, React, TypeScript, and Expo"
             backgroundImg={forzenAppMobileLight}
@@ -137,7 +137,7 @@ export default function Projects() {
           />
           <ProjectItem
             className="hidden dark:block"
-            title="Forzen RN"
+            title="F⍛rzen RN"
             description="A React Native (RN) app for a self-help blog for educational purposes."
             madeWith="React Native, React, TypeScript, and Expo"
             backgroundImg={forzenAppMobileDark}
@@ -149,27 +149,27 @@ export default function Projects() {
             githubUrl="https://github.com/pjnalls/forzen-rn"
           />
           <ProjectItem
-            title="Forzen.io (Mobile Prototype)"
-            description="A live prototype of the mobile version of Forzen.io."
+            title="F⍛rzen.io (Mobile Prototype)"
+            description="A live prototype of the mobile version of F⍛rzen.io."
             madeWith="Figma"
             backgroundImg={forzenPrototypeMobile}
             enableScreenshot={false}
             enableCode={false}
             enableDemo={true}
             demoLabel="Open Prototype"
-            demoUrl="https://www.figma.com/proto/r4YnlPce6mSm8fsjbVclaW/Forzen.io-Prototype-(Mobile)?node-id=0%3A2&amp;scaling=contai&amp;page-id=0%3A1&amp;starting-point-node-id=0%3A2"
+            demoUrl="https://www.figma.com/proto/r4YnlPce6mSm8fsjbVclaW/F⍛rzen.io-Prototype-(Mobile)?node-id=0%3A2&amp;scaling=contai&amp;page-id=0%3A1&amp;starting-point-node-id=0%3A2"
             githubUrl=""
           />
           <ProjectItem
-            title="Forzen.io (Desktop Prototype)"
-            description="A live prototype of the desktop version of Forzen.io."
+            title="F⍛rzen.io (Desktop Prototype)"
+            description="A live prototype of the desktop version of F⍛rzen.io."
             madeWith="Figma"
             backgroundImg={forzenPrototypeDesktop}
             enableScreenshot={false}
             enableCode={false}
             enableDemo={true}
             demoLabel="Open Prototype"
-            demoUrl="https://www.figma.com/proto/Wqz3rQJgEC9vJR03WRDnCB/Forzen.io-Prototype-(Desktop)?node-id=0%3A2&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=0%3A2"
+            demoUrl="https://www.figma.com/proto/Wqz3rQJgEC9vJR03WRDnCB/F⍛rzen.io-Prototype-(Desktop)?node-id=0%3A2&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=0%3A2"
             githubUrl=""
           />
 
@@ -236,8 +236,8 @@ export default function Projects() {
             githubUrl=""
           />
           <ProjectItem
-            title="Forzen.io • pjnalls"
-            description="Forzen.io from the perspective of pjnalls, the engineer — the
+            title="F⍛rzen.io • pjnalls"
+            description="F⍛rzen.io from the perspective of pjnalls, the engineer — the
             side of individuation."
             madeWith="HTML, SCSS, and ES6+ JavaScript"
             backgroundImg={forzenPjnalls}
@@ -249,8 +249,8 @@ export default function Projects() {
             githubUrl="https://github.com/forzen-dot-io/pjnalls"
           />
           <ProjectItem
-            title="Forzen.io • Jung Cauz"
-            description="Forzen.io from the perspective of Jung Cauz, the artist — the
+            title="F⍛rzen.io • Jung Cauz"
+            description="F⍛rzen.io from the perspective of Jung Cauz, the artist — the
             side of meditation."
             madeWith="HTML, SCSS, and ES6+ JavaScript"
             backgroundImg={forzenJungCauz}
