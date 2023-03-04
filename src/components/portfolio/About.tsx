@@ -12,7 +12,7 @@ export default function About() {
           <h2 className="py-4">Who I am</h2>
           <p className="py-2 text-slate-600 dark:text-slate-300/90">
             I'm a frontend developer providing React and Angular consulting
-            along with other technologies for UI designs and implementations.
+            along with other technologies with many opportunities for frontend-architectural and UI/UX designs and implementations
             <br />
             Along with full-time consulting, I&apos;m also a postgraduate
             beginning a program for an MS in computer science in summer of 2023.
@@ -41,10 +41,10 @@ export default function About() {
             everyday.
           </p>
           <p className="py-2 text-black dark:text-white">
-            I&apos;d like to show you my work rather than tell you about it, so{" "}
+            I&apos;d like to show you my work rather than tell you about it, so please feel free to check out some of{" "}
             <a href="/projects" className="py-2 font-semibold">
               <span className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150">
-                please feel free to check out some of my latest projects.
+                my latest projects.
               </span>
             </a>
           </p>

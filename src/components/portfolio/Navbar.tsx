@@ -4,7 +4,7 @@ import { useStore } from "@nanostores/react";
 import { useEffect } from "react";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai/index";
-import { FaGithub } from "react-icons/fa/index";
+import { FaGithub, FaLinkedin } from "react-icons/fa/index";
 import { FiDownload } from "react-icons/fi/index";
 
 import { navOpen, navShadow } from "../../stores";
@@ -201,10 +201,18 @@ export default function Navbar() {
               <br />
               <br />© Copyright 2022–2023 Preston Nalls
             </p>
-            <div className="flex items-center my-2 pt-2 w-full">
-              <a href="https://github.com/pjnalls/pjnalls" aria-label="GitHub">
+            <div className="flex items-center my-2 pt-2 w-full gap-5">
+              <a href="https://github.com/pjnalls" aria-label="GitHub">
                 <div className="rounded-full shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
                   <FaGithub size="30px" />
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/pjnalls"
+                aria-label="LinkedIn"
+              >
+                <div className="text-[#000] dark:text-[#fff] rounded-full shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
+                  <FaLinkedin size="30px" />
                 </div>
               </a>
             </div>

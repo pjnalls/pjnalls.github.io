@@ -1,7 +1,5 @@
 import React from "react";
 
-import { FaGithub } from "react-icons/fa/index";
-
 export default function Main() {
   return (
     <div id="main" className="w-full lg:h-screen text-center relative z-[1]">
