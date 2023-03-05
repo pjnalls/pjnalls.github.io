@@ -17,7 +17,6 @@ import pDot from "/assets/p_700x700.avif";
 import spreangLight from "/assets/spreang.logo.avif";
 import spreangDark from "/assets/spreang.logo.dark.avif";
 import digitalRain from "/assets/project-2.avif";
-import forzenPjnalls from "/assets/project-3.avif";
 import forzenJungCauz from "/assets/project-4.avif";
 import scssArt from "/assets/project-6.avif";
 import mceWeb from "/assets/project-20220817.avif";
@@ -236,21 +235,8 @@ export default function Projects() {
             githubUrl=""
           />
           <ProjectItem
-            title="F⍛rzen.io • pjnalls"
-            description="F⍛rzen.io from the perspective of pjnalls, the engineer — the
-            side of individuation."
-            madeWith="HTML, SCSS, and ES6+ JavaScript"
-            backgroundImg={forzenPjnalls}
-            enableScreenshot={false}
-            enableCode={true}
-            enableDemo={true}
-            demoLabel="View Project"
-            demoUrl="https://forzen.io/pjnalls/"
-            githubUrl="https://github.com/forzen-dot-io/pjnalls"
-          />
-          <ProjectItem
-            title="F⍛rzen.io • Jung Cauz"
-            description="F⍛rzen.io from the perspective of Jung Cauz, the artist — the
+            title="F⍛rzen.io • J.ungy⍛gi"
+            description="F⍛rzen.io from the perspective of J.ungy⍛gi, the artist — the
             side of meditation."
             madeWith="HTML, SCSS, and ES6+ JavaScript"
             backgroundImg={forzenJungCauz}
