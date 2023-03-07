@@ -244,8 +244,8 @@ export default function Projects() {
             enableCode={true}
             enableDemo={true}
             demoLabel="View Page"
-            demoUrl="https://forzen.io/jung-cauz/"
-            githubUrl="https://github.com/forzen-dot-io/JungCauz"
+            demoUrl="https://forzen.io/j.ungyogi/"
+            githubUrl="https://github.com/forzen-dot-io/jungyogi"
           />
           <ProjectItem
             title="SCSS Abstract Art"
@@ -256,7 +256,7 @@ export default function Projects() {
             enableCode={true}
             enableDemo={true}
             demoLabel="View Gallery"
-            demoUrl="https://forzen.io/jung-cauz/art.html"
+            demoUrl="https://forzen.io/j.ungyogi/art.html"
             githubUrl="https://github.com/pjnalls?tab=repositories&q=scss-&type=&language=scss&sort="
           />
           <ProjectItem
