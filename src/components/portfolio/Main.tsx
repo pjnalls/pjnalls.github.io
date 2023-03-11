@@ -26,10 +26,9 @@ export default function Main() {
               </span>
             </a>{" "}
             •<br />
-            MS in Computer Science Postgrad
+            MS in Computer Science Postgraduate
             <br />
-            at Kennesaw State Univ. •<br />
-            Python/C Hobbyist
+            at Kennesaw State University
           </h2>
           <p className="py-4 text-slate-800  dark:text-[#ecf0f3] max-w-[70%] m-auto">
             My focus is on combining aesthetical, <br />
