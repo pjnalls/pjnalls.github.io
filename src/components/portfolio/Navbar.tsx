@@ -199,7 +199,7 @@ export default function Navbar() {
               <br />
               React, TypeScript, Tailwind CSS, Astro and ❤️.
               <br />
-              <br />© Copyright 2022–2023 Preston Nalls
+              <br />Copyright © 2023 Preston Nalls
             </p>
             <div className="flex items-center my-2 pt-2 w-full gap-5">
               <a href="https://github.com/pjnalls" aria-label="GitHub">
