@@ -66,8 +66,6 @@ export default function Projects() {
               githubUrl="https://github.com/pjnalls/careercron"
             />
           </div>
-          <div className="new-release-box">
-            <div className="folded-ribbon font-bold">NEW</div>
             <ProjectItem
               className="dark:hidden"
               title="Spreang"
@@ -94,7 +92,6 @@ export default function Projects() {
               enableDemo={false}
               githubUrl=""
             />
-          </div>
           <ProjectItem
             className="dark:hidden"
             title="Memomalist"
@@ -182,8 +179,6 @@ export default function Projects() {
             enableDemo={false}
             githubUrl="https://github.com/pjnalls/ng-solid-design"
           />
-          <div className="new-release-box">
-            <div className="folded-ribbon font-bold">NEW</div>
             <ProjectItem
               title="Halstown City's Forecast"
               description="Time series analysis / weather forecast via seasonal autoregression."
@@ -195,7 +190,6 @@ export default function Projects() {
               demoLabel=""
               githubUrl="https://github.com/pjnalls/time_series_analysis_and_forecast"
             />
-          </div>
           <ProjectItem
             title="Minimalistic Code Editor (Desktop)"
             description="A screenshot of a minimalistic code editor for Zenful coding
