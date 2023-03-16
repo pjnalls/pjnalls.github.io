@@ -1,26 +1,40 @@
 import React from "react";
 
 /** Load icons for all skills. */
-import { FaAngular, FaReact, FaFigma, FaSass } from "react-icons/fa/index";
+import {
+  FaAngular,
+  FaFigma,
+  FaGitAlt,
+  FaReact,
+  FaSass,
+} from "react-icons/fa/index";
 import {
   SiAdobephotoshop,
   SiArduino,
+  SiMicrosoftazure,
   SiC,
   SiCss3,
+  SiDocker,
   SiHtml5,
+  SiInsomnia,
   SiJavascript,
   SiJest,
   SiJupyter,
   SiMaterialui,
   SiMarkdown,
+  SiMongodb,
   SiNextdotjs,
+  SiNginx,
+  SiNodedotjs,
   SiNumpy,
   SiNx,
   SiPandas,
   SiPython,
   SiRedux,
+  SiSwagger,
   SiTailwindcss,
   SiTypescript,
+  SiExpress,
 } from "react-icons/si/index";
 
 export default function Skills() {
@@ -36,6 +50,185 @@ export default function Skills() {
           💼 Toolkit I Use as a Frontend Developer
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiJest
+                  size="48px"
+                  className="mr-6 text-[#99425b] dark:bg-transparent rounded-md"
+                />
+                <h3>Jest</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  96%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <FaAngular size="48px" className="mr-6 text-[#c3002f]" />
+                <h3>Angular</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  98%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[98%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <FaGitAlt size="48px" className="mr-6 text-[#e44c30]" />
+                <h3>Git</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  99%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[99%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiHtml5
+                  size="48px"
+                  className="mr-6 text-[#e86126] rounded-md"
+                />
+                <h3>HTML</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  92%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[92%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiJavascript
+                  size="48px"
+                  className="mr-6 text-[#f0db4f] bg-[#323330]"
+                />
+                <h3>JavaScript</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  94%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[94%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiSwagger size="48px" className="mr-6 dark:text-[#97c200] text-[#679200]" />
+                <h3>Swagger UI</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  97%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[97%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiNodedotjs size="48px" className="mr-6 dark:text-[#9Cce98] text-[#4C8e48]" />
+                <h3>Node.js</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  97%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[97%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiNginx size="48px" className="mr-6 dark:text-[#3caf79] text-[#1c8f59]" />
+                <h3>NGINX</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  92%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[92%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiNx
+                  size="48px"
+                  className="mr-6 text-[#002F56] dark:text-[#1894c5] dark:bg-transparent rounded-md"
+                />
+                <h3>Nx</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  89%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[89%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiRedux
+                  size="48px"
+                  className="mr-6 text-[#61dafb] bg-[#1f2937] p-1 dark:p-0 dark:bg-transparent rounded-md"
+                />
+                <h3>
+                  Redux /
+                  <br />
+                  NgRx
+                </h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  91%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[91%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="new-release-box hover:scale-110 transition-all ease-in">
             <div className="folded-ribbon font-bold">TOP</div>
             <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl cursor-pointer ease duration-200">
@@ -80,95 +273,18 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <FaAngular size="48px" className="mr-6 text-[#c3002f]" />
-                <h3>Angular</h3>
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  98%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[98%] h-[0.6rem]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <FaAngular size="48px" className="mr-6 text-[#3f51b5]" />
-                <h3>
-                  Angular
-                  <br /> Material
-                </h3>
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  96%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiRedux
+                <SiTypescript
                   size="48px"
-                  className="mr-6 text-[#61dafb] bg-[#1f2937] p-1 dark:p-0 dark:bg-transparent rounded-md"
+                  className="mr-6 text-[#007acc] bg-[#fff] rounded-md"
                 />
-                <h3>
-                  Redux /
-                  <br />
-                  NgRx
-                </h3>
+                <h3>TypeScript</h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  91%{" "}
+                  90%{" "}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[91%] h-[0.6rem]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiMarkdown
-                  size="48px"
-                  className="mr-6 dark:text-[#fff] text-[#000] rounded-md"
-                />
-                <h3>Markdown</h3>
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  99%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[99%] h-[0.6rem]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiHtml5
-                  size="48px"
-                  className="mr-6 text-[#e86126] rounded-md"
-                />
-                <h3>HTML</h3>
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  92%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[92%] h-[0.6rem]"></div>
+                  <div className="bg-[#9d8c66] w-[90%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
@@ -214,18 +330,37 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <FaFigma
-                  size="48px"
-                  className="mr-6 text-[#1f2937] dark:text-white"
-                />
-                <h3>Figma</h3>
+                <FaAngular size="48px" className="mr-6 dark:text-[#6f81e5] text-[#3f51b5]" />
+                <h3>
+                  Angular
+                  <br /> Material
+                </h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  92%{" "}
+                  96%{" "}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[92%] h-[0.6rem]"></div>
+                  <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiInsomnia size="48px" className="mr-6 dark:text-[#9485f5] text-[#6455c5]" />
+                <h3>
+                  Insomnia
+                  <br /> (RESTful)
+                </h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  90%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[90%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
@@ -249,18 +384,14 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiJavascript
-                  size="48px"
-                  className="mr-6 text-[#f0db4f] bg-[#323330]"
-                />
-                <h3>JavaScript</h3>
+                <h3>RxJS</h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  94%{" "}
+                  97%{" "}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[94%] h-[0.6rem]"></div>
+                  <div className="bg-[#9d8c66] w-[97%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
@@ -268,18 +399,18 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiTypescript
+                <SiMarkdown
                   size="48px"
-                  className="mr-6 text-[#007acc] bg-[#fff] rounded-md"
+                  className="mr-6 dark:text-[#fff] text-[#000] rounded-md"
                 />
-                <h3>TypeScript</h3>
+                <h3>Markdown</h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  90%{" "}
+                  99%{" "}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[90%] h-[0.6rem]"></div>
+                  <div className="bg-[#9d8c66] w-[99%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
@@ -287,37 +418,18 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiNx
+                <FaFigma
                   size="48px"
-                  className="mr-6 text-[#002F56] dark:text-[#48C4e5] dark:bg-transparent rounded-md"
+                  className="mr-6 text-[#1f2937] dark:text-white"
                 />
-                <h3>Nx</h3>
+                <h3>Figma</h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  89%{" "}
+                  92%{" "}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[89%] h-[0.6rem]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiJest
-                  size="48px"
-                  className="mr-6 text-[#99425b] dark:bg-transparent rounded-md"
-                />
-                <h3>Jest</h3>
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  96%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
+                  <div className="bg-[#9d8c66] w-[92%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
@@ -340,25 +452,21 @@ export default function Skills() {
         </div>
         <br />
         <h3 className="font-semibold text-2xl text-center">
-          ⚒️ Other Tools I Use for Frontend Development
+          ⚒️ Other Tools I Use for Web, Mobile, and Cross-Platform Development
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10 mb-5">
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiNextdotjs
-                  size="48px"
-                  className="mr-6 text-[#000]  dark:bg-[#fff] rounded-full p-[-33px]
-                  dark:border-2 dark:border-white transition-all ease-in duration-200"
-                />
-                <h3>Next.js</h3>
+                <SiMongodb size="48px" className="mr-6 text-[#00c13f]" />
+                <h3>MongoDB</h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  89%{" "}
+                  96%{" "}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[89%] h-[0.6rem]"></div>
+                  <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
@@ -399,12 +507,135 @@ export default function Skills() {
               </div>
             </div>
           </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiDocker size="48px" className="mr-6 text-[#027ed2]" />
+                <h3>Docker</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  92%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[92%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiMicrosoftazure size="48px" className="mr-6 text-[#00a2eb]" />
+                <h3>Azure</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  90%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[90%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>Astro</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  96%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiNextdotjs
+                  size="48px"
+                  className="mr-6 text-[#000]  dark:bg-[#fff] rounded-full p-[-33px]
+                  dark:border-2 dark:border-white transition-all ease-in duration-200"
+                />
+                <h3>Next.js</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  89%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[89%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiExpress
+                  size="48px"
+                  className="mr-6 text-[#000]  dark:bg-[#fff] rounded-full p-[-33px]
+                  dark:border-2 dark:border-white transition-all ease-in duration-200"
+                />
+                <h3>Express</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  85%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[85%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <br />
         <h3 className="font-semibold text-2xl text-center">
           🖥️ Toolkit I Use as a Python/C Hobbyist
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiJupyter size="48px" className="mr-6 text-[#f37726]" />
+                <h3>Jupyter Notebook</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  96%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="new-release-box hover:scale-110 transition-all ease-in">
+            <div className="folded-ribbon font-bold hover:scale-110">NEW</div>
+            <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl cursor-pointer ease transition-all ease-in duration-200">
+              <div className="grid grid-cols-1 gap-4 justify-between items-center">
+                <div className="m-auto inline-flex justify-around items-center w-full">
+                  <SiArduino size="48px" className="mr-6 text-[#009298]" />
+                  <h3>Arduino</h3>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                    -
+                  </div>
+                  <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                    <div className="bg-[#9d8c66] w-[0%] h-[0.6rem]"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
@@ -437,6 +668,28 @@ export default function Skills() {
               </div>
             </div>
           </div>
+          
+
+          <div className="new-release-box hover:scale-110 transition-all ease-in">
+            <div className="folded-ribbon font-bold hover:scale-110">NEW</div>
+            <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl cursor-pointer ease-in duration-200">
+              <div className="grid grid-cols-1 gap-4 justify-between items-center">
+                <div className="m-auto inline-flex justify-around items-center w-full">
+                  <SiC size="48px" className="mr-6 text-[#5968ba]" />
+                  <h3>C</h3>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                    -
+                  </div>
+                  <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                    <div className="bg-[#9d8c66] w-[0%] h-[0.6rem]"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
@@ -459,53 +712,14 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiJupyter size="48px" className="mr-6 text-[#f37726]" />
-                <h3>Jupyter Notebook</h3>
+                <h3>Matplotlib</h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  96%{" "}
+                  87%{" "}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="new-release-box hover:scale-110 transition-all ease-in">
-            <div className="folded-ribbon font-bold hover:scale-110">NEW</div>
-            <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl cursor-pointer ease-in duration-200">
-              <div className="grid grid-cols-1 gap-4 justify-between items-center">
-                <div className="m-auto inline-flex justify-around items-center w-full">
-                  <SiC size="48px" className="mr-6 text-[#5968ba]" />
-                  <h3>C</h3>
-                </div>
-                <div className="flex items-center justify-center">
-                  <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                    -
-                  </div>
-                  <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                    <div className="bg-[#9d8c66] w-[0%] h-[0.6rem]"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="new-release-box hover:scale-110 transition-all ease-in">
-            <div className="folded-ribbon font-bold hover:scale-110">NEW</div>
-            <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl cursor-pointer ease transition-all ease-in duration-200">
-              <div className="grid grid-cols-1 gap-4 justify-between items-center">
-                <div className="m-auto inline-flex justify-around items-center w-full">
-                  <SiArduino size="48px" className="mr-6 text-[#009298]" />
-                  <h3>Arduino</h3>
-                </div>
-                <div className="flex items-center justify-center">
-                  <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                    -
-                  </div>
-                  <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                    <div className="bg-[#9d8c66] w-[0%] h-[0.6rem]"></div>
-                  </div>
+                  <div className="bg-[#9d8c66] w-[87%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
