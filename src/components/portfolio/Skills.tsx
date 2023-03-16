@@ -55,7 +55,7 @@ export default function Skills() {
               <div className="m-auto inline-flex justify-around items-center w-full">
                 <SiJest
                   size="48px"
-                  className="mr-6 text-[#99425b] dark:bg-transparent rounded-md"
+                  className="mr-6 text-[#99425b] dark:text-[#c9829b] dark:bg-transparent rounded-md"
                 />
                 <h3>Jest</h3>
               </div>
@@ -490,19 +490,15 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiMaterialui size="48px" className="mr-6 text-[#007fff]" />
-                <h3>
-                  MUI
-                  <br />
-                  (Material UI)
-                </h3>
+                <SiMicrosoftazure size="48px" className="mr-6 text-[#00a2eb]" />
+                <h3>Azure</h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  95%{" "}
+                  90%{" "}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[95%] h-[0.6rem]"></div>
+                  <div className="bg-[#9d8c66] w-[90%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
@@ -526,20 +522,23 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiMicrosoftazure size="48px" className="mr-6 text-[#00a2eb]" />
-                <h3>Azure</h3>
+                <SiMaterialui size="48px" className="mr-6 text-[#007fff]" />
+                <h3>
+                  MUI
+                  <br />
+                  (Material UI)
+                </h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  90%{" "}
+                  95%{" "}
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[90%] h-[0.6rem]"></div>
+                  <div className="bg-[#9d8c66] w-[95%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
           </div>
-          <br />
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
@@ -668,8 +667,6 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          
-
           <div className="new-release-box hover:scale-110 transition-all ease-in">
             <div className="folded-ribbon font-bold hover:scale-110">NEW</div>
             <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl cursor-pointer ease-in duration-200">
@@ -689,7 +686,6 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          <br />
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
