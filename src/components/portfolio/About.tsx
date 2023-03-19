@@ -15,7 +15,7 @@ export default function About() {
             along with other technologies with many opportunities for frontend-architectural and UI/UX designs and implementations
             <br />
             Along with full-time consulting, I&apos;m also a postgraduate
-            beginning a program for an MS in computer science in summer of 2023.
+            beginning a program for an MS in computer science in May of 2023.
             <br />
           </p>
           <p className="py-2 text-black dark:text-white">
