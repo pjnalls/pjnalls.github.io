@@ -34,7 +34,7 @@ export default function Main() {
             My focus is on combining aesthetical, <br />
             functional design with efficient yet elegant frontend code.
             <br />
-            <br />I also focus on continually learning in the STEAM disciplines
+            <br />I also focus on continually learning in the STEAM (Scientific, Technological, Engineering, Artistic, and Mathematic) disciplines
             to cultivate better analytical and creative abilities for both
             professional and personal projects.
           </p>
