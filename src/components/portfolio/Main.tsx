@@ -19,12 +19,7 @@ export default function Main() {
           </h1>
           <h2 className="py-4 text-slate-800 dark:text-[#ecf0f3] md:text-3xl text-lg font-semibold">
             Frontend Developer •<br />
-            Creator of{" "}
-            <a href="/projects#careercron">
-              <span className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150">
-                CareerCron
-              </span>
-            </a>{" "}
+            Consultant
             •<br />
             MS in Computer Science Postgraduate
             <br />
