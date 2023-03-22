@@ -47,7 +47,7 @@ export default function Skills() {
         <h2 className="py-4">What I Can Do</h2>
         <br />
         <h3 className="font-semibold text-2xl py-2 text-center">
-          💼 Toolkit I Use as a Frontend Developer
+          🛠️ Toolkit I Use as a Frontend Developer
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
@@ -452,7 +452,7 @@ export default function Skills() {
         </div>
         <br />
         <h3 className="font-semibold text-2xl text-center">
-          ⚒️ Other Tools I Use for Web, Mobile, and Cross-Platform Development
+          🛠️ Other Tools I Use for Web, Mobile, and Cross-Platform Development
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10 mb-5">
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
@@ -597,7 +597,7 @@ export default function Skills() {
         </div>
         <br />
         <h3 className="font-semibold text-2xl text-center">
-          🖥️ Toolkit I Use as a Python/C Hobbyist
+          🛠️ Toolkit I Use as a Python/C Hobbyist
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
