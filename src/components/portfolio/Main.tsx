@@ -18,12 +18,11 @@ export default function Main() {
             .
           </h1>
           <h2 className="py-4 text-slate-800 dark:text-[#ecf0f3] md:text-3xl text-lg font-semibold">
-            Frontend Developer •<br />
-            Consultant
-            •<br />
+            Frontend Developer •
+            <br />
             MS in Computer Science Postgraduate
             <br />
-            at Kennesaw State University
+            at Kennesaw State University - (CCSE)
           </h2>
           <p className="py-4 text-slate-800  dark:text-[#ecf0f3] max-w-[70%] m-auto">
             My focus is on combining aesthetical, <br />
