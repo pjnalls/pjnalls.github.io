@@ -11,6 +11,7 @@ import {
 import {
   SiAdobephotoshop,
   SiArduino,
+  SiAstro,
   SiMicrosoftazure,
   SiC,
   SiCss3,
@@ -20,9 +21,9 @@ import {
   SiJavascript,
   SiJest,
   SiJupyter,
-  SiMaterialui,
   SiMarkdown,
   SiMongodb,
+  SiMui,
   SiNextdotjs,
   SiNginx,
   SiNodedotjs,
@@ -162,7 +163,10 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiSwagger size="48px" className="mr-6 dark:text-[#97c200] text-[#679200]" />
+                <SiSwagger
+                  size="48px"
+                  className="mr-6 dark:text-[#97c200] text-[#679200]"
+                />
                 <h3>Swagger UI</h3>
               </div>
               <div className="flex items-center justify-center">
@@ -178,7 +182,10 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiNodedotjs size="48px" className="mr-6 dark:text-[#9Cce98] text-[#4C8e48]" />
+                <SiNodedotjs
+                  size="48px"
+                  className="mr-6 dark:text-[#9Cce98] text-[#4C8e48]"
+                />
                 <h3>Node.js</h3>
               </div>
               <div className="flex items-center justify-center">
@@ -194,7 +201,10 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiNginx size="48px" className="mr-6 dark:text-[#3caf79] text-[#1c8f59]" />
+                <SiNginx
+                  size="48px"
+                  className="mr-6 dark:text-[#3caf79] text-[#1c8f59]"
+                />
                 <h3>NGINX</h3>
               </div>
               <div className="flex items-center justify-center">
@@ -350,7 +360,10 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <FaAngular size="48px" className="mr-6 dark:text-[#6f81e5] text-[#3f51b5]" />
+                <FaAngular
+                  size="48px"
+                  className="mr-6 dark:text-[#6f81e5] text-[#3f51b5]"
+                />
                 <h3>
                   Angular
                   <br /> Material
@@ -369,7 +382,10 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiInsomnia size="48px" className="mr-6 dark:text-[#9485f5] text-[#6455c5]" />
+                <SiInsomnia
+                  size="48px"
+                  className="mr-6 dark:text-[#9485f5] text-[#6455c5]"
+                />
                 <h3>
                   Insomnia
                   <br /> (RESTful)
@@ -397,21 +413,6 @@ export default function Skills() {
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
                   <div className="bg-[#9d8c66] w-[90%] h-[0.6rem]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>RxJS</h3>
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  97%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[97%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
@@ -475,6 +476,25 @@ export default function Skills() {
           🛠️ Other Tools I Use for Web, Mobile, and Cross-Platform Development
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10 mb-5">
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiAstro
+                  size="48px"
+                  className="mr-6 text-[#f75500]"
+                />
+                <h3>Astro</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  99%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[99%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
@@ -542,7 +562,7 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiMaterialui size="48px" className="mr-6 text-[#007fff]" />
+                <SiMui size="48px" className="mr-6 text-[#007fff]" />
                 <h3>
                   MUI
                   <br />
@@ -555,21 +575,6 @@ export default function Skills() {
                 </div>
                 <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
                   <div className="bg-[#9d8c66] w-[95%] h-[0.6rem]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>Astro</h3>
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  96%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
                 </div>
               </div>
             </div>
