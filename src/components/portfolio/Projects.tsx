@@ -21,7 +21,8 @@ import forzenJungCauz from "/assets/project-4.avif";
 import scssArt from "/assets/project-6.avif";
 import mceWeb from "/assets/project-20220817.avif";
 import mceDesktop from "/assets/project-20220820.avif";
-import rnStrapi from "/assets/rn-strapi.avif";
+import rnStrapiLight from "/assets/rn-strapi-light.avif";
+import rnStrapiDark from "/assets/rn-strapi-dark.avif";
 
 import ProjectItem from "./ProjectItem";
 
@@ -35,12 +36,28 @@ export default function Projects() {
         <h2 className="py-4">What I&apos;ve Created</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
           <ProjectItem
+            className="dark:hidden"
             title="⚛️ React Native + 🚀 Strapi Template"
             description={
               "A example and template of mobile-application and CMS integrations with React Native and Strapi."
             }
             madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi"
-            backgroundImg={rnStrapi}
+            backgroundImg={rnStrapiLight}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={true}
+            demoLabel="Open Demo"
+            demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
+            githubUrl="https://github.com/pjnalls/react-native-strapi-template"
+          />
+          <ProjectItem
+            className="hidden dark:block"
+            title="⚛️ React Native + 🚀 Strapi Template"
+            description={
+              "A example and template of mobile-application and CMS integrations with React Native and Strapi."
+            }
+            madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi"
+            backgroundImg={rnStrapiDark}
             enableScreenshot={false}
             enableCode={true}
             enableDemo={true}
