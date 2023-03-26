@@ -21,6 +21,7 @@ import forzenJungCauz from "/assets/project-4.avif";
 import scssArt from "/assets/project-6.avif";
 import mceWeb from "/assets/project-20220817.avif";
 import mceDesktop from "/assets/project-20220820.avif";
+import rnStrapi from "/assets/rn-strapi.avif";
 
 import ProjectItem from "./ProjectItem";
 
@@ -33,65 +34,76 @@ export default function Projects() {
         </p>
         <h2 className="py-4">What I&apos;ve Created</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
-          <div className="new-release-box" id="careercron">
-            <div className="folded-ribbon font-bold">IN-PROGRESS</div>
-            <ProjectItem
-              className="dark:hidden"
-              title="CareerCron"
-              description={
-                "(Work-in-Progress) Career aide and guide that is there for you anytime, anywhere... ⌛💻📲."
-              }
-              madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
-              backgroundImg={ccLight}
-              enableScreenshot={false}
-              enableCode={false}
-              enableDemo={true}
-              demoLabel="View Promotion"
-              demoUrl="https://careercron.com/"
-              githubUrl="https://github.com/pjnalls/careercron"
-            />
-            <ProjectItem
-              className="hidden dark:block"
-              title="CareerCron"
-              description={
-                "(Work-in-Progress) Career aide and guide that is there for you anytime, anywhere... ⌛💻📲."
-              }
-              madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
-              backgroundImg={ccDark}
-              enableScreenshot={false}
-              enableCode={false}
-              enableDemo={true}
-              demoLabel="View Promotion"
-              demoUrl="https://careercron.com/"
-              githubUrl="https://github.com/pjnalls/careercron"
-            />
-          </div>
-            <ProjectItem
-              className="dark:hidden"
-              title="Spreang"
-              description={
-                'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
-              }
-              madeWith="Figma"
-              backgroundImg={spreangLight}
-              enableScreenshot={false}
-              enableCode={false}
-              enableDemo={false}
-              githubUrl=""
-            />
-            <ProjectItem
-              className="hidden dark:block"
-              title="Spreang"
-              description={
-                'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
-              }
-              madeWith="Figma"
-              backgroundImg={spreangDark}
-              enableScreenshot={false}
-              enableCode={false}
-              enableDemo={false}
-              githubUrl=""
-            />
+          <ProjectItem
+            title="⚛️ React Native + 🚀 Strapi Template"
+            description={
+              "A example and template of mobile-application and CMS integrations with React Native and Strapi."
+            }
+            madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi"
+            backgroundImg={rnStrapi}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={true}
+            demoLabel="Open Demo"
+            demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
+            githubUrl="https://github.com/pjnalls/react-native-strapi-template"
+          />
+          <ProjectItem
+            className="dark:hidden"
+            title="CareerCron"
+            description={
+              "(Work-in-Progress) Career aide and guide that is there for you anytime, anywhere... ⌛💻📲."
+            }
+            madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
+            backgroundImg={ccLight}
+            enableScreenshot={false}
+            enableCode={false}
+            enableDemo={false}
+            demoLabel="View Promotion"
+            demoUrl="https://careercron.com/"
+            githubUrl="https://github.com/pjnalls/careercron"
+          />
+          <ProjectItem
+            className="hidden dark:block"
+            title="CareerCron"
+            description={
+              "(Work-in-Progress) Career aide and guide that is there for you anytime, anywhere... ⌛💻📲."
+            }
+            madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
+            backgroundImg={ccDark}
+            enableScreenshot={false}
+            enableCode={false}
+            enableDemo={false}
+            demoLabel="View Promotion"
+            demoUrl="https://careercron.com/"
+            githubUrl="https://github.com/pjnalls/careercron"
+          />
+          <ProjectItem
+            className="dark:hidden"
+            title="Spreang"
+            description={
+              'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
+            }
+            madeWith="Figma"
+            backgroundImg={spreangLight}
+            enableScreenshot={false}
+            enableCode={false}
+            enableDemo={false}
+            githubUrl=""
+          />
+          <ProjectItem
+            className="hidden dark:block"
+            title="Spreang"
+            description={
+              'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
+            }
+            madeWith="Figma"
+            backgroundImg={spreangDark}
+            enableScreenshot={false}
+            enableCode={false}
+            enableDemo={false}
+            githubUrl=""
+          />
           <ProjectItem
             className="dark:hidden"
             title="Memomalist"
@@ -179,17 +191,17 @@ export default function Projects() {
             enableDemo={false}
             githubUrl="https://github.com/pjnalls/ng-solid-design"
           />
-            <ProjectItem
-              title="Halstown City's Forecast"
-              description="Time series analysis / weather forecast via seasonal autoregression."
-              madeWith="Python, NumPy, pandas, and Matplotlib"
-              backgroundImg={forecast}
-              enableScreenshot={false}
-              enableCode={true}
-              enableDemo={false}
-              demoLabel=""
-              githubUrl="https://github.com/pjnalls/time_series_analysis_and_forecast"
-            />
+          <ProjectItem
+            title="Halstown City's Forecast"
+            description="Time series analysis / weather forecast via seasonal autoregression."
+            madeWith="Python, NumPy, pandas, and Matplotlib"
+            backgroundImg={forecast}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={false}
+            demoLabel=""
+            githubUrl="https://github.com/pjnalls/time_series_analysis_and_forecast"
+          />
           <ProjectItem
             title="Minimalistic Code Editor (Desktop)"
             description="A screenshot of a minimalistic code editor for Zenful coding
