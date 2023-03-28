@@ -19,16 +19,16 @@ export default function About() {
             <br />
           </p>
           <p className="py-2 text-black dark:text-white">
-            Recently, I've began an open-source, cross-platform project called{" "}
+            Recently, I've create an open-source, cross-platform template project called{" "}
             <strong>
-              <a href="/projects#careercron">
+              <a href="/projects#react-native-strapi-template">
                 <span className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150">
-                  CareerCron
+                  ⚛️ React Native + 🚀 Strapi Template
                 </span>
               </a>
             </strong>
-            . We use MERN, React Native, and TypeScript technologies for truly
-            fullstack, web, iOS, and Android developer, development-team and,
+            . In the template, I integrate a Strapi, backend CMS into a React Native written TypeScript for a truly
+            fullstack, web (React app needs to be committed and pushed first), iOS, and Android developer, development-team and,
             most importantly, user experiences.
             <br />
             <br />

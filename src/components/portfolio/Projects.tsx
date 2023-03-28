@@ -35,36 +35,38 @@ export default function Projects() {
         </p>
         <h2 className="py-4">What I&apos;ve Created</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
-          <ProjectItem
-            className="dark:hidden"
-            title="⚛️ React Native + 🚀 Strapi Template"
-            description={
-              "A example and template of mobile-application and CMS integrations with React Native and Strapi."
-            }
-            madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi"
-            backgroundImg={rnStrapiLight}
-            enableScreenshot={false}
-            enableCode={true}
-            enableDemo={true}
-            demoLabel="Open Demo"
-            demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
-            githubUrl="https://github.com/pjnalls/react-native-strapi-template"
-          />
-          <ProjectItem
-            className="hidden dark:block"
-            title="⚛️ React Native + 🚀 Strapi Template"
-            description={
-              "A example and template of mobile-application and CMS integrations with React Native and Strapi."
-            }
-            madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi"
-            backgroundImg={rnStrapiDark}
-            enableScreenshot={false}
-            enableCode={true}
-            enableDemo={true}
-            demoLabel="Open Demo"
-            demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
-            githubUrl="https://github.com/pjnalls/react-native-strapi-template"
-          />
+          <div id="react-native-strapi-template">
+            <ProjectItem
+              className="dark:hidden"
+              title="⚛️ React Native + 🚀 Strapi Template"
+              description={
+                "A example and template of mobile-application and CMS integrations with React Native and Strapi."
+              }
+              madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi"
+              backgroundImg={rnStrapiLight}
+              enableScreenshot={false}
+              enableCode={true}
+              enableDemo={true}
+              demoLabel="Open Demo"
+              demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
+              githubUrl="https://github.com/pjnalls/react-native-strapi-template"
+            />
+            <ProjectItem
+              className="hidden dark:block"
+              title="⚛️ React Native + 🚀 Strapi Template"
+              description={
+                "A example and template of mobile-application and CMS integrations with React Native and Strapi."
+              }
+              madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi"
+              backgroundImg={rnStrapiDark}
+              enableScreenshot={false}
+              enableCode={true}
+              enableDemo={true}
+              demoLabel="Open Demo"
+              demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
+              githubUrl="https://github.com/pjnalls/react-native-strapi-template"
+            />
+          </div>
           <ProjectItem
             className="dark:hidden"
             title="CareerCron"
