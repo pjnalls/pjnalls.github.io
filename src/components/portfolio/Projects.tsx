@@ -46,7 +46,7 @@ export default function Projects() {
               backgroundImg={rnStrapiLight}
               enableScreenshot={false}
               enableCode={true}
-              enableDemo={true}
+              enableDemo={false}
               demoLabel="Open Demo"
               demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
               githubUrl="https://github.com/pjnalls/react-native-strapi-template"
@@ -61,7 +61,7 @@ export default function Projects() {
               backgroundImg={rnStrapiDark}
               enableScreenshot={false}
               enableCode={true}
-              enableDemo={true}
+              enableDemo={false}
               demoLabel="Open Demo"
               demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
               githubUrl="https://github.com/pjnalls/react-native-strapi-template"
@@ -131,7 +131,7 @@ export default function Projects() {
             backgroundImg={memomalistAppMobileLight}
             enableScreenshot={false}
             enableCode={true}
-            enableDemo={true}
+            enableDemo={false}
             demoLabel="Open Demo"
             demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
             githubUrl="https://github.com/pjnalls/memomalist"
@@ -144,7 +144,7 @@ export default function Projects() {
             backgroundImg={memomalistAppMobileDark}
             enableScreenshot={false}
             enableCode={true}
-            enableDemo={true}
+            enableDemo={false}
             demoLabel="Open Demo"
             demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-memomalist"
             githubUrl="https://github.com/pjnalls/memomalist"
@@ -157,7 +157,7 @@ export default function Projects() {
             backgroundImg={forzenAppMobileLight}
             enableScreenshot={false}
             enableCode={true}
-            enableDemo={true}
+            enableDemo={false}
             demoLabel="Open Demo"
             demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-forzen-rn"
             githubUrl="https://github.com/pjnalls/forzen-rn"
@@ -170,7 +170,7 @@ export default function Projects() {
             backgroundImg={forzenAppMobileDark}
             enableScreenshot={false}
             enableCode={true}
-            enableDemo={true}
+            enableDemo={false}
             demoLabel="Open Demo"
             demoUrl="https://snack.expo.dev/@pjnalls/github.com-pjnalls-forzen-rn"
             githubUrl="https://github.com/pjnalls/forzen-rn"
