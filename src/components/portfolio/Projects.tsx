@@ -40,7 +40,7 @@ export default function Projects() {
               className="dark:hidden"
               title="⚛️ React Native + 🚀 Strapi Template"
               description={
-                "A example and template of mobile-application and CMS integrations with React Native and Strapi."
+                "An example and template of mobile-application and CMS integrations with React Native and Strapi."
               }
               madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi"
               backgroundImg={rnStrapiLight}
@@ -55,7 +55,7 @@ export default function Projects() {
               className="hidden dark:block"
               title="⚛️ React Native + 🚀 Strapi Template"
               description={
-                "A example and template of mobile-application and CMS integrations with React Native and Strapi."
+                "An example and template of mobile-application and CMS integrations with React Native and Strapi."
               }
               madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi"
               backgroundImg={rnStrapiDark}
@@ -126,7 +126,7 @@ export default function Projects() {
           <ProjectItem
             className="dark:hidden"
             title="Memomalist"
-            description="/\ˈmeməˌmələst/ [noun]: A minimalistic spaced-repetition application for memorization."
+            description="/ˈmeməˌmələst/ [noun]: A minimalistic spaced-repetition application for memorization."
             madeWith="React Native, React, TypeScript, Fibonacci Sequence, and Expo"
             backgroundImg={memomalistAppMobileLight}
             enableScreenshot={false}
