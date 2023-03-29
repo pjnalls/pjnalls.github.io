@@ -139,7 +139,7 @@ export default function Projects() {
           <ProjectItem
             className="hidden dark:block"
             title="Memomalist"
-            description="/\ˈmeməˌmələst/ [noun]: A minimalistic spaced-repetition application for memorization."
+            description="/ˈmeməˌmələst/ [noun]: A minimalistic spaced-repetition application for memorization."
             madeWith="React Native, React, TypeScript, Fibonacci Sequence, and Expo"
             backgroundImg={memomalistAppMobileDark}
             enableScreenshot={false}

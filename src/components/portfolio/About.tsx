@@ -11,25 +11,16 @@ export default function About() {
           </p>
           <h2 className="py-4">Who I am</h2>
           <p className="py-2 text-slate-600 dark:text-slate-300/90">
-            I'm a frontend developer providing React and Angular consulting
-            along with other technologies with many opportunities for frontend-architectural and UI/UX designs and implementations
-            <br />
-            Along with full-time consulting, I&apos;m also a postgraduate
-            beginning a program for an MS in computer science in May of 2023.
-            <br />
+            I'm a frontend developer with UI architecture experience providing
+            React, Angular, and some cross-platform development consulting along
+            with other technological services — having many opportunities for
+            frontend-architectural and UI/UX designs and implementations from
+            day to day.
           </p>
           <p className="py-2 text-black dark:text-white">
-            Recently, I've create an open-source, cross-platform template project called{" "}
-            <strong>
-              <a href="/projects#react-native-strapi-template">
-                <span className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150">
-                  ⚛️ React Native + 🚀 Strapi Template
-                </span>
-              </a>
-            </strong>
-            . In the template, I integrate a Strapi, backend CMS into a React Native written TypeScript for a truly
-            fullstack, web (React app needs to be committed and pushed first), iOS, and Android developer, development-team and,
-            most importantly, user experiences.
+            Along with both part-time + full-time consulting, I'm also a
+            postgraduate beginning a program for an MS in computer science in
+            May of 2023.
             <br />
             <br />
             As a hobby, I learn Python, data science, machine learning, and pure
@@ -37,16 +28,10 @@ export default function About() {
             <br />
             <br />
             Work as a consultant and for personal pet projects feels like high
-            forms of creative expression, and I love to do the work that I do
-            everyday.
-          </p>
-          <p className="py-2 text-black dark:text-white">
-            I&apos;d like to show you my work rather than tell you about it, so please feel free to check out some of{" "}
-            <a href="/projects" className="py-2 font-semibold">
-              <span className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150">
-                my latest projects.
-              </span>
-            </a>
+            forms of both creative and analytical expression, and I strive to be
+            completely devoted to and singularly focused on the process of
+            designing and developing great DX, CX, UX, and, above all, PX — people
+            experiences.
           </p>
         </div>
         <div className="col-span-2 p-[3.333rem]">
