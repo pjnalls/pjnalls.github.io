@@ -51,7 +51,7 @@ body:before {
   h5,
   h6,
   p {
-    @apply drop-shadow-[0_3px_3px_rgba(255,255,255,0.333)] dark:drop-shadow-[0_3px_3px_rgba(0,0,0,0.333)];
+    @apply drop-shadow-[0_3px_3px_rgba(255,255,255,0.111)] dark:drop-shadow-[0_3px_3px_rgba(0,0,0,0.333)];
   }
 
   li {

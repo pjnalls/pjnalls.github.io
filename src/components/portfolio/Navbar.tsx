@@ -147,7 +147,7 @@ export default function Navbar() {
           </div>
           <div className="border-b border-slate-400 my-4">
             <p className="w-[100%] md:w-[80%] text-sm py-4 tracking-widest">
-              📚 LEARNING DAILY
+              👆 G . P . X . 2 . A
             </p>
           </div>
         </div>
