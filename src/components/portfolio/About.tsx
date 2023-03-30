@@ -30,8 +30,8 @@ export default function About() {
             Work as a consultant and for personal pet projects feels like high
             forms of both creative and analytical expression, and I strive to be
             completely devoted to and singularly focused on the process of
-            designing and developing great DX, CX, UX, and, above all, PX — people
-            experiences.
+            designing and developing great DX, CX, UX, and, most importantly, PX
+            — great people experience above all.
           </p>
         </div>
         <div className="col-span-2 p-[3.333rem]">
