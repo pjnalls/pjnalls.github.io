@@ -5,7 +5,7 @@ export default function Main() {
     <div id="main" className="w-full lg:h-screen text-center relative z-[1]">
       <div className="max-w-[1240px] w-full h-[100%] mx-auto p-2 py-36 flex justify-center items-center">
         <div>
-          <p className="text-lg font-bold tracking-widest text-slate-600 dark:text-slate-300 mb-2">
+          <p className="text-lg font-semibold tracking-widest text-slate-600 dark:text-slate-300 mb-2">
             <span className="uppercase">👆 G . P . X . 2 . A</span>
             <br />
             <span className="font-normal text-base tracking-wide ">
