@@ -9,7 +9,7 @@ export default function Main() {
             <span className="uppercase">👆 G . P . X . 2 . A</span>
             <br />
             <span className="font-normal text-base tracking-wide ">
-              Great People Experiences Above All
+              Great People Experience Above All
             </span>
           </p>
           <h1 className="py-4 text-slate-800 dark:text-[#ecf0f3]">
