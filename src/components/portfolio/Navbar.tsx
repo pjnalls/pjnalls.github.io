@@ -184,7 +184,7 @@ export default function Navbar() {
             </li>
             <li
               onClick={() => handleDarkMode()}
-              className="darkModeToggle text-sm origin-left uppercase text-[30px] hover:text-slate-700 hover:scale-110 dark:hover:text-slate-300 py-4 transition-all duration-200 ease-in"
+              className="darkModeToggle text-sm origin-left uppercase text-[30px] hover:opacity-80 hover:scale-110 py-4 transition-all duration-200 ease-in"
             >
               ◑
             </li>
@@ -202,7 +202,7 @@ export default function Navbar() {
             </p>
             <div className="flex items-center my-2 pt-2 w-full gap-5">
               <a href="https://github.com/pjnalls" aria-label="GitHub">
-                <div className="rounded-full shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
+                <div className="rounded-full shadow-lg text-[#19216f] dark:text-[#fff0e0] shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
                   <FaGithub size="30px" />
                 </div>
               </a>
@@ -210,7 +210,7 @@ export default function Navbar() {
                 href="https://www.linkedin.com/in/pjnalls"
                 aria-label="LinkedIn"
               >
-                <div className="text-[#000] dark:text-[#fff] rounded-full shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
+                <div className="rounded-full shadow-lg text-[#19216f] dark:text-[#fff0e0] shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
                   <FaLinkedin size="30px" />
                 </div>
               </a>

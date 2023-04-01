@@ -19,12 +19,12 @@ export default function Footer() {
       </p>
       <div className="flex items-center content-center justify-center my-2 pt-2 w-full gap-5">
         <a href="https://github.com/pjnalls" aria-label="GitHub">
-          <div className="text-[#000] dark:text-[#fff] rounded-full shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
+          <div className="rounded-full shadow-lg text-[#19216f] dark:text-[#fff0e0] shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
             <FaGithub size="30px" />
           </div>
         </a>
         <a href="https://www.linkedin.com/in/pjnalls" aria-label="LinkedIn">
-          <div className="text-[#000] dark:text-[#fff] rounded-full shadow-lg shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
+          <div className="rounded-full shadow-lg text-[#19216f] dark:text-[#fff0e0] shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
             <FaLinkedin size="30px" />
           </div>
         </a>
