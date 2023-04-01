@@ -5,14 +5,14 @@ export default function Main() {
     <div id="main" className="w-full lg:h-screen text-center relative z-[1]">
       <div className="max-w-[1240px] w-full h-[100%] mx-auto p-2 py-36 flex justify-center items-center">
         <div>
-          <p className="text-lg font-semibold tracking-widest text-slate-600 dark:text-slate-300 mb-2">
-            <span className="uppercase">👆 G . P . X . 2 . A</span>
+          <p className="text-lg font-semibold tracking-widest  mb-2">
+            <span className="text-2xl dark:text-amber-400 text-amber-900">G . P . X . 2 . A</span>
             <br />
             <span className="font-normal text-base tracking-wide ">
-              Great People Experience Above All
+              👆 Great People Experience Above All
             </span>
           </p>
-          <h1 className="py-4 text-slate-800 dark:text-[#ecf0f3]">
+          <h1 className="py-4 ">
             Hi 👋, I&apos;m{" "}
             <a href="/about">
               <span className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150">
@@ -21,14 +21,14 @@ export default function Main() {
             </a>
             .
           </h1>
-          <h2 className="py-4 text-slate-800 dark:text-[#ecf0f3] md:text-3xl text-lg font-semibold">
+          <h2 className="py-4 md:text-3xl text-lg font-semibold">
             Frontend Developer •
             <br />
             MS in Computer Science Postgraduate
             <br />
             at Kennesaw State University - (CCSE)
           </h2>
-          <p className="py-4 text-slate-800  dark:text-[#ecf0f3] max-w-[70%] m-auto">
+          <p className="py-4  max-w-[70%] m-auto">
             My focus is on combining aesthetical, <br />
             functional design with efficient yet elegant frontend code.
             <br />

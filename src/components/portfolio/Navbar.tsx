@@ -48,7 +48,7 @@ export default function Navbar() {
       <div
         className={
           $navShadow
-            ? "fixed w-full z-[10] h-20 shadow-lg shadow-slate-600/40 dark:shadow-slate-900/60 bg-[#ecf0f3] dark:bg-[#1f2937] transition-all ease-in duration-500"
+            ? "fixed w-full z-[10] h-20 shadow-lg shadow-slate-600/40 dark:shadow-slate-900/60 dark:bg-[#227] bg-[#ccf] transition-all ease-in duration-500"
             : "fixed w-full z-[10] h-20 shadow-slate-600/40 bg-transparent transition-all ease-in duration-500"
         }
       >
@@ -123,8 +123,8 @@ export default function Navbar() {
       <div
         className={
           $navOpen
-            ? "md:hidden fixed z-[101] left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#1f2937] p-10 transition-all ease-in duration-300"
-            : "fixed z-[0] left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#1f2937] p-10 transition-all ease-in duration-300"
+            ? "md:hidden fixed z-[101] left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#227] bg-[#ccf] p-10 transition-all ease-in duration-300"
+            : "fixed z-[0] left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#227] bg-[#ccf] p-10 transition-all ease-in duration-300"
         }
       >
         <div>
@@ -145,11 +145,9 @@ export default function Navbar() {
               <AiOutlineClose></AiOutlineClose>
             </div>
           </div>
-          <div className="border-b border-slate-400 my-4">
-            <p className="w-[100%] md:w-[80%] text-sm py-4 tracking-widest">
-              👆 G . P . X . 2 . A
-            </p>
-          </div>
+          <p className="w-[100%] md:w-[80%] text-sm py-4 tracking-widest font-semibold dark:text-amber-400 text-amber-900">
+            👆 G . P . X . 2 . A
+          </p>
         </div>
         <div className="py-4 flex flex-col">
           <ul>
@@ -186,7 +184,7 @@ export default function Navbar() {
             </li>
             <li
               onClick={() => handleDarkMode()}
-              className="darkModeToggle text-sm uppercase text-[30px] hover:text-slate-700 dark:hover:text-slate-300 py-4 transition-all duration-200 ease-in"
+              className="darkModeToggle text-sm origin-left uppercase text-[30px] hover:text-slate-700 hover:scale-110 dark:hover:text-slate-300 py-4 transition-all duration-200 ease-in"
             >
               ◑
             </li>
@@ -199,7 +197,8 @@ export default function Navbar() {
               <br />
               React, TypeScript, Tailwind CSS, Astro and ❤️.
               <br />
-              <br />Copyright © 2023 Preston Nalls
+              <br />
+              Copyright © 2023 Preston Nalls
             </p>
             <div className="flex items-center my-2 pt-2 w-full gap-5">
               <a href="https://github.com/pjnalls" aria-label="GitHub">

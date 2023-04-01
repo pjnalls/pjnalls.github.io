@@ -10,14 +10,14 @@ export default function About() {
             About
           </p>
           <h2 className="py-4">Who I am</h2>
-          <p className="py-2 text-slate-600 dark:text-slate-300/90">
+          <p className="py-2 text-[#19216faf] dark:text-[#fff0e0bf]">
             I'm a frontend developer with UI architecture experience providing
             React, Angular, and some cross-platform development consulting along
             with other technological services — having many opportunities for
             frontend-architectural and UI/UX designs and implementations from
             day to day.
           </p>
-          <p className="py-2 text-black dark:text-white">
+          <p className="py-2">
             Along with both part-time + full-time consulting, I'm also a
             postgraduate beginning a program for an MS in computer science in
             May of 2023.
