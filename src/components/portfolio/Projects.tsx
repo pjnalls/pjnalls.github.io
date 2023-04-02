@@ -42,7 +42,7 @@ export default function Projects() {
               description={
                 "An example and template of mobile-application and CMS integrations with React Native and Strapi."
               }
-              madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi"
+              madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi."
               backgroundImg={rnStrapiLight}
               enableScreenshot={false}
               enableCode={true}
@@ -57,7 +57,7 @@ export default function Projects() {
               description={
                 "An example and template of mobile-application and CMS integrations with React Native and Strapi."
               }
-              madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi"
+              madeWith="React Native, TypeScript, Microsoft Paint • Photos, Expo, and Strapi."
               backgroundImg={rnStrapiDark}
               enableScreenshot={false}
               enableCode={true}
@@ -73,7 +73,7 @@ export default function Projects() {
             description={
               "(Work-in-Progress) Career aide and guide that is there for you anytime, anywhere... ⌛💻📲."
             }
-            madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
+            madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON."
             backgroundImg={ccLight}
             enableScreenshot={false}
             enableCode={false}
@@ -88,7 +88,7 @@ export default function Projects() {
             description={
               "(Work-in-Progress) Career aide and guide that is there for you anytime, anywhere... ⌛💻📲."
             }
-            madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON"
+            madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON."
             backgroundImg={ccDark}
             enableScreenshot={false}
             enableCode={false}
@@ -103,7 +103,7 @@ export default function Projects() {
             description={
               'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
             }
-            madeWith="Figma"
+            madeWith="Figma."
             backgroundImg={spreangLight}
             enableScreenshot={false}
             enableCode={false}
@@ -116,7 +116,7 @@ export default function Projects() {
             description={
               'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
             }
-            madeWith="Figma"
+            madeWith="Figma."
             backgroundImg={spreangDark}
             enableScreenshot={false}
             enableCode={false}
@@ -127,7 +127,7 @@ export default function Projects() {
             className="dark:hidden"
             title="Memomalist"
             description="/ˈmeməˌmələst/ [noun]: A minimalistic spaced-repetition application for memorization."
-            madeWith="React Native, React, TypeScript, Fibonacci Sequence, and Expo"
+            madeWith="React Native, React, TypeScript, Fibonacci Sequence, and Expo."
             backgroundImg={memomalistAppMobileLight}
             enableScreenshot={false}
             enableCode={true}
@@ -140,7 +140,7 @@ export default function Projects() {
             className="hidden dark:block"
             title="Memomalist"
             description="/ˈmeməˌmələst/ [noun]: A minimalistic spaced-repetition application for memorization."
-            madeWith="React Native, React, TypeScript, Fibonacci Sequence, and Expo"
+            madeWith="React Native, React, TypeScript, Fibonacci Sequence, and Expo."
             backgroundImg={memomalistAppMobileDark}
             enableScreenshot={false}
             enableCode={true}
@@ -152,8 +152,8 @@ export default function Projects() {
           <ProjectItem
             className="dark:hidden"
             title="F⍛rzen RN"
-            description="A React Native (RN) app for a self-help blog for educational purposes."
-            madeWith="React Native, React, TypeScript, and Expo"
+            description="A React Native (RN) app for a self-help blog and educational purposes."
+            madeWith="React Native, React, TypeScript, and Expo."
             backgroundImg={forzenAppMobileLight}
             enableScreenshot={false}
             enableCode={true}
@@ -165,8 +165,8 @@ export default function Projects() {
           <ProjectItem
             className="hidden dark:block"
             title="F⍛rzen RN"
-            description="A React Native (RN) app for a self-help blog for educational purposes."
-            madeWith="React Native, React, TypeScript, and Expo"
+            description="A React Native (RN) app for a self-help blog and educational purposes."
+            madeWith="React Native, React, TypeScript, and Expo."
             backgroundImg={forzenAppMobileDark}
             enableScreenshot={false}
             enableCode={true}
@@ -178,7 +178,7 @@ export default function Projects() {
           <ProjectItem
             title="F⍛rzen.io (Mobile Prototype)"
             description="A live prototype of the mobile version of F⍛rzen.io."
-            madeWith="Figma"
+            madeWith="Figma."
             backgroundImg={forzenPrototypeMobile}
             enableScreenshot={false}
             enableCode={false}
@@ -190,7 +190,7 @@ export default function Projects() {
           <ProjectItem
             title="F⍛rzen.io (Desktop Prototype)"
             description="A live prototype of the desktop version of F⍛rzen.io."
-            madeWith="Figma"
+            madeWith="Figma."
             backgroundImg={forzenPrototypeDesktop}
             enableScreenshot={false}
             enableCode={false}
@@ -203,7 +203,7 @@ export default function Projects() {
           <ProjectItem
             title="A° SOLID"
             description="An example Angular web app developed in phases with SOLID design principles."
-            madeWith="Angular, SOLID Design, and Markdown"
+            madeWith="Angular, SOLID Design, and Markdown."
             backgroundImg={aSolid}
             enableScreenshot={false}
             enableCode={true}
@@ -213,7 +213,7 @@ export default function Projects() {
           <ProjectItem
             title="Halstown City's Forecast"
             description="Time series analysis / weather forecast via seasonal autoregression."
-            madeWith="Python, NumPy, pandas, and Matplotlib"
+            madeWith="Python, NumPy, pandas, and Matplotlib."
             backgroundImg={forecast}
             enableScreenshot={false}
             enableCode={true}
@@ -225,7 +225,7 @@ export default function Projects() {
             title="Minimalistic Code Editor (Desktop)"
             description="A screenshot of a minimalistic code editor for Zenful coding
             which has only syntax highlighting."
-            madeWith="React, TypeScript, Electron, CodeMirror, and Vite"
+            madeWith="React, TypeScript, Electron, CodeMirror, and Vite."
             backgroundImg={mceDesktop}
             enableScreenshot={false}
             enableCode={false}
@@ -238,7 +238,7 @@ export default function Projects() {
             title="Minimalistic Code Editor (Web)"
             description="A screenshot of a minimalistic code editor for Zenful coding
             which has only syntax highlighting and a simple console."
-            madeWith="Angular, SCSS, and CodeMirror"
+            madeWith="Angular, SCSS, and CodeMirror."
             backgroundImg={mceWeb}
             enableScreenshot={false}
             enableCode={false}
@@ -250,7 +250,7 @@ export default function Projects() {
           <ProjectItem
             title="Digital Rain"
             description="Digital rain in the browser. (Based off a popular film franchise.)"
-            madeWith="HTML, SCSS, and ES6+ JavaScript"
+            madeWith="HTML, SCSS, and ES6+ JavaScript."
             backgroundImg={digitalRain}
             enableScreenshot={false}
             enableCode={false}
@@ -263,7 +263,7 @@ export default function Projects() {
             title="F⍛rzen.io • J.ungy⍛gi"
             description="F⍛rzen.io from the perspective of J.ungy⍛gi, the artist — the
             side of meditation."
-            madeWith="HTML, SCSS, and ES6+ JavaScript"
+            madeWith="HTML, SCSS, and ES6+ JavaScript."
             backgroundImg={forzenJungCauz}
             enableScreenshot={false}
             enableCode={true}
@@ -275,7 +275,7 @@ export default function Projects() {
           <ProjectItem
             title="SCSS Abstract Art"
             description="For capturing certain, abstract forms of art with thin HTML markup and modular SCSS code."
-            madeWith="SCSS and HTML"
+            madeWith="SCSS and HTML."
             backgroundImg={scssArt}
             enableScreenshot={false}
             enableCode={true}
