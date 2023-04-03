@@ -32,7 +32,7 @@ body:before {
 
 @layer base {
   body {
-    @apply bg-fixed bg-gradient-to-b dark:from-[#327] dark:to-[#506] from-[#ccf] to-[#ecf] text-[#19216f] dark:text-[#fff0e0] tracking-wide transition-all duration-200 ease-linear;
+    @apply bg-fixed bg-gradient-to-b dark:from-[#416] dark:to-[#615] from-[#ccf] to-[#ecf] text-[#19216f] dark:text-[#fff0e0] tracking-wide transition-all duration-200 ease-linear;
   }
 
   h1,
