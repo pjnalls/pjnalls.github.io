@@ -48,7 +48,7 @@ export default function Navbar() {
       <div
         className={
           $navShadow
-            ? "fixed w-full z-[10] h-20 shadow-lg shadow-slate-600/40 dark:shadow-slate-900/60 dark:bg-[#227] bg-[#ccf] transition-all ease-in duration-500"
+            ? "fixed w-full z-[10] h-20 shadow-lg shadow-slate-600/40 dark:shadow-slate-900/60 dark:bg-[#327] bg-[#ccf] transition-all ease-in duration-500"
             : "fixed w-full z-[10] h-20 shadow-slate-600/40 bg-transparent transition-all ease-in duration-500"
         }
       >
@@ -123,8 +123,8 @@ export default function Navbar() {
       <div
         className={
           $navOpen
-            ? "md:hidden fixed z-[101] left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#227] bg-[#ccf] p-10 transition-all ease-in duration-300"
-            : "fixed z-[0] left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#227] bg-[#ccf] p-10 transition-all ease-in duration-300"
+            ? "md:hidden fixed z-[101] left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#327] bg-[#ccf] p-10 transition-all ease-in duration-300"
+            : "fixed z-[0] left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#327] bg-[#ccf] p-10 transition-all ease-in duration-300"
         }
       >
         <div>
