@@ -20,7 +20,7 @@ body:before {
   height: 100vh;
   background-image: url("/assets/bg.avif");
   position: fixed;
-  opacity: 0.05667;
+  opacity: 0.10;
   background-color: #1f2937;
   left: 0;
   top: 0;
@@ -32,8 +32,140 @@ body:before {
 
 @layer base {
   body {
-    @apply bg-fixed bg-gradient-to-b dark:from-[#416] dark:to-[#615] from-[#ccf] to-[#ecf] text-[#19216f] dark:text-[#fff0e0] tracking-wide transition-all duration-200 ease-linear;
+    @apply bg-fixed dark:bg-[#313] bg-[#ccf] text-[#19216f] dark:text-[#fff0e0] tracking-wide transition-all duration-200 ease-linear;
   }
+
+  .primary-gradient {
+    @apply z-[0] bg-fixed bg-gradient-to-b dark:from-[#517] dark:to-[#715] from-[#c0c0ff] to-[#ffc0f0];
+  }
+  .secondary-gradient {
+    @apply z-[0] bg-fixed bg-gradient-to-b dark:from-[#715] dark:to-[#517] from-[#ffc0f0] to-[#c0c0ff];
+  }
+
+  .primary-gradient {
+    animation: 4.25s ease primary-opacity-change 1s infinite;
+    opacity: 0;
+  }
+  .secondary-gradient {
+    animation: 4.25s ease secondary-opacity-change 1s infinite;
+    opacity: 0.5333;
+  }
+
+  @-webkit-keyframes primary-opacity-change {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5333;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes secondary-opacity-change {
+    0% {
+      opacity: 0.5333;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5333;
+    }
+  }
+
+  @-ms-keyframes primary-opacity-change {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5333;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-ms-keyframes secondary-opacity-change {
+    0% {
+      opacity: 0.5333;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5333;
+    }
+  }
+
+  @-moz-keyframes primary-opacity-change {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5333;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes secondary-opacity-change {
+    0% {
+      opacity: 0.5333;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5333;
+    }
+  }
+
+  @-o-keyframes primary-opacity-change {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5333;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-o-keyframes secondary-opacity-change {
+    0% {
+      opacity: 0.5333;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5333;
+    }
+  }
+
+  @keyframes primary-opacity-change {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5333;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes secondary-opacity-change {
+    0% {
+      opacity: 0.5333;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5333;
+    }
+  }
+  
 
   h1,
   h2,
