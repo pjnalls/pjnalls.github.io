@@ -44,7 +44,7 @@ export default function Skills() {
   return (
     <div id="skills" className="w-full relative z-[1] p-2">
       <div className="max-w-[1000px] mx-auto flex flex-col justify-center py-36 px-2">
-        <p className="text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
+        <p className="header-2 text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
           Skills
         </p>
         <h2 className="py-4">What I Can Do</h2>

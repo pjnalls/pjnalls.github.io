@@ -249,7 +249,7 @@ body:before {
   }
 
   main {
-    animation: 0.8333s ease fade-in;
+    animation: 1s ease fade-in;
   }
 
   @-webkit-keyframes fade-in {
@@ -257,7 +257,7 @@ body:before {
       opacity: 0;
       padding-top: 27.333%;
     }
-    50% {
+    25% {
       opacity: 0;
     }
     100% {
@@ -270,7 +270,7 @@ body:before {
       opacity: 0;
       padding-top: 27.333%;
     }
-    50% {
+    25% {
       opacity: 0;
     }
     100% {
@@ -283,7 +283,7 @@ body:before {
       opacity: 0;
       padding-top: 27.333%;
     }
-    50% {
+    25% {
       opacity: 0;
     }
     100% {
@@ -296,7 +296,7 @@ body:before {
       opacity: 0;
       padding-top: 27.333%;
     }
-    50% {
+    25% {
       opacity: 0;
     }
     100% {
@@ -309,12 +309,212 @@ body:before {
       opacity: 0;
       padding-top: 27.333%;
     }
-    50% {
+    25% {
       opacity: 0;
     }
     100% {
       opacity: 1;
       padding-top: 0;
+    }
+  }
+
+  :not(.dark body) * h1,
+  :not(.dark body) * h2,
+  :not(.dark body) * h3,
+  :not(.dark body) * h4,
+  :not(.dark body) * h5,
+  :not(.dark body) * h6,
+  :not(.dark body) * p :not(.header-2) :not(span) {
+    animation: 10s ease color-change 1s infinite;
+  }
+
+  @-webkit-keyframes color-change {
+    0% {
+      color: #19216f;
+    }
+    25% {
+      color: #4f1149;
+    }
+    50% {
+      color: #11496f;
+    }
+    75% {
+      color: #4f1149;
+    }
+    100% {
+      color: #19216f;
+    }
+  }
+
+  @-o-keyframes color-change {
+    0% {
+      color: #19216f;
+    }
+    25% {
+      color: #4f1149;
+    }
+    50% {
+      color: #11494f;
+    }
+    75% {
+      color: #4f1149;
+    }
+    100% {
+      color: #19216f;
+    }
+  }
+
+  @-moz-keyframes color-change {
+    0% {
+      color: #19216f;
+    }
+    25% {
+      color: #4f1149;
+    }
+    50% {
+      color: #11494f;
+    }
+    75% {
+      color: #4f1149;
+    }
+    100% {
+      color: #19216f;
+    }
+  }
+
+  @-ms-keyframes color-change {
+    0% {
+      color: #19216f;
+    }
+    25% {
+      color: #4f1149;
+    }
+    50% {
+      color: #11494f;
+    }
+    75% {
+      color: #4f1149;
+    }
+    100% {
+      color: #19216f;
+    }
+  }
+
+  @keyframes color-change {
+    0% {
+      color: #19216f;
+    }
+    25% {
+      color: #4f1149;
+    }
+    50% {
+      color: #11494f;
+    }
+    75% {
+      color: #4f1149;
+    }
+    100% {
+      color: #19216f;
+    }
+  }
+
+  .dark body * h1,
+  .dark body * h2,
+  .dark body * h3,
+  .dark body * h4,
+  .dark body * h5,
+  .dark body * h6,
+  .dark body * p :not(.header-2) :not(span) {
+    animation: 10s ease dark-color-change 1s infinite;
+  }
+
+  @-webkit-keyframes dark-color-change {
+    0% {
+      color: #fff0e0;
+    }
+    25% {
+      color: #f0e0ff;
+    }
+    50% {
+      color: #e0fff0;
+    }
+    75% {
+      color: #f0e0ff;
+    }
+    100% {
+      color: #fff0e0;
+    }
+  }
+
+  @-o-keyframes dark-color-change {
+    0% {
+      color: #fff0e0;
+    }
+    25% {
+      color: #f0e0ff;
+    }
+    50% {
+      color: #e0fff0;
+    }
+    75% {
+      color: #f0e0ff;
+    }
+    100% {
+      color: #fff0e0;
+    }
+  }
+
+  @-moz-keyframes dark-color-change {
+    0% {
+      color: #fff0e0;
+    }
+    25% {
+      color: #f0e0ff;
+    }
+    50% {
+      color: #e0fff0;
+    }
+    75% {
+      color: #f0e0ff;
+    }
+    100% {
+      color: #fff0e0;
+    }
+  }
+
+  @-ms-keyframes dark-color-change {
+    0% {
+      color: #fff0e0;
+    }
+    25% {
+      color: #f0e0ff;
+    }
+    50% {
+      color: #e0fff0;
+    }
+    75% {
+      color: #f0e0ff;
+    }
+    100% {
+      color: #fff0e0;
+    }
+  }
+
+  @keyframes dark-color-change {
+    0% {
+      color: #fff0e0;
+    }
+    25% {
+      color: #f0e0ff;
+    }
+    50% {
+      color: #e0fff0;
+    }
+    75% {
+      color: #f0e0ff;
+    }
+    100% {
+      color: #fff0e0;
     }
   }
 

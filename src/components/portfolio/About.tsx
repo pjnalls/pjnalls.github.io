@@ -6,11 +6,11 @@ export default function About() {
     <div id="about" className="w-full relative z-[1] p-2">
       <div className="max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36 md:flex justify-center items-center">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widestest text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
+          <p className="header-2 uppercase text-xl tracking-widestest text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
             About
           </p>
           <h2 className="py-4">Who I am</h2>
-          <p className="py-2 text-[#19216faf] dark:text-[#fff0e0bf]">
+          <p className="py-2">
             I'm a frontend developer with UI architecture experience providing
             React, Angular, and some cross-platform development consulting along
             with other technological services — having many opportunities for
@@ -23,15 +23,22 @@ export default function About() {
             May of 2023.
             <br />
             <br />
-            As a hobby, I learn Python, data science, machine learning, and pure
-            mathematics.
+            As a hobby, I learn Python, data science, machine learning,
+            mathematics, philosophy, yoga (in the traditional sense), and different yet similar languages and
+            cultures.
             <br />
             <br />
             Work as a consultant and for personal pet projects feels like high
             forms of both creative and analytical expression, and I strive to be
             completely devoted to and singularly focused on the process of
             designing and developing great DX, CX, UX, and, most importantly, PX
-            — great people experience above all.
+            — great people experience above all. 👆{" "}
+            <a
+              href="https://www.linkedin.com/in/pjnalls"
+              className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150"
+            >
+              #gpx2a
+            </a>
           </p>
         </div>
         <div className="col-span-2 p-[3.333rem]">
