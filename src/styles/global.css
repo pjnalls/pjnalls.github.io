@@ -20,7 +20,7 @@ body:before {
   height: 100vh;
   background-image: url("/assets/bg.avif");
   position: fixed;
-  opacity: 0.10;
+  opacity: 0.1;
   background-color: #1f2937;
   left: 0;
   top: 0;
@@ -33,6 +33,7 @@ body:before {
 @layer base {
   body {
     @apply bg-fixed dark:bg-[#313] bg-[#ccf] text-[#19216f] dark:text-[#fff0e0] tracking-wide transition-all duration-200 ease-linear;
+    overflow-y: scroll;
   }
 
   .primary-gradient {
@@ -165,7 +166,6 @@ body:before {
       opacity: 0.5333;
     }
   }
-  
 
   h1,
   h2,
@@ -246,6 +246,76 @@ body:before {
     inset: 0 0 auto auto;
     transform-origin: 0 0;
     transform: translate(29.3%) rotate(45deg);
+  }
+
+  main {
+    animation: 0.8333s ease fade-in;
+  }
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+      padding-top: 27.333%;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      padding-top: 0;
+    }
+  }
+  @-ms-keyframes fade-in {
+    0% {
+      opacity: 0;
+      padding-top: 27.333%;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      padding-top: 0;
+    }
+  }
+  @-o-keyframes fade-in {
+    0% {
+      opacity: 0;
+      padding-top: 27.333%;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      padding-top: 0;
+    }
+  }
+  @-moz-keyframes fade-in {
+    0% {
+      opacity: 0;
+      padding-top: 27.333%;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      padding-top: 0;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      padding-top: 27.333%;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      padding-top: 0;
+    }
   }
 
   /** ********************
