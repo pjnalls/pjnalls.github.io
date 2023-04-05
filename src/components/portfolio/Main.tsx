@@ -22,7 +22,7 @@ export default function Main() {
             .
           </h1>
           <h2 className="py-4 md:text-3xl text-lg font-semibold">
-            Frontend Developer •
+            Frontend Developer
             <br />
             MS in Computer Science Postgraduate
             <br />

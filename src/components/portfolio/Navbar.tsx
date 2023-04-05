@@ -94,7 +94,30 @@ export default function Navbar() {
                 </a>
                 <span className="hovercard">
                   <span className="pointer">👆</span>
-                  <div className="tooltiptext">Download my resume here.</div>
+                  <div className="tooltiptext font-medium">
+                    Download my resume here.
+                  </div>
+                </span>
+              </li>
+              <li className="ml-10 text-sm hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in resume-option">
+                <a
+                  className="flex items-center"
+                  href="/assets/履歴書 - Preston Nalls.pdf"
+                >
+                  <span className="mr-1 uppercase">
+                    CV (<span lang="ja">日本語</span>){" "}
+                  </span>{" "}
+                  <FiDownload fontSize={"1rem"} />
+                </a>
+                <span className="hovercard">
+                  <span className="pointer right-20">👆</span>
+                  <div className="tooltiptext font-medium">
+                    <span lang="ja">
+                      ここから履歴書を
+                      <br />
+                      ダウンロードします。
+                    </span>
+                  </div>
                 </span>
               </li>
               <li
@@ -179,7 +202,30 @@ export default function Navbar() {
               </a>
               <span className="hovercard drawer">
                 <span className="pointer drawer__pointer">👈</span>
-                <div className="tooltiptext">Download my resume here.</div>
+                <div className="tooltiptext font-medium">
+                  Download my resume here.
+                </div>
+              </span>
+            </li>
+            <li className="py-3 text-sm origin-left hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in resume-option">
+              <a
+                className="flex items-center"
+                href="/assets/履歴書 - Preston Nalls.pdf"
+              >
+                <span className="mr-1 uppercase">
+                  CV (<span lang="ja">日本語</span>){" "}
+                </span>{" "}
+                <FiDownload fontSize={"1rem"} />
+              </a>
+              <span className="hovercard drawer">
+                <span className="pointer drawer__pointer">👈</span>
+                <div className="tooltiptext font-medium">
+                  <span lang="ja">
+                    ここから履歴書を
+                    <br />
+                    ダウンロードします。
+                  </span>
+                </div>
               </span>
             </li>
             <li
