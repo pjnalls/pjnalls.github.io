@@ -1,7 +1,6 @@
-import React from "react";
 import { useStore } from "@nanostores/react";
 
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai/index";
 import { FaGithub, FaLinkedin } from "react-icons/fa/index";
@@ -64,9 +63,7 @@ export default function Navbar() {
           </a>
           <div>
             <ul className="hidden md:flex px-2 transition-all ease-in duration-300">
-              <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <a href="/">Home</a>
-              </li>
+
 
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
                 <a href="/about">About</a>
@@ -105,7 +102,7 @@ export default function Navbar() {
                   href="/assets/履歴書 - Preston Nalls.pdf"
                 >
                   <span className="mr-1 uppercase">
-                    CV (<span lang="ja">日本語</span>){" "}
+                    CV (JA){" "}
                   </span>{" "}
                   <FiDownload fontSize={"1rem"} />
                 </a>
@@ -175,10 +172,6 @@ export default function Navbar() {
         <div className="py-4 flex flex-col">
           <ul>
             <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in">
-              <a href="/">Home</a>
-            </li>
-
-            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in">
               <a href="/about">About</a>
             </li>
 
@@ -213,7 +206,7 @@ export default function Navbar() {
                 href="/assets/履歴書 - Preston Nalls.pdf"
               >
                 <span className="mr-1 uppercase">
-                  CV (<span lang="ja">日本語</span>){" "}
+                  CV (JA){" "}
                 </span>{" "}
                 <FiDownload fontSize={"1rem"} />
               </a>
