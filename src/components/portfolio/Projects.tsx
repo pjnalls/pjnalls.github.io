@@ -37,6 +37,7 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 gap-8 py-2">
           <div id="react-native-strapi-template">
             <ProjectItem
+              id="0"
               className="dark:hidden"
               title="⚛️ React Native + 🚀 Strapi Template"
               description={
@@ -52,6 +53,7 @@ export default function Projects() {
               githubUrl="https://github.com/pjnalls/react-native-strapi-template"
             />
             <ProjectItem
+              id="1"
               className="hidden dark:block"
               title="⚛️ React Native + 🚀 Strapi Template"
               description={
@@ -68,6 +70,7 @@ export default function Projects() {
             />
           </div>
           <ProjectItem
+            id="2"
             className="dark:hidden"
             title="CareerCron"
             description={
@@ -83,6 +86,7 @@ export default function Projects() {
             githubUrl="https://github.com/pjnalls/careercron"
           />
           <ProjectItem
+            id="3"
             className="hidden dark:block"
             title="CareerCron"
             description={
@@ -98,6 +102,7 @@ export default function Projects() {
             githubUrl="https://github.com/pjnalls/careercron"
           />
           <ProjectItem
+            id="4"
             className="dark:hidden"
             title="Spreang"
             description={
@@ -111,6 +116,7 @@ export default function Projects() {
             githubUrl=""
           />
           <ProjectItem
+            id="5"
             className="hidden dark:block"
             title="Spreang"
             description={
@@ -124,6 +130,7 @@ export default function Projects() {
             githubUrl=""
           />
           <ProjectItem
+            id="5"
             className="dark:hidden"
             title="Memomalist"
             description="/ˈmeməˌmələst/ [noun]: A minimalistic spaced-repetition application for memorization."
@@ -137,6 +144,7 @@ export default function Projects() {
             githubUrl="https://github.com/pjnalls/memomalist"
           />
           <ProjectItem
+            id="6"
             className="hidden dark:block"
             title="Memomalist"
             description="/ˈmeməˌmələst/ [noun]: A minimalistic spaced-repetition application for memorization."
@@ -150,6 +158,7 @@ export default function Projects() {
             githubUrl="https://github.com/pjnalls/memomalist"
           />
           <ProjectItem
+            id="7"
             className="dark:hidden"
             title="F⍛rzen RN"
             description="A React Native (RN) app for a self-help blog and educational purposes."
@@ -163,6 +172,7 @@ export default function Projects() {
             githubUrl="https://github.com/pjnalls/forzen-rn"
           />
           <ProjectItem
+            id="8"
             className="hidden dark:block"
             title="F⍛rzen RN"
             description="A React Native (RN) app for a self-help blog and educational purposes."
@@ -176,6 +186,7 @@ export default function Projects() {
             githubUrl="https://github.com/pjnalls/forzen-rn"
           />
           <ProjectItem
+            id="9"
             title="F⍛rzen.io (Mobile Prototype)"
             description="A live prototype of the mobile version of F⍛rzen.io."
             madeWith="Figma."
@@ -188,6 +199,7 @@ export default function Projects() {
             githubUrl=""
           />
           <ProjectItem
+            id="10"
             title="F⍛rzen.io (Desktop Prototype)"
             description="A live prototype of the desktop version of F⍛rzen.io."
             madeWith="Figma."
@@ -201,6 +213,7 @@ export default function Projects() {
           />
 
           <ProjectItem
+            id="11"
             title="A° SOLID"
             description="An example Angular web app developed in phases with SOLID design principles."
             madeWith="Angular, SOLID Design, and Markdown."
@@ -211,6 +224,7 @@ export default function Projects() {
             githubUrl="https://github.com/pjnalls/ng-solid-design"
           />
           <ProjectItem
+            id="12"
             title="Halstown City's Forecast"
             description="Time series analysis / weather forecast via seasonal autoregression."
             madeWith="Python, NumPy, pandas, and Matplotlib."
@@ -222,6 +236,7 @@ export default function Projects() {
             githubUrl="https://github.com/pjnalls/time_series_analysis_and_forecast"
           />
           <ProjectItem
+            id="13"
             title="Minimalistic Code Editor (Desktop)"
             description="A screenshot of a minimalistic code editor for Zenful coding
             which has only syntax highlighting."
@@ -235,6 +250,7 @@ export default function Projects() {
             githubUrl=""
           />
           <ProjectItem
+            id="14"
             title="Minimalistic Code Editor (Web)"
             description="A screenshot of a minimalistic code editor for Zenful coding
             which has only syntax highlighting and a simple console."
@@ -248,6 +264,7 @@ export default function Projects() {
             githubUrl=""
           />
           <ProjectItem
+            id="15"
             title="Digital Rain"
             description="Digital rain in the browser. (Based off a popular film franchise.)"
             madeWith="HTML, SCSS, and ES6+ JavaScript."
@@ -260,6 +277,7 @@ export default function Projects() {
             githubUrl=""
           />
           <ProjectItem
+            id="16"
             title="F⍛rzen.io • J.ungy⍛gi"
             description="F⍛rzen.io from the perspective of J.ungy⍛gi, the artist — the
             side of meditation."
@@ -273,6 +291,7 @@ export default function Projects() {
             githubUrl="https://github.com/forzen-dot-io/jungyogi"
           />
           <ProjectItem
+            id="17"
             title="SCSS Abstract Art"
             description="For capturing certain, abstract forms of art with thin HTML markup and modular SCSS code."
             madeWith="SCSS and HTML."
@@ -285,6 +304,7 @@ export default function Projects() {
             githubUrl="https://github.com/pjnalls?tab=repositories&q=scss-&type=&language=scss&sort="
           />
           <ProjectItem
+            id="18"
             title="pjnalls.com"
             description="My portfolio and blog website made seamlessly thanks to Astro with React integrations."
             madeWith="React, TypeScript, Tailwind CSS, Astro and ❤️."
