@@ -24,7 +24,7 @@ export default function Main() {
           <h2 className="py-4 md:text-3xl text-lg font-semibold">
             Frontend Developer
             <br />
-            MS in Computer Science Postgraduate
+            M.S. in Computer Science Postgraduate
             <br />
             at Kennesaw State University - (CCSE)
           </h2>
