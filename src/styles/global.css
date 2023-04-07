@@ -249,7 +249,7 @@ body:before {
   }
 
   main {
-    animation: 1s ease fade-in;
+    animation: 1s ease fade-in forwards;
   }
 
   @-webkit-keyframes fade-in {
@@ -315,6 +315,76 @@ body:before {
     100% {
       opacity: 1;
       padding-top: 0;
+    }
+  }
+
+  .fade-out {
+    animation: 1s ease fade-out forwards;
+  }
+
+  @-webkit-keyframes fade-out {
+    0% {
+      opacity: 1;
+      padding-top: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      padding-top: 27.333%;
+    }
+  }
+  @-ms-keyframes fade-out {
+    0% {
+      opacity: 1;
+      padding-top: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      padding-top: 27.333%;
+    }
+  }
+  @-o-keyframes fade-out {
+    0% {
+      opacity: 1;
+      padding-top: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      padding-top: 27.333%;
+    }
+  }
+  @-moz-keyframes fade-out {
+    0% {
+      opacity: 1;
+      padding-top: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      padding-top: 27.333%;
+    }
+  }
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+      padding-top: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      padding-top: 27.333%;
     }
   }
 

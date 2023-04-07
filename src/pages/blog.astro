@@ -21,6 +21,10 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
     <BaseHead title={SITE_BLOG_TITLE} description={SITE_BLOG_DESCRIPTION} />
 
     <style>
+      .hide,
+      .hide * {
+        opacity: 1s !important;
+      }
       ul {
         list-style-type: none;
         padding: unset;
@@ -49,8 +53,9 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
       }
     </style>
   </head>
-  <body>    <div class="primary-gradient fixed h-[100vh] w-full"></div>
-    <div class="secondary-gradient fixed h-[100vh] w-full"></div>
+  <body>
+    <div id="gradient1" class="primary-gradient fixed h-[100vh] w-full"></div>
+    <div id="gradient2" class="secondary-gradient fixed h-[100vh] w-full"></div>
     <Header />
     <main class="w-full lg:h-screen relative z-[1]">
       <section
@@ -71,7 +76,12 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
                       }
                     )}
                   </time>
-                  <a href={post.url}>{post.frontmatter.title}</a>
+                  <noscript>
+                    <a href={post.url}>{post.frontmatter.title}</a>
+                  </noscript>
+                  <a id="i" class="post" href="#" data-id={post.url}>
+                    {post.frontmatter.title}
+                  </a>
                 </li>
               </>
             ))
@@ -81,5 +91,26 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
     </main>
     <Footer />
     <script is:inline src="/copyright-notice.js"></script>
+    <script>
+      const addFadeOutClass = () => {
+        document
+          .getElementsByTagName("main")
+          ?.item(0)
+          ?.classList?.add("fade-out");
+        document.getElementById("gradient1")?.classList?.toggle("primary-gradient");
+        document.getElementById("gradient2")?.classList?.toggle("secondary-gradient");
+      };
+      const handleBlogItemClick = (url = "") => {
+        addFadeOutClass();
+        setTimeout(() => (window.location.href = url), 1133);
+      };
+
+      const posts = document.getElementsByClassName("post");
+      for (let i = 0; i < posts?.length; i++) {
+        posts.item(i)?.addEventListener("click", () => {
+          handleBlogItemClick(posts.item(0)?.getAttribute("data-id") ?? "");
+        });
+      }
+    </script>
   </body>
 </html>

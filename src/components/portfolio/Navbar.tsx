@@ -37,13 +37,24 @@ export default function Navbar() {
     }
   };
 
+  const addFadeOutClass = () =>
+    document.getElementsByTagName("main")?.item(0)?.classList?.add("fade-out");
+  const handleTopNavItemClick = (routeName = "") => {
+    addFadeOutClass();
+    navOpen.set(!navOpen);
+    setTimeout(
+      () => (window.location.href = `${window.location.origin}/${routeName}`),
+      1133
+    );
+  };
+
   useEffect(() => {
     handleNavShadow();
     window.addEventListener("scroll", () => handleNavShadow());
   }, []);
 
   return (
-    <div className="transition-all ease-in duration-300">
+    <div>
       <div
         className={
           $navShadow
@@ -52,7 +63,18 @@ export default function Navbar() {
         }
       >
         <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16 transition-all ease-in duration-300">
-          <a href="/">
+          <noscript>
+            <a href="/">
+              <img
+                src={logo}
+                alt="logo for P.J. Nalls"
+                width={52}
+                height={52}
+                className="rounded-full cursor-pointer"
+              />
+            </a>
+          </noscript>
+          <a href="#" onClick={() => handleTopNavItemClick("")}>
             <img
               src={logo}
               alt="logo for P.J. Nalls"
@@ -63,22 +85,40 @@ export default function Navbar() {
           </a>
           <div>
             <ul className="hidden md:flex px-2 transition-all ease-in duration-300">
-
-
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <a href="/about">About</a>
+                <noscript>
+                  <a href="/about">About</a>
+                </noscript>
+                <a href="#" onClick={() => handleTopNavItemClick("about")}>
+                  About
+                </a>
               </li>
 
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <a href="/skills">Skills</a>
+                <noscript>
+                  <a href="/skills">Skills</a>
+                </noscript>
+                <a href="#" onClick={() => handleTopNavItemClick("skills")}>
+                  Skills
+                </a>
               </li>
 
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <a href="/projects">Projects</a>
+                <noscript>
+                  <a href="/projects">Projects</a>
+                </noscript>
+                <a href="#" onClick={() => handleTopNavItemClick("projects")}>
+                  Projects
+                </a>
               </li>
 
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <a href="/blog">Blog</a>
+                <noscript>
+                  <a href="/blog">Blog</a>
+                </noscript>
+                <a href="#" onClick={() => handleTopNavItemClick("blog")}>
+                  Blog
+                </a>
               </li>
 
               <li className="ml-10 text-sm hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in resume-option">
@@ -101,9 +141,7 @@ export default function Navbar() {
                   className="flex items-center"
                   href="/assets/履歴書 - Preston Nalls.pdf"
                 >
-                  <span className="mr-1 uppercase">
-                    CV (JA){" "}
-                  </span>{" "}
+                  <span className="mr-1 uppercase">CV (JA) </span>{" "}
                   <FiDownload fontSize={"1rem"} />
                 </a>
                 <span className="hovercard">
@@ -136,20 +174,31 @@ export default function Navbar() {
       <div
         className={
           $navOpen
-            ? "md:hidden fixed z-[100] left-0 top-0 w-full h-screen bg-[#1f2937]/70 transition-all ease-in duration-300"
-            : "fixed z-[1] left-0 top-0 w-full h-screen bg-transition  transition-all ease-in duration-300"
+            ? "md:hidden fixed z-[100] left-0 top-0 w-full h-screen bg-[#1f2937]/70 transition-all ease duration-500"
+            : "fixed z-[1] left-0 top-0 w-full h-screen bg-transition  transition-all ease duration-500"
         }
       ></div>
       <div
         className={
           $navOpen
-            ? "md:hidden fixed z-[101] left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#416] bg-[#ccf] p-10 transition-all ease-in duration-300"
-            : "fixed z-[0] left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#416] bg-[#ccf] p-10 transition-all ease-in duration-300"
+            ? "md:hidden fixed z-[101] left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#416] bg-[#ccf] p-10 transition-all duration-500 ease"
+            : "fixed z-[0] left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#416] bg-[#ccf] p-10 transition-all duration-500 ease"
         }
       >
         <div>
-          <div className="flex w-full items-center justify-between transition-all ease-in duration-300">
-            <a href="/">
+          <div className="flex w-full items-center justify-between transition-all duration-200 ease">
+            <noscript>
+              <a href="/">
+                <img
+                  src={logo}
+                  alt="logo for pjnalls"
+                  width="54"
+                  height="54"
+                  className="rounded-full cursor-pointer"
+                />
+              </a>
+            </noscript>
+            <a href="#" onClick={() => handleTopNavItemClick("#opened")}>
               <img
                 src={logo}
                 alt="logo for pjnalls"
@@ -171,21 +220,47 @@ export default function Navbar() {
         </div>
         <div className="py-4 flex flex-col">
           <ul>
-            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in">
-              <a href="/about">About</a>
+            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease">
+              <noscript>
+                <a href="/about">About</a>
+              </noscript>
+              <a href="#" onClick={() => handleTopNavItemClick("about#opened")}>
+                About
+              </a>
             </li>
 
-            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in">
-              <a href="/skills">Skills</a>
+            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease">
+              <noscript>
+                <a href="/skills">Skills</a>
+              </noscript>
+              <a
+                href="#"
+                onClick={() => handleTopNavItemClick("skills#opened")}
+              >
+                Skills
+              </a>
             </li>
 
-            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in">
-              <a href="/projects">Projects</a>
+            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease">
+              <noscript>
+                <a href="/projects">Projects</a>
+              </noscript>
+              <a
+                href="#"
+                onClick={() => handleTopNavItemClick("projects#opened")}
+              >
+                Projects
+              </a>
             </li>
-            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in">
-              <a href="/blog">Blog</a>
+            <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease">
+              <noscript>
+                <a href="/blog">Blog</a>
+              </noscript>
+              <a href="#" onClick={() => handleTopNavItemClick("blog#opened")}>
+                Blog
+              </a>
             </li>
-            <li className="py-3 text-sm origin-left hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in resume-option">
+            <li className="py-3 text-sm origin-left hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease resume-option">
               <a
                 className="flex items-center"
                 href="/assets/Frontend Developer Resume - Preston Nalls.docx"
@@ -200,14 +275,12 @@ export default function Navbar() {
                 </div>
               </span>
             </li>
-            <li className="py-3 text-sm origin-left hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease-in resume-option">
+            <li className="py-3 text-sm origin-left hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease resume-option">
               <a
                 className="flex items-center"
                 href="/assets/履歴書 - Preston Nalls.pdf"
               >
-                <span className="mr-1 uppercase">
-                  CV (JA){" "}
-                </span>{" "}
+                <span className="mr-1 uppercase">CV (JA) </span>{" "}
                 <FiDownload fontSize={"1rem"} />
               </a>
               <span className="hovercard drawer">
@@ -223,7 +296,7 @@ export default function Navbar() {
             </li>
             <li
               onClick={() => handleDarkMode()}
-              className="darkModeToggle text-sm origin-left uppercase text-[30px] hover:opacity-80 hover:scale-110 py-4 transition-all duration-200 ease-in"
+              className="darkModeToggle text-sm origin-left uppercase text-[30px] hover:opacity-80 hover:scale-110 py-4"
             >
               ◑
             </li>
