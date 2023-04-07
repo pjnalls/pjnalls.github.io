@@ -19,7 +19,7 @@ export default function About() {
           </p>
           <p className="py-2">
             Along with both part-time + full-time consulting, I'm also a
-            postgraduate beginning a program for an MS in computer science in
+            postgraduate beginning a program for an M.S. in computer science in
             May of 2023.
             <br />
             <br />

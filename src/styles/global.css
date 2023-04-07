@@ -249,7 +249,7 @@ body:before {
   }
 
   main, ._404 {
-    animation: 1s ease fade-in forwards;
+    animation: 1s ease fade-in;
   }
 
   @-webkit-keyframes fade-in {
