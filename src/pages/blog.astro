@@ -91,6 +91,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
     </main>
     <Footer />
     <script is:inline src="/copyright-notice.js"></script>
+    <script is:inline src="/get-previous-route.js"></script>
     <script>
       const addFadeOutClass = () => {
         document
@@ -108,7 +109,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
       const posts = document.getElementsByClassName("post");
       for (let i = 0; i < posts?.length; i++) {
         posts.item(i)?.addEventListener("click", () => {
-          handleBlogItemClick(posts.item(0)?.getAttribute("data-id") ?? "");
+          handleBlogItemClick(posts.item(i)?.getAttribute("data-id") ?? "");
         });
       }
     </script>

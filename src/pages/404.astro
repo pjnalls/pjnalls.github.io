@@ -31,10 +31,21 @@ import { SITE_HOME_TITLE, SITE_HOME_DESCRIPTION } from "../config";
           ?.item(0)
           ?.classList?.add("fade-out");
       };
-      (function (url = "") {
+      (function (previousRoute = "") {
         setTimeout(() => addFadeOutClass(), 2133);
-        setTimeout(() => (window.location.href = "/"), 2667);
-      })();
+        setTimeout(
+          () =>
+            (window.location.href = `/${
+              ["", "about", "skills", "projects", "blog"].indexOf(
+                previousRoute ?? ""
+              ) > -1
+                ? previousRoute
+                : ""
+            }`),
+          2667
+        );
+      })(localStorage.getItem("previousRoute"));
     </script>
+    <script is:inline src="/get-previous-route.js"></script>
   </body>
 </html>

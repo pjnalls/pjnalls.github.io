@@ -1,18 +1,23 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Projects from '../components/portfolio/Projects';
-import Footer from '../components/portfolio/Footer';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Projects from "../components/portfolio/Projects";
+import Footer from "../components/portfolio/Footer";
 
-import { SITE_PROJECTS_TITLE, SITE_PROJECTS_DESCRIPTION } from '../config';
+import { SITE_PROJECTS_TITLE, SITE_PROJECTS_DESCRIPTION } from "../config";
 ---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <script is:inline src="/resolve-fouc.js"></script>
-    <BaseHead title={SITE_PROJECTS_TITLE} description={SITE_PROJECTS_DESCRIPTION} />
+    <BaseHead
+      title={SITE_PROJECTS_TITLE}
+      description={SITE_PROJECTS_DESCRIPTION}
+    />
   </head>
-  <body>    <div class="primary-gradient fixed h-[100vh] w-full"></div>
+  <body>
+    <div class="primary-gradient fixed h-[100vh] w-full"></div>
     <div class="secondary-gradient fixed h-[100vh] w-full"></div>
     <Header />
     <main class="md:px-10 px-3">
@@ -20,5 +25,6 @@ import { SITE_PROJECTS_TITLE, SITE_PROJECTS_DESCRIPTION } from '../config';
     </main>
     <Footer />
     <script is:inline src="/copyright-notice.js"></script>
+    <script is:inline src="/get-previous-route.js"></script>
   </body>
 </html>
