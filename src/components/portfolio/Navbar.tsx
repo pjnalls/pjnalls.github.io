@@ -63,17 +63,6 @@ export default function Navbar() {
         }
       >
         <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16 transition-all ease-in duration-300">
-          <noscript>
-            <a href="/">
-              <img
-                src={logo}
-                alt="logo for P.J. Nalls"
-                width={52}
-                height={52}
-                className="rounded-full cursor-pointer"
-              />
-            </a>
-          </noscript>
           <a href="#" onClick={() => handleTopNavItemClick("")}>
             <img
               src={logo}
@@ -86,36 +75,24 @@ export default function Navbar() {
           <div>
             <ul className="hidden md:flex px-2 transition-all ease-in duration-300">
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <noscript>
-                  <a href="/about">About</a>
-                </noscript>
                 <a href="#" onClick={() => handleTopNavItemClick("about")}>
                   About
                 </a>
               </li>
 
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <noscript>
-                  <a href="/skills">Skills</a>
-                </noscript>
                 <a href="#" onClick={() => handleTopNavItemClick("skills")}>
                   Skills
                 </a>
               </li>
 
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <noscript>
-                  <a href="/projects">Projects</a>
-                </noscript>
                 <a href="#" onClick={() => handleTopNavItemClick("projects")}>
                   Projects
                 </a>
               </li>
 
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <noscript>
-                  <a href="/blog">Blog</a>
-                </noscript>
                 <a href="#" onClick={() => handleTopNavItemClick("blog")}>
                   Blog
                 </a>
@@ -187,17 +164,6 @@ export default function Navbar() {
       >
         <div>
           <div className="flex w-full items-center justify-between transition-all duration-200 ease">
-            <noscript>
-              <a href="/">
-                <img
-                  src={logo}
-                  alt="logo for pjnalls"
-                  width="54"
-                  height="54"
-                  className="rounded-full cursor-pointer"
-                />
-              </a>
-            </noscript>
             <a href="#" onClick={() => handleTopNavItemClick("#opened")}>
               <img
                 src={logo}
@@ -221,18 +187,12 @@ export default function Navbar() {
         <div className="py-4 flex flex-col">
           <ul>
             <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease">
-              <noscript>
-                <a href="/about">About</a>
-              </noscript>
               <a href="#" onClick={() => handleTopNavItemClick("about#opened")}>
                 About
               </a>
             </li>
 
             <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease">
-              <noscript>
-                <a href="/skills">Skills</a>
-              </noscript>
               <a
                 href="#"
                 onClick={() => handleTopNavItemClick("skills#opened")}
@@ -242,9 +202,6 @@ export default function Navbar() {
             </li>
 
             <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease">
-              <noscript>
-                <a href="/projects">Projects</a>
-              </noscript>
               <a
                 href="#"
                 onClick={() => handleTopNavItemClick("projects#opened")}
@@ -253,9 +210,6 @@ export default function Navbar() {
               </a>
             </li>
             <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease">
-              <noscript>
-                <a href="/blog">Blog</a>
-              </noscript>
               <a href="#" onClick={() => handleTopNavItemClick("blog#opened")}>
                 Blog
               </a>
