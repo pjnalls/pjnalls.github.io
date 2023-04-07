@@ -1,0 +1,40 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Main from "../components/portfolio/Main";
+import Footer from "../components/portfolio/Footer";
+
+import { SITE_HOME_TITLE, SITE_HOME_DESCRIPTION } from "../config";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script is:inline src="/resolve-fouc.js"></script>
+    <BaseHead title={SITE_HOME_TITLE} description={SITE_HOME_DESCRIPTION} />
+  </head>
+  <body>
+    <div class="primary-gradient fixed h-[100vh] w-full"></div>
+    <div class="secondary-gradient fixed h-[100vh] w-full"></div>
+    <Header />
+    <main class="md:px-10 px-3 w-full text-center">
+      <p class="lg:h-screen lg:py-0 py-36 flex justify-center items-center">
+        Page not found.
+      </p>
+    </main>
+    <Footer />
+    <script is:inline src="/copyright-notice.js"></script>
+    <script>
+      const addFadeOutClass = () => {
+        document
+          .getElementsByTagName("main")
+          ?.item(0)
+          ?.classList?.add("fade-out");
+      };
+      (function (url = "") {
+        setTimeout(() => addFadeOutClass(), 2133);
+        setTimeout(() => (window.location.href = "/"), 2667);
+      })();
+    </script>
+  </body>
+</html>

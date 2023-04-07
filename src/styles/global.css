@@ -248,7 +248,7 @@ body:before {
     transform: translate(29.3%) rotate(45deg);
   }
 
-  main {
+  main, ._404 {
     animation: 1s ease fade-in forwards;
   }
 
