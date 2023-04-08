@@ -35,6 +35,91 @@ export default function Projects() {
         </p>
         <h2 className="py-4">What I&apos;ve Created</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
+          <ProjectItem
+            id="4"
+            className="dark:hidden"
+            title="Spreang"
+            description={
+              'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
+            }
+            madeWith="Figma."
+            backgroundImg={spreangLight}
+            enableScreenshot={false}
+            enableCode={false}
+            enableDemo={false}
+            githubUrl=""
+          />
+          <ProjectItem
+            id="11"
+            title="A° SOLID"
+            description="An example Angular web app developed in phases with SOLID design principles."
+            madeWith="Angular, SOLID Design, and Markdown."
+            backgroundImg={aSolid}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={false}
+            githubUrl="https://github.com/pjnalls/ng-solid-design"
+          />
+          <ProjectItem
+            id="14"
+            title="Minimalistic Code Editor (Web)"
+            description="A screenshot of a minimalistic code editor for Zenful coding
+            which has only syntax highlighting and a simple console."
+            madeWith="Angular, SCSS, and CodeMirror."
+            backgroundImg={mceWeb}
+            enableScreenshot={false}
+            enableCode={false}
+            enableDemo={false}
+            demoLabel=""
+            demoUrl=""
+            githubUrl=""
+          />
+          <ProjectItem
+            id="5"
+            className="hidden dark:block"
+            title="Spreang"
+            description={
+              'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
+            }
+            madeWith="Figma."
+            backgroundImg={spreangDark}
+            enableScreenshot={false}
+            enableCode={false}
+            enableDemo={false}
+            githubUrl=""
+          />
+          <ProjectItem
+            id="2"
+            className="dark:hidden"
+            title="CareerCron"
+            description={
+              "(Work-in-Progress) Career aide and guide that is there for you anytime, anywhere... ⌛💻📲."
+            }
+            madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON."
+            backgroundImg={ccLight}
+            enableScreenshot={false}
+            enableCode={false}
+            enableDemo={false}
+            demoLabel="View Promotion"
+            demoUrl="https://careercron.com/"
+            githubUrl="https://github.com/pjnalls/careercron"
+          />
+          <ProjectItem
+            id="3"
+            className="hidden dark:block"
+            title="CareerCron"
+            description={
+              "(Work-in-Progress) Career aide and guide that is there for you anytime, anywhere... ⌛💻📲."
+            }
+            madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON."
+            backgroundImg={ccDark}
+            enableScreenshot={false}
+            enableCode={false}
+            enableDemo={false}
+            demoLabel="View Promotion"
+            demoUrl="https://careercron.com/"
+            githubUrl="https://github.com/pjnalls/careercron"
+          />
           <div id="react-native-strapi-template">
             <ProjectItem
               id="0"
@@ -69,66 +154,6 @@ export default function Projects() {
               githubUrl="https://github.com/pjnalls/react-native-strapi-template"
             />
           </div>
-          <ProjectItem
-            id="2"
-            className="dark:hidden"
-            title="CareerCron"
-            description={
-              "(Work-in-Progress) Career aide and guide that is there for you anytime, anywhere... ⌛💻📲."
-            }
-            madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON."
-            backgroundImg={ccLight}
-            enableScreenshot={false}
-            enableCode={false}
-            enableDemo={false}
-            demoLabel="View Promotion"
-            demoUrl="https://careercron.com/"
-            githubUrl="https://github.com/pjnalls/careercron"
-          />
-          <ProjectItem
-            id="3"
-            className="hidden dark:block"
-            title="CareerCron"
-            description={
-              "(Work-in-Progress) Career aide and guide that is there for you anytime, anywhere... ⌛💻📲."
-            }
-            madeWith="MERN, React Native, TypeScript, Figma, and MƎTRON."
-            backgroundImg={ccDark}
-            enableScreenshot={false}
-            enableCode={false}
-            enableDemo={false}
-            demoLabel="View Promotion"
-            demoUrl="https://careercron.com/"
-            githubUrl="https://github.com/pjnalls/careercron"
-          />
-          <ProjectItem
-            id="4"
-            className="dark:hidden"
-            title="Spreang"
-            description={
-              'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
-            }
-            madeWith="Figma."
-            backgroundImg={spreangLight}
-            enableScreenshot={false}
-            enableCode={false}
-            enableDemo={false}
-            githubUrl=""
-          />
-          <ProjectItem
-            id="5"
-            className="hidden dark:block"
-            title="Spreang"
-            description={
-              'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
-            }
-            madeWith="Figma."
-            backgroundImg={spreangDark}
-            enableScreenshot={false}
-            enableCode={false}
-            enableDemo={false}
-            githubUrl=""
-          />
           <ProjectItem
             id="5"
             className="dark:hidden"
@@ -211,18 +236,6 @@ export default function Projects() {
             demoUrl="https://www.figma.com/proto/Wqz3rQJgEC9vJR03WRDnCB/F⍛rzen.io-Prototype-(Desktop)?node-id=0%3A2&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=0%3A2"
             githubUrl=""
           />
-
-          <ProjectItem
-            id="11"
-            title="A° SOLID"
-            description="An example Angular web app developed in phases with SOLID design principles."
-            madeWith="Angular, SOLID Design, and Markdown."
-            backgroundImg={aSolid}
-            enableScreenshot={false}
-            enableCode={true}
-            enableDemo={false}
-            githubUrl="https://github.com/pjnalls/ng-solid-design"
-          />
           <ProjectItem
             id="12"
             title="Halstown City's Forecast"
@@ -242,20 +255,6 @@ export default function Projects() {
             which has only syntax highlighting."
             madeWith="React, TypeScript, Electron, CodeMirror, and Vite."
             backgroundImg={mceDesktop}
-            enableScreenshot={false}
-            enableCode={false}
-            enableDemo={false}
-            demoLabel=""
-            demoUrl=""
-            githubUrl=""
-          />
-          <ProjectItem
-            id="14"
-            title="Minimalistic Code Editor (Web)"
-            description="A screenshot of a minimalistic code editor for Zenful coding
-            which has only syntax highlighting and a simple console."
-            madeWith="Angular, SCSS, and CodeMirror."
-            backgroundImg={mceWeb}
             enableScreenshot={false}
             enableCode={false}
             enableDemo={false}
