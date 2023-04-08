@@ -44,10 +44,18 @@ body:before {
   }
 
   .primary-gradient {
+    -webkit-animation: 4.25s ease primary-opacity-change 1s infinite;
+    -ms-animation: 4.25s ease primary-opacity-change 1s infinite;
+    -o-animation: 4.25s ease primary-opacity-change 1s infinite;
+    -moz-animation: 4.25s ease primary-opacity-change 1s infinite;
     animation: 4.25s ease primary-opacity-change 1s infinite;
     opacity: 0;
   }
-  .secondary-gradient {
+  .secondary-gradient {  
+    -webkit-animation: 4.25s ease secondary-opacity-change 1s infinite;
+    -ms-animation: 4.25s ease secondary-opacity-change 1s infinite;
+    -o-animation: 4.25s ease secondary-opacity-change 1s infinite;
+    -moz-animation: 4.25s ease secondary-opacity-change 1s infinite;
     animation: 4.25s ease secondary-opacity-change 1s infinite;
     opacity: 0.5333;
   }
@@ -249,6 +257,10 @@ body:before {
   }
 
   main, ._404 {
+    -webkit-animation: 1s ease fade-in;
+    -ms-animation: 1s ease fade-in;
+    -o-animation: 1s ease fade-in;
+    -moz-animation: 1s ease fade-in;
     animation: 1s ease fade-in;
   }
 
@@ -319,6 +331,10 @@ body:before {
   }
 
   .fade-out {
+    -webkit-animation: 1s ease fade-out forwards;
+    -ms-animation: 1s ease fade-out forwards;
+    -o-animation: 1s ease fade-out forwards;
+    -moz-animation: 1s ease fade-out forwards;
     animation: 1s ease fade-out forwards;
   }
 
@@ -395,6 +411,10 @@ body:before {
   :not(.dark body) * h5,
   :not(.dark body) * h6,
   :not(.dark body) * p :not(.header-2) :not(span) {
+    -webkit-animation: 10s ease color-change 1s infinite;
+    -ms-animation: 10s ease color-change 1s infinite;
+    -o-animation: 10s ease color-change 1s infinite;
+    -moz-animation: 10s ease color-change 1s infinite;
     animation: 10s ease color-change 1s infinite;
   }
 
@@ -495,6 +515,10 @@ body:before {
   .dark body * h5,
   .dark body * h6,
   .dark body * p :not(.header-2) :not(span) {
+    -webkit-animation: 10s ease dark-color-change 1s infinite;
+    -ms-animation: 10s ease dark-color-change 1s infinite;
+    -o-animation: 10s ease dark-color-change 1s infinite;
+    -moz-animation: 10s ease dark-color-change 1s infinite;
     animation: 10s ease dark-color-change 1s infinite;
   }
 
