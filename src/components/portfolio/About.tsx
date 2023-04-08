@@ -23,7 +23,7 @@ export default function About() {
             May of 2023.
             <br />
             <br />
-            As a hobby, I learn Python, data science, machine learning,
+            As hobbies, I learn and practice Python, data science, machine learning,
             mathematics, philosophy, yoga (in the traditional sense), and different yet similar languages and
             cultures.
             <br />
