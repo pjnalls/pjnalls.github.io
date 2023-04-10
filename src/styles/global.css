@@ -30,6 +30,38 @@ body:before {
   background-size: cover;
 }
 
+#blossomContainer {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.petal {
+  transform: scale(0.7);
+}
+
+.petal.petal-style1 {
+  width: 31px;
+  height: 22px;
+  background-position: -61px 0;
+}
+.petal.petal-style2 {
+  width: 28px;
+  height: 20px;
+  background-position: -30px -23px;
+}
+.petal.petal-style3 {
+  width: 26px;
+  height: 19px;
+  background-position: -30px -50px;
+}
+.petal.petal-style4 {
+  width: 23px;
+  height: 18px;
+  background-position: -79px -35px;
+}
+
 @layer base {
   body {
     @apply bg-fixed dark:bg-[#313] bg-[#ccf] text-[#19216f] dark:text-[#fff0e0] tracking-wide transition-all duration-200 ease-linear;
@@ -51,7 +83,7 @@ body:before {
     animation: 4.25s ease primary-opacity-change 1s infinite;
     opacity: 0;
   }
-  .secondary-gradient {  
+  .secondary-gradient {
     -webkit-animation: 4.25s ease secondary-opacity-change 1s infinite;
     -ms-animation: 4.25s ease secondary-opacity-change 1s infinite;
     -o-animation: 4.25s ease secondary-opacity-change 1s infinite;
@@ -256,7 +288,8 @@ body:before {
     transform: translate(29.3%) rotate(45deg);
   }
 
-  main, ._404 {
+  main,
+  ._404 {
     -webkit-animation: 1s ease fade-in;
     -ms-animation: 1s ease fade-in;
     -o-animation: 1s ease fade-in;
@@ -401,6 +434,55 @@ body:before {
     100% {
       opacity: 0;
       padding-top: 27.333%;
+    }
+  }
+
+  .fade-out-blossoms {
+    -webkit-animation: 1s ease fade-out-blossoms forwards;
+    -ms-animation: 1s ease fade-out-blossoms forwards;
+    -o-animation: 1s ease fade-out-blossoms forwards;
+    -moz-animation: 1s ease fade-out-blossoms forwards;
+    animation: 1s ease fade-out-blossoms forwards;
+  }
+
+  @keyframes fade-out-blossoms {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out-blossoms {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out-blossoms {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out-blossoms {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out-blossoms {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 

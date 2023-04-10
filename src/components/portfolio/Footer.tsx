@@ -13,7 +13,7 @@ export default function Footer() {
           Made with
         </span>
         <br />
-        React, TypeScript, Tailwind CSS, Astro and ❤️.
+        React, TypeScript, Tailwind CSS, Astro, Piskel and ❤️.
         <br />
         <br />Copyright © 2023 Preston Nalls
       </p>

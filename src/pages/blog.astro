@@ -56,6 +56,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
   <body>
     <div id="gradient1" class="primary-gradient fixed h-[100vh] w-full"></div>
     <div id="gradient2" class="secondary-gradient fixed h-[100vh] w-full"></div>
+    <div class="z-[0]" id="blossomContainer"></div>
     <Header />
     <main class="w-full lg:h-screen relative z-[1]">
       <section
@@ -90,14 +91,22 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
     <Footer />
     <script is:inline src="/copyright-notice.js"></script>
     <script is:inline src="/get-previous-route.js"></script>
+    <script is:inline src="/blossom-scene.js"></script>
     <script>
       const addFadeOutClass = () => {
         document
           .getElementsByTagName("main")
           ?.item(0)
           ?.classList?.add("fade-out");
-        document.getElementById("gradient1")?.classList?.toggle("primary-gradient");
-        document.getElementById("gradient2")?.classList?.toggle("secondary-gradient");
+        document
+          .getElementById("blossomContainer")
+          ?.classList?.add("fade-out-blossoms");
+        document
+          .getElementById("gradient1")
+          ?.classList?.toggle("primary-gradient");
+        document
+          .getElementById("gradient2")
+          ?.classList?.toggle("secondary-gradient");
       };
       const handleBlogItemClick = (url = "") => {
         addFadeOutClass();

@@ -37,8 +37,10 @@ export default function Navbar() {
     }
   };
 
-  const addFadeOutClass = () =>
+  const addFadeOutClass = () => {
     document.getElementsByTagName("main")?.item(0)?.classList?.add("fade-out");
+    document.getElementById("blossomContainer")?.classList?.add("fade-out-blossoms");
+  };
   const handleTopNavItemClick = (routeName = "") => {
     addFadeOutClass();
     navOpen.set(!navOpen);
@@ -261,7 +263,7 @@ export default function Navbar() {
                 Made with
               </span>
               <br />
-              React, TypeScript, Tailwind CSS, Astro and ❤️.
+              React, TypeScript, Tailwind CSS, Astro, Piskel and ❤️.
               <br />
               <br />
               Copyright © 2023 Preston Nalls
