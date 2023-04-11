@@ -40,20 +40,21 @@ class BlossomScene {
     this.placeholder = document.createElement("div");
     this.petals = [];
     this.petalsTypes = config.petalsTypes;
-    this.gravity = config.gravity || 0.8;
-    this.windMaxSpeed = config.windMaxSpeed || 3;
+    this.gravity = config.gravity || 0.833;
+    this.windMaxSpeed = config.windMaxSpeed || 4;
     this.windMagnitude = 0.2;
     this.windDuration = 0;
     this.width = this.container.offsetWidth;
-    this.height = this.container.offsetHeight;
+    this.height = document.documentElement.scrollHeight;
     this.timer = 0;
 
     this.container.style.overflow = "hidden";
-    this.numPetals = config.numPetals || this.width > 640 ? 12 : 7;
+    this.numPetals = config.numPetals || this.width > 640 ? 24 : 16;
     this.placeholder.style.transformStyle = "preserve-3d";
     this.placeholder.style.width = this.container.offsetWidth + "px";
-    this.placeholder.style.height = this.container.offsetHeight + "px";
+    this.placeholder.style.height = document.documentElement.scrollHeight + "px";
     this.container.appendChild(this.placeholder);
+
     this.createPetals();
     requestAnimationFrame(this.updateFrame.bind(this));
   }
