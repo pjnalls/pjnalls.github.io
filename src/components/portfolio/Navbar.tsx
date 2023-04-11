@@ -39,7 +39,9 @@ export default function Navbar() {
 
   const addFadeOutClass = () => {
     document.getElementsByTagName("main")?.item(0)?.classList?.add("fade-out");
-    document.getElementById("blossomContainer")?.classList?.add("fade-out-blossoms");
+    document
+      .getElementById("blossomContainer")
+      ?.classList?.add("fade-out-blossoms");
   };
   const handleTopNavItemClick = (routeName = "") => {
     addFadeOutClass();
@@ -136,7 +138,7 @@ export default function Navbar() {
               </li>
               <li
                 onClick={() => handleDarkMode()}
-                className="darkModeToggle ml-10 text-sm uppercase text-[30px] hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in"
+                className="darkModeToggle ml-10 text-sm uppercase text-[30px] hover:scale-110 hover:border-slate-300 transition-all duration-200 ease width-[60px]"
               >
                 ◑
               </li>
@@ -225,7 +227,7 @@ export default function Navbar() {
                 <FiDownload fontSize={"1rem"} />
               </a>
               <span className="hovercard drawer">
-                <span className="pointer drawer__pointer">👈</span>
+                <span className="pointer drawer-pointer">👈</span>
                 <div className="tooltiptext font-medium">
                   Download my resume here.
                 </div>
@@ -240,7 +242,7 @@ export default function Navbar() {
                 <FiDownload fontSize={"1rem"} />
               </a>
               <span className="hovercard drawer">
-                <span className="pointer drawer__pointer">👈</span>
+                <span className="pointer drawer-pointer">👈</span>
                 <div className="tooltiptext font-medium">
                   <span lang="ja">
                     ここから履歴書を
@@ -252,7 +254,7 @@ export default function Navbar() {
             </li>
             <li
               onClick={() => handleDarkMode()}
-              className="darkModeToggle text-sm origin-left uppercase text-[30px] hover:opacity-80 hover:scale-110 py-4"
+              className="darkModeToggle text-sm origin-left uppercase text-[30px] hover:opacity-80 hover:scale-110 py-4 ml-[-2px] transition-all duration-200 ease width-[60px]"
             >
               ◑
             </li>
