@@ -3,10 +3,11 @@ import { useStore } from "@nanostores/react";
 import React, { useEffect } from "react";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai/index";
+import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs/index";
 import { FaGithub, FaLinkedin } from "react-icons/fa/index";
 import { FiDownload } from "react-icons/fi/index";
 
-import { navOpen, navShadow } from "../../stores";
+import { itsDark, navOpen, navShadow } from "../../stores";
 import logo from "/assets/p.avif";
 
 import "./Navbar.css";
@@ -14,6 +15,7 @@ import "./Navbar.css";
 export default function Navbar() {
   const $navOpen = useStore(navOpen);
   const $navShadow = useStore(navShadow);
+  const $itsDark = useStore(itsDark);
 
   const handleDarkMode = () => {
     const htmlClassList = document
@@ -21,9 +23,11 @@ export default function Navbar() {
       .item(0)?.classList;
 
     if (htmlClassList?.value.includes("dark")) {
+      itsDark.set(false);
       htmlClassList?.remove("dark");
       localStorage.theme = "light";
     } else {
+      itsDark.set(true);
       htmlClassList?.add("dark");
       localStorage.theme = "dark";
     }
@@ -53,6 +57,7 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    handleDarkMode();
     handleNavShadow();
     window.addEventListener("scroll", () => handleNavShadow());
   }, []);
@@ -140,7 +145,11 @@ export default function Navbar() {
                 onClick={() => handleDarkMode()}
                 className="darkModeToggle ml-10 text-sm uppercase text-[30px] hover:scale-110 hover:border-slate-300 transition-all duration-200 ease width-[60px]"
               >
-                ◑
+                {$itsDark ? (
+                  <BsFillSunFill fontSize={"1.333rem"} />
+                ) : (
+                  <BsFillMoonFill fontSize={"1.333rem"} />
+                )}
               </li>
             </ul>
             <div
@@ -256,7 +265,11 @@ export default function Navbar() {
               onClick={() => handleDarkMode()}
               className="darkModeToggle text-sm origin-left uppercase text-[30px] hover:opacity-80 hover:scale-110 py-4 ml-[-2px] transition-all duration-200 ease width-[60px]"
             >
-              ◑
+              {$itsDark ? (
+                <BsFillSunFill fontSize={"1.333rem"} />
+              ) : (
+                <BsFillMoonFill fontSize={"1.333rem"} />
+              )}
             </li>
           </ul>
           <div className="pt-16">
