@@ -33,6 +33,14 @@ export default function Navbar() {
     }
   };
 
+  const initTheme = () =>
+    document
+      .getElementsByTagName("html")
+      .item(0)
+      ?.classList?.value.includes("dark")
+      ? itsDark.set(true)
+      : itsDark.set(false);
+
   const handleNavShadow = () => {
     if (window.scrollY > 90) {
       navShadow.set(true);
@@ -57,8 +65,8 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    handleDarkMode();
     handleNavShadow();
+    initTheme();
     window.addEventListener("scroll", () => handleNavShadow());
   }, []);
 
