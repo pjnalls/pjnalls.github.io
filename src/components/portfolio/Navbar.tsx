@@ -133,7 +133,7 @@ export default function Navbar() {
               <li className="ml-10 text-sm hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in resume-option">
                 <a
                   className="flex items-center"
-                  href="/assets/履歴書 - Preston Nalls.pdf"
+                  href="/assets/履歴書 - Nalls, Preston.xlsx"
                 >
                   <span className="mr-1 uppercase">CV (JA) </span>{" "}
                   <FiDownload fontSize={"1rem"} />
@@ -253,7 +253,7 @@ export default function Navbar() {
             <li className="py-3 text-sm origin-left hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease resume-option">
               <a
                 className="flex items-center"
-                href="/assets/履歴書 - Preston Nalls.pdf"
+                href="/assets/履歴書 - Nalls, Preston.xlsx"
               >
                 <span className="mr-1 uppercase">CV (JA) </span>{" "}
                 <FiDownload fontSize={"1rem"} />

@@ -6,7 +6,9 @@ export default function Main() {
       <div className="max-w-[1240px] w-full h-[100%] mx-auto p-2 py-36 flex justify-center items-center">
         <div>
           <p className="text-lg font-semibold tracking-widest  mb-2">
-            <span className="text-2xl dark:text-amber-400 text-amber-900">G . P . X . 2 . A</span>
+            <span className="text-2xl dark:text-amber-400 text-amber-900">
+              G . P . X . 2 . A
+            </span>
             <br />
             <span className="font-normal text-base tracking-wide ">
               👆 Great People Experience Above All
@@ -21,12 +23,12 @@ export default function Main() {
             </a>
             .
           </h1>
-          <h2 className="py-4 md:text-3xl text-lg font-semibold">
-            Frontend Developer •
+          <h2 className="md:py-4 py-1 md:text-3xl text-xl font-semibold">
+            Frontend Developer • 
+            <br/>
+            Software Consultant •
             <br />
-            M.S. in Computer Science Postgraduate
-            <br />
-            at Kennesaw State University - (CCSE)
+            MS in CS Postgrad @ KSU (CCSE)
           </h2>
           <p className="py-4  max-w-[70%] m-auto">
             My focus is on combining aesthetical, <br />
