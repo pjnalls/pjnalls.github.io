@@ -13,9 +13,7 @@ export default function About() {
           <p className="py-2">
             I'm a frontend developer with UI architecture experience providing
             React, Angular, and some cross-platform development consulting along
-            with other technological services — having many opportunities for
-            frontend-architectural and UI/UX designs and implementations from
-            day to day.
+            with other technological services.
           </p>
           <p className="py-2">
             Along with both part-time + full-time consulting, I'm also a
