@@ -36,7 +36,7 @@ export default function ProjectItem({
         </label>
         <h3
           id={id + '-' + title}
-          className="text-white pb-3 m-0 pt-0 leading-5 lg:leading-7 md:leading-5 font-semibold text-xl drop-shadow-[0_3px_3px_rgba(0,0,0,0.333)]"
+          className="text-white project-item-title pb-3 m-0 pt-0 leading-5 lg:leading-7 md:leading-5 font-semibold text-xl drop-shadow-[0_3px_3px_rgba(0,0,0,0.333)]"
         >
           {title}
         </h3>

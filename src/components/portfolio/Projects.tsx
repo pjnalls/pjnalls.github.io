@@ -36,20 +36,6 @@ export default function Projects() {
         <h2 className="py-4">What I&apos;ve Created</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
           <ProjectItem
-            id="4"
-            className="dark:hidden"
-            title="Spreang"
-            description={
-              'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
-            }
-            madeWith="Figma."
-            backgroundImg={spreangLight}
-            enableScreenshot={false}
-            enableCode={false}
-            enableDemo={false}
-            githubUrl=""
-          />
-          <ProjectItem
             id="11"
             title="A° SOLID"
             description="An example Angular web app developed in phases with SOLID design principles."
@@ -72,6 +58,20 @@ export default function Projects() {
             enableDemo={false}
             demoLabel=""
             demoUrl=""
+            githubUrl=""
+          />
+          <ProjectItem
+            id="4"
+            className="dark:hidden"
+            title="Spreang"
+            description={
+              'A 3-day, remote React and Angular "hackathon" (coding fest) before spring break, March 8th - March 10th.'
+            }
+            madeWith="Figma."
+            backgroundImg={spreangLight}
+            enableScreenshot={false}
+            enableCode={false}
+            enableDemo={false}
             githubUrl=""
           />
           <ProjectItem
