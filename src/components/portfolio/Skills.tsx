@@ -480,10 +480,7 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiAstro
-                  size="48px"
-                  className="mr-6 text-[#f75500]"
-                />
+                <SiAstro size="48px" className="mr-6 text-[#f75500]" />
                 <h3>Astro</h3>
               </div>
               <div className="flex items-center justify-center">
@@ -531,22 +528,6 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiMicrosoftazure size="48px" className="mr-6 text-[#00a2eb]" />
-                <h3>Azure</h3>
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  90%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[90%] h-[0.6rem]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
                 <SiDocker size="48px" className="mr-6 text-[#027ed2]" />
                 <h3>Docker</h3>
               </div>
@@ -584,9 +565,7 @@ export default function Skills() {
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
                 <SiStrapi size="48px" className="mr-6 text-[#8f76ff]" />
-                <h3>
-                  Strapi
-                </h3>
+                <h3>Strapi</h3>
               </div>
               <div className="flex items-center justify-center">
                 <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
