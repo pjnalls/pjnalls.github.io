@@ -24,11 +24,9 @@ export default function Main() {
             .
           </h1>
           <h2 className="md:py-4 py-1 md:text-3xl text-xl font-semibold">
-            Frontend Developer • 
+            S/W Consultant (Frontend) @ STG |
             <br />
-            Software Consultant @ STG • 
-            <br />
-            MSCS Postgrad @ KSU (CCSE) • 
+            MSCS Postgrad @ KSU (CCSE) |
             <br />
             JLPT N2 Certified
           </h2>

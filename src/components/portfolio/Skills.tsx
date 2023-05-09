@@ -12,6 +12,7 @@ import {
   SiAdobephotoshop,
   SiArduino,
   SiAstro,
+  SiAmazon,
   SiMicrosoftazure,
   SiC,
   SiCss3,
@@ -496,6 +497,25 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
+                <SiAmazon
+                  size="48px"
+                  className="mr-6 dark:text-[#f29100] text-[#923100]"
+                />
+                <h3>AWS</h3>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
+                  83%{" "}
+                </div>
+                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
+                  <div className="bg-[#9d8c66] w-[99%] h-[0.6rem]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
                 <SiMongodb size="48px" className="mr-6 text-[#00c13f]" />
                 <h3>MongoDB</h3>
               </div>
@@ -620,127 +640,198 @@ export default function Skills() {
         </div>
         <br />
         <h3 className="font-semibold text-2xl text-center">
-          🛠️ Toolkit I Use as a Python/C Hobbyist
+          🌐 Natural Languages Ordered by Proficiency
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiJupyter size="48px" className="mr-6 text-[#f37726]" />
-                <h3>Jupyter Notebook</h3>
+                <h3>
+                  English <br />
+                  (American Standard)
+                </h3>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  96%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[96%] h-[0.6rem]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="new-release-box hover:scale-110 transition-all ease-in">
-            <div className="folded-ribbon font-bold hover:scale-110">NEW</div>
-            <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl cursor-pointer ease transition-all ease-in duration-200">
-              <div className="grid grid-cols-1 gap-4 justify-between items-center">
-                <div className="m-auto inline-flex justify-around items-center w-full">
-                  <SiArduino size="48px" className="mr-6 text-[#009298]" />
-                  <h3>Arduino</h3>
-                </div>
-                <div className="flex items-center justify-center">
-                  <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                    -
-                  </div>
-                  <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                    <div className="bg-[#9d8c66] w-[0%] h-[0.6rem]"></div>
-                  </div>
-                </div>
-              </div>
+              <p className="text-[#8f203f] dark:text-[#ffb0cf]">
+                Native Proficiency
+              </p>
             </div>
           </div>
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiPython size="48px" className="mr-6 text-[#4885b6]" />
-                <h3>Python</h3>
+                <h3>
+                  English <br />
+                  (Black Venacular)
+                </h3>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  90%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[90%] h-[0.6rem]"></div>
-                </div>
-              </div>
+              <p className="text-[#8f203f] dark:text-[#ffb0cf]">
+                Native Proficiency
+              </p>
             </div>
           </div>
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiNumpy size="48px" className="mr-6 text-[#4d77cf]" />
-                <h3>NumPy</h3>
+                <h3>
+                  English <br />
+                  (Academic)
+                </h3>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  92%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[92%] h-[0.6rem]"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="new-release-box hover:scale-110 transition-all ease-in">
-            <div className="folded-ribbon font-bold hover:scale-110">NEW</div>
-            <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl cursor-pointer ease-in duration-200">
-              <div className="grid grid-cols-1 gap-4 justify-between items-center">
-                <div className="m-auto inline-flex justify-around items-center w-full">
-                  <SiC size="48px" className="mr-6 text-[#5968ba]" />
-                  <h3>C</h3>
-                </div>
-                <div className="flex items-center justify-center">
-                  <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                    -
-                  </div>
-                  <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                    <div className="bg-[#9d8c66] w-[0%] h-[0.6rem]"></div>
-                  </div>
-                </div>
-              </div>
+              <p className="text-[#7f203f] dark:text-[#efb0cf]">
+                Full Professional Proficiency
+              </p>
             </div>
           </div>
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <SiPandas
-                  size="48px"
-                  className="mr-6 text-[#000] dark:text-[#fff]"
-                />
-                <h3>pandas</h3>
+                <h3>
+                  English <br />
+                  (Business)
+                </h3>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  87%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[87%] h-[0.6rem]"></div>
-                </div>
-              </div>
+              <p className="text-[#7f203f] dark:text-[#efb0cf]">
+                Full Professional Proficiency
+              </p>
             </div>
           </div>
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>Matplotlib</h3>
+                <h3>
+                  Japanese <br />
+                  (Standard)
+                </h3>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="text-slate-600 dark:text-slate-300 text-lg font-semibold">
-                  87%{" "}
-                </div>
-                <div className="bg-[#1f2937] w-full h-[0.6rem] ml-3">
-                  <div className="bg-[#9d8c66] w-[87%] h-[0.6rem]"></div>
-                </div>
+              <p className="text-[#7f203f] dark:text-[#efb0cf]">
+                Full Professional Proficiency
+              </p>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>
+                  Kanji <br />
+                </h3>
               </div>
+              <p className="text-[#7f203f] dark:text-[#efb0cf]">
+                Full Professional Proficiency
+              </p>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>
+                  Japanese <br />
+                  (Academic)
+                </h3>
+              </div>
+              <p className="text-[#6f203f] dark:text-[#dfb0cf]">
+                Professional Proficiency
+              </p>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>Greek</h3>
+              </div>
+              <p className="text-[#5f203f] dark:text-[#cfb0cf]">
+                Etymological Proficiency
+              </p>
+            </div>
+          </div>
+
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>Latin</h3>
+              </div>
+              <p className="text-[#5f203f] dark:text-[#cfb0cf]">
+                Etymological Proficiency
+              </p>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>
+                  Japanese <br />
+                  (Kansai Dialect)
+                </h3>
+              </div>
+              <p className="text-[#4f204f] dark:text-[#bfb0df]">
+                Limited Working Proficiency
+              </p>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>Traditional Hanzi</h3>
+              </div>
+              <p className="text-[#4f204f] dark:text-[#bfb0df]">
+                Limited Working Proficiency
+              </p>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>
+                  Chinese <br />
+                  (Mandarin)
+                </h3>
+              </div>
+              <p className="text-[#4f204f] dark:text-[#bfb0df]">
+                Limited Working Proficiency
+              </p>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>Simplified Hanzi</h3>
+              </div>
+              <p className="text-[#4f205f] dark:text-[#bfb0ef]">
+                Elementary Proficiency
+              </p>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>Spanish</h3>
+              </div>
+              <p className="text-[#4f205f] dark:text-[#bfb0ef]">
+                Elementary Proficiency
+              </p>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>French</h3>
+              </div>
+              <p className="text-[#4f206f] dark:text-[#bfb0ff]">Novice</p>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>Thai</h3>
+              </div>
+              <p className="text-[#4f206f] dark:text-[#bfb0ff]">Novice</p>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>Hindi</h3>
+              </div>
+              <p className="text-[#4f206f] dark:text-[#bfb0ff]">Novice</p>
             </div>
           </div>
         </div>
