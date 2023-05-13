@@ -759,6 +759,19 @@ export default function Skills() {
               <div className="m-auto inline-flex justify-around items-center w-full">
                 <h3>
                   Japanese <br />
+                  (Tamego)
+                </h3>
+              </div>
+              <p className="text-[#4f204f] dark:text-[#bfb0df]">
+                Limited Working Proficiency
+              </p>
+            </div>
+          </div>
+          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
+            <div className="grid grid-cols-1 gap-4 justify-between items-center">
+              <div className="m-auto inline-flex justify-around items-center w-full">
+                <h3>
+                  Japanese <br />
                   (Kansai Dialect)
                 </h3>
               </div>
