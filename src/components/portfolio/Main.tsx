@@ -24,13 +24,13 @@ export default function Main() {
             .
           </h1>
           <h2 className="md:py-4 py-1 md:text-3xl text-xl font-semibold">
-            S/W Consultant (Frontend) @ STG |
+            Frontend Engineer | 
             <br />
-            MSCS Postgrad @ KSU (CCSE) |
+            MSCS Postgraduate @ KSU (CCSE) |
             <br />
             JLPT N2 Certified
           </h2>
-          <p className="py-4  max-w-[70%] m-auto">
+          <p className="py-4 max-w-[70%] m-auto">
             My focus is on combining aesthetical, <br />
             functional design with efficient yet elegant frontend code.
             <br />

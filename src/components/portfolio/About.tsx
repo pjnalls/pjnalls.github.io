@@ -11,7 +11,7 @@ export default function About() {
           </p>
           <h2 className="py-4">Who I am</h2>
           <p className="py-2">
-            I'm a frontend developer with UI architecture experience providing
+            I'm a frontend engineer with UI-architectural experience providing
             React, Angular, and some cross-platform development consulting along
             with other technological services.
           </p>
