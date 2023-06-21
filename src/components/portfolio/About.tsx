@@ -16,10 +16,6 @@ export default function About() {
             with other technological services.
           </p>
           <p className="py-2">
-            Along with consulting, I'm also a postgraduate beginning a program
-            for an M.S. in Computer Science in May of 2023.
-            <br />
-            <br />
             As hobbies, I learn and practice Python, data science, machine
             learning, mathematics, philosophy, yoga (in the traditional sense),
             and different yet similar languages and cultures.

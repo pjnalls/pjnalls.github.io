@@ -809,7 +809,7 @@ export default function Skills() {
                 <h3>Simplified Hanzi</h3>
               </div>
               <p className="text-[#4f205f] dark:text-[#bfb0ef]">
-                Elementary Proficiency
+                Limited Working Proficiency
               </p>
             </div>
           </div>
