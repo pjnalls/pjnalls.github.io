@@ -24,7 +24,7 @@ export default function Main() {
             .
           </h1>
           <h2 className="md:py-4 py-1 md:text-3xl text-xl font-semibold">
-            Frontend Engineer | Polyglot
+            Polyglot Frontend Engineer
           </h2>
           <p className="py-4 max-w-[70%] m-auto">
             My focus is on combining aesthetical, <br />
