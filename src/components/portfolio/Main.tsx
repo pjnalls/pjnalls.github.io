@@ -15,22 +15,34 @@ export default function Main() {
             </span>
           </p>
           <h1 className="py-4 ">
-            Hi 👋, I&apos;m{" "}
+            <span id="hi_im" className="intl">
+              Hi 👋, I&apos;m{" "}
+            </span>
+            <br />
             <a href="/about">
-              <span className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150">
+              <span
+                id="preston"
+                className="intl text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150"
+              >
                 Preston
               </span>
             </a>
-            .
+            <span id="period" className="intl">
+              .
+            </span>
           </h1>
-          <h2 className="md:py-4 py-1 md:text-3xl text-xl font-semibold">
+          <h2
+            id="headline"
+            className="intl md:py-4 py-1 md:text-3xl text-xl font-semibold"
+          >
             Polyglot Frontend Engineer
           </h2>
-          <p className="py-4 max-w-[70%] m-auto">
-            My focus is on combining aesthetical, <br />
+          <p id="summary1" className="intl py-4 max-w-[66.7%] m-auto">
+            My focus is on combining aesthetical,
             functional design with efficient yet elegant frontend code.
-            <br />
-            <br />I also focus on continually learning in the STEAM (Scientific,
+          </p>
+          <p id="summary2" className="intl py-0 max-w-[83.3%] m-auto">
+            I also focus on continually learning in the STEAM (Scientific,
             Technologic, Engineering, Artistic, and Mathematic) disciplines to
             cultivate better analytical and creative abilities for both
             professional and personal projects.

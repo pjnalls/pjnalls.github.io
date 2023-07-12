@@ -9,13 +9,19 @@ export default function Footer() {
       className="w-full relative text-center z-[1] hidden md:block py-6 pb-24"
     >
       <p className="text-sm tracking-wider">
-        <span className="text-[#2e40e0] dark:text-[#9fa8ff] tracking-widest">
+        <span
+          id="madeWith"
+          className="intl text-[#2e40e0] dark:text-[#9fa8ff] tracking-widest"
+        >
           Made with
         </span>
         <br />
-        React, TypeScript, Tailwind CSS, Astro, Piskel and ❤️.
+        <span id="techUsed" className="intl">
+          React, TypeScript, Tailwind CSS, Astro, Piskel, and ❤️.
+        </span>
         <br />
-        <br />Copyright © 2023 Preston Nalls
+        <br />
+        Copyright © 2023 Preston Nalls
       </p>
       <div className="flex items-center content-center justify-center my-2 pt-2 w-full gap-5">
         <a href="https://github.com/pjnalls" aria-label="GitHub">
