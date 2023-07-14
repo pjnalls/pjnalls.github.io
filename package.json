@@ -2,6 +2,7 @@
   "name": "pjnalls",
   "type": "module",
   "version": "0.0.1",
+  "license": "MIT",
   "author": "Preston Nalls",
   "private": true,
   "scripts": {
