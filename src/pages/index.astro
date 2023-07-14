@@ -1,11 +1,12 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import Main from "../components/portfolio/Main";
 import Footer from "../components/portfolio/Footer";
 
 import { SITE_HOME_TITLE, SITE_HOME_DESCRIPTION } from "../config";
+import Navbar from "../components/portfolio/Navbar";
 ---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,7 +17,11 @@ import { SITE_HOME_TITLE, SITE_HOME_DESCRIPTION } from "../config";
     <div class="primary-gradient fixed h-[100vh] w-full"></div>
     <div class="secondary-gradient fixed h-[100vh] w-full"></div>
     <div class="z-[0]" id="blossomContainer"></div>
-    <Header />
+        <header>
+      <nav>
+        <Navbar client:load />
+      </nav>
+    </header>
     <main class="md:px-10 px-3">
       <Main />
     </main>
@@ -24,6 +29,6 @@ import { SITE_HOME_TITLE, SITE_HOME_DESCRIPTION } from "../config";
     <script is:inline src="/copyright-notice.js"></script>
     <script is:inline src="/get-previous-route.js"></script>
     <script is:inline src="/blossom-scene.js"></script>
-    <script is:inline src="/get-localization.js"></script>
+    <script is:inline src="/localize.js"></script>
   </body>
 </html>

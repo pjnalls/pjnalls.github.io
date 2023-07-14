@@ -26,12 +26,12 @@ import rnStrapiDark from "/assets/rn-strapi-dark.avif";
 
 import ProjectItem from "./ProjectItem";
 
-export default function Projects() {
+export default function Works() {
   return (
-    <div id="projects" className="w-full relative z-[1] p-2">
+    <div id="works" className="w-full relative z-[1] p-2">
       <div className="max-w-[1000px] mx-auto px-2 py-36">
         <p className="header-2 text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
-          Projects
+          Works
         </p>
         <h2 className="py-4">What I&apos;ve Created</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">

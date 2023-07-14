@@ -68,7 +68,106 @@ export default function Navbar() {
     handleNavShadow();
     initTheme();
     window.addEventListener("scroll", () => handleNavShadow());
+
+    const intlTags = document.getElementsByClassName("intl-nav");
+    const setLocale = () => {
+      localStorage.setItem(
+        "locale",
+        Intl.NumberFormat().resolvedOptions().locale ?? "en-US"
+      );
+      for (let i = 0; i < intlTags?.length; i++) {
+        (intlTags.item(i) as Element).textContent =
+          localizationDB[intlTags.item(i)?.getAttribute("id") as any]?.get(
+            localStorage.getItem("locale")
+          ) ??
+          localizationDB[intlTags.item(i)?.getAttribute("id") as any]?.get(
+            "en-US"
+          );
+      }
+    };
+    setLocale();
   }, []);
+
+  /**
+   * LOCALIZATION DATABASE
+   */
+  var localizationDB: any = {
+    /**
+     * NAVIGATION BAR
+     */
+    about: new Map([
+      ["en-US", "About"],
+      ["ja", "自己紹介"],
+      ["zh-TW", "自我介紹"],
+      ["zh-CN", "自我介绍"],
+      ["es-ES", "Introducción"],
+      ["ko", "자기소개"],
+      ["hi", "आत्म परिचय"],
+    ]),
+    skills: new Map([
+      ["en-US", "Skills"],
+      ["ja", "スキル"],
+      ["zh-TW", "技能"],
+      ["zh-CN", "技能"],
+      ["es-ES", "Técnica"],
+      ["ko", "기술"],
+      ["hi", "कौशल"],
+    ]),
+    works: new Map([
+      ["en-US", "Works"],
+      ["ja", "作品"],
+      ["zh-TW", "作品"],
+      ["zh-CN", "作品"],
+      ["es-ES", "Obras"],
+      ["ko", "작품"],
+      ["hi", "काम"],
+    ]),
+    blog: new Map([
+      ["en-US", "Blog"],
+      ["ja", "ブログ"],
+      ["zh-TW", "博客"],
+      ["zh-CN", "博客"],
+      ["es-ES", "Blog"],
+      ["ko", "블로그"],
+      ["hi", "ब्लॉग"],
+    ]),
+    resume: new Map([
+      ["en-US", "Resume"],
+      ["ja", "レジュメ"],
+      ["zh-TW", "簡歷"],
+      ["zh-CN", "简历"],
+      ["es-ES", "CV (EN)"],
+      ["ko", "이력서"],
+      ["hi", "सीवी (अंग्रेजी)"],
+    ]),
+    cv: new Map([
+      ["en-US", "CV (JA)"],
+      ["ja", "履歴書"],
+      ["zh-TW", "自我介紹"],
+      ["zh-CN", "自我介绍"],
+      ["es-ES", "CV (JA)"],
+      ["ko", "자기소개"],
+      ["hi", "सीवी (जापानी)"],
+    ]),
+    madeWith: new Map([
+      ["en-US", "Made with"],
+      ["ja", "使用技術"],
+      ["zh-TW", "使用的技術"],
+      ["zh-CN", "使用的技术"],
+      ["es-ES", "Hecho con"],
+      ["ko", "사용 기술"],
+      ["hi", "प्रौद्योगिकी का प्रयोग किया गया"],
+    ]),
+    techUsed: new Map([
+      ["en-US", "React, TypeScript, Tailwind CSS, Astro, Piskel, and ❤️."],
+      ["ja", "React、TypeScript、 Tailwind CSS、 Astro、 Piskel、❤️。"],
+      ["zh-TW", "React、TypeScript、Tailwind CSS、Astro、Piskel和❤️。"],
+      ["zh-CN", "React、TypeScript、Tailwind CSS、Astro、Piskel和❤️。"],
+      ["es-ES", "React, TypeScript, Tailwind CSS, Astro, Piskel y ❤️."],
+      ["ko", "React, TypeScript, Tailwind CSS, Astro, Piskel, ❤️."],
+      ["hi", "React, TypeScript, Tailwind CSS, Astro, Piskel, और ❤️"],
+    ]),
+  };
 
   return (
     <div>
@@ -92,25 +191,45 @@ export default function Navbar() {
           <div>
             <ul className="hidden md:flex px-2 transition-all ease-in duration-300">
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <a href="#" onClick={() => handleTopNavItemClick("about")}>
+                <a
+                  id="about"
+                  className="intl-nav"
+                  href="#"
+                  onClick={() => handleTopNavItemClick("about")}
+                >
                   About
                 </a>
               </li>
 
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <a href="#" onClick={() => handleTopNavItemClick("skills")}>
+                <a
+                  id="skills"
+                  className="intl-nav"
+                  href="#"
+                  onClick={() => handleTopNavItemClick("skills")}
+                >
                   Skills
                 </a>
               </li>
 
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <a href="#" onClick={() => handleTopNavItemClick("projects")}>
-                  Projects
+                <a
+                  id="works"
+                  className="intl-nav"
+                  href="#"
+                  onClick={() => handleTopNavItemClick("works")}
+                >
+                  Works
                 </a>
               </li>
 
               <li className="ml-10 text-sm uppercase hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in">
-                <a href="#" onClick={() => handleTopNavItemClick("blog")}>
+                <a
+                  id="blog"
+                  className="intl-nav"
+                  href="#"
+                  onClick={() => handleTopNavItemClick("blog")}
+                >
                   Blog
                 </a>
               </li>
@@ -120,7 +239,9 @@ export default function Navbar() {
                   className="flex items-center"
                   href="/assets/Resume - Preston Nalls.pdf"
                 >
-                  <span className="mr-1 uppercase">Resume </span>{" "}
+                  <span id="resume" className="intl-nav mr-1 uppercase">
+                    Resume{" "}
+                  </span>{" "}
                   <FiDownload fontSize={"1rem"} />
                 </a>
                 <span className="hovercard">
@@ -135,17 +256,15 @@ export default function Navbar() {
                   className="flex items-center"
                   href="/assets/履歴書 - Nalls, Preston.xlsx"
                 >
-                  <span className="mr-1 uppercase">CV (JA) </span>{" "}
+                  <span id="cv" className="intl-nav mr-1 uppercase">
+                    CV (JA){" "}
+                  </span>{" "}
                   <FiDownload fontSize={"1rem"} />
                 </a>
                 <span className="hovercard">
                   <span className="pointer right-20">👆</span>
                   <div className="tooltiptext font-medium">
-                    <span lang="ja">
-                      ここから履歴書を
-                      <br />
-                      ダウンロードします。
-                    </span>
+                    Download my resume here.
                   </div>
                 </span>
               </li>
@@ -208,13 +327,20 @@ export default function Navbar() {
         <div className="py-4 flex flex-col">
           <ul>
             <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease">
-              <a href="#" onClick={() => handleTopNavItemClick("about#opened")}>
+              <a
+                id="about"
+                className="intl-nav"
+                href="#"
+                onClick={() => handleTopNavItemClick("about#opened")}
+              >
                 About
               </a>
             </li>
 
             <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease">
               <a
+                id="skills"
+                className="intl-nav"
                 href="#"
                 onClick={() => handleTopNavItemClick("skills#opened")}
               >
@@ -224,14 +350,21 @@ export default function Navbar() {
 
             <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease">
               <a
+                id="works"
+                className="intl-nav"
                 href="#"
-                onClick={() => handleTopNavItemClick("projects#opened")}
+                onClick={() => handleTopNavItemClick("works#opened")}
               >
-                Projects
+                Works
               </a>
             </li>
             <li className="py-3 text-sm origin-left uppercase hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease">
-              <a href="#" onClick={() => handleTopNavItemClick("blog#opened")}>
+              <a
+                id="blog"
+                className="intl-nav"
+                href="#"
+                onClick={() => handleTopNavItemClick("blog#opened")}
+              >
                 Blog
               </a>
             </li>
@@ -240,7 +373,9 @@ export default function Navbar() {
                 className="flex items-center"
                 href="/assets/Resume - Preston Nalls.pdf"
               >
-                <span className="mr-1 uppercase">Resume </span>{" "}
+                <span id="resume" className="intl-nav mr-1 uppercase">
+                  Resume{" "}
+                </span>{" "}
                 <FiDownload fontSize={"1rem"} />
               </a>
               <span className="hovercard drawer">
@@ -261,11 +396,7 @@ export default function Navbar() {
               <span className="hovercard drawer">
                 <span className="pointer drawer-pointer">👈</span>
                 <div className="tooltiptext font-medium">
-                  <span lang="ja">
-                    ここから履歴書を
-                    <br />
-                    ダウンロードします。
-                  </span>
+                  Download my resume here.
                 </div>
               </span>
             </li>
@@ -282,11 +413,16 @@ export default function Navbar() {
           </ul>
           <div className="pt-16">
             <p className="text-sm tracking-wider">
-              <span className="text-[#2e40e0] dark:text-[#9fa8ff] tracking-widest">
+              <span
+                id="madeWith"
+                className="intl-nav text-[#2e40e0] dark:text-[#9fa8ff] tracking-widest"
+              >
                 Made with
               </span>
               <br />
-              React, TypeScript, Tailwind CSS, Astro, Piskel and ❤️.
+              <span id="techUsed" className="intl-nav">
+                React, TypeScript, Tailwind CSS, Astro, Piskel and ❤️.
+              </span>
               <br />
               <br />
               Copyright © 2023 Preston Nalls

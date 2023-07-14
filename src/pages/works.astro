@@ -1,10 +1,10 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Projects from "../components/portfolio/Projects";
+import Works from "../components/portfolio/Works";
 import Footer from "../components/portfolio/Footer";
 
-import { SITE_PROJECTS_TITLE, SITE_PROJECTS_DESCRIPTION } from "../config";
+import { SITE_WORKS_TITLE, SITE_WORKS_DESCRIPTION } from "../config";
+import Navbar from "../components/portfolio/Navbar";
 ---
 
 <!DOCTYPE html>
@@ -12,17 +12,21 @@ import { SITE_PROJECTS_TITLE, SITE_PROJECTS_DESCRIPTION } from "../config";
   <head>
     <script is:inline src="/resolve-fouc.js"></script>
     <BaseHead
-      title={SITE_PROJECTS_TITLE}
-      description={SITE_PROJECTS_DESCRIPTION}
+      title={SITE_WORKS_TITLE}
+      description={SITE_WORKS_DESCRIPTION}
     />
   </head>
   <body>
     <div class="primary-gradient fixed h-[100vh] w-full"></div>
     <div class="secondary-gradient fixed h-[100vh] w-full"></div>
     <div class="z-[0]" id="blossomContainer"></div>
-    <Header />
+    <header>
+      <nav>
+        <Navbar client:load />
+      </nav>
+    </header>
     <main class="md:px-10 px-3">
-      <Projects />
+      <Works />
     </main>
     <Footer />
     <script is:inline src="/copyright-notice.js"></script>

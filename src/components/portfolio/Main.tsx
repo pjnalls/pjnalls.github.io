@@ -45,7 +45,7 @@ export default function Main() {
             I also focus on continually learning in the STEAM (Scientific,
             Technologic, Engineering, Artistic, and Mathematic) disciplines to
             cultivate better analytical and creative abilities for both
-            professional and personal projects.
+            professional and personal works.
           </p>
         </div>
       </div>

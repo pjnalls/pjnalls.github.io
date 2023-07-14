@@ -22,7 +22,7 @@ export default function About() {
             and many languages and cultures as a polyglot.
             <br />
             <br />
-            Work as a consultant and for personal pet projects feels like high
+            Work as a consultant and for personal pet works feels like high
             forms of both creative and analytical expression, and I strive to be
             completely devoted to and singularly focused on the process of
             designing and developing great DX, CX, UX, and, most importantly, PX

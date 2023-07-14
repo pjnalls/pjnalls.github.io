@@ -1,10 +1,9 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Main from "../components/portfolio/Main";
 import Footer from "../components/portfolio/Footer";
 
 import { SITE_HOME_TITLE, SITE_HOME_DESCRIPTION } from "../config";
+import Navbar from "../components/portfolio/Navbar";
 ---
 
 <!DOCTYPE html>
@@ -16,7 +15,11 @@ import { SITE_HOME_TITLE, SITE_HOME_DESCRIPTION } from "../config";
   <body>
     <div class="primary-gradient fixed h-[100vh] w-full"></div>
     <div class="secondary-gradient fixed h-[100vh] w-full"></div>
-    <Header />
+        <header>
+      <nav>
+        <Navbar client:load />
+      </nav>
+    </header>
     <main class="md:px-10 px-3 w-full text-center">
       <p class="lg:h-screen lg:py-0 py-36 flex justify-center items-center">
         Page not found.
@@ -36,7 +39,7 @@ import { SITE_HOME_TITLE, SITE_HOME_DESCRIPTION } from "../config";
         setTimeout(
           () =>
             (window.location.href = `/${
-              ["", "about", "skills", "projects", "blog"].indexOf(
+              ["", "about", "skills", "works", "blog"].indexOf(
                 previousRoute ?? ""
               ) > -1
                 ? previousRoute

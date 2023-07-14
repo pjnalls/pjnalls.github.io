@@ -1,7 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Navbar from "../components/portfolio/Navbar";
 
 export interface Props {
   content: {
@@ -31,7 +31,11 @@ const {
 
   <body>
     <div class="z-[0]" id="blossomContainer"></div>
-    <Header />
+        <header>
+      <nav>
+        <Navbar />
+      </nav>
+    </header>
     <main class="w-full h-screen relative z-[1] md:px-10 px-8">
       <article class="max-w-[1000px] w-full h-[100%] mx-auto p-2 px-0 py-36">
         {
