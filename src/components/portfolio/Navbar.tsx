@@ -65,16 +65,13 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    handleNavShadow();
-    initTheme();
-    window.addEventListener("scroll", () => handleNavShadow());
-
     const intlTags = document.getElementsByClassName("intl-nav");
     const setLocale = () => {
-      localStorage.setItem(
-        "locale",
-        Intl.NumberFormat().resolvedOptions().locale ?? "en-US"
-      );
+      !localStorage.getItem("locale") &&
+        localStorage.setItem(
+          "locale",
+          Intl.NumberFormat().resolvedOptions().locale ?? "en-US"
+        );
       for (let i = 0; i < intlTags?.length; i++) {
         (intlTags.item(i) as Element).textContent =
           localizationDB[intlTags.item(i)?.getAttribute("id") as any]?.get(
@@ -86,6 +83,9 @@ export default function Navbar() {
       }
     };
     setLocale();
+    handleNavShadow();
+    initTheme();
+    window.addEventListener("scroll", () => handleNavShadow());
   }, []);
 
   /**

@@ -6,27 +6,35 @@ export default function About() {
     <div id="about" className="w-full relative z-[1] p-2">
       <div className="max-w-[1000px] w-full mx-auto p-2 px-0 py-36 md:flex justify-center items-center">
         <div className="col-span-2">
-          <p className="header-2 uppercase text-xl tracking-widestest text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
+          <p
+            id="about"
+            className="intl-nav header-2 uppercase text-xl tracking-widestest text-[#4f58fc] dark:text-[#9fa8ff] font-semibold"
+          >
             About
           </p>
-          <h2 className="py-4">Who I am</h2>
-          <p className="py-2">
+          <h2 id="who_i_am" className="intl py-4">
+            Who I am
+          </h2>
+          <p id="bio1" className="intl py-2">
             I'm a a frontend engineer with fullstack Javascript development and
             UI architecture experience providing React, Angular, and some
             cross-platform development consulting along with other technological
             services.
           </p>
-          <p className="py-2">
+          <p id="bio2" className="intl py-2">
             As hobbies, I learn and practice Python, data science, machine
             learning, mathematics, philosophy, yoga (in the traditional sense),
             and many languages and cultures as a polyglot.
-            <br />
-            <br />
+          </p>
+          <p id="bio3" className="intl py-2">
             Work as a consultant and for personal pet works feels like high
             forms of both creative and analytical expression, and I strive to be
             completely devoted to and singularly focused on the process of
             designing and developing great DX, CX, UX, and, most importantly, PX
             — great people experience above all. 👆{" "}
+          </p>
+          <p>
+            {" "}
             <a
               href="https://www.linkedin.com/in/pjnalls"
               className="text-[#4f58fc] dark:text-[#9fa8ff] cursor-pointer hover:dark:text-[#6f78fc] hover:text-[#2f38c0] transition-all ease-in duration-150"
@@ -47,13 +55,13 @@ export default function About() {
         </div>
       </div>
       <section className="mb-8 max-w-[1000px] w-full mx-auto">
-        <h2 className="py-4 mb-8 text-center">
-          What my coding <br />
+        <h2 id="coding_statistics" className="intl py-4 mb-8 text-center">
+          What my coding
           statistics are
         </h2>
         <div className="text-center flex flex-wrap justify-center gap-8 content-center items-center">
           <div className="w-full flex flex-wrap">
-            <p className="w-full mb-4">
+            <p id="total_gh_tribute" className="intl w-full mb-4">
               🔥 Total GitHub Contributions and Streak Statistics
             </p>
             <a
@@ -71,7 +79,7 @@ export default function About() {
           </div>
 
           <div className="w-full flex flex-wrap">
-            <p className="w-full mb-4">
+            <p id="overall_gh_stats" className="intl w-full mb-4">
               🅰️ Overall GitHub Statistics and Grade (Mark)
             </p>
             <br />
@@ -90,7 +98,7 @@ export default function About() {
           </div>
 
           <div className="w-full flex flex-wrap">
-            <p className="w-full mb-4">
+            <p id="top_languages" className="intl w-full mb-4">
               🔝 Top Programming Languages I Use on GitHub
             </p>
             <br />

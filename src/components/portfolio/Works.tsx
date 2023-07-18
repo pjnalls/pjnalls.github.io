@@ -30,10 +30,10 @@ export default function Works() {
   return (
     <div id="works" className="w-full relative z-[1] p-2">
       <div className="max-w-[1000px] mx-auto px-2 py-36">
-        <p className="header-2 text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
+        <p id="works" className="intl-nav header-2 text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
           Works
         </p>
-        <h2 className="py-4">What I&apos;ve Created</h2>
+        <h2 id="what_ive_created" className="intl py-4">What I&apos;ve Created</h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
           <ProjectItem
             id="11"
