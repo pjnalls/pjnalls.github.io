@@ -12,6 +12,11 @@ body {
   margin: 0;
 }
 
+select, select * {
+  background-color: transparent;
+  cursor: pointer;
+}
+
 html:before,
 body:before {
   content: "";

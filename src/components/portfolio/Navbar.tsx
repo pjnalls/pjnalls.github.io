@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai/index";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs/index";
-import { FaGithub, FaLinkedin } from "react-icons/fa/index";
+import { FaGithub, FaLanguage, FaLinkedin } from "react-icons/fa/index";
 import { FiDownload } from "react-icons/fi/index";
 
 import { itsDark, navOpen, navShadow } from "../../stores";
@@ -63,15 +63,14 @@ export default function Navbar() {
       1133
     );
   };
+  const selectLocale = (locale: string) => {
+    localStorage.setItem("locale", locale);
+    window.location.reload();
+  };
 
   useEffect(() => {
     const intlTags = document.getElementsByClassName("intl-nav");
     const setLocale = () => {
-      !localStorage.getItem("locale") &&
-        localStorage.setItem(
-          "locale",
-          Intl.NumberFormat().resolvedOptions().locale ?? "en-US"
-        );
       for (let i = 0; i < intlTags?.length; i++) {
         (intlTags.item(i) as Element).textContent =
           localizationDB[intlTags.item(i)?.getAttribute("id") as any]?.get(
@@ -81,6 +80,12 @@ export default function Navbar() {
             "en-US"
           );
       }
+      const localeSettings = document.querySelectorAll(
+        `#${localStorage.getItem("locale") as string}`
+      ) as NodeListOf<HTMLOptionElement>;
+      localeSettings.forEach((setting) => {
+        setting.selected = true;
+      });
     };
     setLocale();
     handleNavShadow();
@@ -102,7 +107,6 @@ export default function Navbar() {
       ["zh-CN", "自我介绍"],
       ["es-ES", "Introducción"],
       ["ko", "자기소개"],
-      ["hi", "आत्म परिचय"],
     ]),
     skills: new Map([
       ["en-US", "Skills"],
@@ -111,7 +115,6 @@ export default function Navbar() {
       ["zh-CN", "技能"],
       ["es-ES", "Técnica"],
       ["ko", "기술"],
-      ["hi", "कौशल"],
     ]),
     works: new Map([
       ["en-US", "Works"],
@@ -120,16 +123,22 @@ export default function Navbar() {
       ["zh-CN", "作品"],
       ["es-ES", "Obras"],
       ["ko", "작품"],
-      ["hi", "काम"],
+    ]),
+    en_AS: new Map([
+      ["en-US", "English (American)"],
+      ["ja", "英語（アメリカ）"],
+      ["zh-TW", "英語（美國）"],
+      ["zh-CN", "英语（美国）"],
+      ["es-ES", "Inglés (Americano)"],
+      ["ko", "영어(미국식)"],
     ]),
     blog: new Map([
       ["en-US", "Blog"],
-      ["ja", "ブログ"],
-      ["zh-TW", "博客"],
-      ["zh-CN", "博客"],
-      ["es-ES", "Blog"],
-      ["ko", "블로그"],
-      ["hi", "ब्लॉग"],
+      ["ja", "ブログ  (英語）"],
+      ["zh-TW", "博客 (英語）"],
+      ["zh-CN", "博客 (英语）"],
+      ["es-ES", "Blog (Inglés)"],
+      ["ko", "블로그 (미국식)"],
     ]),
     resume: new Map([
       ["en-US", "Resume"],
@@ -138,7 +147,6 @@ export default function Navbar() {
       ["zh-CN", "简历"],
       ["es-ES", "CV (EN)"],
       ["ko", "이력서"],
-      ["hi", "सीवी (अंग्रेजी)"],
     ]),
     cv: new Map([
       ["en-US", "CV (JA)"],
@@ -147,7 +155,6 @@ export default function Navbar() {
       ["zh-CN", "自我介绍"],
       ["es-ES", "CV (JA)"],
       ["ko", "자기소개"],
-      ["hi", "सीवी (जापानी)"],
     ]),
     madeWith: new Map([
       ["en-US", "Made with"],
@@ -156,7 +163,6 @@ export default function Navbar() {
       ["zh-CN", "使用的技术"],
       ["es-ES", "Hecho con"],
       ["ko", "사용 기술"],
-      ["hi", "प्रौद्योगिकी का प्रयोग किया गया"],
     ]),
     techUsed: new Map([
       ["en-US", "React, TypeScript, Tailwind CSS, Astro, Piskel, and ❤️."],
@@ -165,7 +171,14 @@ export default function Navbar() {
       ["zh-CN", "React、TypeScript、Tailwind CSS、Astro、Piskel和❤️。"],
       ["es-ES", "React, TypeScript, Tailwind CSS, Astro, Piskel y ❤️."],
       ["ko", "React, TypeScript, Tailwind CSS, Astro, Piskel, ❤️."],
-      ["hi", "React, TypeScript, Tailwind CSS, Astro, Piskel, और ❤️"],
+    ]),
+    download_here: new Map([
+      ["en-US", "Download my resume here."],
+      ["ja", "履歴書はこちらからダウンロードできます。"],
+      ["zh-TW", "在此下載我的簡歷。"],
+      ["zh-CN", "在此下载我的简历。"],
+      ["es-ES", "Descargue mi currículum aquí."],
+      ["ko", "여기에서 이력서를 다운로드하세요."],
     ]),
   };
 
@@ -239,19 +252,23 @@ export default function Navbar() {
                   className="flex items-center"
                   href="/assets/Resume - Preston Nalls.pdf"
                 >
-                  <span id="resume" className="intl-nav mr-1 uppercase">
+                  <FiDownload fontSize={"1rem"} />{" "}
+                  <span id="resume" className="intl-nav ml-1 uppercase">
+                    {" "}
                     Resume{" "}
                   </span>{" "}
-                  <FiDownload fontSize={"1rem"} />
                 </a>
                 <span className="hovercard">
                   <span className="pointer">👆</span>
-                  <div className="tooltiptext font-medium">
+                  <div
+                    id="download_here"
+                    className="intl-nav tooltiptext font-medium"
+                  >
                     Download my resume here.
                   </div>
                 </span>
               </li>
-              <li className="ml-10 text-sm hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in resume-option">
+              {/* <li className="ml-10 text-sm hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in resume-option">
                 <a
                   className="flex items-center"
                   href="/assets/履歴書 - Nalls, Preston.xlsx"
@@ -263,10 +280,37 @@ export default function Navbar() {
                 </a>
                 <span className="hovercard">
                   <span className="pointer right-20">👆</span>
-                  <div className="tooltiptext font-medium">
+                  <div id="download_here" className="intl-nav tooltiptext font-medium">
                     Download my resume here.
                   </div>
                 </span>
+              </li> */}
+              <li className="ml-10 mt-[-2px] text-sm hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in resume-option flex items-center">
+                <FaLanguage size={"24px"} />
+                <select
+                  className="locale-settings"
+                  onChange={({ target: { value } }) => selectLocale(value)}
+                  onBlur={({ target: { value } }) => selectLocale(value)}
+                >
+                  <option id="en-US" value={"en-US"}>
+                    ENGLISH
+                  </option>
+                  <option id="ja" value={"ja"}>
+                    日本語
+                  </option>
+                  <option id="zh-TW" value={"zh-TW"}>
+                    繁體字
+                  </option>
+                  <option id="zh-CN" value={"zh-CN"}>
+                    简体字
+                  </option>
+                  <option id="es-ES" value={"es-ES"}>
+                    ESPAÑOL
+                  </option>
+                  <option id="ko" value={"ko"}>
+                    한국어
+                  </option>
+                </select>
               </li>
               <li
                 onClick={() => handleDarkMode()}
@@ -373,19 +417,23 @@ export default function Navbar() {
                 className="flex items-center"
                 href="/assets/Resume - Preston Nalls.pdf"
               >
-                <span id="resume" className="intl-nav mr-1 uppercase">
+                <FiDownload fontSize={"1rem"} />{" "}
+                <span id="resume" className="intl-nav ml-1 uppercase">
+                  {" "}
                   Resume{" "}
                 </span>{" "}
-                <FiDownload fontSize={"1rem"} />
               </a>
               <span className="hovercard drawer">
                 <span className="pointer drawer-pointer">👈</span>
-                <div className="tooltiptext font-medium">
+                <div
+                  id="download_here"
+                  className="intl-nav tooltiptext font-medium"
+                >
                   Download my resume here.
                 </div>
               </span>
             </li>
-            <li className="py-3 text-sm origin-left hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease resume-option">
+            {/* <li className="py-3 text-sm origin-left hover:text-slate-700 dark:hover:text-slate-300 hover:scale-110 transition-all duration-200 ease resume-option">
               <a
                 className="flex items-center"
                 href="/assets/履歴書 - Nalls, Preston.xlsx"
@@ -395,10 +443,37 @@ export default function Navbar() {
               </a>
               <span className="hovercard drawer">
                 <span className="pointer drawer-pointer">👈</span>
-                <div className="tooltiptext font-medium">
+                <div id="download_here" className="intl-nav tooltiptext font-medium">
                   Download my resume here.
                 </div>
               </span>
+            </li> */}
+            <li className="py-3 mt-[-1px] text-sm origin-left hover:text-slate-700 hover:scale-110 transition-all duration-200 ease resume-option flex items-center">
+              <FaLanguage size={"24px"} />
+              <select
+                className="locale-settings"
+                onChange={({ target: { value } }) => selectLocale(value)}
+                onBlur={({ target: { value } }) => selectLocale(value)}
+              >
+                <option id="en-US" value={"en-US"}>
+                  ENGLISH
+                </option>
+                <option id="ja" value={"ja"}>
+                  日本語
+                </option>
+                <option id="zh-TW" value={"zh-TW"}>
+                  繁體字
+                </option>
+                <option id="zh-CN" value={"zh-CN"}>
+                  简体字
+                </option>
+                <option id="es-ES" value={"es-ES"}>
+                  ESPAÑOL
+                </option>
+                <option id="ko" value={"ko"}>
+                  한국어
+                </option>
+              </select>
             </li>
             <li
               onClick={() => handleDarkMode()}

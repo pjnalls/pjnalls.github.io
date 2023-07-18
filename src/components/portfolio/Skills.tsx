@@ -46,12 +46,20 @@ export default function Skills() {
   return (
     <div id="skills" className="w-full relative z-[1] p-2">
       <div className="max-w-[1000px] mx-auto flex flex-col justify-center py-36 px-2">
-        <p id="skills" className="intl-nav header-2 text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
+        <p
+          id="skills"
+          className="intl-nav header-2 text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold"
+        >
           Skills
         </p>
-        <h2 id="what_i_can_do" className="intl py-4">What I Can Do</h2>
+        <h2 id="what_i_can_do" className="intl py-4">
+          What I Can Do
+        </h2>
         <br />
-        <h3 id="" className="intl font-semibold text-2xl py-2 text-center">
+        <h3
+          id="toolkit"
+          className="intl font-semibold text-2xl py-2 text-center"
+        >
           🛠️ Toolkit I Use as a Frontend Engineer
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
@@ -491,7 +499,10 @@ export default function Skills() {
           </div>
         </div>
         <br />
-        <h3 className="font-semibold text-2xl text-center">
+        <h3
+          id="other_tools"
+          className="intl font-semibold text-2xl text-center"
+        >
           🛠️ Other Tools I Use for Web, Mobile, and Cross-Platform Development
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10 mb-5">
@@ -656,19 +667,25 @@ export default function Skills() {
           </div>
         </div>
         <br />
-        <h3 className="font-semibold text-2xl text-center">
+        <h3
+          id="natural_languages"
+          className="intl font-semibold text-2xl text-center"
+        >
           🌐 Natural Languages Ordered by Proficiency
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center pt-3 pb-10">
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>
+                <h3 id="en_AS" className="intl">
                   English <br />
                   (American Standard)
                 </h3>
               </div>
-              <p className="text-[#8f203f] dark:text-[#ffb0cf]">
+              <p
+                id="native"
+                className="intl text-[#8f203f] dark:text-[#ffb0cf]"
+              >
                 Native Proficiency
               </p>
             </div>
@@ -676,25 +693,15 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>
-                  English <br />
-                  (Black Venacular)
-                </h3>
-              </div>
-              <p className="text-[#8f203f] dark:text-[#ffb0cf]">
-                Native Proficiency
-              </p>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>
+                <h3 id="en_A" className="intl">
                   English <br />
                   (Academic)
                 </h3>
               </div>
-              <p className="text-[#7f203f] dark:text-[#efb0cf]">
+              <p
+                id="full_prof"
+                className="intl text-[#7f203f] dark:text-[#efb0cf]"
+              >
                 Full Professional Proficiency
               </p>
             </div>
@@ -702,12 +709,15 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>
+                <h3 id="en_B" className="intl">
                   English <br />
                   (Business)
                 </h3>
               </div>
-              <p className="text-[#7f203f] dark:text-[#efb0cf]">
+              <p
+                id="full_prof"
+                className="intl text-[#7f203f] dark:text-[#efb0cf]"
+              >
                 Full Professional Proficiency
               </p>
             </div>
@@ -715,47 +725,31 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>
+                <h3 id="ja_S" className="intl">
                   Japanese <br />
                   (Standard)
                 </h3>
               </div>
-              <p className="text-[#7f203f] dark:text-[#efb0cf]">
+              <p
+                id="full_prof"
+                className="intl text-[#7f203f] dark:text-[#efb0cf]"
+              >
                 Full Professional Proficiency
               </p>
             </div>
           </div>
+
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>
-                  Kanji <br />
+                <h3 id="greek" className="intl">
+                  Greek
                 </h3>
               </div>
-              <p className="text-[#7f203f] dark:text-[#efb0cf]">
-                Full Professional Proficiency
-              </p>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>
-                  Japanese <br />
-                  (Academic)
-                </h3>
-              </div>
-              <p className="text-[#6f203f] dark:text-[#dfb0cf]">
-                Professional Proficiency
-              </p>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>Greek</h3>
-              </div>
-              <p className="text-[#5f203f] dark:text-[#cfb0cf]">
+              <p
+                id="etymological"
+                className="intl text-[#5f203f] dark:text-[#cfb0cf]"
+              >
                 Etymological Proficiency
               </p>
             </div>
@@ -764,58 +758,28 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>Latin</h3>
+                <h3 id="latin" className="intl">
+                  Latin
+                </h3>
               </div>
-              <p className="text-[#5f203f] dark:text-[#cfb0cf]">
+              <p id="etymological" className="intl dark:text-[#cfb0cf]">
                 Etymological Proficiency
               </p>
             </div>
           </div>
+
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>
-                  Japanese <br />
-                  (Tamego)
-                </h3>
-              </div>
-              <p className="text-[#4f204f] dark:text-[#bfb0df]">
-                Limited Working Proficiency
-              </p>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>
-                  Japanese <br />
-                  (Kansai Dialect)
-                </h3>
-              </div>
-              <p className="text-[#4f204f] dark:text-[#bfb0df]">
-                Limited Working Proficiency
-              </p>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>Traditional Hanzi</h3>
-              </div>
-              <p className="text-[#4f204f] dark:text-[#bfb0df]">
-                Limited Working Proficiency
-              </p>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>
+                <h3 id="zh_M" className="intl">
                   Chinese <br />
                   (Mandarin)
                 </h3>
               </div>
-              <p className="text-[#4f204f] dark:text-[#bfb0df]">
+              <p
+                id="limited_working"
+                className="intl text-[#4f204f] dark:text-[#bfb0df]"
+              >
                 Limited Working Proficiency
               </p>
             </div>
@@ -823,19 +787,14 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>Simplified Hanzi</h3>
+                <h3 id="es_skill" className="intl">
+                  Spanish
+                </h3>
               </div>
-              <p className="text-[#4f205f] dark:text-[#bfb0ef]">
-                Limited Working Proficiency
-              </p>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>Spanish</h3>
-              </div>
-              <p className="text-[#4f205f] dark:text-[#bfb0ef]">
+              <p
+                id="elementary"
+                className="intl text-[#4f205f] dark:text-[#bfb0ef]"
+              >
                 Elementary Proficiency
               </p>
             </div>
@@ -843,25 +802,16 @@ export default function Skills() {
           <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
             <div className="grid grid-cols-1 gap-4 justify-between items-center">
               <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>French</h3>
+                <h3 id="th" className="intl">
+                  Thai
+                </h3>
               </div>
-              <p className="text-[#4f206f] dark:text-[#bfb0ff]">Novice</p>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>Thai</h3>
-              </div>
-              <p className="text-[#4f206f] dark:text-[#bfb0ff]">Novice</p>
-            </div>
-          </div>
-          <div className="p-6 shadow dark:shadow-slate-800 dark:shadow-md rounded-xl hover:scale-110 cursor-pointer ease transition-all ease-in duration-200">
-            <div className="grid grid-cols-1 gap-4 justify-between items-center">
-              <div className="m-auto inline-flex justify-around items-center w-full">
-                <h3>Hindi</h3>
-              </div>
-              <p className="text-[#4f206f] dark:text-[#bfb0ff]">Novice</p>
+              <p
+                id="novice"
+                className="intl text-[#4f206f] dark:text-[#bfb0ff]"
+              >
+                Novice
+              </p>
             </div>
           </div>
         </div>
