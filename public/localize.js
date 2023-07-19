@@ -1,4 +1,11 @@
 (function () {
+  localStorage.getItem("locale") == null &&
+    localStorage.setItem(
+      "locale",
+      ["en_US", "ja_JP", "zh_TW", "zh_CN", "ko_KR"].find((l) =>
+        l.includes(Intl.NumberFormat().resolvedOptions().locale.substring(0, 2))
+      )
+    );
   const intlTags = document.getElementsByClassName("intl");
   const setLocale = () => {
     for (let i = 0; i < intlTags?.length; i++) {
@@ -289,8 +296,8 @@
     total_gh_tribute: new Map([
       ["en_US", "🔥 Total GitHub Contributions and Streak Statistics"],
       ["ja_JP", "🔥 GitHubの総貢献量とストリークの統計"],
-      ["zh_TW", "🔥GitHub總貢獻和連續統計"],
-      ["zh_CN", "🔥GitHub总贡献和连续统计"],
+      ["zh_TW", "🔥 GitHub總貢獻和連續統計"],
+      ["zh_CN", "🔥 GitHub总贡献和连续统计"],
       ["es_ES", "🔥 Total de contribuciones a GitHub y estadísticas de rachas"],
       ["ko_KR", "🔥 총 GitHub 기여도 및 연승 통계"],
     ]),
@@ -319,8 +326,8 @@
     what_i_can_do: new Map([
       ["en_US", "What I Can Do"],
       ["ja_JP", "僕に出来る事"],
-      ["zh_TW", "我能做什麼"],
-      ["zh_CN", "我能做什么"],
+      ["zh_TW", "我的能力"],
+      ["zh_CN", "我的能力"],
       ["es_ES", "Lo que puedo hacer"],
       ["ko_KR", "내가 할 수 있는 일"],
     ]),

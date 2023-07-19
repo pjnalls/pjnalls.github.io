@@ -68,14 +68,14 @@ export default function Navbar() {
     window.location.reload();
   };
 
+  const getLinkedInLocale = () => {
+    const locale = localStorage.getItem("locale");
+    return `https://www.linkedin.com/in/pjnalls/${
+      locale === "en_US" ? "" : `?locale=${locale}`
+    }`;
+  };
+
   useEffect(() => {
-    const locale = localStorage?.getItem("locale") as string;
-    document
-      .getElementById("linked-navbar")
-      ?.setAttribute(
-        "href",
-        `https://www.linkedin.com/in/pjnalls?locale=${locale}`
-      );
     const intlTags = document.getElementsByClassName("intl-nav");
     const setLocale = () => {
       for (let i = 0; i < intlTags?.length; i++) {
@@ -98,6 +98,16 @@ export default function Navbar() {
     handleNavShadow();
     initTheme();
     window.addEventListener("scroll", () => handleNavShadow());
+
+    const locale = localStorage?.getItem("locale") ?? "en_US";
+    document
+      .getElementById("linked-navbar")
+      ?.setAttribute(
+        "href",
+        `https://www.linkedin.com/in/pjnalls/${
+          locale === "en_US" ? "" : `?locale=${locale}`
+        }`
+      );
   }, []);
 
   /**
@@ -260,7 +270,7 @@ export default function Navbar() {
                   href="/assets/Resume - Preston Nalls.pdf"
                 >
                   <FiDownload fontSize={"1rem"} />{" "}
-                  <span id="resume" className="intl-nav ml-1 uppercase">
+                  <span id="resume" className="intl-nav ml-2 uppercase">
                     {" "}
                     Resume{" "}
                   </span>{" "}
@@ -295,6 +305,7 @@ export default function Navbar() {
               <li className="ml-10 mt-[-2px] text-sm hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in resume-option flex items-center">
                 <FaLanguage size={"24px"} />
                 <select
+                  id="localeSettings1"
                   className="locale-settings ml-1"
                   onChange={({ target: { value } }) => selectLocale(value)}
                 >
@@ -424,7 +435,7 @@ export default function Navbar() {
                 href="/assets/Resume - Preston Nalls.pdf"
               >
                 <FiDownload fontSize={"1rem"} />{" "}
-                <span id="resume" className="intl-nav ml-1 uppercase">
+                <span id="resume" className="intl-nav ml-2 uppercase">
                   {" "}
                   Resume{" "}
                 </span>{" "}
@@ -457,6 +468,7 @@ export default function Navbar() {
             <li className="py-3 mt-[-1px] text-sm origin-left hover:text-slate-700 hover:scale-110 transition-all duration-200 ease resume-option flex items-center">
               <FaLanguage size={"24px"} />
               <select
+                id="localeSettings2"
                 className="locale-settings ml-1"
                 onChange={({ target: { value } }) => selectLocale(value)}
               >
@@ -515,7 +527,7 @@ export default function Navbar() {
               </a>
               <a
                 id="linked-navbar"
-                href="https://www.linkedin.com/in/pjnalls"
+                href={getLinkedInLocale()}
                 aria-label="LinkedIn"
               >
                 <div className="rounded-full shadow-lg text-[#19216f] dark:text-[#fff0e0] shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
