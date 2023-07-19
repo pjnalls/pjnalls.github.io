@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa/index";
 
@@ -29,7 +29,10 @@ export default function Footer() {
             <FaGithub size="30px" />
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/pjnalls" aria-label="LinkedIn">
+        <a
+          id="linked-footer"
+          aria-label="LinkedIn Profile"
+        >
           <div className="rounded-full shadow-lg text-[#19216f] dark:text-[#fff0e0] shadow-slate-400 dark:shadow-slate-900 p-3 cursor-pointer hover:scale-110 transition-all ease-in duration-200">
             <FaLinkedin size="30px" />
           </div>

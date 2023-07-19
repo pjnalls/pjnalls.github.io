@@ -69,6 +69,13 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    const locale = localStorage?.getItem("locale") as string;
+    document
+      .getElementById("linked-navbar")
+      ?.setAttribute(
+        "href",
+        `https://www.linkedin.com/in/pjnalls?locale=${locale}`
+      );
     const intlTags = document.getElementsByClassName("intl-nav");
     const setLocale = () => {
       for (let i = 0; i < intlTags?.length; i++) {
@@ -77,7 +84,7 @@ export default function Navbar() {
             localStorage.getItem("locale")
           ) ??
           localizationDB[intlTags.item(i)?.getAttribute("id") as any]?.get(
-            "en-US"
+            "en_US"
           );
       }
       const localeSettings = document.querySelectorAll(
@@ -101,84 +108,84 @@ export default function Navbar() {
      * NAVIGATION BAR
      */
     about: new Map([
-      ["en-US", "About"],
-      ["ja", "自己紹介"],
-      ["zh-TW", "自我介紹"],
-      ["zh-CN", "自我介绍"],
-      ["es-ES", "Introducción"],
-      ["ko", "자기소개"],
+      ["en_US", "About"],
+      ["ja_JP", "自己紹介"],
+      ["zh_TW", "自我介紹"],
+      ["zh_CN", "自我介绍"],
+      ["es_ES", "Introducción"],
+      ["ko_KR", "자기소개"],
     ]),
     skills: new Map([
-      ["en-US", "Skills"],
-      ["ja", "スキル"],
-      ["zh-TW", "技能"],
-      ["zh-CN", "技能"],
-      ["es-ES", "Técnica"],
-      ["ko", "기술"],
+      ["en_US", "Skills"],
+      ["ja_JP", "スキル"],
+      ["zh_TW", "技能"],
+      ["zh_CN", "技能"],
+      ["es_ES", "Técnica"],
+      ["ko_KR", "기술"],
     ]),
     works: new Map([
-      ["en-US", "Works"],
-      ["ja", "作品"],
-      ["zh-TW", "作品"],
-      ["zh-CN", "作品"],
-      ["es-ES", "Obras"],
-      ["ko", "작품"],
+      ["en_US", "Works"],
+      ["ja_JP", "作品"],
+      ["zh_TW", "作品"],
+      ["zh_CN", "作品"],
+      ["es_ES", "Obras"],
+      ["ko_KR", "작품"],
     ]),
     en_AS: new Map([
-      ["en-US", "English (American)"],
-      ["ja", "英語（アメリカ）"],
-      ["zh-TW", "英語（美國）"],
-      ["zh-CN", "英语（美国）"],
-      ["es-ES", "Inglés (Americano)"],
-      ["ko", "영어(미국식)"],
+      ["en_US", "English (American)"],
+      ["ja_JP", "英語（アメリカ）"],
+      ["zh_TW", "英語（美國）"],
+      ["zh_CN", "英语（美国）"],
+      ["es_ES", "Inglés (Americano)"],
+      ["ko_KR", "영어(미국식)"],
     ]),
     blog: new Map([
-      ["en-US", "Blog"],
-      ["ja", "ブログ  (英語）"],
-      ["zh-TW", "博客 (英語）"],
-      ["zh-CN", "博客 (英语）"],
-      ["es-ES", "Blog (Inglés)"],
-      ["ko", "블로그 (미국식)"],
+      ["en_US", "Blog"],
+      ["ja_JP", "ブログ  (英語）"],
+      ["zh_TW", "博客 (英語）"],
+      ["zh_CN", "博客 (英语）"],
+      ["es_ES", "Blog (Inglés)"],
+      ["ko_KR", "블로그 (미국식)"],
     ]),
     resume: new Map([
-      ["en-US", "Resume"],
-      ["ja", "レジュメ"],
-      ["zh-TW", "簡歷"],
-      ["zh-CN", "简历"],
-      ["es-ES", "CV (EN)"],
-      ["ko", "이력서"],
+      ["en_US", "Resume"],
+      ["ja_JP", "レジュメ"],
+      ["zh_TW", "簡歷"],
+      ["zh_CN", "简历"],
+      ["es_ES", "CV (EN)"],
+      ["ko_KR", "이력서"],
     ]),
     cv: new Map([
-      ["en-US", "CV (JA)"],
-      ["ja", "履歴書"],
-      ["zh-TW", "自我介紹"],
-      ["zh-CN", "自我介绍"],
-      ["es-ES", "CV (JA)"],
-      ["ko", "자기소개"],
+      ["en_US", "CV (JA)"],
+      ["ja_JP", "履歴書"],
+      ["zh_TW", "自我介紹"],
+      ["zh_CN", "自我介绍"],
+      ["es_ES", "CV (JA)"],
+      ["ko_KR", "자기소개"],
     ]),
     madeWith: new Map([
-      ["en-US", "Made with"],
-      ["ja", "使用技術"],
-      ["zh-TW", "使用的技術"],
-      ["zh-CN", "使用的技术"],
-      ["es-ES", "Hecho con"],
-      ["ko", "사용 기술"],
+      ["en_US", "Made with"],
+      ["ja_JP", "使用技術"],
+      ["zh_TW", "使用的技術"],
+      ["zh_CN", "使用的技术"],
+      ["es_ES", "Hecho con"],
+      ["ko_KR", "사용 기술"],
     ]),
     techUsed: new Map([
-      ["en-US", "React, TypeScript, Tailwind CSS, Astro, Piskel, and ❤️."],
-      ["ja", "React、TypeScript、 Tailwind CSS、 Astro、 Piskel、❤️。"],
-      ["zh-TW", "React、TypeScript、Tailwind CSS、Astro、Piskel和❤️。"],
-      ["zh-CN", "React、TypeScript、Tailwind CSS、Astro、Piskel和❤️。"],
-      ["es-ES", "React, TypeScript, Tailwind CSS, Astro, Piskel y ❤️."],
-      ["ko", "React, TypeScript, Tailwind CSS, Astro, Piskel, ❤️."],
+      ["en_US", "React, TypeScript, Tailwind CSS, Astro, Piskel, and ❤️."],
+      ["ja_JP", "React、TypeScript、 Tailwind CSS、 Astro、 Piskel、❤️。"],
+      ["zh_TW", "React、TypeScript、Tailwind CSS、Astro、Piskel和❤️。"],
+      ["zh_CN", "React、TypeScript、Tailwind CSS、Astro、Piskel和❤️。"],
+      ["es_ES", "React, TypeScript, Tailwind CSS, Astro, Piskel y ❤️."],
+      ["ko_KR", "React, TypeScript, Tailwind CSS, Astro, Piskel, ❤️."],
     ]),
     download_here: new Map([
-      ["en-US", "Download my resume here."],
-      ["ja", "履歴書はこちらからダウンロードできます。"],
-      ["zh-TW", "在此下載我的簡歷。"],
-      ["zh-CN", "在此下载我的简历。"],
-      ["es-ES", "Descargue mi currículum aquí."],
-      ["ko", "여기에서 이력서를 다운로드하세요."],
+      ["en_US", "Download my resume here."],
+      ["ja_JP", "履歴書はこちらからダウンロードできます。"],
+      ["zh_TW", "在此下載我的簡歷。"],
+      ["zh_CN", "在此下载我的简历。"],
+      ["es_ES", "Descargue mi currículum aquí."],
+      ["ko_KR", "여기에서 이력서를 다운로드하세요."],
     ]),
   };
 
@@ -291,22 +298,22 @@ export default function Navbar() {
                   className="locale-settings ml-1"
                   onChange={({ target: { value } }) => selectLocale(value)}
                 >
-                  <option id="en-US" value={"en-US"}>
+                  <option id="en_US" value={"en_US"}>
                     ENGLISH
                   </option>
-                  <option id="ja" value={"ja"}>
+                  <option id="ja_JP" value={"ja_JP"}>
                     日本語
                   </option>
-                  <option id="zh-TW" value={"zh-TW"}>
+                  <option id="zh_TW" value={"zh_TW"}>
                     繁體字
                   </option>
-                  <option id="zh-CN" value={"zh-CN"}>
+                  <option id="zh_CN" value={"zh_CN"}>
                     简体字
                   </option>
-                  <option id="es-ES" value={"es-ES"}>
+                  <option id="es_ES" value={"es_ES"}>
                     ESPAÑOL
                   </option>
-                  <option id="ko" value={"ko"}>
+                  <option id="ko_KR" value={"ko_KR"}>
                     한국어
                   </option>
                 </select>
@@ -453,22 +460,22 @@ export default function Navbar() {
                 className="locale-settings ml-1"
                 onChange={({ target: { value } }) => selectLocale(value)}
               >
-                <option id="en-US" value={"en-US"}>
+                <option id="en_US" value={"en_US"}>
                   ENGLISH
                 </option>
-                <option id="ja" value={"ja"}>
+                <option id="ja_JP" value={"ja_JP"}>
                   日本語
                 </option>
-                <option id="zh-TW" value={"zh-TW"}>
+                <option id="zh_TW" value={"zh_TW"}>
                   繁體字
                 </option>
-                <option id="zh-CN" value={"zh-CN"}>
+                <option id="zh_CN" value={"zh_CN"}>
                   简体字
                 </option>
-                <option id="es-ES" value={"es-ES"}>
+                <option id="es_ES" value={"es_ES"}>
                   ESPAÑOL
                 </option>
-                <option id="ko" value={"ko"}>
+                <option id="ko_KR" value={"ko_KR"}>
                   한국어
                 </option>
               </select>
@@ -507,6 +514,7 @@ export default function Navbar() {
                 </div>
               </a>
               <a
+                id="linked-navbar"
                 href="https://www.linkedin.com/in/pjnalls"
                 aria-label="LinkedIn"
               >
