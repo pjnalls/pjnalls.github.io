@@ -288,9 +288,8 @@ export default function Navbar() {
               <li className="ml-10 mt-[-2px] text-sm hover:scale-110 hover:border-slate-300 transition-all duration-200 ease-in resume-option flex items-center">
                 <FaLanguage size={"24px"} />
                 <select
-                  className="locale-settings"
+                  className="locale-settings ml-1"
                   onChange={({ target: { value } }) => selectLocale(value)}
-                  onBlur={({ target: { value } }) => selectLocale(value)}
                 >
                   <option id="en-US" value={"en-US"}>
                     ENGLISH
@@ -451,9 +450,8 @@ export default function Navbar() {
             <li className="py-3 mt-[-1px] text-sm origin-left hover:text-slate-700 hover:scale-110 transition-all duration-200 ease resume-option flex items-center">
               <FaLanguage size={"24px"} />
               <select
-                className="locale-settings"
+                className="locale-settings ml-1"
                 onChange={({ target: { value } }) => selectLocale(value)}
-                onBlur={({ target: { value } }) => selectLocale(value)}
               >
                 <option id="en-US" value={"en-US"}>
                   ENGLISH

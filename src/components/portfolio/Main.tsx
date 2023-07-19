@@ -37,7 +37,7 @@ export default function Main() {
           >
             Polyglot Frontend Engineer
           </h2>
-          <p id="summary1" className="intl py-4 max-w-[66.7%] m-auto">
+          <p id="summary1" className="intl py-4 max-w-[75%] m-auto">
             My focus is on combining aesthetical,
             functional design with efficient yet elegant frontend code.
           </p>
