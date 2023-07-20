@@ -33,7 +33,7 @@ const {
     <div class="z-[0]" id="blossomContainer"></div>
         <header>
       <nav>
-        <Navbar />
+        <Navbar client:load />
       </nav>
     </header>
     <main class="w-full h-screen relative z-[1] md:px-10 px-8">
@@ -70,6 +70,8 @@ const {
       </article>
     </main>
     <script is:inline src="/copyright-notice.js"></script>
+    <script is:inline src="/get-previous-route.js"></script>
     <script is:inline src="/blossom-scene.js"></script>
+    <script is:inline src="/localize.js"></script>
   </body>
 </html>
