@@ -12,7 +12,8 @@ body {
   margin: 0;
 }
 
-select, select * {
+select,
+select * {
   background-color: transparent;
   cursor: pointer;
 }
@@ -367,6 +368,71 @@ body:before {
     }
   }
 
+  nav {
+    -webkit-animation: 1s ease fade-in-nav;
+    -ms-animation: 1s ease fade-in-nav;
+    -o-animation: 1s ease fade-in-nav;
+    -moz-animation: 1s ease fade-in-nav;
+    animation: 1s ease fade-in-nav;
+  }
+
+  @-webkit-keyframes fade-in-nav {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-ms-keyframes fade-in-nav {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-o-keyframes fade-in-nav {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      padding-top: 0;
+    }
+  }
+  @-moz-keyframes fade-in-nav {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-nav {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   .fade-out {
     -webkit-animation: 1s ease fade-out forwards;
     -ms-animation: 1s ease fade-out forwards;
@@ -438,6 +504,55 @@ body:before {
     100% {
       opacity: 0;
       padding-top: 27.333%;
+    }
+  }
+
+  .fade-out-nav {
+    -webkit-animation: 0.333s ease fade-out-nav forwards;
+    -ms-animation: 0.333s ease fade-out-nav forwards;
+    -o-animation: 0.333s ease fade-out-nav forwards;
+    -moz-animation: 0.333s ease fade-out-nav forwards;
+    animation: 0.333s ease fade-out-nav forwards;
+  }
+
+  @-webkit-keyframes fade-out-nav {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-ms-keyframes fade-out-nav {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-o-keyframes fade-out-nav {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes fade-out-nav {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out-nav {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 

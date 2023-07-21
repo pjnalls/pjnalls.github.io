@@ -52,6 +52,10 @@ export default function Navbar() {
   const addFadeOutClass = () => {
     document.getElementsByTagName("main")?.item(0)?.classList?.add("fade-out");
     document
+      .getElementsByTagName("nav")
+      ?.item(0)
+      ?.classList?.add("fade-out-nav");
+    document
       .getElementById("blossomContainer")
       ?.classList?.add("fade-out-blossoms");
   };
@@ -271,9 +275,8 @@ export default function Navbar() {
                 >
                   <FiDownload fontSize={"1rem"} />{" "}
                   <span id="resume" className="intl-nav ml-2 uppercase">
-                    {" "}
-                    Resume{" "}
-                  </span>{" "}
+                    Resume
+                  </span>
                 </a>
                 <span className="hovercard">
                   <span className="pointer">👆</span>
@@ -436,9 +439,8 @@ export default function Navbar() {
               >
                 <FiDownload fontSize={"1rem"} />{" "}
                 <span id="resume" className="intl-nav ml-2 uppercase">
-                  {" "}
-                  Resume{" "}
-                </span>{" "}
+                  Resume
+                </span>
               </a>
               <span className="hovercard drawer">
                 <span className="pointer drawer-pointer">👈</span>
