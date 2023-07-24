@@ -1,0 +1,4 @@
+import{j as t}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const i={};function r(p){return t.jsx("div",{className:i.container,children:t.jsx("h1",{children:"Welcome to Stepper!"})})}try{r.displayName="Stepper",r.__docgenInfo={description:"",displayName:"Stepper",props:{}}}catch{}const m={component:r,title:"Navigation/Stepper",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A760&mode=dev"}}},e={args:{}};var o,a,s;e.parameters={...e.parameters,docs:{...(o=e.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(a=e.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};const d=["Primary"];export{e as Primary,d as __namedExportsOrder,m as default};
+//# sourceMappingURL=stepper.stories-bcb84249.js.map

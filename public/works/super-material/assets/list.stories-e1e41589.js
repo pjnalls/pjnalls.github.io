@@ -1,0 +1,4 @@
+import{j as t}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function e(i){return t.jsx("div",{className:n.container,children:t.jsx("h1",{children:"Welcome to List!"})})}try{e.displayName="List",e.__docgenInfo={description:"",displayName:"List",props:{}}}catch{}const p={component:e,title:"Data Display/List",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A751&mode=dev"}}},r={args:{}};var s,a,o;r.parameters={...r.parameters,docs:{...(s=r.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {}
+}`,...(o=(a=r.parameters)==null?void 0:a.docs)==null?void 0:o.source}}};const d=["Primary"];export{r as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=list.stories-e1e41589.js.map

@@ -1,0 +1,4 @@
+import{j as o}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const i={};function t(m){return o.jsx("div",{className:i.container,children:o.jsx("h1",{children:"Welcome to BottomSheets!"})})}try{t.displayName="BottomSheets",t.__docgenInfo={description:"",displayName:"BottomSheets",props:{}}}catch{}const p={component:t,title:"Lab/Bottom Sheets",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A733&mode=dev"}}},e={args:{}};var r,s,a;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  args: {}
+}`,...(a=(s=e.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};const d=["Primary"];export{e as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=bottom-sheets.stories-04c4a90a.js.map

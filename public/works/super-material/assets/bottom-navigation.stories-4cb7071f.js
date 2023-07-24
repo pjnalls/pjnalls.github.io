@@ -1,0 +1,4 @@
+import{j as r}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function t(s){return r.jsx("div",{className:n.container,children:r.jsx("h1",{children:"Welcome to BottomNavigation!"})})}try{t.displayName="BottomNavigation",t.__docgenInfo={description:"",displayName:"BottomNavigation",props:{}}}catch{}const p={component:t,title:"Navigation/Bottom Navigation",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A732&mode=dev"}}},o={args:{}};var a,e,i;o.parameters={...o.parameters,docs:{...(a=o.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {}
+}`,...(i=(e=o.parameters)==null?void 0:e.docs)==null?void 0:i.source}}};const d=["Primary"];export{o as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=bottom-navigation.stories-4cb7071f.js.map

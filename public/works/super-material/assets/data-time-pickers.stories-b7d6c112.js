@@ -1,0 +1,4 @@
+import{j as a}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const c={};function r(i){return a.jsx("div",{className:c.container,children:a.jsx("h1",{children:"Welcome to DataTimePickers!"})})}try{r.displayName="DataTimePickers",r.__docgenInfo={description:"",displayName:"DataTimePickers",props:{}}}catch{}const p={component:r,title:"Lab/Data Time Pickers",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A757&mode=dev"}}},e={args:{}};var t,s,o;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {}
+}`,...(o=(s=e.parameters)==null?void 0:s.docs)==null?void 0:o.source}}};const d=["Primary"];export{e as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=data-time-pickers.stories-b7d6c112.js.map

@@ -1,0 +1,4 @@
+import{j as a}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const i={};function e(c){return a.jsx("div",{className:i.container,children:a.jsx("h1",{children:"Welcome to Breadcrumbs!"})})}try{e.displayName="Breadcrumbs",e.__docgenInfo={description:"",displayName:"Breadcrumbs",props:{}}}catch{}const d={component:e,title:"Navigation/Breadcrumbs",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A734&mode=dev"}}},r={args:{}};var s,o,t;r.parameters={...r.parameters,docs:{...(s=r.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {}
+}`,...(t=(o=r.parameters)==null?void 0:o.docs)==null?void 0:t.source}}};const p=["Primary"];export{r as Primary,p as __namedExportsOrder,d as default};
+//# sourceMappingURL=breadcrumbs.stories-3e4064a9.js.map

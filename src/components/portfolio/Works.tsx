@@ -19,6 +19,7 @@ import spreangDark from "/assets/spreang.logo.dark.avif";
 import digitalRain from "/assets/project-2.avif";
 import forzenJungCauz from "/assets/project-4.avif";
 import scssArt from "/assets/project-6.avif";
+import sm from "/assets/super-material.avif";
 import mceWeb from "/assets/project-20220817.avif";
 import mceDesktop from "/assets/project-20220820.avif";
 import rnStrapiLight from "/assets/rn-strapi-light.avif";
@@ -30,11 +31,29 @@ export default function Works() {
   return (
     <div id="works" className="w-full relative z-[1] p-2">
       <div className="max-w-[1000px] mx-auto px-2 py-36">
-        <p id="works" className="intl-nav header-2 text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold">
+        <p
+          id="works"
+          className="intl-nav header-2 text-xl tracking-widest uppercase text-[#4f58fc] dark:text-[#9fa8ff] font-semibold"
+        >
           Works
         </p>
-        <h2 id="what_ive_created" className="intl py-4">What I&apos;ve Created</h2>
+        <h2 id="what_ive_created" className="intl py-4">
+          What I&apos;ve Created
+        </h2>
         <div className="grid md:grid-cols-2 gap-8 py-2">
+          <ProjectItem
+            id="A11"
+            title="Super Material"
+            description="An advanced implementation of MUI Core component libray as standalone Nx, Storybook, and React component library containing a single source of truth."
+            madeWith="React, Nx, Storybook, Figma, and Anima."
+            backgroundImg={sm}
+            enableScreenshot={false}
+            enableCode={true}
+            enableDemo={true}
+            demoLabel="View Work"
+            githubUrl="https://github.com/pjnalls/super-material"
+            demoUrl="/works/super-material/"
+          />
           <ProjectItem
             id="11"
             title="A° SOLID"

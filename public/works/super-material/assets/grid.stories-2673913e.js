@@ -1,0 +1,4 @@
+import{j as o}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function e(i){return o.jsx("div",{className:n.container,children:o.jsx("h1",{children:"Welcome to Grid!"})})}try{e.displayName="Grid",e.__docgenInfo={description:"",displayName:"Grid",props:{}}}catch{}const m={component:e,title:"Layout/Grid",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A745&mode=dev"}}},r={args:{}};var t,a,s;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(a=r.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};const p=["Primary"];export{r as Primary,p as __namedExportsOrder,m as default};
+//# sourceMappingURL=grid.stories-2673913e.js.map

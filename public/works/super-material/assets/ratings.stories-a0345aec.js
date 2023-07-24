@@ -1,0 +1,4 @@
+import{j as t}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const i={};function e(n){return t.jsx("div",{className:i.container,children:t.jsx("h1",{children:"Welcome to Ratings!"})})}try{e.displayName="Ratings",e.__docgenInfo={description:"",displayName:"Ratings",props:{}}}catch{}const p={component:e,title:"Inputs/Ratings",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A759&mode=dev"}}},r={args:{}};var s,a,o;r.parameters={...r.parameters,docs:{...(s=r.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {}
+}`,...(o=(a=r.parameters)==null?void 0:a.docs)==null?void 0:o.source}}};const d=["Primary"];export{r as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=ratings.stories-a0345aec.js.map

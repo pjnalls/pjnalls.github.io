@@ -1,0 +1,4 @@
+import{j as a}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function r(i){return a.jsx("div",{className:n.container,children:a.jsx("h1",{children:"Welcome to SpeedDial!"})})}try{r.displayName="SpeedDial",r.__docgenInfo={description:"",displayName:"SpeedDial",props:{}}}catch{}const d={component:r,title:"Navigation/Speed Dial",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=512%3A2269&mode=dev"}}},e={args:{}};var o,t,s;e.parameters={...e.parameters,docs:{...(o=e.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(t=e.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};const m=["Primary"];export{e as Primary,m as __namedExportsOrder,d as default};
+//# sourceMappingURL=speed-dial.stories-604777bd.js.map

@@ -1,0 +1,4 @@
+import{j as t}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function r(c){return t.jsx("div",{className:n.container,children:t.jsx("h1",{children:"Welcome to Selects!"})})}try{r.displayName="Selects",r.__docgenInfo={description:"",displayName:"Selects",props:{}}}catch{}const p={component:r,title:"Inputs/Selects",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=69%3A1014&mode=dev"}}},e={args:{}};var s,o,a;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {}
+}`,...(a=(o=e.parameters)==null?void 0:o.docs)==null?void 0:a.source}}};const d=["Primary"];export{e as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=selects.stories-95e7dfea.js.map

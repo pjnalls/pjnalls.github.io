@@ -1,0 +1,4 @@
+import{j as o}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function r(s){return o.jsx("div",{className:n.container,children:o.jsx("h1",{children:"Welcome to Timeline!"})})}try{r.displayName="Timeline",r.__docgenInfo={description:"",displayName:"Timeline",props:{}}}catch{}const p={component:r,title:"Lab/Timeline",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A767&mode=dev"}}},e={args:{}};var t,i,a;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {}
+}`,...(a=(i=e.parameters)==null?void 0:i.docs)==null?void 0:a.source}}};const d=["Primary"];export{e as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=timeline.stories-4b81c81f.js.map

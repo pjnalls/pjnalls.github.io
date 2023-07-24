@@ -1,0 +1,4 @@
+import{j as e}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const p={};function r(i){return e.jsx("div",{className:p.container,children:e.jsx("h1",{children:"Welcome to Tooltip!"})})}try{r.displayName="Tooltip",r.__docgenInfo={description:"",displayName:"Tooltip",props:{}}}catch{}const m={component:r,title:"Data Display/Tooltip",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A768&mode=dev"}}},o={args:{}};var t,a,s;o.parameters={...o.parameters,docs:{...(t=o.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(a=o.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};const d=["Primary"];export{o as Primary,d as __namedExportsOrder,m as default};
+//# sourceMappingURL=tooltip.stories-0ac4d781.js.map

@@ -1,0 +1,4 @@
+import{j as e}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function a(i){return e.jsx("div",{className:n.container,children:e.jsx("h1",{children:"Welcome to Parallax!"})})}try{a.displayName="Parallax",a.__docgenInfo={description:"",displayName:"Parallax",props:{}}}catch{}const l={component:a,title:"Lab/Parallax",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A756&mode=dev"}}},r={args:{}};var o,t,s;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(t=r.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};const p=["Primary"];export{r as Primary,p as __namedExportsOrder,l as default};
+//# sourceMappingURL=parallax.stories-4811cba3.js.map

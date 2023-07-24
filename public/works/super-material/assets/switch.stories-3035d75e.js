@@ -1,0 +1,4 @@
+import{j as t}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const c={};function e(i){return t.jsx("div",{className:c.container,children:t.jsx("h1",{children:"Welcome to Switch!"})})}try{e.displayName="Switch",e.__docgenInfo={description:"",displayName:"Switch",props:{}}}catch{}const p={component:e,title:"Inputs/Switch",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=512%3A2199&mode=dev"}}},r={args:{}};var o,s,a;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {}
+}`,...(a=(s=r.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};const d=["Primary"];export{r as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=switch.stories-3035d75e.js.map

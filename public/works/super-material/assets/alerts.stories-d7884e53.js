@@ -1,0 +1,4 @@
+import{j as t}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function r(i){return t.jsx("div",{className:n.container,children:t.jsx("h1",{children:"Welcome to Alerts!"})})}try{r.displayName="Alerts",r.__docgenInfo={description:"",displayName:"Alerts",props:{}}}catch{}const p={component:r,title:"Feedback/Alerts",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A2&mode=dev"}}},e={args:{}};var s,o,a;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {}
+}`,...(a=(o=e.parameters)==null?void 0:o.docs)==null?void 0:a.source}}};const d=["Primary"];export{e as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=alerts.stories-d7884e53.js.map

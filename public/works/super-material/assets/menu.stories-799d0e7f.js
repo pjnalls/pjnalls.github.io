@@ -1,0 +1,4 @@
+import{j as o}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const i={};function r(n){return o.jsx("div",{className:i.container,children:o.jsx("h1",{children:"Welcome to Menu!"})})}try{r.displayName="Menu",r.__docgenInfo={description:"",displayName:"Menu",props:{}}}catch{}const p={component:r,title:"Navigation/Menu",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A752&mode=dev"}}},e={args:{}};var t,a,s;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(a=e.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};const d=["Primary"];export{e as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=menu.stories-799d0e7f.js.map

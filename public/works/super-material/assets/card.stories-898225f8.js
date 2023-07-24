@@ -1,0 +1,4 @@
+import{j as a}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function e(i){return a.jsx("div",{className:n.container,children:a.jsx("h1",{children:"Welcome to Card!"})})}try{e.displayName="Card",e.__docgenInfo={description:"",displayName:"Card",props:{}}}catch{}const m={component:e,title:"Surfaces/Card",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A738&mode=dev"}}},r={args:{}};var o,t,s;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(t=r.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};const p=["Primary"];export{r as Primary,p as __namedExportsOrder,m as default};
+//# sourceMappingURL=card.stories-898225f8.js.map

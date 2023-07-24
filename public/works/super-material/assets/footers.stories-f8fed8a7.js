@@ -1,0 +1,4 @@
+import{j as o}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function e(i){return o.jsx("div",{className:n.container,children:o.jsx("h1",{children:"Welcome to Footers!"})})}try{e.displayName="Footers",e.__docgenInfo={description:"",displayName:"Footers",props:{}}}catch{}const p={component:e,title:"Lab/Footers",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A743&mode=dev"}}},r={args:{}};var t,s,a;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {}
+}`,...(a=(s=r.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};const d=["Primary"];export{r as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=footers.stories-f8fed8a7.js.map

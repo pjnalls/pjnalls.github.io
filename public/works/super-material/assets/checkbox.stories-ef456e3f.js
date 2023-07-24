@@ -1,0 +1,4 @@
+import{j as o}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function r(c){return o.jsx("div",{className:n.container,children:o.jsx("h1",{children:"Welcome to Checkbox!"})})}try{r.displayName="Checkbox",r.__docgenInfo={description:"",displayName:"Checkbox",props:{}}}catch{}const p={component:r,title:"Inputs/Checkbox",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=69%3A132&mode=dev"}}},e={args:{}};var t,s,a;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {}
+}`,...(a=(s=e.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};const d=["Primary"];export{e as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=checkbox.stories-ef456e3f.js.map

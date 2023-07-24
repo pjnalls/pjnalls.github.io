@@ -1,0 +1,4 @@
+import{j as r}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const s={};function o(i){return r.jsx("div",{className:s.container,children:r.jsx("h1",{children:"Welcome to FloatingActionButton!"})})}try{o.displayName="FloatingActionButton",o.__docgenInfo={description:"",displayName:"FloatingActionButton",props:{}}}catch{}const p={component:o,title:"Inputs/Floating Action Button",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A736&mode=dev"}}},t={args:{}};var e,n,a;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`{
+  args: {}
+}`,...(a=(n=t.parameters)==null?void 0:n.docs)==null?void 0:a.source}}};const d=["Primary"];export{t as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=floating-action-button.stories-0157dc77.js.map

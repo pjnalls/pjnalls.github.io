@@ -1,0 +1,4 @@
+import{j as r}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const i={};function o(n){return r.jsx("div",{className:i.container,children:r.jsx("h1",{children:"Welcome to RadioButton!"})})}try{o.displayName="RadioButton",o.__docgenInfo={description:"",displayName:"RadioButton",props:{}}}catch{}const m={component:o,title:"Inputs/Radio Button",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=512%3A2144&mode=dev"}}},t={args:{}};var e,a,s;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(a=t.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};const p=["Primary"];export{t as Primary,p as __namedExportsOrder,m as default};
+//# sourceMappingURL=radio-button.stories-46c73254.js.map

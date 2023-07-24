@@ -1,0 +1,4 @@
+import{j as s}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const i={};function e(n){return s.jsx("div",{className:i.container,children:s.jsx("h1",{children:"Welcome to TransferList!"})})}try{e.displayName="TransferList",e.__docgenInfo={description:"",displayName:"TransferList",props:{}}}catch{}const p={component:e,title:"Inputs/Transfer List",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=512%3A2254&mode=dev0"}}},r={args:{}};var t,a,o;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {}
+}`,...(o=(a=r.parameters)==null?void 0:a.docs)==null?void 0:o.source}}};const d=["Primary"];export{r as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=transfer-list.stories-3bc10fb3.js.map

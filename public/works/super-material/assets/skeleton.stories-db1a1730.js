@@ -1,0 +1,4 @@
+import{j as o}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const i={};function r(n){return o.jsx("div",{className:i.container,children:o.jsx("h1",{children:"Welcome to Skeleton!"})})}try{r.displayName="Skeleton",r.__docgenInfo={description:"",displayName:"Skeleton",props:{}}}catch{}const p={component:r,title:"Feedback/Skeleton",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=138%3A0&mode=dev"}}},e={args:{}};var t,a,s;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(a=e.parameters)==null?void 0:a.docs)==null?void 0:s.source}}};const d=["Primary"];export{e as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=skeleton.stories-db1a1730.js.map

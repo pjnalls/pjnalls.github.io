@@ -1,0 +1,4 @@
+import{j as o}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const i={};function e(c){return o.jsx("div",{className:i.container,children:o.jsx("h1",{children:"Welcome to Backdrop!"})})}try{e.displayName="Backdrop",e.__docgenInfo={description:"",displayName:"Backdrop",props:{}}}catch{}const d={component:e,title:"Feedback/Backdrop",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A747&mode=dev"}}},r={args:{}};var a,t,s;r.parameters={...r.parameters,docs:{...(a=r.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(t=r.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};const m=["Primary"];export{r as Primary,m as __namedExportsOrder,d as default};
+//# sourceMappingURL=backdrop.stories-7216832e.js.map

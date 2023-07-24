@@ -1,0 +1,4 @@
+import{j as a}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function e(i){return a.jsx("div",{className:n.container,children:a.jsx("h1",{children:"Welcome to Tabs!"})})}try{e.displayName="Tabs",e.__docgenInfo={description:"",displayName:"Tabs",props:{}}}catch{}const p={component:e,title:"Navigation/Tabs",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A766&mode=dev"}}},r={args:{}};var s,o,t;r.parameters={...r.parameters,docs:{...(s=r.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {}
+}`,...(t=(o=r.parameters)==null?void 0:o.docs)==null?void 0:t.source}}};const d=["Primary"];export{r as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=tabs.stories-cae2c26c.js.map

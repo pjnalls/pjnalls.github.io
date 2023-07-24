@@ -1,0 +1,4 @@
+import{j as o}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const i={};function e(n){return o.jsx("div",{className:i.container,children:o.jsx("h1",{children:"Welcome to Masonry!"})})}try{e.displayName="Masonry",e.__docgenInfo={description:"",displayName:"Masonry",props:{}}}catch{}const p={component:e,title:"Lab/Masonry",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=512%3A2403&mode=dev"}}},r={args:{}};var a,s,t;r.parameters={...r.parameters,docs:{...(a=r.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {}
+}`,...(t=(s=r.parameters)==null?void 0:s.docs)==null?void 0:t.source}}};const d=["Primary"];export{r as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=masonry.stories-de043aa6.js.map

@@ -1,0 +1,4 @@
+import{j as o}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const c={};function e(n){return o.jsx("div",{className:c.container,children:o.jsx("h1",{children:"Welcome to Icons!"})})}try{e.displayName="Icons",e.__docgenInfo={description:"",displayName:"Icons",props:{}}}catch{}const p={component:e,title:"Data Display/Icons",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=512%3A2263&mode=dev"}}},r={args:{}};var s,t,a;r.parameters={...r.parameters,docs:{...(s=r.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {}
+}`,...(a=(t=r.parameters)==null?void 0:t.docs)==null?void 0:a.source}}};const d=["Primary"];export{r as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=icons.stories-fdec9a30.js.map

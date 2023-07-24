@@ -1,0 +1,4 @@
+import{j as e}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const n={};function a(i){return e.jsx("div",{className:n.container,children:e.jsx("h1",{children:"Welcome to Avatar!"})})}try{a.displayName="Avatar",a.__docgenInfo={description:"",displayName:"Avatar",props:{}}}catch{}const p={component:a,title:"Data Display/Avatar",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=14%3A728&mode=dev"}}},r={args:{}};var t,o,s;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(o=r.parameters)==null?void 0:o.docs)==null?void 0:s.source}}};const d=["Primary"];export{r as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=avatar.stories-3528c99a.js.map

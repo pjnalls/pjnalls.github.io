@@ -1,0 +1,4 @@
+import{j as t}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const i={};function e(c){return t.jsx("div",{className:i.container,children:t.jsx("h1",{children:"Welcome to Stack!"})})}try{e.displayName="Stack",e.__docgenInfo={description:"",displayName:"Stack",props:{}}}catch{}const p={component:e,title:"Layout/Stack",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=512%3A2403&mode=dev"}}},r={args:{}};var a,o,s;r.parameters={...r.parameters,docs:{...(a=r.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(o=r.parameters)==null?void 0:o.docs)==null?void 0:s.source}}};const d=["Primary"];export{r as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=stack.stories-e986bfcf.js.map

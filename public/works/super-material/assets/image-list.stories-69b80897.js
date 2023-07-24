@@ -1,0 +1,4 @@
+import{j as t}from"./jsx-runtime-ed146b25.js";import"./index-c6dae603.js";const m={};function r(i){return t.jsx("div",{className:m.container,children:t.jsx("h1",{children:"Welcome to ImageList!"})})}try{r.displayName="ImageList",r.__docgenInfo={description:"",displayName:"ImageList",props:{}}}catch{}const p={component:r,title:"Layout/Image List",parameters:{design:{type:"figma",url:"https://www.figma.com/file/EUQyB3jTGkj0ND03W0qNtB/MUI-(Material-Design-Component-Figma-Library-For-React)-(Community)?node-id=512%3A2274&mode=dev"}}},e={args:{}};var a,s,o;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {}
+}`,...(o=(s=e.parameters)==null?void 0:s.docs)==null?void 0:o.source}}};const d=["Primary"];export{e as Primary,d as __namedExportsOrder,p as default};
+//# sourceMappingURL=image-list.stories-69b80897.js.map
