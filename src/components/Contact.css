@@ -1,0 +1,16 @@
+.linkedin-mark div {
+  background: url('/linkedin-mark.png');
+  background-repeat: no-repeat;
+  color: transparent;
+  height: auto;
+  line-height: 256px;
+  margin: 8em auto;
+  opacity: 0.8;
+  text-align: center;
+  transition: all 200ms ease;
+  width: 276px;
+}
+.linkedin-mark div:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}

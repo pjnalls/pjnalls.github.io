@@ -1,0 +1,35 @@
+.about-pic {
+  border-radius: 50%;
+  width: 240px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.about-pic:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.bio {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.bio p {
+  text-align: left;
+}
+
+@media screen and (max-width: 720px) {
+  .bio {
+    display: block;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  .bio * {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}

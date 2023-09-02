@@ -1,0 +1,22 @@
+.github-mark div {
+  background: url('/github-mark-white.png');
+  background-repeat: no-repeat;
+  color: transparent;
+  height: auto;
+  line-height: 240px;
+  margin: 8em auto;
+  opacity: 0.8;
+  text-align: center;
+  transition: all 200ms ease;
+  width: 240px;
+}
+.github-mark div:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (prefers-color-scheme: light) {
+  .github-mark div {
+    background: url('/github-mark.png');
+  }
+}
