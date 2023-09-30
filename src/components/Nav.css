@@ -67,11 +67,15 @@
 @media screen and (max-width: 720px) {
   .logo {
     border-radius: 50%;
+    height: 3em;
     will-change: filter;
     transition: filter 300ms;
   }
 
   .Nav__options {
     gap: 2em;
+  }
+  .Nav__options li {
+    font-size: small;
   }
 }

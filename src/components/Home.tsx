@@ -11,7 +11,7 @@ function Home() {
       </div>
       <h1>Preston Nalls</h1>
       <div className="card">
-        <h2>Encouraging learning of both natural and programming languages.</h2>
+        <h2>Promoting the joy of learning natural and programming languages of all kinds 🌏🌍🌎.</h2>
       </div>
       <p className="message">
         Hi, I'm Preston!

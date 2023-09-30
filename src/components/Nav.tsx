@@ -22,6 +22,7 @@ function Nav({ activeRoute, setRoute }: NavProps) {
       <ul className="Nav__options">
         {['about', 'portfolio', 'contact'].map((routeName) => (
           <li
+            key={routeName}
             className={routeName === activeRoute ? 'active' : ''}
             onClick={() => handleOnClick(routeName)}
           >

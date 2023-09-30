@@ -37,7 +37,13 @@ body {
   margin: 0;
   background-image: url('/ocean.avif'), linear-gradient(#414e, #012e);
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
   background-position: left;
   background-blend-mode: darken, soft-light;
   min-height: 100vh;
@@ -75,7 +81,7 @@ button:focus-visible {
 }
 
 section {
-  height: 100dvh;
+  height: 100vh;
   padding: 1.5em;
   padding-top: 16em;
 }
@@ -108,5 +114,13 @@ section {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  section {
+    height: auto;
+    padding: 1.5em;
+    padding-top: 4em;
   }
 }
