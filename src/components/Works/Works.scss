@@ -1,0 +1,60 @@
+#works {
+  margin-top: 24rem;
+  margin-bottom: 24rem;
+  padding-top: 12rem;
+}
+
+.github {
+  * {
+    padding: 1rem 0;
+  }
+}
+.github-mark div {
+  background: url('/github-mark-white.png');
+  background-repeat: no-repeat;
+  background-size: 80px;
+  color: transparent;
+  height: auto;
+  line-height: 1.75;
+  margin: 3em auto -1rem auto;
+  opacity: 0.8;
+  text-align: center;
+  transition: all 200ms ease;
+  width: 80px;
+}
+.github-mark div:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.yt-mark div {
+  background: url('/yt_logo_rgb_dark.png');
+  background-repeat: no-repeat;
+  background-size: 160px;
+  color: transparent;
+  height: auto;
+  line-height: 2;
+  margin: 3em auto 1em auto;
+  opacity: 0.8;
+  text-align: center;
+  transition: all 200ms ease;
+  width: 160px;
+}
+.yt-mark div:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (prefers-color-scheme: light) {
+  .github-mark div {
+    background: url('/github-mark.png');
+    background-repeat: no-repeat;
+    background-size: 80px;
+  }
+  .yt-mark div {
+    background: url('/yt_logo_rgb_light.png');
+    background-repeat: no-repeat;
+    background-size: 160px;
+  }
+}
+

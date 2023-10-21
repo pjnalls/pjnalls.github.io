@@ -1,0 +1,55 @@
+#about {
+  margin-top: 24rem;
+  margin-bottom: 24rem;
+  padding-top: 12rem;
+}
+
+.about-pic {
+  border-radius: 50%;
+  width: 240px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.about-pic:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.bio {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding: 0 15em;
+}
+.bio * {
+  padding: 0 0.5em;
+}
+
+.bio p {
+  text-align: left;
+}
+
+@media screen and (max-width: 1120px) {
+  .bio {
+    padding: 0 10em;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .bio {
+    padding: 0 3.33em;
+  }
+}
+@media screen and (max-width: 720px) {
+  .bio {
+    align-content: center;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+  }
+  .bio * {
+    padding: 0.5em 0;
+  }
+}

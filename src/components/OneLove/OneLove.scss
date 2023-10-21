@@ -1,0 +1,47 @@
+section.py {
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+}
+
+.one-love {
+  padding: 0 20em;
+}
+
+.one-love {
+  text-align: left;
+}
+.author {
+  float: right;
+}
+
+@media screen and (max-width: 1120px) {
+  .one-love {
+    padding: 0 10em;
+  }
+  .author {
+    float: right;
+    padding: 0 10rem 0 0;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .one-love {
+    padding: 0 3.33em;
+  }
+  .author {
+    float: right;
+    padding: 0 3.33rem 0 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .one-love {
+    align-content: center;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+  }
+  .one-love * {
+    padding: 0.5em 0;
+  }
+}

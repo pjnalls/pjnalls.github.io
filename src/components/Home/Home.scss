@@ -1,0 +1,37 @@
+#home {
+  margin-top: 8rem;
+  padding-top: 0;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 12em;
+  padding: 0 1.5em;
+  margin-top: 6rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.profile-pic:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.card {
+  padding: 0;
+}
+
+.mission {
+  font-weight: 300;
+  padding: 2em 0;
+}
+
+.message {
+  padding: 1em;
+  color: #8cd;
+}
+
+@media (prefers-color-scheme: light) {
+  .message {
+    padding: 1em;
+    color: #012;
+  }
+}
