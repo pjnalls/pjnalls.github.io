@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fffcf0;
+}
+footer {
+  bottom: 0;
+  margin: 0;
+  position: fixed;
+  padding: 0 0 24px 0;
+  right: 0;
+  text-align: center;
+  width: 100vw;
+}
+body {
+  background-attachment: fixed;
+  background-blend-mode: darken, soft-light;
+  background-color: transparent;
+  background-image: url('/stars.avif'), linear-gradient(#190444ef, #032f3fef);
+  background-size: cover;
+  background-position: center;
+  color-scheme: light dark;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  font-weight: 400;
+}
+
+.card {
+  color: #fffcf0;
+}
+
+#app {
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  padding-top: 180px;
+  transition: background-image 0.5s ease, background-color 0.5s ease,
+    background-blend-mode 0.5s ease, color 0.5s ease;
+  width: 100%;
+}
+#here {
+  font-weight: 500;
+  color: #a4acff;
+  text-decoration: inherit;
+  &:hover {
+    color: #838bff;
+    cursor: pointer;
+  }
+}
+#onelove {
+  color: #efecc0;
+}
+
+@media screen and (max-width: 720px) {
+  #app {
+    background-attachment: fixed;
+    background-blend-mode: darken, soft-light;
+    background-color: transparent;
+    background-image: url('/stars.avif'), linear-gradient(#190444ef, #032f3fef);
+    background-size: cover;
+    background-position: center;
+    color: #fffcf0;
+    color-scheme: light dark;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-synthesis: none;
+    font-weight: 400;
+    padding-top: 36px;
+  }
+  .profile-pic {
+    width: 120px;
+  }
+}
+
+.message {
+  color: #7be;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 240px;
+  height: auto;
+  transition: filter 300ms;
+  &:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+}
+
+
+#onelove {
+  color: #cfcc90;
+}
+
+@media (prefers-color-scheme: light) {
+  *, .card {
+
+    color: #1c2970;
+  }
+  
+  a {
+    font-weight: 500;
+    color: #444cdf;
+    text-decoration: inherit;
+    &:hover {
+      color: #242bbf;
+    }
+  }
+  #app {
+    background-attachment: fixed;
+    background-blend-mode: soft-light, hard-light;
+    background-image: url('/stars.avif'), linear-gradient(#e9dfffef, #effe);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+#onelove {
+  color: #9f9c50;
+}
+  }
+
+.card {
+  color: #1c2970; 
+}
+#here {
+  font-weight: 500;
+  color: #242c5f;
+  text-decoration: inherit;
+  &:hover {
+    color: #131b4f;
+    cursor: pointer;
+  }
+}
+.message {
+  color: #369;
+}
+}
+
+
