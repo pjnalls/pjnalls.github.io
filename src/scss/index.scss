@@ -1,0 +1,89 @@
+@use "partials/anchor";
+@use "partials/app";
+@use "partials/avatar";
+@use "partials/colors";
+@use "partials/footer";
+@use "partials/promo";
+
+* {
+  background-color: transparent !important;
+  border: none !important;
+  box-sizing: border-box;
+  color: colors.$light-1;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+body {
+  background-color: colors.$dark-2;
+}
+span {
+  color: colors.$light-gold;
+}
+
+.anchor-avatar {
+  &:hover {
+    transform: scale(0.96);
+  }
+}
+.anchor-text {
+  @include anchor.styled-text--default;
+}
+.app {
+  @include app.styled--default;
+}
+.avatar {
+  @include avatar.styled--default;
+}
+.copyright {
+  &:hover {
+    font-size: 15px;
+  }
+}
+.footer {
+  @include footer.styled--default;
+}
+.mantine-Burger-burger {
+  background-color: colors.$light-1 !important;
+  transition: background-color 0s;
+  &[data-opened="true"] {
+    background-color: transparent !important;
+  }
+}
+.promo {
+  @include promo.styled;
+}
+@media (max-width: 720px) {
+  nav {
+    background: linear-gradient(to bottom, #190444e9, #032f3fbf);
+  }
+}
+@media (prefers-color-scheme: light) {
+  *,
+  .promo {
+    color: colors.$dark-1;
+  }
+  span {
+    color: colors.$amber-gold;
+  }
+  .anchor-text {
+    @include anchor.styled-text--light;
+  }
+  .app {
+    @include app.styled--light;
+  }
+  .footer {
+    @include footer.styled--light;
+  }
+  .mantine-Burger-burger {
+    background-color: colors.$dark-1 !important;
+  }
+  .onelove {
+    color: colors.$amber-gold;
+  }
+  @media (max-width: 720px) {
+    nav {
+      background: linear-gradient(to bottom, #e9dfffe9, #effb);
+    }
+  }
+}
