@@ -1,0 +1,112 @@
+@use "partials/anchor";
+@use "partials/app";
+@use "partials/avatar";
+@use "partials/colors";
+@use "partials/footer";
+@use "partials/promo";
+
+nav, header, .app {
+  background-color: transparent !important;
+  border: none !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+* {
+  color: colors.$light-1;
+}
+body {
+  background-color: colors.$dark-2;
+}
+span {
+  color: colors.$light-gold;
+}
+
+.active {
+  color: colors.$light-1 !important;
+  &:hover {
+    color: colors.$light-2 !important;
+  }
+}
+.anchor-avatar {
+  &:hover {
+    transform: scale(0.96);
+  }
+}
+.anchor-text {
+  @include anchor.styled-text--default;
+}
+.app {
+  @include app.styled--default;
+}
+.avatar {
+  @include avatar.styled--default;
+}
+.copyright {
+  &:hover {
+    font-size: 15px;
+  }
+}
+.footer {
+  @include footer.styled--default;
+}
+.mantine-Burger-burger {
+  background-color: colors.$light-1 !important;
+  transition: background-color 0s;
+  &[data-opened="true"] {
+    background-color: transparent !important;
+  }
+}
+.resume {
+  background-color: #101c2f90 !important;
+}
+.promo {
+  @include promo.styled;
+}
+@media (max-width: 780px) {
+  nav {
+    background: linear-gradient(to bottom, #190444e6, #032f3fbf) !important;
+    box-shadow: 0 0 20px linear-gradient(to bottom, #190444e6, #032f3fbf) !important;
+  }
+}
+@media (prefers-color-scheme: light) {
+  *,
+  .promo {
+    color: colors.$dark-1;
+  }
+  span {
+    color: colors.$amber-gold;
+  }
+  .active {
+    color: colors.$dark-1 !important;
+    &:hover {
+      color: colors.$dark-2 !important;
+    }
+  }
+  .anchor-text {
+    @include anchor.styled-text--light;
+  }
+  .app {
+    @include app.styled--light;
+  }
+  .footer {
+    @include footer.styled--light;
+  }
+  .mantine-Burger-burger {
+    background-color: colors.$dark-1 !important;
+  }
+
+  .resume {
+    background-color: #f9fcff90 !important;
+  }
+  .onelove {
+    color: colors.$amber-gold;
+  }
+  @media (max-width: 780px) {
+    nav {
+      background: linear-gradient(to bottom, #e9dfffe9, #effb) !important;
+      box-shadow: 0 0 20px linear-gradient(to bottom, #e9dfffe9 #effb) !important;
+    }
+  }
+}

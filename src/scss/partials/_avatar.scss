@@ -1,0 +1,10 @@
+@use "colors";
+
+@mixin styled--default {
+  border-radius: 50%;
+  height: auto;
+  transition: filter 300ms;
+  &:hover {
+    filter: drop-shadow(0 0 2em colors.$filter-blue);
+  }
+}

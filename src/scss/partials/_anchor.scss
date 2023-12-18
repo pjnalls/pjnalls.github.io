@@ -1,0 +1,28 @@
+@use "colors";
+
+@mixin anchor-text($color, $color-onhover, $text-shadow-onhover) {
+  color: $color;
+  text-decoration: inherit;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $color-onhover;
+    cursor: pointer;
+    font-size: 15px;
+    text-shadow: $text-shadow-onhover;
+    transition: all 0.3s ease;
+  }
+}
+@mixin styled-text--default {
+  @include anchor-text(
+    colors.$violet--default-1,
+    colors.$violet--default-2,
+    2px 2px 2px #6489
+  );
+}
+@mixin styled-text--light {
+  @include anchor-text(
+    colors.$violet-light-1,
+    colors.$violet-light-2,
+    2px 2px 2px #b9cf
+  );
+}

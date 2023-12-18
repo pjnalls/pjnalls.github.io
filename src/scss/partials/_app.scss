@@ -1,0 +1,30 @@
+@use "colors";
+
+@mixin app($gradient-start, $gradient-end) {
+  background-attachment: fixed;
+  background-blend-mode: darken, soft-light;
+  background-image: url("/stars.avif"),
+    linear-gradient($gradient-start, $gradient-end);
+  background-position: center;
+  background-size: cover;
+  color-scheme: light dark;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 12px 0;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  transition: background-image 0.5s ease, background-color 0.5s ease,
+    background-blend-mode 0.5s ease, color 0.5s ease;
+  width: 100%;
+}
+
+@mixin styled--default {
+  @include app(colors.$dark-1, colors.$dark-1a);
+}
+@mixin styled--light {
+  @include app(colors.$light-1, colors.$light-1a);
+  background-blend-mode: lighten;
+  color: colors.$dark-1;
+}
