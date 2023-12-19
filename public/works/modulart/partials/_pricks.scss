@@ -1,0 +1,31 @@
+.pricks {
+  width: 0;
+  height: 0;
+  border-left: 1vmin solid transparent;
+  border-right: 1vmin solid transparent;
+  border-bottom: 7vmin solid $cactus-lines-color;
+  transform: rotate(-45deg);
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 5vmin;
+    left: 9vmin;
+    border-left: 1vmin solid transparent;
+    border-right: 1vmin solid transparent;
+    border-bottom: 7vmin solid $cactus-lines-color;
+    transform: rotate(90deg);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 7vmin;
+    left: -10vmin;
+    border-left: 1vmin solid transparent;
+    border-right: 1vmin solid transparent;
+    border-bottom: 7vmin solid $cactus-lines-color;
+  }
+}

@@ -1,0 +1,27 @@
+/** 
+ * Global Color Variables 
+ */
+
+$background-color: #efe1e1;
+$circle-color: #f5d9a1;
+$pot-color: #915f5d;
+$cactus-color: #809f5a;
+$cactus-lines-color: #4f653f;
+$outline-color: #3f352f;
+
+html {
+  /** Make fonts more accessible */
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

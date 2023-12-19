@@ -1,0 +1,6 @@
+.about {
+  margin: calc(50dvh - 220px) 0;
+  @media (max-width: 780px) {
+    margin: calc(50dvh - 280px) 0;
+  }
+}

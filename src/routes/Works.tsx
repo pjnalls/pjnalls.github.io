@@ -1,15 +1,14 @@
 import { Anchor, Stack, Text } from "@mantine/core";
-import Construction from "../components/Construction";
-import "../scss/components/Construction.scss";
+import Showcase from "../components/routes/Works/Showcase";
 
 function Works() {
   return (
-    <Stack gap={0} my={"calc(50dvh - 280px)"}>
+    <Stack gap={0} my={12}>
       <Stack gap={0}>
-        <Construction />
+        <Showcase />
         <br />
         <Text lts={-0.2}>
-          ⚠️ Please click{" "}
+          🧑‍💻 Please click{" "}
           <Anchor
             fw={600}
             href="https://github.com/pjnalls?tab=repositories&q=&type=public&language=&sort="
@@ -18,11 +17,10 @@ function Works() {
           >
             here
           </Anchor>{" "}
-          or on
           <br />
-          the logo above to view my works on GitHub
+          to view my list
           <br />
-          as a temporary work-around.
+          of works on GitHub.
         </Text>
       </Stack>
     </Stack>

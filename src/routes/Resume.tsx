@@ -5,9 +5,9 @@ import {
   devSkills,
   designSkills,
   prodSkills,
-} from "../shared/fixtures";
-import Profession from "../components/Profession";
-import Skill from "../components/Skill";
+} from "../shared/index.fixtures";
+import Profession from "../components/routes/Resume/Profession";
+import Skill from "../components/resusable/Skill";
 import { FaGithub, FaHome } from "react-icons/fa";
 
 function Resume() {
@@ -77,7 +77,7 @@ function Resume() {
             <Text fs={"italic"} fw={300} fz={11} mt={4}>
               Note: Skills below are all self-accessed by the engineer.
             </Text>
-            <Title order={3} fw={500} fz={12} mt={8}>
+            <Title lts={-0.4} order={3} fw={500} fz={12} mt={8}>
               Frontend Engineering
             </Title>
             <Stack gap={0}>

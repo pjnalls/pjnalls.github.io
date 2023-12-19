@@ -7,7 +7,7 @@ function Cover() {
       <Center>
         <Anchor
           className="anchor-avatar"
-          href="https://github.com/pjnalls"
+          href="/works"
           py={24}
           rel="noopener noreferrer"
           target="_blank"
@@ -49,15 +49,14 @@ function Cover() {
         Please click{" "}
         <Anchor
           fw={600}
-          href="https://github.com/pjnalls"
+          href="/works"
           className="anchor-text"
-          target="_blank"
         >
           here
         </Anchor>{" "}
         or on the logo above
         <br />
-        to view my GitHub profile.
+        to view my worka.
       </Text>
     </Card>
   );

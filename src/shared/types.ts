@@ -2,6 +2,7 @@ import { MantineStyleProp } from "@mantine/core";
 import * as FaReactIcons from "react-icons/fa";
 import * as SiReactIcons from "react-icons/si";
 
+export type NavLinkProps = { label: string; route: string; href: string };
 export type ProfessionProps = {
   dates: string;
   concentration: string;
@@ -17,7 +18,15 @@ export type SkillProps = {
   onMouseEvent?: MouseEvent;
   otherIcon?: string;
   skill: string;
-  stars: number;
+  stars?: number;
   style?: MantineStyleProp;
 };
-export type NavLinkProps = { label: string; route: string; href: string };
+export type WorkProps = {
+  description: string;
+  name: string;
+  githubUrl: string;
+  imgSrc: string;
+  ingredients: SkillProps[];
+  style?: MantineStyleProp;
+  workUrl: string;
+};

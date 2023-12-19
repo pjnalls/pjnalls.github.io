@@ -1,6 +1,6 @@
 @use "colors";
 
-@mixin anchor-text($color, $color-onhover, $text-shadow-onhover) {
+@mixin anchor-text($color, $color-onhover, $shadow-onhover) {
   color: $color;
   text-decoration: inherit;
   transition: all 0.3s ease;
@@ -8,7 +8,8 @@
     color: $color-onhover;
     cursor: pointer;
     font-size: 15px;
-    text-shadow: $text-shadow-onhover;
+    text-shadow: $shadow-onhover;
+    transform: scale(0.96);
     transition: all 0.3s ease;
   }
 }

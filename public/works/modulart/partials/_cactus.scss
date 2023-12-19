@@ -1,0 +1,31 @@
+.cactus {
+  position: absolute;
+  width: 17vmin;
+  height: 30vmin;
+  background: $cactus-color;
+  border-radius: 45%;
+  top: 15vmin;
+  left: 25vmin;
+  border: 1vmin solid $outline-color;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5vmin;
+    height: 30vmin;
+    left: 6vmin;
+    background: transparent;
+    border-radius: 50%;
+    border-right: 1vmin solid $cactus-lines-color;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 5vmin;
+    height: 30vmin;
+    right: 6vmin;
+    background: transparent;
+    border-radius: 50%;
+    border-left: 1vmin solid $cactus-lines-color;
+  }
+  @import "pricks";
+}

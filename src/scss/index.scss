@@ -29,19 +29,17 @@ span {
     color: colors.$light-2 !important;
   }
 }
-.anchor-avatar {
-  &:hover {
-    transform: scale(0.96);
-  }
-}
 .anchor-text {
   @include anchor.styled-text--default;
 }
 .app {
   @include app.styled--default;
 }
-.avatar {
-  @include avatar.styled--default;
+.avatar, .work {
+  @include avatar.styled;
+}
+.work {
+  border-radius: 8px;
 }
 .copyright {
   &:hover {
@@ -58,7 +56,7 @@ span {
     background-color: transparent !important;
   }
 }
-.resume {
+.resume, .work {
   background-color: #101c2f90 !important;
 }
 .promo {
@@ -97,7 +95,7 @@ span {
     background-color: colors.$dark-1 !important;
   }
 
-  .resume {
+  .resume, .work {
     background-color: #f9fcff90 !important;
   }
   .onelove {

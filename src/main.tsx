@@ -1,44 +1,10 @@
+import React from "react";
 import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
 import "@mantine/core/styles.css";
 
-import App from "./App.tsx";
+import { router } from "./routes/routers/router.main";
 import "./scss/index.scss";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import PageNotFound from "./routes/404.tsx";
-import Resume from "./routes/Resume.tsx";
-import React from "react";
-import Cover from "./routes/Cover.tsx";
-import About from "./routes/About.tsx";
-import Works from "./routes/Works.tsx";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "",
-        element: <Cover />,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "resume",
-        element: <Resume />,
-      },
-      {
-        path: "works",
-        element: <Works />,
-      },
-      {
-        path: "*",
-        element: <PageNotFound />,
-      },
-    ],
-  },
-]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

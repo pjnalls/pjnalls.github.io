@@ -1,9 +1,10 @@
 import { Container, Text } from "@mantine/core";
+import "../scss/components/About.scss";
 
 function About() {
   return (
-    <Container size={'xs'}>
-      <Text my={"calc(50dvh - 280px)"} ta={"left"}>
+    <Container className="about" size={"xs"}>
+      <Text ta={"left"}>
         🏡 Hi, I'm Preston. <br />
         Welcome to my portfolio website!
         <br />

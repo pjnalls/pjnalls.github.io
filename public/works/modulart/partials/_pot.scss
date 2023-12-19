@@ -1,0 +1,61 @@
+.pot {
+  position: absolute;
+  /** Create a trapezoid shape. */
+  border-top: 25vmin solid $pot-color;
+  border-left: 7vmin solid transparent;
+  border-right: 7vmin solid transparent;
+  height: 0;
+  width: 40vmin;
+  bottom: 15vmin;
+  border-radius: 3vmin;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 26vmin;
+    height: 1vmin;
+    background-color: $outline-color;
+  }
+  .cheeks {
+    position: absolute;
+    width: 5vmin;
+    height: 2.5vmin;
+    top: -13vmin;
+    left: 1.5vmin;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 25%;
+    box-shadow: 18vmin 0 rgba(red, 25%);
+    z-index: 0;
+  }
+  .eyes {
+    position: absolute;
+    z-index: 1;
+    width: 4vmin;
+    height: 4vmin;
+    background: $outline-color;
+    border-radius: 50%;
+    bottom: 12vmin;
+    right: 18vmin;
+    box-shadow: 14vmin 0 $outline-color;
+    animation: blink 1.5s infinite ease-out;
+  }
+  .mouth {
+    position: absolute;
+    width: 4vmin;
+    height: 4vmin;
+    top: -11vmin;
+    left: 11vmin;
+    border-radius: 50%;
+    background: transparent;
+    border-bottom: 1vmin solid $outline-color;
+  }
+
+  @keyframes blink {
+    0% {
+      transform: scale(1, 0.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
