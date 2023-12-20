@@ -1,5 +1,5 @@
 import { Anchor, Burger, Group, Image, Text } from "@mantine/core";
-import avatar from "/p.logo.avif";
+import avatar from "/assets/p.logo.avif";
 
 function Header({
   desktopOpened,

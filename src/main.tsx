@@ -4,7 +4,7 @@ import { RouterProvider } from "react-router-dom";
 import "@mantine/core/styles.css";
 
 import { router } from "./pages/utils/router";
-import "./scss/index.scss";
+import "./styles/index.scss";
 
 import { getLastRoute } from "./pages/utils/last-route";
 

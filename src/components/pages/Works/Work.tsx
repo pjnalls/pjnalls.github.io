@@ -1,7 +1,7 @@
 import { Anchor, Card, Center, Flex, Image, Stack, Text, Title } from "@mantine/core";
 
 import { WorkProps } from "../../../shared/types";
-import "../../../scss/components/Skill.scss";
+import "../../../styles/components/Skill.scss";
 import Skill from "../../resusable/Skill";
 
 function Work({

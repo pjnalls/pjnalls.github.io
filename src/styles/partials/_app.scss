@@ -3,7 +3,7 @@
 @mixin app($gradient-start, $gradient-end) {
   background-attachment: fixed;
   background-blend-mode: darken, soft-light;
-  background-image: url("/stars.avif"),
+  background-image: url("/assets/stars.avif"),
     linear-gradient($gradient-start, $gradient-end);
   background-position: center;
   background-size: cover;

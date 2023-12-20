@@ -1,5 +1,5 @@
 import { Card, Center, Image, Stack, Text, Title } from "@mantine/core";
-import avatar from "/p.logo.avif";
+import avatar from "/assets/p.logo.avif";
 import { NavLink } from "react-router-dom";
 import { setLastRoute } from "./utils/last-route";
 
@@ -34,7 +34,7 @@ function Cover() {
           <br />
           natural and programming
           <br />
-          languages of all kinds.
+          languages of all kinds
           <br />
         </Text>
         <Text fw={300} size="xl">
@@ -42,7 +42,7 @@ function Cover() {
           <span className="onelove" style={{ fontWeight: 600 }}>
             #onelove
           </span>{" "}
-          🌏🌍🌎.
+          🌏🌍🌎
         </Text>
       </Stack>
       <Text lts={-0.2}>

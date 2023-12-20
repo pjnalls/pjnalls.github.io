@@ -1,5 +1,5 @@
 import { Container, Text } from "@mantine/core";
-import "../scss/components/About.scss";
+import "../styles/components/About.scss";
 import { setLastRoute } from "./utils/last-route";
 
 function About() {

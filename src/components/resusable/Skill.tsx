@@ -1,6 +1,6 @@
 import { Flex, Text, Title } from "@mantine/core";
 import { SkillProps } from "../../shared/types";
-import "../../scss/components/Skill.scss";
+import "../../styles/components/Skill.scss";
 import * as FaReactIcons from "react-icons/fa";
 import * as SiReactIcons from "react-icons/si";
 
