@@ -31,6 +31,7 @@ function Showcase() {
                   style: {
                     height: "fit-content",
                     width: "calc(33dvw - 24px)",
+                    maxWidth: "calc(240px - 12px)"
                   },
                 }}
               />
@@ -47,7 +48,7 @@ function Showcase() {
           borderRadius: "8px",
           height: "360px",
           width: "calc(100dvw - 32px)",
-          maxWidth: "1200px",
+          maxWidth: "720px",
         }}
       ></iframe>
     </Stack>

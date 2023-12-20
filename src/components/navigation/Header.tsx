@@ -15,27 +15,30 @@ function Header({
             src={avatar}
             className="avatar"
             alt="Preston's photo"
-            width={24}
+            width="24px"
+            height="24px"
           />
         </Anchor>
         <Text fw={400} fz={16} pl={4}>
-          <Anchor className="anchor-text" href="https://github.com/pjnalls">
+          <Anchor className="anchor-text" href="/">
             @pjnalls
           </Anchor>
         </Text>
       </Group>
       <Group>
         <Burger
-          opened={mobileOpened}
-          onClick={toggleMobile}
+          aria-label="Toggle mobile navigation"
           hiddenFrom="sm"
+          onClick={toggleMobile}
+          opened={mobileOpened}
           size="sm"
         />
         <Burger
-          opened={desktopOpened}
+          aria-label="Toggle desktop navigation"
           onClick={toggleDesktop}
-          visibleFrom="sm"
+          opened={desktopOpened}
           size="sm"
+          visibleFrom="sm"
         />
       </Group>
     </Group>

@@ -1,9 +1,12 @@
 import { Anchor, Stack, Text } from "@mantine/core";
-import Showcase from "../components/routes/Works/Showcase";
+import Showcase from "../components/pages/Works/Showcase";
+import { setLastRoute } from "./utils/last-route";
+
 
 function Works() {
+  setLastRoute('/works');
   return (
-    <Stack gap={0} my={12}>
+    <Stack gap={0}>
       <Stack gap={0}>
         <Showcase />
         <br />
@@ -17,10 +20,9 @@ function Works() {
           >
             here
           </Anchor>{" "}
+          to view
           <br />
-          to view my list
-          <br />
-          of works on GitHub.
+          my works on GitHub.
         </Text>
       </Stack>
     </Stack>

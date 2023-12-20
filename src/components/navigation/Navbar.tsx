@@ -15,7 +15,7 @@ function Navbar({
           }
           key={`nav-links-${index}`}
           onClick={handleActiveNavToggle}
-          to={link.route}
+          to={`/${link.route}`}
           style={{ fontWeight: 300, textAlign: "left" }}
         >
           {link.label}

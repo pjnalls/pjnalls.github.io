@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../Root";
-import PageNotFound from "../404";
 import About from "../About";
 import Cover from "../Cover";
 import Resume from "../Resume";
@@ -12,25 +11,21 @@ export const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: "",
+        path: "/",
         element: <Cover />,
       },
       {
-        path: "about",
+        path: "/about",
         element: <About />,
       },
       {
-        path: "resume",
+        path: "/resume",
         element: <Resume />,
       },
       {
-        path: "works",
+        path: "/works",
         element: <Works />,
-      },
-      {
-        path: "*",
-        element: <PageNotFound />,
-      },
+      }
     ],
   },
 ]);

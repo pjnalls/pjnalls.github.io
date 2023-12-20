@@ -6,11 +6,13 @@ import {
   designSkills,
   prodSkills,
 } from "../shared/index.fixtures";
-import Profession from "../components/routes/Resume/Profession";
+import Profession from "../components/pages/Resume/Profession";
 import Skill from "../components/resusable/Skill";
 import { FaGithub, FaHome } from "react-icons/fa";
+import { setLastRoute } from "./utils/last-route";
 
 function Resume() {
+  setLastRoute('/resume');
   return (
     <Container p={0} maw={420} size={"xs"}>
       <Card
@@ -18,10 +20,11 @@ function Resume() {
         h={"calc(100dvh - 102px)"}
         p={12}
         m={0}
+        mah={620}
         shadow={"lg"}
       >
         <Grid
-          align={"start"}
+          align={"center"}
           columns={12}
           h={"calc(100dvh - 102px)"}
           justify="space-between"
@@ -40,8 +43,7 @@ function Resume() {
           <Grid.Col
             span={5}
             style={{
-              textAlign: "right",
-              verticalAlign: "center",
+              textAlign: "right"
             }}
           >
             <Flex align={"center"} gap={4} justify={"end"} mt={12}>
@@ -74,10 +76,10 @@ function Resume() {
             <Title order={2} fz={16}>
               Skills
             </Title>
-            <Text fs={"italic"} fw={300} fz={11} mt={4}>
-              Note: Skills below are all self-accessed by the engineer.
+            <Text fs={"italic"} fw={300} fz={10} lts={-0.4} my={0} mt={0}>
+              Note: Skills are all self-accessed.
             </Text>
-            <Title lts={-0.4} order={3} fw={500} fz={12} mt={8}>
+            <Title lts={-0.4} order={3} fw={500} fz={12} mt={4}>
               Frontend Engineering
             </Title>
             <Stack gap={0}>
@@ -87,8 +89,8 @@ function Resume() {
                   {...{ faIcon, id, siIcon, skill, stars }}
                 />
               ))}
-              <Title order={3} fw={500} fz={12} mt={8}>
-                UI / UX Design
+              <Title order={3} fw={500} fz={12} mt={12}>
+                UI/UX Design
               </Title>
               {designSkills.map(({ faIcon, siIcon, skill, stars }, id) => (
                 <Skill
@@ -112,8 +114,8 @@ function Resume() {
             </Stack>
           </Grid.Col>
           <Grid.Col m={0} py={0} span={5}>
-            <Title order={3} fw={500} fz={12} mt={8} mb={0}>
-              DevOps, CI / CD
+            <Title order={3} fw={500} fz={12} my={0}>
+              DevOps, CI/CD
             </Title>
             {prodSkills.map(({ faIcon, siIcon, skill, stars }, id) => (
               <Skill key={id + 500} {...{ faIcon, id, siIcon, skill, stars }} />

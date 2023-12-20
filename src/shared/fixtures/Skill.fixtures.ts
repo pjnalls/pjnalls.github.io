@@ -17,9 +17,14 @@ export const designSkills: Array<SkillProps> = [
     stars: 4.9,
   },
   {
-    skill: "UX R&D",
-    faIcon: "FaComment",
+    skill: "Animation",
+    faIcon: "FaFilm",
     stars: 4.5,
+  },
+  {
+    skill: "UX Testing",
+    faIcon: "FaUser",
+    stars: 4.4,
   },
 ];
 export const devSkills: Array<SkillProps> = [
@@ -39,12 +44,12 @@ export const devSkills: Array<SkillProps> = [
     stars: 4.7,
   },
   {
-    skill: "Mantine",
-    siIcon: "SiMantine",
-    stars: 4.8,
+    skill: "Storybook",
+    siIcon: "SiStorybook",
+    stars: 4.6,
   },
   {
-    skill: "ES6+",
+    skill: "JavaScript",
     siIcon: "SiJavascript",
     stars: 4.8,
   },

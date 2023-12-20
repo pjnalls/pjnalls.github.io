@@ -1,17 +1,17 @@
-import { Anchor, Card, Center, Image, Stack, Text, Title } from "@mantine/core";
+import { Card, Center, Image, Stack, Text, Title } from "@mantine/core";
 import avatar from "/p.logo.avif";
+import { NavLink } from "react-router-dom";
+import { setLastRoute } from "./utils/last-route";
 
 function Cover() {
+  setLastRoute("/");
   return (
-    <Card className="app" pt={'calc(50dvh - 293px)'}  w={"calc(100dvw - 24px)"}>
+    <Card className="app" pt={"calc(50dvh - 293px)"} w={"calc(100dvw - 24px)"}>
       <Center>
-        <Anchor
+        <NavLink
           className="anchor-avatar"
-          href="/works"
-          py={24}
-          rel="noopener noreferrer"
-          target="_blank"
-          w={120}
+          to={"/works"}
+          style={{ paddingBottom: 12, paddingTop: 12, width: 120 }}
         >
           <Image
             src={avatar}
@@ -20,7 +20,7 @@ function Cover() {
             width={"120px"}
             height={"120px"}
           />
-        </Anchor>
+        </NavLink>
       </Center>
       <Title fw={400} fz={48} lts={0.6} order={1}>
         Preston Nalls
@@ -46,17 +46,14 @@ function Cover() {
         </Text>
       </Stack>
       <Text lts={-0.2}>
-        Please click{" "}
-        <Anchor
-          fw={600}
-          href="/works"
+        <NavLink
           className="anchor-text"
+          style={{ fontWeight: 600, textAlign: "left" }}
+          to={"/works"}
         >
-          here
-        </Anchor>{" "}
-        or on the logo above
-        <br />
-        to view my worka.
+          View my works here
+        </NavLink>
+        .
       </Text>
     </Card>
   );

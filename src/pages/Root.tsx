@@ -27,7 +27,6 @@ function Root() {
     if (mobileOpened) toggleMobile();
     else if (desktopOpened) toggleDesktop();
   };
-
   return (
     <ColorSchemeContext.Provider
       value={{
