@@ -5,7 +5,12 @@
 @use "partials/footer";
 @use "partials/promo";
 
-nav, header, .app {
+body {
+  background-color: colors.$dark-1 !important;
+}
+nav,
+header,
+.app {
   background-color: transparent !important;
   border: none !important;
   box-sizing: border-box;
@@ -15,9 +20,6 @@ nav, header, .app {
 }
 * {
   color: colors.$light-1;
-}
-body {
-  background-color: colors.$dark-2;
 }
 span {
   color: colors.$light-gold;
@@ -35,7 +37,8 @@ span {
 .app {
   @include app.styled--default;
 }
-.avatar, .work {
+.avatar,
+.work {
   @include avatar.styled;
 }
 .work {
@@ -56,7 +59,8 @@ span {
     background-color: transparent !important;
   }
 }
-.resume, .work {
+.resume,
+.work {
   background-color: #101c2f90 !important;
 }
 .promo {
@@ -69,6 +73,9 @@ span {
   }
 }
 @media (prefers-color-scheme: light) {
+  body {
+    background-color: colors.$light-1 !important;
+  }
   *,
   .promo {
     color: colors.$dark-1;
@@ -95,7 +102,8 @@ span {
     background-color: colors.$dark-1 !important;
   }
 
-  .resume, .work {
+  .resume,
+  .work {
     background-color: #f9fcff90 !important;
   }
   .onelove {
