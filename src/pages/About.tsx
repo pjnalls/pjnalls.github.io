@@ -1,9 +1,7 @@
 import { Container, Text } from "@mantine/core";
 import "../styles/components/About.scss";
-import { setLastRoute } from "./utils/last-route";
 
 function About() {
-  setLastRoute('/about');
   return (
     <Container className="about" size={"xs"}>
       <Text ta={"left"}>

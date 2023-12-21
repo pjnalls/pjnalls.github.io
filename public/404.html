@@ -18,7 +18,11 @@
     <meta charset="utf-8" />
     <title>Preston's Portfolio</title>
     <script type="text/javascript">
-      window.location.href = "https://pjnalls.com";
+      window.location.href = `https://pjnalls.com${
+        window.location.pathname
+          ? `?lastRoute=${window.location.pathname.slice(1)}`
+          : ""
+      }`;
     </script>
   </head>
   <body></body>

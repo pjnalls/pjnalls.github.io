@@ -1,10 +1,8 @@
 import { Card, Center, Image, Stack, Text, Title } from "@mantine/core";
 import avatar from "/assets/p.logo.avif";
 import { NavLink } from "react-router-dom";
-import { setLastRoute } from "./utils/last-route";
 
 function Cover() {
-  setLastRoute("/");
   return (
     <Card className="app" pt={"calc(50dvh - 293px)"} w={"calc(100dvw - 24px)"}>
       <Center>

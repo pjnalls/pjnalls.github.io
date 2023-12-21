@@ -9,10 +9,8 @@ import {
 import Profession from "../components/pages/Resume/Profession";
 import Skill from "../components/resusable/Skill";
 import { FaGithub, FaHome } from "react-icons/fa";
-import { setLastRoute } from "./utils/last-route";
 
 function Resume() {
-  setLastRoute('/resume');
   return (
     <Container p={0} maw={420} size={"xs"}>
       <Card

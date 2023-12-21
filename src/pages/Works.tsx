@@ -1,10 +1,8 @@
 import { Anchor, Stack, Text } from "@mantine/core";
 import Showcase from "../components/pages/Works/Showcase";
-import { setLastRoute } from "./utils/last-route";
 
 
 function Works() {
-  setLastRoute('/works');
   return (
     <Stack gap={0}>
       <Stack gap={0}>
