@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <style>
-      html,
-      body {
-        background: #190444;
-        height: 100dvh;
-        width: 100dvw;
-      }
-      @media (prefers-color-scheme: light) {
-        html,
-        body {
-          background-color: #e9dfff;
-        }
-      }
-    </style>
-    <meta charset="utf-8" />
-    <title>Preston's Portfolio</title>
-    <script type="text/javascript">
-      window.location.href = `https://pjnalls.com${
-        window.location.pathname
-          ? `?lastRoute=${window.location.pathname.slice(1)}`
-          : ""
-      }`;
-    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/avif" href="404/assets/p.logo.avif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preston's Portfolio - 404</title>
+    <meta name="theme-color" content="#e9dfff" />
+    <meta
+      name="description"
+      content="🌴🏠🌳 Professional portfolio website of a human-centered frontend engineer promoting joy of learning natural and programming languages of all kinds ❤️ #onelove 🌏🌍🌎"
+    />
+    <script
+      type="module"
+      crossorigin
+      src="404/assets/index-oFZtjTLf.js"
+    ></script>
+    <link rel="stylesheet" crossorigin href="404/assets/index-7oOtx3qJ.css" />
+    <script type="text/javascript"></script>
+    <link rel="manifest" href="404/manifest.webmanifest" />
   </head>
-  <body></body>
+  <body class="app">
+    <div id="root"></div>
+    <script>
+      setTimeout(
+        () =>
+          (window.location.href = `/${
+            window.location.pathname
+              ? `?lastRoute=${window.location.pathname.slice(1)}`
+              : ""
+          }`),
+        400
+      );
+    </script>
+  </body>
 </html>

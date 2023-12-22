@@ -1,6 +1,6 @@
 import { Card, Text, Title } from "@mantine/core";
 
-function Contruction() {
+function Construction() {
   return (
     <Card className="construction" maw={480} mt={0} w={"calc(100dvw - 24px)"}>
       <Title fz={64} fw={700} order={1}>
@@ -18,4 +18,4 @@ function Contruction() {
     </Card>
   );
 }
-export default Contruction;
+export default Construction;
