@@ -1,8 +1,10 @@
 import { Card, Center, Image, Stack, Text, Title } from "@mantine/core";
+import { useDocumentTitle } from "@mantine/hooks";
 import avatar from "/assets/p.logo.avif";
 import { NavLink } from "react-router-dom";
 
-function Cover() {
+function Home() {
+  useDocumentTitle("Home | Preston's Portfolio");
   return (
     <Card className="app" pt={"calc(50dvh - 293px)"} w={"calc(100dvw - 24px)"}>
       <Center>
@@ -56,4 +58,4 @@ function Cover() {
     </Card>
   );
 }
-export default Cover;
+export default Home;

@@ -2,6 +2,7 @@ import { Flex, Stack, Text, Title } from "@mantine/core";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 function PageNotFound() {
+  
   return (
     <Stack gap={0} my={"calc(50dvh - 200px)"}>
       <Title fz={80} fw={400} order={1}>

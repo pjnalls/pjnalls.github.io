@@ -1,8 +1,9 @@
 import { Anchor, Stack, Text } from "@mantine/core";
+import { useDocumentTitle } from "@mantine/hooks";
 import Showcase from "../components/pages/Works/Showcase";
 
-
 function Works() {
+  useDocumentTitle("Resume | Preston's Portfolio");
   return (
     <Stack gap={0}>
       <Stack gap={0}>

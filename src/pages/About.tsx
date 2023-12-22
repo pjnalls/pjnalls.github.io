@@ -1,7 +1,9 @@
 import { Container, Text } from "@mantine/core";
+import { useDocumentTitle } from "@mantine/hooks";
 import "../styles/components/About.scss";
 
 function About() {
+  useDocumentTitle("About | Preston's Portfolio");
   return (
     <Container className="about" size={"xs"}>
       <Text ta={"left"}>

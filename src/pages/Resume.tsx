@@ -9,8 +9,10 @@ import {
 import Profession from "../components/pages/Resume/Profession";
 import Skill from "../components/resusable/Skill";
 import { FaGithub, FaHome } from "react-icons/fa";
+import { useDocumentTitle } from "@mantine/hooks";
 
 function Resume() {
+  useDocumentTitle("Resume | Preston's Portfolio");
   return (
     <Container p={0} maw={420} size={"xs"}>
       <Card
@@ -41,7 +43,7 @@ function Resume() {
           <Grid.Col
             span={5}
             style={{
-              textAlign: "right"
+              textAlign: "right",
             }}
           >
             <Flex align={"center"} gap={4} justify={"end"} mt={12}>
