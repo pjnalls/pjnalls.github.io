@@ -1,11 +1,18 @@
-import { Outlet } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import { AppShell, Center } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import Header from "../components/navigation/Header";
 import Navbar from "../components/navigation/Navbar";
 import Footer from "../components/navigation/Footer";
+import Home from "./Home";
+import About from "./About";
+import Resume from "./Resume";
+import Works from "./Works";
+import PageNotFound from "./404";
 
 function App() {
+  const location = useLocation();
   const [mobileOpened, { toggle: toggleMobile }] = useDisclosure();
   const [desktopOpened, { toggle: toggleDesktop }] = useDisclosure();
   const handleActiveNavToggle = () => {
@@ -34,7 +41,24 @@ function App() {
       </AppShell.Navbar>
       <AppShell.Main>
         <Center>
-          <Outlet />
+          <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+              <Route
+                path="*"
+                element={
+                  <Navigate
+                    to={`/${window.location.href.split("?")[1]?.split("=")[1]}`}
+                    replace
+                  />
+                }
+              />
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/works" element={<Works />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/*" element={<PageNotFound />} />
+            </Routes>
+          </AnimatePresence>
         </Center>
       </AppShell.Main>
     </AppShell>

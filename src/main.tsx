@@ -1,18 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
+import { BrowserRouter, redirect } from "react-router-dom";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 
-import { router } from "./pages/_router";
+import App from "./pages/App";
 import "./styles/index.scss";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <MantineProvider defaultColorScheme={"auto"}>
-      <RouterProvider router={router} />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </MantineProvider>
   </React.StrictMode>
 );
 
-router.navigate(window.location.href.split("?")[1]?.split("=")[1]);
+redirect(window.location.href.split("?")[1]?.split("=")[1]);
