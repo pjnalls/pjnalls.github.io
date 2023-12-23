@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, redirect } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 
@@ -16,5 +16,3 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     </MantineProvider>
   </React.StrictMode>
 );
-
-redirect(window.location.href.split("?")[1]?.split("=")[1]);

@@ -51,9 +51,13 @@ function Home() {
           </Text>
           <Text fw={300} size="xl">
             ❤️{" "}
-            <span className="onelove" style={{ fontWeight: 600 }}>
+            <NavLink
+              className="onelove"
+              to={`/onelove`}
+              style={{ fontWeight: 600, textAlign: "left" }}
+            >
               #onelove
-            </span>{" "}
+            </NavLink>{" "}
             🌏🌍🌎
           </Text>
         </Stack>

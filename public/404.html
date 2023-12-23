@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/avif" href="404/assets/p.logo.avif" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Preston's Portfolio - 404</title>
+    <title>Page not found | Preston's Portfolio</title>
     <meta name="theme-color" content="#e9dfff" />
     <meta
       name="description"
@@ -21,16 +21,6 @@
   </head>
   <body class="app">
     <div id="root"></div>
-    <script>
-      setTimeout(
-        () =>
-          (window.location.href = `/${
-            window.location.pathname
-              ? `?currentRoute=${window.location.pathname.slice(1)}`
-              : ""
-          }`),
-        400
-      );
-    </script>
+    <script src="redirect.js"></script>
   </body>
 </html>

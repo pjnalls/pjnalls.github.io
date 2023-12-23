@@ -1,8 +1,10 @@
-import { motion } from "framer-motion";
 import { Flex, Stack, Text, Title } from "@mantine/core";
+import { useDocumentTitle } from "@mantine/hooks";
+import { motion } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 function PageNotFound() {
+  useDocumentTitle("Page not found | Preston's Portfolio");
   return (
     <motion.main
       key="page-not-found"

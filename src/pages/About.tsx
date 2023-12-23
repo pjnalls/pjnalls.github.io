@@ -13,7 +13,7 @@ function About() {
       exit={{ marginTop: -120, opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
     >
-      <Container className="about" size={"xs"}>
+      <Container className="about" mx={0} px={12} size={"xs"}>
         <Text ta={"left"}>
           🏡 Hi, I'm Preston. <br />
           Welcome to my portfolio website!

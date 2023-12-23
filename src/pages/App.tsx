@@ -10,6 +10,7 @@ import About from "./About";
 import Resume from "./Resume";
 import Works from "./Works";
 import PageNotFound from "./404";
+import OneLove from "./OneLove";
 
 function App() {
   const location = useLocation();
@@ -44,18 +45,22 @@ function App() {
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
               <Route
-                path="*"
+                path="/"
                 element={
                   <Navigate
-                    to={`/${window.location.href.split("?")[1]?.split("=")[1]}`}
+                    to={`/${
+                      window.location.href.split("?")[1]?.split("=")[1] ??
+                      "home"
+                    }`}
                     replace
                   />
                 }
               />
-              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/works" element={<Works />} />
               <Route path="/resume" element={<Resume />} />
+              <Route path="/works" element={<Works />} />
+              <Route path="/onelove" element={<OneLove />} />
               <Route path="/*" element={<PageNotFound />} />
             </Routes>
           </AnimatePresence>

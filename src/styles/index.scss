@@ -73,6 +73,16 @@ span {
     box-shadow: 0 0 20px linear-gradient(to bottom, #190444e6, #032f3fbf) !important;
   }
 }
+
+.onelove {
+  text-decoration: none;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 0.8;
+    font-size: large;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   body {
     background-color: colors.$light-1 !important;
