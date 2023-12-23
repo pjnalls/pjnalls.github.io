@@ -15,4 +15,4 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   </React.StrictMode>
 );
 
-router.navigate(window.location.href.split("?")[1].split("=")[1]);
+router.navigate(window.location.href.split("?")[1]?.split("=")[1]);
