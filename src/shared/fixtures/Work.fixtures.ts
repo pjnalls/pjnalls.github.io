@@ -2,29 +2,30 @@ import { WorkProps } from "../types";
 
 export const works: Array<WorkProps> = [
   {
-    name: "Supermaterial",
-    ingredients: [
-      { skill: "React", siIcon: "SiReact" },
-      { skill: "TypeScript", siIcon: "SiTypescript" },
-      { skill: "Storybook", siIcon: "SiStorybook" },
-    ],
-    description: "⚡🦸🦹 \"Superextended\" component library",
-    imgSrc: "/works/supermat/logo.svg",
-    workUrl: "/works/supermat/index.html",
-    githubUrl: "https://github.com/pjnalls/supermat",
-  },
-  {
     name: "Modulart",
     ingredients: [
       { skill: "Sass", siIcon: "SiSass" },
       { skill: "HTML5", siIcon: "SiHtml5" },
       { skill: "2D Design", faIcon: "FaPaintBrush" },
     ],
-    description: `🎨🌵💅 Art programmed with modular Sass CSS`,
-    imgSrc: "/works/modulart/cactus.png",
-    workUrl: "/works/modulart/index.html",
-    githubUrl: "https://github.com/pjnalls/modulart-02",
+    description: `🎨☀️💅 Art of the Sun programmed with modular Sass CSS`,
+    imgSrc: "/works/modulart-01/art.avif",
+    workUrl: "/works/modulart-01/index.html",
+    githubUrl: "https://github.com/pjnalls/modulart-01",
   },
+  {
+    name: "Supermaterial",
+    ingredients: [
+      { skill: "React", siIcon: "SiReact" },
+      { skill: "TypeScript", siIcon: "SiTypescript" },
+      { skill: "Storybook", siIcon: "SiStorybook" },
+    ],
+    description: '⚡🦸🦹 "Superextended" component library',
+    imgSrc: "/works/supermaterial/logo.svg",
+    workUrl: "/works/supermaterial/index.html",
+    githubUrl: "https://github.com/pjnalls/Supermaterial",
+  },
+
   {
     name: "Digital Rain",
     ingredients: [
