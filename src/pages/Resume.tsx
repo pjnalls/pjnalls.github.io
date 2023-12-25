@@ -17,10 +17,10 @@ function Resume() {
   return (
     <motion.main
       key="resume"
-      initial={{ marginTop: 120, opacity: 0 }}
-      animate={{ marginTop: 0, opacity: 1 }}
-      exit={{ marginTop: -120, opacity: 0 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      initial={{ marginTop: -120, opacity: 0, scale: 0.96 }}
+      animate={{ marginTop: 0, opacity: 1, scale: 1 }}
+      exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <Container p={0} maw={420} size={"xs"}>
         <Card
@@ -54,18 +54,20 @@ function Resume() {
                 textAlign: "right",
               }}
             >
-              <Flex align={"center"} gap={4} justify={"end"} mt={12}>
-                <Text fz={10} fw={300} lts={-0.6}>
-                  www.pjnalls.com
-                </Text>
-                <FaHome style={{ fontSize: "12px" }} />
-              </Flex>
-              <Flex align={"center"} gap={4} justify={"end"}>
-                <Text fz={10} fw={300} lts={-0.6}>
-                  www.github.com/pjnalls
-                </Text>
-                <FaGithub style={{ fontSize: "12px" }} />
-              </Flex>
+              <Stack gap={0} mt={12}>
+                <Flex align={"center"} gap={4} justify={"end"}>
+                  <Text fz={10} fw={300} lts={-0.6}>
+                    www.pjnalls.com
+                  </Text>
+                  <FaHome style={{ fontSize: "12px" }} />
+                </Flex>
+                <Flex align={"center"} gap={4} justify={"end"}>
+                  <Text fz={10} fw={300} lts={-0.6}>
+                    www.github.com/pjnalls
+                  </Text>
+                  <FaGithub style={{ fontSize: "12px" }} />
+                </Flex>
+              </Stack>
             </Grid.Col>
             <Grid.Col span={7}>
               <Title order={2} fz={16}>

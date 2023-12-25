@@ -9,10 +9,10 @@ function Home() {
   return (
     <motion.main
       key="home"
-      initial={{ marginTop: 120, opacity: 0 }}
-      animate={{ marginTop: 0, opacity: 1 }}
-      exit={{ marginTop: -120, opacity: 0 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      initial={{ marginTop: -120, opacity: 0, scale: 0.96 }}
+      animate={{ marginTop: 0, opacity: 1, scale: 1 }}
+      exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <Card
         className="home"

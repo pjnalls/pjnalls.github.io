@@ -5,6 +5,8 @@
 @use "partials/footer";
 @use "partials/promo";
 
+@import "./partials/paragraph";
+
 body {
   background-color: colors.$dark-1 !important;
 }

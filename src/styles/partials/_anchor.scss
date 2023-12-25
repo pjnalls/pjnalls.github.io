@@ -4,6 +4,7 @@
   color: $color;
   text-decoration: inherit;
   transition: all 0.3s ease;
+  transform-origin: left;
   &:hover {
     color: $color-onhover;
     cursor: pointer;

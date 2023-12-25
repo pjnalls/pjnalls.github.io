@@ -7,12 +7,12 @@ function OneLove() {
   return (
     <motion.main
       key="onelove"
-      initial={{ marginTop: 120, opacity: 0 }}
-      animate={{ marginTop: 0, opacity: 1 }}
-      exit={{ marginTop: -120, opacity: 0 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      initial={{ marginTop: -120, opacity: 0, scale: 0.96 }}
+      animate={{ marginTop: 0, opacity: 1, scale: 1 }}
+      exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
     >
-      <Container mx={0} px={12} size={"xs"}>
+      <Container className="p-lg" mx={0} px={12} size={"xs"}>
         <Text ta={"left"}>
           We can teach ourselves how to hate,
           <br />
@@ -88,13 +88,17 @@ function OneLove() {
           <br />
         </Text>
         <Text ta={"right"}>詹詹 @pjnalls</Text>
+        <br />
         <Text ta={"center"}>
           —{" "}
           <b>
-            <Anchor href="https://www.youtube.com/watch?v=QMbvpftTEUs&list=PLYjQZOtMsA8qlIbelxPov2WtdNmcT-69-&index=1">
+            <Anchor
+              className="anchor-text"
+              href="https://www.youtube.com/watch?v=QMbvpftTEUs&list=PLYjQZOtMsA8qlIbelxPov2WtdNmcT-69-&index=1"
+            >
               "One Love" ♪ by Bob Marley
             </Anchor>
-          </b>
+          </b>{" "}
           🌏🌍🌎
         </Text>
       </Container>

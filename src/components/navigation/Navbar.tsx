@@ -16,7 +16,12 @@ function Navbar({
           key={`nav-links-${index}`}
           onClick={handleActiveNavToggle}
           to={`/${link.route}`}
-          style={{ fontWeight: 300, textAlign: "left" }}
+          style={{
+            fontSize: 18,
+            fontWeight: 300,
+            marginTop: 4,
+            textAlign: "left",
+          }}
         >
           {link.label}
         </NavLink>
