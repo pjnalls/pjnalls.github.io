@@ -38,3 +38,8 @@ export type CertProps = {
   issuer: string;
   certUrl?: string;
 }
+export type LanguageProps = {
+  languageCode: string;
+  languageLabel: string;
+  selfIntro: string;
+}

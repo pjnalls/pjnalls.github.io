@@ -12,8 +12,8 @@ function OneLove() {
       exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
-      <Container className="p-lg" mx={0} px={12} size={"xs"}>
-        <Text ta={"left"}>
+      <Container className="p-lg" mx={0} px={12} size={"xs"} ta={"left"}>
+        <Text lang="en">
           We can teach ourselves how to hate,
           <br />
           Yet we can also teach ourselves how to love.
@@ -24,8 +24,9 @@ function OneLove() {
           <br />
           We can choose to learn to love all things according to their nature so
           that peace abounds in us and all around us.
-          <br />
-          <br />
+        </Text>
+        <br />
+        <Text lang="es">
           Podemos enseñarnos a odiar,
           <br />
           Sin embargo, también podemos enseñarnos a amar.
@@ -36,8 +37,9 @@ function OneLove() {
           <br />
           Podemos elegir aprender a amar todas las cosas según su naturaleza
           para que la paz abunde en nosotros y a nuestro alrededor.
-          <br />
-          <br />
+        </Text>
+        <br />
+        <Text lang="zh-Hans">
           我们可以教会自己如何去恨，
           <br />
           然而我们也可以教自己如何去爱。
@@ -48,8 +50,9 @@ function OneLove() {
           <br />
           我们可以选择学会根据事物的本质来爱一切事物，
           这样我们和我们周围就会充满和平。
-          <br />
-          <br />
+        </Text>
+        <br />
+        <Text lang="zh-Hant">
           我們可以教自己如何去恨，
           <br />
           然而我們也可以教自己如何去愛。
@@ -60,8 +63,9 @@ function OneLove() {
           <br />
           我們可以選擇學習根據事物的本質來愛一切事物，
           這樣我們和我們周圍就會充滿和平。
-          <br />
-          <br />
+        </Text>
+        <br />
+        <Text lang="ja">
           私たちは憎む方法を自分自身に教えることができます。
           <br />
           しかし、私たちは愛する方法を自分自身に教えることもできます。
@@ -72,8 +76,9 @@ function OneLove() {
           <br />
           私たちは、私たちと私たちの周りに平和が満ち溢れるように、
           すべてのものをその性質に応じて愛することを 学ぶことを選択できます。
-          <br />
-          <br />
+        </Text>
+        <br />
+        <Text lang="ko">
           우리는 미워하는 법을 스스로 가르칠 수 있습니다.
           <br />
           하지만 우리는 사랑하는 법을 스스로 가르칠 수도 있습니다.
@@ -84,9 +89,9 @@ function OneLove() {
           <br />
           우리는 모든 것을 그 본성에 따라 사랑하는 평화가 넘치도록 선택할 수
           있습니다.
-          <br />
-          <br />
         </Text>
+        <br />
+        <br />
         <Text ta={"right"}>詹詹 @pjnalls</Text>
         <br />
         <Text ta={"center"}>

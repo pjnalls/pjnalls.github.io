@@ -3,7 +3,6 @@
 @mixin anchor-text($color, $color-onhover, $shadow-onhover) {
   color: $color;
   text-decoration: inherit;
-  text-shadow: 1px 1px 2px colors.$dark-1;
   transition: all 0.3s ease-out;
   transform-origin: left;
   &:hover {

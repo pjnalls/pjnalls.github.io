@@ -8,7 +8,7 @@ function Certifications() {
     useDocumentTitle("Certifications | Preston's Portfolio");
   return (
     <motion.main
-      key="contact"
+      key="certifications"
       initial={{ marginTop: -120, opacity: 0, scale: 0.96 }}
       animate={{ marginTop: 0, opacity: 1, scale: 1 }}
       exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
