@@ -19,7 +19,7 @@ header,
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-out;
 }
 * {
   color: colors.$light-1;
@@ -44,7 +44,8 @@ span {
 .work {
   @include avatar.styled;
 }
-.work {
+.work,
+.cert {
   border-radius: 8px;
 }
 .copyright {
@@ -63,7 +64,8 @@ span {
   }
 }
 .resume,
-.work {
+.work,
+.cert {
   background-color: #101c2f90 !important;
 }
 .promo {
@@ -116,7 +118,8 @@ span {
   }
 
   .resume,
-  .work {
+  .work,
+  .cert {
     background-color: #f9fcff90 !important;
   }
   .onelove {

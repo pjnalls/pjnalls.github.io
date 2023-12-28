@@ -1,7 +1,7 @@
 .construction {
   background: linear-gradient(to bottom, #6f5c00c0, #4f3c00e0) !important;
   border-radius: 4px;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease-out;
   &:hover {
     cursor: not-allowed;
     opacity: 0.8;

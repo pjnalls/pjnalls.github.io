@@ -30,3 +30,11 @@ export type WorkProps = {
   style?: MantineStyleProp;
   workUrl: string;
 };
+export type CertProps = {
+  alt: string;
+  description: string;
+  name: string;
+  imgUrl: string;
+  issuer: string;
+  certUrl?: string;
+}

@@ -1,4 +1,5 @@
 import { Card, Text, Title } from "@mantine/core";
+import '../../styles/components/Construction.scss';
 
 function Construction() {
   return (

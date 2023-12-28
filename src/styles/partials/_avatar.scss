@@ -3,7 +3,7 @@
 @mixin styled {
   border-radius: 50%;
   height: auto;
-  transition: filter 0.3s ease, opacity 0.3ms ease;
+  transition: filter 0.3s ease, opacity 0.3ms ease-out;
   &:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 2em colors.$filter-blue);

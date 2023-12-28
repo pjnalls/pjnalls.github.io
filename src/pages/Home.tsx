@@ -16,7 +16,7 @@ function Home() {
     >
       <Card
         className="home"
-        pt={"calc(50dvh - 293px)"}
+        py={"calc(50dvh - 293px)"}
         w={"calc(100dvw - 24px)"}
       >
         <Center>

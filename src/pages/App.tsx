@@ -12,6 +12,7 @@ import Works from "./Works";
 import PageNotFound from "./404";
 import OneLove from "./OneLove";
 import Contact from "./Contact";
+import Certifications from "./Certifications";
 
 function App() {
   const location = useLocation();
@@ -59,10 +60,11 @@ function App() {
               />
               <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/certifications" element={<Certifications />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/works" element={<Works />} />
               <Route path="/onelove" element={<OneLove />} />
-              <Route path="/contact" element={<Contact/>} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/*" element={<PageNotFound />} />
             </Routes>
           </AnimatePresence>

@@ -21,7 +21,7 @@ function About() {
           🧑‍💻 As a frontend engineer by day who takes language-learning
           seriously, I spend most of my free time learning all kinds of natural
           languages—in addition to programming languages such as TypeScript and
-          Sass I use just about everyday.
+          Sass which I use just about everyday.
           <br />
           <br />
           🧬 Hopefully through my work, I can inspire others to make their work
@@ -31,8 +31,8 @@ function About() {
           <br />
           <br />
           💼 Please feel free to look around from time to time whenever you're
-          here as I add more to this site about my profession, works, love of
-          languages and cultures, and myself.
+          here as I add more to this site about my profession, works, and love of
+          languages and cultures.
         </Text>
       </Container>
     </motion.main>

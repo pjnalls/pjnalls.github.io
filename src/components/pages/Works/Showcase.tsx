@@ -16,7 +16,7 @@ function Showcase() {
             { name, ingredients, description, imgSrc, workUrl, githubUrl },
             index
           ) => (
-            <div
+            <div 
               key={`work-${index}`}
               onClick={() => handleWorkOnClick(workUrl)}
             >
