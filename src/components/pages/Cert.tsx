@@ -32,6 +32,8 @@ function Cert(certs: CertProps) {
           style={{
             overflowWrap: "break-word",
           }}
+          target="_blank"
+          rel="noreferrer"
         >
           {certUrl}
         </Anchor>

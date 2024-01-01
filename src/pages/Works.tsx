@@ -24,6 +24,7 @@ function Works() {
               href="https://github.com/pjnalls?tab=repositories&q=&type=public&language=&sort="
               className="anchor-text"
               target="_blank"
+              rel="noreferrer"
             >
               here
             </Anchor>{" "}
