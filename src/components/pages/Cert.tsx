@@ -21,7 +21,7 @@ function Cert(certs: CertProps) {
         <Text fw={400} fz={14}>
           Issued by <b>{issuer}</b>
         </Text>
-        <Text fw={300} fz={12} m={0} lh={0}>
+        <Text fw={300} fz={12} m={0}>
           {description}
         </Text>
         <Anchor
