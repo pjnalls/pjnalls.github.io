@@ -37,7 +37,7 @@ export const works: Array<WorkProps> = [
       },
     ],
     description: "🧑‍🎤🧮☔️ Emerald-colored computational rain",
-    imgSrc: "/assets/works/digirain/assets/01.png",
+    imgSrc: "/assets/works/digirain/assets/01-dIOe20qM.png",
     workUrl: "/assets/works/digirain/index.html",
     githubUrl: "https://github.com/pjnalls/digital-rains",
   },
