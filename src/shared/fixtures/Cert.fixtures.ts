@@ -43,7 +43,7 @@ export const certs: CertProps[] = [
   },
   {
     alt: 'Completed Chinese certification',
-    name: 'Certificate of Acknowledgment for 20 hours of Chinese Courses',
+    name: 'Certificate of Achievement for Chinese',
     description:
       'for successfully completing 20 hours of Chinese lessons with certified Preply tutors.',
     issuer: 'Preply',
