@@ -4,7 +4,7 @@ import { useDocumentTitle } from "@mantine/hooks";
 import Showcase from "../components/pages/Works/Showcase";
 
 function Works() {
-  useDocumentTitle("Resume | Preston's Portfolio");
+  useDocumentTitle("Works | Preston's Portfolio");
   return (
     <motion.main
       key="works"

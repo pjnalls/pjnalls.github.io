@@ -36,7 +36,7 @@ function OneLove() {
         <br />
         <Accordion defaultValue={"1love-zh-Hans"}>
           <Accordion.Item key={"1love-en"} value={"1love-en"}>
-            <Accordion.Control>English</Accordion.Control>
+            <Accordion.Control>🇺🇸 English</Accordion.Control>
             <Accordion.Panel lang="en">
               We can teach ourselves how to hate,
               <br />
@@ -51,7 +51,7 @@ function OneLove() {
             </Accordion.Panel>
           </Accordion.Item>
           <Accordion.Item key={"1love-es"} value={"1love-es"}>
-            <Accordion.Control>Spanish</Accordion.Control>
+            <Accordion.Control>🇪🇸 Spanish</Accordion.Control>
             <Accordion.Panel lang="es">
               Podemos enseñarnos a odiar,
               <br />
@@ -66,7 +66,7 @@ function OneLove() {
             </Accordion.Panel>
           </Accordion.Item>
           <Accordion.Item key={"1love-zh-Hans"} value={"1love-zh-Hans"}>
-            <Accordion.Control>Chinese &#40;Simplified&#41;</Accordion.Control>
+            <Accordion.Control>🇨🇳 Mandarin &#40;Simplified&#41;</Accordion.Control>
             <Accordion.Panel lang="zh-Hans">
               我们可以教会自己如何去恨，
               <br />
@@ -81,7 +81,7 @@ function OneLove() {
             </Accordion.Panel>
           </Accordion.Item>
           <Accordion.Item key={"1love-zh-Hant"} value={"1love-zh-Hant"}>
-            <Accordion.Control>Chinese &#40;Traditional&#41;</Accordion.Control>
+            <Accordion.Control>🇹🇼 Mandarin &#40;Traditional&#41;</Accordion.Control>
             <Accordion.Panel lang="zh-Hant">
               我們可以教自己如何去恨，
               <br />
@@ -96,7 +96,7 @@ function OneLove() {
             </Accordion.Panel>
           </Accordion.Item>
           <Accordion.Item key={"1love-ja"} value={"1love-ja"}>
-            <Accordion.Control>Japanese</Accordion.Control>
+            <Accordion.Control>🇯🇵 Japanese</Accordion.Control>
             <Accordion.Panel lang="ja">
               私たちは憎む方法を自分自身に教えることができます。
               <br />
@@ -112,7 +112,7 @@ function OneLove() {
             </Accordion.Panel>
           </Accordion.Item>
           <Accordion.Item key={"1love-ko"} value={"1love-ko"}>
-            <Accordion.Control>Korean</Accordion.Control>
+            <Accordion.Control>🇰🇷 Korean</Accordion.Control>
             <Accordion.Panel lang="ko">
               우리는 미워하는 법을 스스로 가르칠 수 있습니다.
               <br />
