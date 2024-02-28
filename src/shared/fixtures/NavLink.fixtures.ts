@@ -8,5 +8,4 @@ export const navLinks: Array<NavLinkProps> = [
   { label: "Resume", route: "resume", href: "/resume" },
   { label: "Works", route: "works", href: "/works" },
   { label: "#onelove", route: "onelove", href: "/#onelove" },
-  { label: "Contact", route: "contact", href: "/contact" },
 ];

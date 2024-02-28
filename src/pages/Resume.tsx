@@ -57,7 +57,7 @@ function Resume() {
               <Stack gap={0} mt={12}>
                 <Flex align={"center"} gap={4} justify={"end"}>
                   <Text fz={10} fw={300} lts={-0.6}>
-                    www.pjnalls.com
+                    pjnalls.github.io
                   </Text>
                   <FaHome style={{ fontSize: "12px" }} />
                 </Flex>

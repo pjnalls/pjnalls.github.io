@@ -7,7 +7,7 @@ const manifest: VitePWAOptions = {
   includeAssets: ["favicon.ico", "apple-touc-icon.png", "masked-icon.svg"],
   manifest: {
     name: "Preston's Portfolio",
-    short_name: "pjnalls.com",
+    short_name: "pjnalls.github.io",
     start_url: "/",
     description:
       "🌴🏠🌳 Professional portfolio website of a human-centered frontend engineer promoting joy of learning natural and programming languages of all kinds ❤️ #onelove 🌏🌍🌎",

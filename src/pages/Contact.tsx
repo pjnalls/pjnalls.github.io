@@ -15,8 +15,8 @@ function Contact() {
       <Container className="p-md" mx={0} px={12} size={"xs"}>
         <Text ta={"left"}>
           ✉️ Contact me at{" "}
-          <Anchor className="anchor-text" href="mailto:concierge@pjnalls.com">
-            concierge@pjnalls.com
+          <Anchor className="anchor-text" href="mailto:concierge@pjnalls.github.io">
+            concierge@pjnalls.github.io
           </Anchor>
           .<br />
           <br />
