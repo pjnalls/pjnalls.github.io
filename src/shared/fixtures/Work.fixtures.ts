@@ -2,16 +2,16 @@ import { WorkProps } from "../types";
 
 export const works: Array<WorkProps> = [
   {
-    name: "Modulart",
+    name: "Global BMI",
     ingredients: [
-      { skill: "Sass", siIcon: "SiSass" },
-      { skill: "HTML5", siIcon: "SiHtml5" },
-      { skill: "2D Design", faIcon: "FaPaintBrush" },
+      { skill: "React Native", siIcon: "SiReact" },
+      { skill: "React", siIcon: "SiReact" },
+      { skill: "TypeScript", siIcon: "SiTypescript" },
     ],
-    description: `🎨☀️💅 Art of the Sun programmed with modular Sass CSS`,
-    imgSrc: "/assets/works/modulart-01/art.avif",
-    workUrl: "/assets/works/modulart-01/index.html",
-    githubUrl: "https://github.com/pjnalls/modulart-01",
+    description: `🌐🏋️#️⃣ Global context for body mass index`,
+    imgSrc: "/assets/works/global-bmi/assets/promo.png",
+    workUrl: "/assets/works/global-bmi/index.html",
+    githubUrl: "https://github.com/pjnalls/global-bmi",
   },
   {
     name: "Supermaterial",

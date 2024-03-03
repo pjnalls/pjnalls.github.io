@@ -10,7 +10,7 @@ function Showcase() {
   };
   return (
     <Stack align="center">
-      <Flex gap={16} justify="center" wrap={"wrap"}>
+      <Flex gap={16} justify="center" wrap={"wrap"} mt={-80}>
         {works.map(
           (
             { name, ingredients, description, imgSrc, workUrl, githubUrl },
@@ -46,7 +46,7 @@ function Showcase() {
         src={url}
         style={{
           borderRadius: "8px",
-          height: "360px",
+          height: "520px",
           width: "calc(100dvw - 32px)",
           maxWidth: "720px",
         }}
