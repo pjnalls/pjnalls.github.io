@@ -30,7 +30,7 @@ function Works() {
             </Anchor>{" "}
             to view
             <br />
-            my works on GitHub.
+            my projects on GitHub.
           </Text>
         </Stack>
       </Stack>
