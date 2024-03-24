@@ -19,8 +19,10 @@ function About() {
           <br />
           <br />
           👨‍💻 I create, enhance, and maintain React, Angular, .NET, and React
-          Native web and mobile apps where I work and in my spare time. I
-          primarily write code in either C# and TypeScript.
+          Native web and mobile apps and services where I work and do extended
+          amounts of yoga in my spare time.<br/>
+          I primarily write code in either C#
+          and TypeScript, and I can read in multiple natural languages.
           <br />
           <br />
           🧬 Hopefully through my work, I can inspire others to make their work

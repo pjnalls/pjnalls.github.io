@@ -26,7 +26,7 @@ function Languages() {
           Least-to-Greatest Proficiencies
         </Title>
         <br />
-        <Accordion defaultValue={'lang-zh-Hans'}>
+        <Accordion defaultValue={'lang-en'}>
           <Accordion.Item key={'lang-zh'} value={'lang-zh'}>
             <Accordion.Control>🇭🇰 Cantonese</Accordion.Control>
             <Accordion.Panel lang="zh">
@@ -159,9 +159,7 @@ function Languages() {
               <br />
               <br />
               I'm looking forward to practicing more in my target languages in
-              the future.
-              <br />
-              I hope you'll join me! 🙂
+              the future 🙂
               <br />
             </Accordion.Panel>
           </Accordion.Item>
