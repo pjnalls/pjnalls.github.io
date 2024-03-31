@@ -34,7 +34,7 @@ function OneLove() {
           🌏🌍🌎
         </Title>
         <br />
-        <Accordion defaultValue={"1love-zh-Hans"}>
+        <Accordion defaultValue={"1love-en"}>
           <Accordion.Item key={"1love-en"} value={"1love-en"}>
             <Accordion.Control>🇺🇸 English</Accordion.Control>
             <Accordion.Panel lang="en">
