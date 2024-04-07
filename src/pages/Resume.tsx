@@ -90,7 +90,7 @@ function Resume() {
                 Note: Skills are all self-accessed.
               </Text>
               <Title lts={-0.4} order={3} fw={500} fz={12} mt={4}>
-                Frontend Engineering
+                Fullstack Engineering
               </Title>
               <Stack gap={0}>
                 {devSkills.map(({ faIcon, siIcon, skill, stars }, id) => (

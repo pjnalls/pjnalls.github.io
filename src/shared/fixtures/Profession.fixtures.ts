@@ -2,8 +2,8 @@ import { ProfessionProps } from "../types";
 
 export const experiences: Array<ProfessionProps> = [
     {
-      concentration: "Frontend",
-      dates: "11/2023 - Present",
+      concentration: "Fullstack",
+      dates: "10/2023 - Present",
       title: "Sr SWE",
     },
     {
@@ -70,11 +70,6 @@ export const experiences: Array<ProfessionProps> = [
       concentration: "English",
       dates: "3/2013 - 12/2013",
       title: "Teacher",
-    },
-    {
-      concentration: "Pharmacy",
-      dates: "12/2012 - 3/2013",
-      title: "Tech",
     },
   ];
   export const education: Array<ProfessionProps> = [
