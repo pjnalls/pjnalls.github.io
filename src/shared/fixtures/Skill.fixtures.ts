@@ -34,8 +34,8 @@ export const devSkills: Array<SkillProps> = [
     stars: 4.7,
   },
   {
-    skill: 'Storybook',
-    siIcon: 'SiStorybook',
+    skill: 'Angular',
+    siIcon: 'SiAngular',
     stars: 4.6,
   },
   {
