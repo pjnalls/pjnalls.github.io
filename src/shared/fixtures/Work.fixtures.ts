@@ -2,15 +2,15 @@ import { WorkProps } from "../types";
 
 export const works: Array<WorkProps> = [
   {
-    name: "Global BMI",
+    name: "Time Series Analysis",
     ingredients: [
-      { skill: "React Native", siIcon: "SiReact" },
-      { skill: "React", siIcon: "SiReact" },
-      { skill: "TypeScript", siIcon: "SiTypescript" },
+      { skill: "Python", siIcon: "SiPython" },
+      { skill: "NumPy", siIcon: "SiNumpy" },
+      { skill: "pandas", siIcon: "SiPandas" },
     ],
-    description: `🌐🏋️#️⃣ Global context for body mass index`,
-    imgSrc: "/assets/works/global-bmi/assets/promo.png",
-    workUrl: "/assets/works/global-bmi/index.html",
+    description: `🏢⏰🌳 Time series analysis and weather forecast`,
+    imgSrc: "/assets/works/tsa/thumbnail.png",
+    workUrl: "/assets/works/tsa/index.html",
     githubUrl: "https://github.com/pjnalls/global-bmi",
   },
   {
@@ -25,7 +25,6 @@ export const works: Array<WorkProps> = [
     workUrl: "/assets/works/supermaterial/index.html",
     githubUrl: "https://github.com/pjnalls/Supermaterial",
   },
-
   {
     name: "Digital Rain",
     ingredients: [
