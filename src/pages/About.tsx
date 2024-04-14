@@ -12,7 +12,13 @@ function About() {
       exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
     >
-      <Container className="p-lg" mx={0} px={12} size={'xs'}>
+      <Container
+        className="p-lg"
+        mx={0}
+        px={12}
+        size={'xs'}
+        style={{ overflowY: 'auto' }}
+      >
         <Text ta={'left'}>
           🏡 Hi, I'm Preston. <br />
           Welcome to my portfolio website!

@@ -9,6 +9,7 @@
 
 body {
   background-color: colors.$dark-1 !important;
+  overflow-x: hidden;
 }
 nav,
 header,
@@ -80,6 +81,13 @@ span {
   }
 }
 
+.mantine-Accordion-control {
+  transition: all 0.3s ease;
+}
+.mantine-Accordion-control:hover {
+  background-color: #101c2f90;
+}
+
 @media (prefers-color-scheme: light) {
   body {
     background-color: colors.$light-1 !important;
@@ -120,5 +128,12 @@ span {
       background: linear-gradient(to bottom, #e9dfffe9, #effb) !important;
       box-shadow: 0 0 20px linear-gradient(to bottom, #e9dfffe9 #effb) !important;
     }
+  }
+  
+  .mantine-Accordion-control {
+    transition: all 0.3s ease;
+  }
+  .mantine-Accordion-control:hover {
+    background-color: #effb;
   }
 }
