@@ -1,7 +1,6 @@
 import { Accordion, Container, Text, Title } from '@mantine/core';
 import { useDocumentTitle } from '@mantine/hooks';
 import { motion } from 'framer-motion';
-import { NavLink } from 'react-router-dom';
 
 function Languages() {
   useDocumentTitle("Languages | Preston's Portfolio");
@@ -16,6 +15,7 @@ function Languages() {
       <Container
         className="p-lg"
         m={0}
+        my={'calc(50dvh - 480px)'}
         px={0}
         size={'sm'}
         ta={'left'}
@@ -69,7 +69,7 @@ function Languages() {
               <br />
               Estudié español en la escuela durante unos 3 o 4 años.
               <br />
-              ¡Esperamos hablar con usted!
+              ¡Espero hablar contigo pronto!
               <br />
             </Accordion.Panel>
           </Accordion.Item>
@@ -93,6 +93,8 @@ function Languages() {
               <br />
               因为我的工作有一点艺术的部分。
               <br />
+              期待跟你聊天！
+              <br />
             </Accordion.Panel>
           </Accordion.Item>
           <Accordion.Item key={'lang-zh-Hant'} value={'lang-zh-Hant'}>
@@ -113,6 +115,9 @@ function Languages() {
               最後，我喜歡藝術，
               <br />
               因為我的工作有一點藝術的部分。
+              <br />
+              期待跟你聊天！
+              <br />
             </Accordion.Panel>
           </Accordion.Item>
 
@@ -167,18 +172,6 @@ function Languages() {
         <br />
         <br />
         <Text ta={'right'}>詹詹 @pjnalls</Text>
-        <br />
-        <Text lts={-0.2} style={{ fontWeight: 600, textAlign: 'center' }}>
-          <NavLink
-            className="anchor-text"
-            to={'https://www.duolingo.com/profile/pjnalls'}
-            target="_blank"
-            rel="noreferrer"
-          >
-            View my Duolingo profile here
-          </NavLink>
-          .
-        </Text>
       </Container>
     </motion.main>
   );

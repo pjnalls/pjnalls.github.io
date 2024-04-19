@@ -10,7 +10,7 @@ function Showcase() {
   };
   return (
     <Stack align="center">
-      <Flex gap={16} justify="center" wrap={"wrap"} mt={-80}>
+      <Flex gap={16} justify="center" wrap={"wrap"}>
         {works.map(
           (
             { name, ingredients, description, imgSrc, workUrl, githubUrl },

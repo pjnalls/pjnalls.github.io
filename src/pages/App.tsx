@@ -32,7 +32,8 @@ function App() {
         breakpoint: "sm",
         collapsed: { mobile: !mobileOpened, desktop: !desktopOpened },
       }}
-      padding="md"
+      p={0}
+      m={0}
     >
       <AppShell.Header w={"100dvw"}>
         <Header

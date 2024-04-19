@@ -26,8 +26,7 @@ function Resume() {
         <Card
           className="resume"
           h={"calc(100dvh - 102px)"}
-          p={12}
-          m={0}
+          my={"calc(50dvh - 420px)"}
           mah={620}
           shadow={"lg"}
         >
@@ -36,8 +35,8 @@ function Resume() {
             columns={12}
             h={"calc(100dvh - 102px)"}
             justify="space-between"
-            overflow="scroll"
-            style={{ transition: "all 3s ease" }}
+            overflow="hidden"
+            style={{ transition: "all 3s ease", overflowY: "auto" }}
             ta={"left"}
           >
             <Grid.Col span={7}>

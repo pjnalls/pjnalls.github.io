@@ -25,7 +25,7 @@ function Header({
           </Anchor>
         </Text>
       </Group>
-      <Group mr="md">
+      <Group pr="xs">
         <Burger
           aria-label="Toggle mobile navigation"
           hiddenFrom="sm"

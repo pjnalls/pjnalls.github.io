@@ -11,19 +11,20 @@ body {
   background-color: colors.$dark-1 !important;
   overflow-x: hidden;
 }
+
 nav,
 header,
 .app .home {
   background-color: transparent !important;
   border: none !important;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   transition: all 0.3s ease-out;
 }
 
 * {
   color: colors.$light-1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 span {
   color: colors.$light-gold;

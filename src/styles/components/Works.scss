@@ -1,0 +1,9 @@
+.works {
+  margin: calc(50dvh - 420px) auto;
+}
+
+@media (max-width: 780px) {
+    .works{
+        margin-top: -72px;
+    }
+}
