@@ -8,7 +8,7 @@ export const works: Array<WorkProps> = [
       { skill: "NumPy", siIcon: "SiNumpy" },
       { skill: "pandas", siIcon: "SiPandas" },
     ],
-    description: `🏢⏰🌳 Time series analysis and weather forecast`,
+    description: `🏢⏰🌳 Weather forecast analysis`,
     imgSrc: "/assets/works/tsa/thumbnail.png",
     workUrl: "/assets/works/tsa/index.html",
     githubUrl: "https://github.com/pjnalls/global-bmi",

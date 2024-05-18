@@ -30,7 +30,7 @@ function OneLove() {
             target="_blank"
             rel="noreferrer"
           >
-            "One Love" ♪ by Bob Marley
+            "One Love"
           </Anchor>{" "}
           🌏🌍🌎
         </Title>

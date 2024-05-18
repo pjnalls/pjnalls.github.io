@@ -11,7 +11,6 @@ import Resume from "./Resume";
 import Works from "./Works";
 import PageNotFound from "./404";
 import OneLove from "./OneLove";
-import Contact from "./Contact";
 import Certifications from "./Certifications";
 import Languages from "./Languages";
 
@@ -67,7 +66,6 @@ function App() {
               <Route path="/languages" element={<Languages />} />
               <Route path="/works" element={<Works />} />
               <Route path="/onelove" element={<OneLove />} />
-              <Route path="/contact" element={<Contact />} />
               <Route path="/*" element={<PageNotFound />} />
             </Routes>
           </AnimatePresence>

@@ -1,6 +1,6 @@
 # Preston's Portfolio ([pjnalls.github.io](pjnalls.github.io))
 
-🌴🏠🌳 Professional portfolio website of a human-centered frontend engineer promoting joy of learning natural and programming languages of all kinds ❤️ #onelove 🌏🌍🌎
+🏡💼🧑‍💻 My homepage
 
 ## Basic Frontend Dev Solution Steps
 

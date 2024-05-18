@@ -28,7 +28,7 @@ function About() {
           Native web and mobile apps and services where I work and do extended
           amounts of yoga in my spare time.
           <br />
-          I primarily write code in either C# and TypeScript, currently learning
+          I primarily write code in C# and TypeScript, currently learning
           Python, and can read in multiple natural languages.
           <br />
           <br />
