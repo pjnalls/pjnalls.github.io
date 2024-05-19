@@ -15,7 +15,6 @@ function OneLove() {
       <Container
         className="p-lg"
         m={0}
-        my={"calc(50dvh - 400px)"}
         px={0}
         size={"sm"}
         ta={"left"}

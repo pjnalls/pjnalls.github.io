@@ -46,7 +46,7 @@ function Showcase() {
         src={url}
         style={{
           borderRadius: "8px",
-          height: "520px",
+          height: "60vh",
           width: "calc(100dvw - 32px)",
           maxWidth: "720px",
         }}

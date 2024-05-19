@@ -15,7 +15,6 @@ function Languages() {
       <Container
         className="p-lg"
         m={0}
-        my={'calc(50dvh - 480px)'}
         px={0}
         size={'sm'}
         ta={'left'}
