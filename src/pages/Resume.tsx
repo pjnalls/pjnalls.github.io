@@ -26,7 +26,6 @@ function Resume() {
         <Card
           className="resume"
           h={"calc(100dvh - 102px)"}
-          my={"calc(50dvh - 420px)"}
           mah={620}
           shadow={"lg"}
         >
