@@ -22,7 +22,7 @@ function Home() {
         <Center>
           <NavLink
             className="anchor-avatar"
-            to={'/works'}
+            to={'/skills'}
             style={{ paddingBottom: 12, paddingTop: 12, width: 120 }}
           >
             <Image
@@ -68,7 +68,7 @@ function Home() {
           <NavLink
             className="anchor-text"
             style={{ fontWeight: 600, textAlign: 'left' }}
-            to={'/works'}
+            to={'/skills'}
           >
             View my projects here
           </NavLink>
