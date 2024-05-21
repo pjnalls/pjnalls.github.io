@@ -75,7 +75,7 @@ span {
 .promo {
   @include promo.styled;
 }
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   nav {
     background: linear-gradient(to bottom, #190444e6, #032f3fbf) !important;
     box-shadow: 0 0 20px linear-gradient(to bottom, #190444e6, #032f3fbf) !important;
@@ -141,7 +141,7 @@ span {
   .onelove {
     color: colors.$amber-gold;
   }
-  @media (max-width: 780px) {
+  @media (max-width: 768px) {
     nav {
       background: linear-gradient(to bottom, #e9dfffe9, #effb) !important;
       box-shadow: 0 0 20px linear-gradient(to bottom, #e9dfffe9 #effb) !important;
