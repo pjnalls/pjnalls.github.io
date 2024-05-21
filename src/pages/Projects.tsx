@@ -15,7 +15,7 @@ function Works() {
       transition={{ duration: 0.5, ease: 'easeOut' }}
     >
       <Stack className="works" gap={0} 
-        px={24} >
+        px={24} maw={'100vw'}>
         <Title fw={500} order={2} ta={'left'} my={'xs'}>
           💼 My Projects
         </Title>

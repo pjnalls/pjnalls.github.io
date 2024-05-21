@@ -77,7 +77,7 @@ const manifest: VitePWAOptions = {
     short_name: "pjnalls.github.io",
     start_url: "/",
     description:
-      "🌴🏠🌳 Professional portfolio website of a human-centered frontend engineer promoting joy of learning natural and programming languages of all kinds ❤️ #onelove 🌏🌍🌎",
+      "🧬🧑‍💻🔬 Portfolio website of a senior software engineer with experience in iOS, Android, Web, .NET, Angular, React and React Native development 🍎🤖⚛️ ♥️ #OneLove 🌏🌎🌍",
     icons: [
       {
         src: "/assets/pwa/manifest-icon-192.maskable.png",

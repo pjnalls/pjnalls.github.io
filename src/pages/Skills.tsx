@@ -15,7 +15,7 @@ function Skills() {
       exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
     >
-      <Container style={{ margin: '0 auto' }} w={'100vw'} px={24}>
+      <Container style={{ margin: '0 auto' }} maw={'768px'} px={24}>
         <Title fw={500} order={2} ta={'left'} my={'lg'}>
           🧮 My Skills
         </Title>

@@ -59,7 +59,7 @@ function Home() {
               to={`/onelove`}
               style={{ fontWeight: 600, textAlign: 'left' }}
             >
-              #onelove
+              #OneLove
             </NavLink>{' '}
             🌏🌍🌎
           </Text>

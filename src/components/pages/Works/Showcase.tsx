@@ -47,8 +47,8 @@ function Showcase() {
         style={{
           borderRadius: "8px",
           height: "60vh",
-          width: "calc(100dvw - 32px)",
-          maxWidth: "720px",
+          width: "100%",
+          maxWidth: "768px",
         }}
       ></iframe>
     </Stack>

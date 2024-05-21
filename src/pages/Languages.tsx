@@ -19,6 +19,7 @@ function Languages() {
         size={'sm'}
         ta={'left'}
         w={'calc(100vw - 24px)'}
+        maw={480}
       >
         <Title fw={500} order={2} ta={'left'} my={'lg'}>
           🔤 Languages Ordered by <br />

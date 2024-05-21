@@ -3,7 +3,7 @@ import { Accordion, Anchor, Container, Text, Title } from '@mantine/core';
 import { useDocumentTitle } from '@mantine/hooks';
 
 function OneLove() {
-  useDocumentTitle("#onelove | Preston's Portfolio");
+  useDocumentTitle("#OneLove | Preston's Portfolio");
   return (
     <motion.main
       key="onelove"
@@ -19,6 +19,7 @@ function OneLove() {
         size={'sm'}
         ta={'left'}
         w={'calc(100vw - 24px)'}
+        maw={480}
       >
         <Anchor
           href="https://www.youtube.com/watch?v=QMbvpftTEUs&list=PLYjQZOtMsA8qlIbelxPov2WtdNmcT-69-&index=1"

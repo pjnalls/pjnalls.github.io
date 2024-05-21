@@ -7,5 +7,5 @@ export const navLinks: Array<NavLinkProps> = [
   { label: "Languages", route: "languages", href: "/languages" },
   { label: "Résumé", route: "resume", href: "/resume" },
   { label: "Projects", route: "projects", href: "/projects" },
-  { label: "#onelove", route: "onelove", href: "/#onelove" },
+  { label: "#OneLove", route: "onelove", href: "/#onelove" },
 ];
