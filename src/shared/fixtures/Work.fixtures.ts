@@ -35,7 +35,7 @@ export const works: Array<WorkProps> = [
         faIcon: "FaFilm",
       },
     ],
-    description: "🧑‍🎤🧮☔️ Emerald-colored computational rain",
+    description: "🧑‍🎤🧮☔️ Computational rain in-browser",
     imgSrc: "/assets/works/digirain/assets/01-dIOe20qM.png",
     workUrl: "/assets/works/digirain/index.html",
     githubUrl: "https://github.com/pjnalls/digital-rains",
