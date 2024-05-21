@@ -1,16 +1,16 @@
-import { motion } from "framer-motion";
-import { Card, Container, Flex, Grid, Stack, Text, Title } from "@mantine/core";
-import { useDocumentTitle } from "@mantine/hooks";
-import { FaGithub, FaHome } from "react-icons/fa";
+import { motion } from 'framer-motion';
+import { Card, Container, Flex, Grid, Stack, Text, Title } from '@mantine/core';
+import { useDocumentTitle } from '@mantine/hooks';
+import { FaGithub, FaHome } from 'react-icons/fa';
 import {
   education,
   experiences,
   devSkills,
   designSkills,
   prodSkills,
-} from "../shared/index.fixtures";
-import Profession from "../components/pages/Resume/Profession";
-import Skill from "../components/resusable/Skill";
+} from '../shared/index.fixtures';
+import Profession from '../components/pages/Resume/Profession';
+import Skill from '../components/resusable/Skill';
 
 function Resume() {
   useDocumentTitle("Resume | Preston's Portfolio");
@@ -20,23 +20,29 @@ function Resume() {
       initial={{ marginTop: -120, opacity: 0, scale: 0.96 }}
       animate={{ marginTop: 0, opacity: 1, scale: 1 }}
       exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
     >
-      <Container p={0} maw={420} size={"xs"}>
+      <Container 
+        px={0} maw={420} size={'xs'}>
+        <Title fw={500} order={2} ta={'left'} my={'lg'}>
+          📄 Résumé
+        </Title>
+        <hr />
         <Card
           className="resume"
-          h={"calc(100dvh - 102px)"}
+          h={'calc(100dvh - 102px)'}
           mah={620}
-          shadow={"lg"}
+          my={'lg'}
+          shadow={'lg'}
         >
           <Grid
-            align={"center"}
+            align={'center'}
             columns={12}
-            h={"calc(100dvh - 102px)"}
+            h={'calc(100dvh - 102px)'}
             justify="space-between"
             overflow="hidden"
-            style={{ transition: "all 3s ease", overflowY: "auto" }}
-            ta={"left"}
+            style={{ transition: 'all 3s ease', overflowY: 'auto' }}
+            ta={'left'}
           >
             <Grid.Col span={7}>
               <Title fw={600} fz={28} order={1}>
@@ -49,21 +55,21 @@ function Resume() {
             <Grid.Col
               span={5}
               style={{
-                textAlign: "right",
+                textAlign: 'right',
               }}
             >
               <Stack gap={0} mt={12}>
-                <Flex align={"center"} gap={4} justify={"end"}>
+                <Flex align={'center'} gap={4} justify={'end'}>
                   <Text fz={10} fw={300} lts={-0.6}>
                     pjnalls.github.io
                   </Text>
-                  <FaHome style={{ fontSize: "12px" }} />
+                  <FaHome style={{ fontSize: '12px' }} />
                 </Flex>
-                <Flex align={"center"} gap={4} justify={"end"}>
+                <Flex align={'center'} gap={4} justify={'end'}>
                   <Text fz={10} fw={300} lts={-0.6}>
                     www.github.com/pjnalls
                   </Text>
-                  <FaGithub style={{ fontSize: "12px" }} />
+                  <FaGithub style={{ fontSize: '12px' }} />
                 </Flex>
               </Stack>
             </Grid.Col>
@@ -84,7 +90,7 @@ function Resume() {
               <Title order={2} fz={16}>
                 Skills
               </Title>
-              <Text fs={"italic"} fw={300} fz={10} lts={-0.4} my={0} mt={0}>
+              <Text fs={'italic'} fw={300} fz={10} lts={-0.4} my={0} mt={0}>
                 Note: Skills are all self-accessed.
               </Text>
               <Title lts={-0.4} order={3} fw={500} fz={12} mt={4}>

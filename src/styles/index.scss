@@ -20,6 +20,15 @@ header,
   transition: all 0.3s ease-out;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid colors.$light-1;
+  margin: 1em 0;
+  padding: 0;
+}
+
 * {
   color: colors.$light-1;
   box-sizing: border-box;
@@ -30,7 +39,7 @@ span {
   color: colors.$light-gold;
 }
 
-.active {
+.active, .mantine-Accordion-label {
   color: colors.$light-1 !important;
   &:hover {
     color: colors.$light-2 !important;
@@ -97,10 +106,18 @@ span {
   .promo {
     color: colors.$dark-1;
   }
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid colors.$dark-1;
+    margin: 1em 0;
+    padding: 0;
+  }
   span {
     color: colors.$amber-gold;
   }
-  .active {
+  .active, .mantine-Accordion-label {
     color: colors.$dark-1 !important;
     &:hover {
       color: colors.$dark-2 !important;

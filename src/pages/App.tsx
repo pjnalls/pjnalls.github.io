@@ -8,10 +8,10 @@ import Footer from "../components/navigation/Footer";
 import Home from "./Home";
 import About from "./About";
 import Resume from "./Resume";
-import Works from "./Works";
+import Projects from "./Projects";
 import PageNotFound from "./404";
 import OneLove from "./OneLove";
-import Certifications from "./Certifications";
+import Skills from "./Skills";
 import Languages from "./Languages";
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
       navbar={{
         width: 300,
         breakpoint: "sm",
-        collapsed: { mobile: !mobileOpened, desktop: !desktopOpened },
+        collapsed: { mobile: !mobileOpened, desktop: false },
       }}
       p={0}
       m={0}
@@ -62,9 +62,9 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/resume" element={<Resume />} />
-              <Route path="/certifications" element={<Certifications />} />
+              <Route path="/skills" element={<Skills />} />
               <Route path="/languages" element={<Languages />} />
-              <Route path="/works" element={<Works />} />
+              <Route path="/projects" element={<Projects />} />
               <Route path="/onelove" element={<OneLove />} />
               <Route path="/*" element={<PageNotFound />} />
             </Routes>

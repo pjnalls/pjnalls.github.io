@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Container, Text } from '@mantine/core';
+import { Container, Text, Title } from '@mantine/core';
 import { useDocumentTitle } from '@mantine/hooks';
 
 function About() {
@@ -13,13 +13,15 @@ function About() {
       transition={{ duration: 0.5, ease: 'easeOut' }}
     >
       <Container
-        className="p-lg"
         mx={0}
-        px={12}
+        px={24}
         size={'xs'}
-        style={{ overflowY: 'auto' }}
       >
-        <Text ta={'left'}>
+        <Title fw={500} order={2} ta={'left'} my={'lg'}>
+          🧑‍💻 About me
+        </Title>
+        <hr />
+        <Text ta={'left'} my={'lg'}>
           🏡 Hi, I'm Preston. <br />
           Welcome to my portfolio website!
           <br />

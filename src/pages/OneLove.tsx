@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import { Accordion, Anchor, Container, Text, Title } from "@mantine/core";
-import { useDocumentTitle } from "@mantine/hooks";
+import { motion } from 'framer-motion';
+import { Accordion, Anchor, Container, Text, Title } from '@mantine/core';
+import { useDocumentTitle } from '@mantine/hooks';
 
 function OneLove() {
   useDocumentTitle("#onelove | Preston's Portfolio");
@@ -10,32 +10,29 @@ function OneLove() {
       initial={{ marginTop: -120, opacity: 0, scale: 0.96 }}
       animate={{ marginTop: 0, opacity: 1, scale: 1 }}
       exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
     >
       <Container
         className="p-lg"
         m={0}
         px={0}
-        size={"sm"}
-        ta={"left"}
-        w={"calc(100vw - 24px)"}
+        size={'sm'}
+        ta={'left'}
+        w={'calc(100vw - 24px)'}
       >
-        <Title ta={"center"} order={2}>
-          <Anchor
-            className="anchor-text"
-            fw={500}
-            fz={20}
-            href="https://www.youtube.com/watch?v=QMbvpftTEUs&list=PLYjQZOtMsA8qlIbelxPov2WtdNmcT-69-&index=1"
-            target="_blank"
-            rel="noreferrer"
-          >
-            "One Love"
-          </Anchor>{" "}
-          🌏🌍🌎
-        </Title>
+        <Anchor
+          href="https://www.youtube.com/watch?v=QMbvpftTEUs&list=PLYjQZOtMsA8qlIbelxPov2WtdNmcT-69-&index=1"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Title fw={500} ta={'left'} order={2} my={'lg'}>
+            🌏🌍🌎 "One Love"
+          </Title>
+        </Anchor>
+        <hr />
         <br />
-        <Accordion defaultValue={"1love-en"}>
-          <Accordion.Item key={"1love-en"} value={"1love-en"}>
+        <Accordion defaultValue={'1love-en'}>
+          <Accordion.Item key={'1love-en'} value={'1love-en'}>
             <Accordion.Control>🇺🇸 English</Accordion.Control>
             <Accordion.Panel lang="en">
               We can teach ourselves how to hate,
@@ -50,7 +47,7 @@ function OneLove() {
               nature so that peace abounds in us and all around us.
             </Accordion.Panel>
           </Accordion.Item>
-          <Accordion.Item key={"1love-es"} value={"1love-es"}>
+          <Accordion.Item key={'1love-es'} value={'1love-es'}>
             <Accordion.Control>🇪🇸 Spanish</Accordion.Control>
             <Accordion.Panel lang="es">
               Podemos enseñarnos a odiar,
@@ -65,8 +62,10 @@ function OneLove() {
               para que la paz abunde en nosotros y a nuestro alrededor.
             </Accordion.Panel>
           </Accordion.Item>
-          <Accordion.Item key={"1love-zh-Hans"} value={"1love-zh-Hans"}>
-            <Accordion.Control>🇨🇳 Mandarin &#40;Simplified&#41;</Accordion.Control>
+          <Accordion.Item key={'1love-zh-Hans'} value={'1love-zh-Hans'}>
+            <Accordion.Control>
+              🇨🇳 Mandarin &#40;Simplified&#41;
+            </Accordion.Control>
             <Accordion.Panel lang="zh-Hans">
               我们可以教会自己如何去恨，
               <br />
@@ -80,8 +79,10 @@ function OneLove() {
               这样我们和我们周围就会充满和平。
             </Accordion.Panel>
           </Accordion.Item>
-          <Accordion.Item key={"1love-zh-Hant"} value={"1love-zh-Hant"}>
-            <Accordion.Control>🇹🇼 Mandarin &#40;Traditional&#41;</Accordion.Control>
+          <Accordion.Item key={'1love-zh-Hant'} value={'1love-zh-Hant'}>
+            <Accordion.Control>
+              🇹🇼 Mandarin &#40;Traditional&#41;
+            </Accordion.Control>
             <Accordion.Panel lang="zh-Hant">
               我們可以教自己如何去恨，
               <br />
@@ -95,7 +96,7 @@ function OneLove() {
               這樣我們和我們周圍就會充滿和平。
             </Accordion.Panel>
           </Accordion.Item>
-          <Accordion.Item key={"1love-ja"} value={"1love-ja"}>
+          <Accordion.Item key={'1love-ja'} value={'1love-ja'}>
             <Accordion.Control>🇯🇵 Japanese</Accordion.Control>
             <Accordion.Panel lang="ja">
               私たちは憎む方法を自分自身に教えることができます。
@@ -111,7 +112,7 @@ function OneLove() {
               学ぶことを選択できます。
             </Accordion.Panel>
           </Accordion.Item>
-          <Accordion.Item key={"1love-ko"} value={"1love-ko"}>
+          <Accordion.Item key={'1love-ko'} value={'1love-ko'}>
             <Accordion.Control>🇰🇷 Korean</Accordion.Control>
             <Accordion.Panel lang="ko">
               우리는 미워하는 법을 스스로 가르칠 수 있습니다.
@@ -128,7 +129,8 @@ function OneLove() {
           </Accordion.Item>
           <br />
           <br />
-          <Text ta={"right"}>詹詹 @pjnalls</Text>
+          <Text ta={'right'}>詹詹 (Zhānzhān) @pjnalls</Text>
+          <br />
           <br />
         </Accordion>
       </Container>

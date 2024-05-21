@@ -15,15 +15,16 @@ function Languages() {
       <Container
         className="p-lg"
         m={0}
-        px={0}
+        px={12}
         size={'sm'}
         ta={'left'}
         w={'calc(100vw - 24px)'}
       >
-        <Title fw={500} fz={20} order={2} ta={'center'}>
-          Languages Ordered by <br />
+        <Title fw={500} order={2} ta={'left'} my={'lg'}>
+          🔤 Languages Ordered by <br />
           Least-to-Greatest Proficiencies
         </Title>
+        <hr />
         <br />
         <Accordion defaultValue={'lang-en'}>
           <Accordion.Item key={'lang-zh'} value={'lang-zh'}>
@@ -170,7 +171,9 @@ function Languages() {
         </Accordion>
         <br />
         <br />
-        <Text ta={'right'}>詹詹 @pjnalls</Text>
+        <Text ta={'right'}>詹詹 (Zhānzhān) @pjnalls</Text>
+        <br />
+        <br />
       </Container>
     </motion.main>
   );

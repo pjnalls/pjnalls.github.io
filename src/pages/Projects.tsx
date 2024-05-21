@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Anchor, Stack, Text } from '@mantine/core';
+import { Anchor, Stack, Text, Title } from '@mantine/core';
 import { useDocumentTitle } from '@mantine/hooks';
 import Showcase from '../components/pages/Works/Showcase';
 import '../styles/components/Works.scss';
@@ -14,7 +14,13 @@ function Works() {
       exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
     >
-      <Stack className="works" gap={0}>
+      <Stack className="works" gap={0} 
+        px={24} >
+        <Title fw={500} order={2} ta={'left'} my={'xs'}>
+          💼 My Projects
+        </Title>
+        <hr />
+        <br />
         <Showcase />
         <br />
         <Text lts={-0.2}>
