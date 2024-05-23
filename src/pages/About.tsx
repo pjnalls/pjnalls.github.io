@@ -36,8 +36,8 @@ function About() {
           <br />
           🧬 Hopefully through my work, I can inspire others to make their work
           "human-centered"—as human-computer interaction (HCI) becomes of
-          paramount with advancements in technologies such as artificial general
-          intelligence (AGI), metaverse-user experiences, etc.
+          paramount importance with advancements in technologies such as artificial general
+          intelligence (AGI) and metaverse-user experiences.
           <br />
           <br />
           💼 Please feel free to look around while you're here.
