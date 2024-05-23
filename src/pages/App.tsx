@@ -1,18 +1,18 @@
-import { Navigate, Route, Routes, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
-import { AppShell, Center } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
-import Header from "../components/navigation/Header";
-import Navbar from "../components/navigation/Navbar";
-import Footer from "../components/navigation/Footer";
-import Home from "./Home";
-import About from "./About";
-import Resume from "./Resume";
-import Projects from "./Projects";
-import PageNotFound from "./404";
-import OneLove from "./OneLove";
-import Skills from "./Skills";
-import Languages from "./Languages";
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import { AppShell, Center } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
+import Header from '../components/navigation/Header';
+import Navbar from '../components/navigation/Navbar';
+import Footer from '../components/navigation/Footer';
+import Home from './Home';
+import About from './About';
+import Resume from './Resume';
+import Projects from './Projects';
+import PageNotFound from './404';
+import OneLove from './OneLove';
+import Skills from './Skills';
+import Languages from './Languages';
 
 function App() {
   const location = useLocation();
@@ -28,16 +28,14 @@ function App() {
       header={{ height: 60 }}
       navbar={{
         width: 300,
-        breakpoint: "sm",
+        breakpoint: 'sm',
         collapsed: { mobile: !mobileOpened, desktop: false },
       }}
       p={0}
       m={0}
     >
-      <AppShell.Header w={"100dvw"}>
-        <Header
-          {...{ desktopOpened, mobileOpened, toggleDesktop, toggleMobile }}
-        />
+      <AppShell.Header w={'100dvw'}>
+        <Header {...{ mobileOpened, toggleMobile }} />
       </AppShell.Header>
       <AppShell.Navbar p="lg">
         <Navbar {...{ handleActiveNavToggle }} />
@@ -52,8 +50,8 @@ function App() {
                 element={
                   <Navigate
                     to={`/${
-                      window.location.href.split("?")[1]?.split("=")[1] ??
-                      "home"
+                      window.location.href.split('?')[1]?.split('=')[1] ??
+                      'home'
                     }`}
                     replace
                   />

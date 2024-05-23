@@ -1,14 +1,9 @@
-import { Anchor, Burger, Group, Image, Text } from "@mantine/core";
-import avatar from "/assets/p.logo.avif";
+import { Anchor, Burger, Group, Image, Text } from '@mantine/core';
+import avatar from '/assets/p.logo.avif';
 
-function Header({
-  desktopOpened,
-  mobileOpened,
-  toggleDesktop,
-  toggleMobile,
-}: any) {
+function Header({ mobileOpened, toggleMobile }: any) {
   return (
-    <Group h="100%" justify={"space-between"} px="md">
+    <Group h="100%" justify={'space-between'} px="md">
       <Group gap={4}>
         <Anchor className="anchor-avatar" href="/" w={24}>
           <Image
@@ -32,13 +27,6 @@ function Header({
           onClick={toggleMobile}
           opened={mobileOpened}
           size="sm"
-        />
-        <Burger
-          aria-label="Toggle desktop navigation"
-          onClick={toggleDesktop}
-          opened={desktopOpened}
-          size="sm"
-          visibleFrom="sm"
         />
       </Group>
     </Group>
