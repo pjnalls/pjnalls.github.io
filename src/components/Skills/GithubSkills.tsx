@@ -44,9 +44,13 @@ export default function GithubSkills() {
       <br />
       <br />
 
-      <h3 style={{ textAlign: 'center' }}>🖼️ UI/UX and Frontend Toolkit</h3>
+      <h3 style={{ textAlign: 'center' }}>🛠️ Fullstack and UI/UX Toolkit</h3>
       <br />
       <div style={{ margin: '0 auto' }}>
+        <img
+          src="https://img.shields.io/badge/Storybook-6f173f?logo=storybook&logoColor=ff4785"
+          alt="Frontend Tool 0"
+        />{' '}
         <img
           src="https://img.shields.io/badge/RxJS-610425?logo=reactivex&logoColor=e10988"
           alt="Frontend Tool 1"
@@ -106,11 +110,15 @@ export default function GithubSkills() {
         <br />
         <br />
         <img
+          src="https://img.shields.io/badge/Figma-40434a?logo=figma&logoColor=fff"
+          alt="Frontend Tool 15"
+        />{' '}
+        <img
           src="https://img.shields.io/badge/Markdown-40434a?logo=markdown&logoColor=fff"
           alt="Frontend Tool 14"
         />{' '}
         <img
-          src="https://img.shields.io/badge/Figma-40434a?logo=figma&logoColor=fff"
+          src="https://img.shields.io/badge/Microsoft_SQL_Server-40434a?logo=microsoftsqlserver&logoColor=fff"
           alt="Frontend Tool 15"
         />
       </div>
