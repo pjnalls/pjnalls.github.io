@@ -38,7 +38,7 @@ function Home() {
           Preston Nalls
         </Title>
         <Title fw={300} order={2} fz={20} lts={2}>
-          Senior Software Engineer
+          React Native Developer
         </Title>
         <Stack className="promo" gap={0} my={24}>
           <Text fw={300} lts={-0.4} size="xl">

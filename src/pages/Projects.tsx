@@ -38,6 +38,8 @@ function Works() {
           <br />
           my projects on GitHub.
         </Text>
+        <br />
+        <br />
       </Stack>
     </motion.main>
   );

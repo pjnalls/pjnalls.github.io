@@ -22,22 +22,22 @@ function About() {
           Welcome to my portfolio website!
           <br />
           <br />
-          👨‍💻 I create, enhance, and maintain React, Angular, .NET, and React
+          👷 I create, enhance, and maintain React, Angular, .NET, and React
           Native web and mobile apps and services where I work, and I like
-          listening to a lot Square Enix music and reading the lastest tech news
-          in my free time.
+          listening to a lot of video game music, watching video game speedruns,
+          and being in yoga in my free time.
           <br />
-          I primarily write code in C# and TypeScript and can read in multiple
-          natural languages.
+          I primarily write code in TypeScript and C#, am currently sharpening
+          my React Native skills, and can read in multiple natural languages.
           <br />
           <br />
           🦄 I consider myself to be a bit of a unicorn in the sense that I'm
           currently a fullstack web and mobile developer where I work yet I have
-          a background in art and design: I grew up with a passion in drawing,
-          anime, and games. I also graduated from a university with a Bachelor
-          of Science degree with a concentration in 2D and 3D animation and,
-          later on, with an additional Bachelor of Science degree in computer
-          science.
+          a background in art and design: I grew up with a passion for drawing,
+          anime, and games. Later, I graduated from a university earning a
+          Bachelor of Science degree with a concentration in 2D and 3D animation
+          and then, later on, earning an additional Bachelor of Science degree
+          in computer science.
           <br />
           <br />
           💼 Please feel free to look around while you're here.
