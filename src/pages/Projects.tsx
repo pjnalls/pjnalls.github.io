@@ -5,7 +5,7 @@ import Showcase from '../components/pages/Works/Showcase';
 import '../styles/components/Works.scss';
 
 function Works() {
-  useDocumentTitle("Works | Preston's Portfolio");
+  useDocumentTitle("Projects | Preston's Portfolio");
   return (
     <motion.main
       key="works"

@@ -1,43 +1,43 @@
-import { WorkProps } from "../types";
+import { WorkProps } from '../types';
 
 export const works: Array<WorkProps> = [
   {
-    name: "Time Series Analysis",
+    name: 'iTunes',
     ingredients: [
-      { skill: "Python", siIcon: "SiPython" },
-      { skill: "NumPy", siIcon: "SiNumpy" },
-      { skill: "pandas", siIcon: "SiPandas" },
+      { skill: 'React Native', siIcon: 'SiReact' },
+      { skill: 'Expo', siIcon: 'SiExpo' },
+      { skill: 'TypeScrip', siIcon: 'SiTypescript' },
     ],
-    description: `🏢⏰🌳 Weather forecast analysis`,
-    imgSrc: "/assets/works/tsa/thumbnail.png",
-    workUrl: "/assets/works/tsa/index.html",
-    githubUrl: "https://github.com/pjnalls/global-bmi",
+    description: `🍎🎵🎧 an iTunes Clone`,
+    imgSrc: '/assets/works/itunes/favicon.ico',
+    workUrl: '/assets/works/itunes/index.html',
+    githubUrl: 'https://github.com/pjnalls/itunes/',
   },
   {
-    name: "Supermaterial",
+    name: 'Supermaterial',
     ingredients: [
-      { skill: "React", siIcon: "SiReact" },
-      { skill: "TypeScript", siIcon: "SiTypescript" },
-      { skill: "Storybook", siIcon: "SiStorybook" },
+      { skill: 'React', siIcon: 'SiReact' },
+      { skill: 'TypeScript', siIcon: 'SiTypescript' },
+      { skill: 'Storybook', siIcon: 'SiStorybook' },
     ],
     description: '⚡🦸🦹 "Superextended" component library',
-    imgSrc: "/assets/works/supermaterial/logo.svg",
-    workUrl: "/assets/works/supermaterial/index.html",
-    githubUrl: "https://github.com/pjnalls/Supermaterial",
+    imgSrc: '/assets/works/supermaterial/logo.svg',
+    workUrl: '/assets/works/supermaterial/index.html',
+    githubUrl: 'https://github.com/pjnalls/Supermaterial',
   },
   {
-    name: "Digital Rain",
+    name: 'Digital Rain',
     ingredients: [
-      { skill: "Sass", siIcon: "SiSass" },
-      { skill: "JavaScript", siIcon: "SiJavascript" },
+      { skill: 'Sass', siIcon: 'SiSass' },
+      { skill: 'JavaScript', siIcon: 'SiJavascript' },
       {
-        skill: "Animation",
-        faIcon: "FaFilm",
+        skill: 'Animation',
+        faIcon: 'FaFilm',
       },
     ],
-    description: "🧑‍🎤🧮☔️ Emerald-colored computational rain",
-    imgSrc: "/assets/works/digirain/assets/01-2upQI7vH.png",
-    workUrl: "/assets/works/digirain/index.html",
-    githubUrl: "https://github.com/pjnalls/digital-rains",
+    description: '🧑‍🎤🧮☔️ Emerald-colored computational rain',
+    imgSrc: '/assets/works/digirain/assets/01-2upQI7vH.png',
+    workUrl: '/assets/works/digirain/index.html',
+    githubUrl: 'https://github.com/pjnalls/digital-rains/',
   },
 ];
