@@ -27,6 +27,7 @@ function Showcase() {
                   description,
                   imgSrc,
                   workUrl,
+                  url,
                   githubUrl,
                   style: {
                     height: "fit-content",

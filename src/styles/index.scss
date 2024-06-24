@@ -51,8 +51,7 @@ span {
 .app {
   @include app.styled--default;
 }
-.avatar,
-.work {
+.avatar {
   @include avatar.styled;
 }
 .work,

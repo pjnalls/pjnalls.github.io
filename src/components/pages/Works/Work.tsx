@@ -7,11 +7,13 @@ function Work({
   description,
   ingredients,
   imgSrc,
+  workUrl,
+  url,
   name,
   style,
 }: WorkProps): JSX.Element {
   return (
-    <Card className="work" p={8} style={style}>
+    <Card className={`${workUrl === url ? 'active-work' : 'work'}`} p={8} style={style}>
       <Stack gap={0} style={{ borderRadius: '4px' }}>
         <Center>
           <Image maw={40} src={imgSrc} />

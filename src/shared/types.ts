@@ -29,6 +29,7 @@ export type WorkProps = {
   ingredients: SkillProps[];
   style?: MantineStyleProp;
   workUrl: string;
+  url?: string;
 };
 export type CertProps = {
   alt: string;

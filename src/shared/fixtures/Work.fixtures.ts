@@ -6,7 +6,7 @@ export const works: Array<WorkProps> = [
     ingredients: [
       { skill: 'React Native', siIcon: 'SiReact' },
       { skill: 'Expo', siIcon: 'SiExpo' },
-      { skill: 'TypeScrip', siIcon: 'SiTypescript' },
+      { skill: 'TypeScript', siIcon: 'SiTypescript' },
     ],
     description: `🍎🎵🎧 an iTunes Clone`,
     imgSrc: '/assets/works/itunes/favicon.ico',
@@ -29,7 +29,7 @@ export const works: Array<WorkProps> = [
     name: 'Digital Rain',
     ingredients: [
       { skill: 'Sass', siIcon: 'SiSass' },
-      { skill: 'JavaScript', siIcon: 'SiJavascript' },
+      { skill: 'TypeScript', siIcon: 'SiTypescript' },
       {
         skill: 'Animation',
         faIcon: 'FaFilm',

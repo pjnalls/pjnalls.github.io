@@ -49,7 +49,7 @@ function Resume() {
                 Preston Nalls
               </Title>
               <Title order={2} fw={300} fz={10} lts={-0.2}>
-                Senior Software Engineer
+                React Native Developer
               </Title>
             </Grid.Col>
             <Grid.Col

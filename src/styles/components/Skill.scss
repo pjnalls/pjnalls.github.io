@@ -1,3 +1,5 @@
+@use '../partials/colors';
+
 [data-star] {
   text-align: left;
   font-style: normal;
@@ -7,7 +9,7 @@
 }
 [data-star]::before {
   display: block;
-  content: "★★★★★";
+  content: '★★★★★';
   color: #eee;
 }
 [data-star]::after {
@@ -15,7 +17,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  content: "★★★★★";
+  content: '★★★★★';
   width: 0;
   color: #e3ae00;
   overflow: hidden;
@@ -23,7 +25,26 @@
 }
 
 @for $i from 0 through 50 {
-  [data-star^="#{calc($i / 10)}"]::after {
+  [data-star^='#{calc($i / 10)}']::after {
     width: $i * 2%;
   }
+}
+
+.work {
+  border-radius: 50%;
+  height: auto;
+  transition: filter 0.3s ease, opacity 0.3ms ease-out;
+  &:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 2em colors.$filter-blue);
+    transform: scale(0.96);
+    opacity: 0.8 !important;
+  }
+}
+
+.active-work {
+  cursor: pointer;
+  filter: drop-shadow(0 0 2em colors.$filter-blue);
+  transform: scale(0.96);
+  opacity: 0.8 !important;
 }
