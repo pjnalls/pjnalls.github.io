@@ -19,9 +19,14 @@ export const designSkills: Array<SkillProps> = [
 ];
 export const devSkills: Array<SkillProps> = [
   {
+    skill: 'React Native',
+    siIcon: 'SiReact',
+    stars: 4.7,
+  },
+  {
     skill: 'React',
     faIcon: 'FaReact',
-    stars: 4.5,
+    stars: 4.8,
   },
   {
     skill: 'TypeScript',
@@ -39,29 +44,24 @@ export const devSkills: Array<SkillProps> = [
     stars: 4.6,
   },
   {
-    skill: 'C#',
-    siIcon: 'SiCsharp',
+    skill: 'Tailwind CSS',
+    siIcon: 'SiTailwindcss',
     stars: 4.6,
   },
   {
-    skill: '.NET',
-    siIcon: 'SiDotnet',
-    stars: 4.5,
+    skill: 'Expo',
+    siIcon: 'SiExpo',
+    stars: 4.8,
   },
   {
-    skill: 'MSSQL',
-    siIcon: 'SiMicrosoftsqlserver',
+    skill: 'ES6+ JavaScript',
+    siIcon: 'SiJavascript',
     stars: 4.5,
   },
   {
     skill: 'Node.js',
     faIcon: 'FaNodeJs',
-    stars: 4.2,
-  },
-  {
-    skill: 'React Native',
-    siIcon: 'SiReact',
-    stars: 4.3,
+    stars: 4.6,
   },
   {
     skill: 'Vite',
