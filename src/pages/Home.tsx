@@ -44,11 +44,9 @@ function Home() {
           <Text fw={300} lts={-0.4} size="xl">
             🧬🧑‍💻🔬 with Experience in
             <br />
-            iOS, Android, Web, 
-            <br/>
-            .NET, Angular, React & 
+            React, React Native, Angular, iOS, 
             <br />
-            React Native Development 🍎🤖⚛️
+            Android & Web Development 🍎🤖⚛️
             <br />
           </Text>
           <br />

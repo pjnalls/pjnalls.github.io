@@ -22,12 +22,12 @@ function About() {
           Welcome to my portfolio website!
           <br />
           <br />
-          👷 I create, enhance, and maintain React, Angular, .NET, and React
+          👷 I create, enhance, and maintain React, Angular, and React
           Native web and mobile apps and services where I work, and I like
           listening to a lot of video game music, watching video game speedruns,
           and being in yoga in my free time.
           <br />
-          I primarily write code in TypeScript and C#, am currently sharpening
+          I primarily write code in TypeScript, am currently sharpening
           my React Native skills, and can read in multiple natural languages.
           <br />
           <br />

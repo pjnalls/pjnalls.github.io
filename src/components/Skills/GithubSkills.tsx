@@ -2,10 +2,11 @@ export default function GithubSkills() {
   return (
     <>
       <div style={{ margin: '0 auto' }}>
-        <img src="assets/logos/React.png" width="160px" />
-        <img src="assets/logos/TypeScript.png" width="160px" />
-        <img src="assets/logos/Tailwindcss.png" width="160px" />
-        <img src="assets/logos/Node.js.png" width="160px" />
+        <img src="assets/logos/React.png" width="128px" />
+        <img src="assets/logos/TypeScript.png" width="128px" />
+        <img src="assets/logos/Tailwindcss.png" width="128px" />
+        <img src="assets/logos/Node.js.png" width="128px" />
+        <img src="assets/logos/Figma.png" width="128px" />
         <p>
           <a
             className="anchor-text"
@@ -34,10 +35,6 @@ export default function GithubSkills() {
         <img
           src="https://img.shields.io/badge/TypeScript-203f58?logo=typescript&logoColor=209aec"
           alt="Primary Programming Language 2"
-        />{' '}
-        <img
-          src="https://img.shields.io/badge/C--Sharp-473065?logo=cSharp&logoColor=9780e5"
-          alt="Primary Programming Language 1"
         />{' '}
       </div>
 
@@ -103,10 +100,6 @@ export default function GithubSkills() {
           src="https://img.shields.io/badge/Vite-282080?logo=vite&logoColor=a355fe"
           alt="Frontend Tool 12"
         />{' '}
-        <img
-          src="https://img.shields.io/badge/.NET-372065?logo=dotnet&logoColor=9780e5"
-          alt="Frontend Tool 13"
-        />{' '}
         <br />
         <br />
         <img
@@ -117,10 +110,6 @@ export default function GithubSkills() {
           src="https://img.shields.io/badge/Markdown-40434a?logo=markdown&logoColor=fff"
           alt="Frontend Tool 14"
         />{' '}
-        <img
-          src="https://img.shields.io/badge/Microsoft_SQL_Server-40434a?logo=microsoftsqlserver&logoColor=fff"
-          alt="Frontend Tool 15"
-        />
       </div>
 
       <br />
