@@ -6,14 +6,14 @@ function Languages() {
   useDocumentTitle("Languages | Preston's Portfolio");
   return (
     <motion.main
-      key="languages"
+      key='languages'
       initial={{ marginTop: -120, opacity: 0, scale: 0.96 }}
       animate={{ marginTop: 0, opacity: 1, scale: 1 }}
       exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
     >
       <Container
-        className="p-lg"
+        className='p-lg'
         m={0}
         px={12}
         size={'sm'}
@@ -21,16 +21,24 @@ function Languages() {
         w={'calc(100vw - 24px)'}
         maw={480}
       >
-        <Title fw={500} order={2} ta={'left'} my={'lg'}>
+        <Title
+          fw={500}
+          order={2}
+          ta={'left'}
+          my={'lg'}
+        >
           🔤 Languages Ordered by <br />
           Least-to-Greatest Proficiencies
         </Title>
         <hr />
         <br />
         <Accordion defaultValue={'lang-en'}>
-          <Accordion.Item key={'lang-zh'} value={'lang-zh'}>
-            <Accordion.Control>🇭🇰 Cantonese</Accordion.Control>
-            <Accordion.Panel lang="zh">
+          <Accordion.Item
+            key={'lang-zh'}
+            value={'lang-zh'}
+          >
+            <Accordion.Control>Cantonese</Accordion.Control>
+            <Accordion.Panel lang='zh'>
               大家好! 我叫譜詹頓，還是只叫詹詹。
               <br />
               我會傾偈用徜徉同繁涓中文，
@@ -46,9 +54,12 @@ function Languages() {
               期待同你傾偈！
             </Accordion.Panel>
           </Accordion.Item>
-          <Accordion.Item key={'lang-ko'} value={'lang-ko'}>
-            <Accordion.Control>🇰🇷 Korean</Accordion.Control>
-            <Accordion.Panel lang="ko">
+          <Accordion.Item
+            key={'lang-ko'}
+            value={'lang-ko'}
+          >
+            <Accordion.Control>Korean</Accordion.Control>
+            <Accordion.Panel lang='ko'>
               여러분 안녕하세요, 처음 뵙겠습니다!
               <br />
               프레스턴이라고 합니다.
@@ -61,9 +72,12 @@ function Languages() {
               <br />잘 부탁드립니다 🙇
             </Accordion.Panel>
           </Accordion.Item>
-          <Accordion.Item key={'lang-es'} value={'lang-es'}>
-            <Accordion.Control>🇪🇸 Spanish</Accordion.Control>
-            <Accordion.Panel lang="es">
+          <Accordion.Item
+            key={'lang-es'}
+            value={'lang-es'}
+          >
+            <Accordion.Control>Spanish</Accordion.Control>
+            <Accordion.Panel lang='es'>
               ¡Hola a todos!
               <br />
               Soy Preston de Estados Unidos.
@@ -74,11 +88,12 @@ function Languages() {
               <br />
             </Accordion.Panel>
           </Accordion.Item>
-          <Accordion.Item key={'lang-zh-Hans'} value={'lang-zh-Hans'}>
-            <Accordion.Control>
-              🇨🇳 Mandarin &#40;Simplified&#41;
-            </Accordion.Control>
-            <Accordion.Panel lang="zh-Hans">
+          <Accordion.Item
+            key={'lang-zh-Hans'}
+            value={'lang-zh-Hans'}
+          >
+            <Accordion.Control>Mandarin &#40;Simplified&#41;</Accordion.Control>
+            <Accordion.Panel lang='zh-Hans'>
               你好！👋 我叫谱詹顿，朋友都叫我詹詹。
               <br />
               我学了一年左右中文。
@@ -98,11 +113,14 @@ function Languages() {
               <br />
             </Accordion.Panel>
           </Accordion.Item>
-          <Accordion.Item key={'lang-zh-Hant'} value={'lang-zh-Hant'}>
+          <Accordion.Item
+            key={'lang-zh-Hant'}
+            value={'lang-zh-Hant'}
+          >
             <Accordion.Control>
-              🇹🇼 Mandarin &#40;Traditional&#41;
+              Mandarin &#40;Traditional&#41;
             </Accordion.Control>
-            <Accordion.Panel lang="zh-Hant">
+            <Accordion.Panel lang='zh-Hant'>
               你好！ 👋 我叫譜詹頓，朋友都叫我詹詹。
               <br />
               我學了一年左右中文。
@@ -122,9 +140,12 @@ function Languages() {
             </Accordion.Panel>
           </Accordion.Item>
 
-          <Accordion.Item key={'lang-ja'} value={'lang-ja'}>
-            <Accordion.Control>🇯🇵 Japanese</Accordion.Control>
-            <Accordion.Panel lang="ja">
+          <Accordion.Item
+            key={'lang-ja'}
+            value={'lang-ja'}
+          >
+            <Accordion.Control>Japanese</Accordion.Control>
+            <Accordion.Panel lang='ja'>
               どうもこんにちは！
               <br />
               アメリカ生まれ育ち、今も住んでおります、
@@ -141,9 +162,12 @@ function Languages() {
               <br />
             </Accordion.Panel>
           </Accordion.Item>
-          <Accordion.Item key={'lang-en'} value={'lang-en'}>
-            <Accordion.Control>🇺🇸 English</Accordion.Control>
-            <Accordion.Panel lang="en">
+          <Accordion.Item
+            key={'lang-en'}
+            value={'lang-en'}
+          >
+            <Accordion.Control>English</Accordion.Control>
+            <Accordion.Panel lang='en'>
               Hi! I'm Preston 👋
               <br />
               <br />
