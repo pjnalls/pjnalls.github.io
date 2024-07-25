@@ -1,11 +1,11 @@
-@use "partials/anchor";
-@use "partials/app";
-@use "partials/avatar";
-@use "partials/colors";
-@use "partials/footer";
-@use "partials/promo";
+@use 'partials/anchor';
+@use 'partials/app';
+@use 'partials/avatar';
+@use 'partials/colors';
+@use 'partials/footer';
+@use 'partials/promo';
 
-@import "./partials/paragraph";
+@import './partials/paragraph';
 
 body {
   background-color: colors.$dark-1 !important;
@@ -39,7 +39,8 @@ span {
   color: colors.$light-gold;
 }
 
-.active, .mantine-Accordion-label {
+.active,
+.mantine-Accordion-label {
   color: colors.$light-1 !important;
   &:hover {
     color: colors.$light-2 !important;
@@ -76,8 +77,8 @@ span {
 }
 @media (max-width: 768px) {
   nav {
-    background: linear-gradient(to bottom, #190444e6, #032f3fbf) !important;
-    box-shadow: 0 0 20px linear-gradient(to bottom, #190444e6, #032f3fbf) !important;
+    background: linear-gradient(to bottom, #190758e6, #490758bf) !important;
+    box-shadow: 0 0 20px linear-gradient(to bottom, #190758e6, #490758bf) !important;
   }
 }
 
@@ -95,62 +96,4 @@ span {
 }
 .mantine-Accordion-control:hover {
   background-color: #101c2f90;
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: colors.$light-1 !important;
-  }
-  *,
-  .promo {
-    color: colors.$dark-1;
-  }
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid colors.$dark-1;
-    margin: 1em 0;
-    padding: 0;
-  }
-  span {
-    color: colors.$amber-gold;
-  }
-  .active, .mantine-Accordion-label {
-    color: colors.$dark-1 !important;
-    &:hover {
-      color: colors.$dark-2 !important;
-    }
-  }
-  .anchor-text {
-    @include anchor.styled-text--light;
-  }
-  .app {
-    @include app.styled--light;
-  }
-  .footer {
-    @include footer.styled--light;
-  }
-
-  .resume,
-  .work,
-  .cert {
-    background-color: #f9fcff90 !important;
-  }
-  .onelove {
-    color: colors.$amber-gold;
-  }
-  @media (max-width: 768px) {
-    nav {
-      background: linear-gradient(to bottom, #e9dfffe9, #effb) !important;
-      box-shadow: 0 0 20px linear-gradient(to bottom, #e9dfffe9 #effb) !important;
-    }
-  }
-  
-  .mantine-Accordion-control {
-    transition: all 0.3s ease;
-  }
-  .mantine-Accordion-control:hover {
-    background-color: #effb;
-  }
 }
