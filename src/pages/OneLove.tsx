@@ -11,6 +11,7 @@ function OneLove() {
       animate={{ marginTop: 0, opacity: 1, scale: 1 }}
       exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
+      style={{ zIndex: 2 }}
     >
       <Container
         className='p-lg'

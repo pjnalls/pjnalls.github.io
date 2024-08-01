@@ -11,6 +11,7 @@ function Languages() {
       animate={{ marginTop: 0, opacity: 1, scale: 1 }}
       exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
+      style={{ zIndex: 2 }}
     >
       <Container
         className='p-lg'
@@ -146,17 +147,15 @@ function Languages() {
           >
             <Accordion.Control>Japanese</Accordion.Control>
             <Accordion.Panel lang='ja'>
-              どうもこんにちは！
-              <br />
-              アメリカ生まれ育ち、今も住んでおります、
+              どうも。初めまして。
               <br />
               プレストンと申します。
               <br />
-              ここではソフトウエアエンジニアとして仕事しております。
+              アメリカ生まれ育ち、今も住んでいます。
               <br />
-              時間がある時、のんびりと外国語を学んだり、ヨガをしたりします。
+              ウェブとスマホのアプリを7年間以上作っています。
               <br />
-              一緒に外国語を学ぶこと楽しみにしております！
+              時間がある時、音楽を聴いたり、ヨガをしたりします。
               <br />
               よろしくお願いします🙇
               <br />

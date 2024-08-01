@@ -13,6 +13,7 @@ function Home() {
       animate={{ marginTop: 0, opacity: 1, scale: 1 }}
       exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
+      style={{ zIndex: 2 }}
     >
       <Card
         className='home'
@@ -67,21 +68,6 @@ function Home() {
             Android & Web Development 🍎🤖⚛️
             <br />
           </Text>
-          <br />
-          <Text
-            fw={400}
-            size='xl'
-          >
-            ❤️{' '}
-            <NavLink
-              className='onelove'
-              to={`/onelove`}
-              style={{ fontWeight: 600, textAlign: 'left' }}
-            >
-              #OneLove
-            </NavLink>{' '}
-            🌏🌍🌎
-          </Text>
         </Stack>
         <Text lts={-0.2}>
           <NavLink
@@ -89,9 +75,8 @@ function Home() {
             style={{ fontWeight: 600, textAlign: 'left' }}
             to={'/projects'}
           >
-            View my projects here
+            View my projects here.
           </NavLink>
-          .
         </Text>
       </Card>
     </motion.main>

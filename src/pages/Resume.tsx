@@ -16,20 +16,29 @@ function Resume() {
   useDocumentTitle("Resume | Preston's Portfolio");
   return (
     <motion.main
-      key="resume"
+      key='resume'
       initial={{ marginTop: -120, opacity: 0, scale: 0.96 }}
       animate={{ marginTop: 0, opacity: 1, scale: 1 }}
       exit={{ marginTop: 120, opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
+      style={{ zIndex: 2 }}
     >
-      <Container 
-        px={0} maw={420} size={'xs'}>
-        <Title fw={500} order={2} ta={'left'} my={'lg'}>
+      <Container
+        px={0}
+        maw={420}
+        size={'xs'}
+      >
+        <Title
+          fw={500}
+          order={2}
+          ta={'left'}
+          my={'lg'}
+        >
           📄 Résumé
         </Title>
         <hr />
         <Card
-          className="resume"
+          className='resume'
           h={'calc(100dvh - 102px)'}
           mah={620}
           my={'lg'}
@@ -39,16 +48,25 @@ function Resume() {
             align={'center'}
             columns={12}
             h={'calc(100dvh - 102px)'}
-            justify="space-between"
-            overflow="hidden"
+            justify='space-between'
+            overflow='hidden'
             style={{ transition: 'all 3s ease', overflowY: 'auto' }}
             ta={'left'}
           >
             <Grid.Col span={7}>
-              <Title fw={600} fz={28} order={1}>
+              <Title
+                fw={600}
+                fz={28}
+                order={1}
+              >
                 Preston Nalls
               </Title>
-              <Title order={2} fw={300} fz={10} lts={-0.2}>
+              <Title
+                order={2}
+                fw={300}
+                fz={10}
+                lts={-0.2}
+              >
                 React Native Developer
               </Title>
             </Grid.Col>
@@ -58,15 +76,34 @@ function Resume() {
                 textAlign: 'right',
               }}
             >
-              <Stack gap={0} mt={12}>
-                <Flex align={'center'} gap={4} justify={'end'}>
-                  <Text fz={10} fw={300} lts={-0.6}>
+              <Stack
+                gap={0}
+                mt={12}
+              >
+                <Flex
+                  align={'center'}
+                  gap={4}
+                  justify={'end'}
+                >
+                  <Text
+                    fz={10}
+                    fw={300}
+                    lts={-0.6}
+                  >
                     pjnalls.github.io
                   </Text>
                   <FaHome style={{ fontSize: '12px' }} />
                 </Flex>
-                <Flex align={'center'} gap={4} justify={'end'}>
-                  <Text fz={10} fw={300} lts={-0.6}>
+                <Flex
+                  align={'center'}
+                  gap={4}
+                  justify={'end'}
+                >
+                  <Text
+                    fz={10}
+                    fw={300}
+                    lts={-0.6}
+                  >
                     www.github.com/pjnalls
                   </Text>
                   <FaGithub style={{ fontSize: '12px' }} />
@@ -74,7 +111,10 @@ function Resume() {
               </Stack>
             </Grid.Col>
             <Grid.Col span={7}>
-              <Title order={2} fz={16}>
+              <Title
+                order={2}
+                fz={16}
+              >
                 Experience
               </Title>
               <Stack gap={0}>
@@ -87,13 +127,29 @@ function Resume() {
               </Stack>
             </Grid.Col>
             <Grid.Col span={5}>
-              <Title order={2} fz={16}>
+              <Title
+                order={2}
+                fz={16}
+              >
                 Skills
               </Title>
-              <Text fs={'italic'} fw={300} fz={10} lts={-0.4} my={0} mt={0}>
+              <Text
+                fs={'italic'}
+                fw={300}
+                fz={10}
+                lts={-0.4}
+                my={0}
+                mt={0}
+              >
                 Note: Skills are all self-accessed.
               </Text>
-              <Title lts={-0.4} order={3} fw={500} fz={12} mt={4}>
+              <Title
+                lts={-0.4}
+                order={3}
+                fw={500}
+                fz={12}
+                mt={4}
+              >
                 Frontend Engineering
               </Title>
               <Stack gap={0}>
@@ -103,7 +159,12 @@ function Resume() {
                     {...{ faIcon, id, siIcon, skill, stars }}
                   />
                 ))}
-                <Title order={3} fw={500} fz={12} mt={12}>
+                <Title
+                  order={3}
+                  fw={500}
+                  fz={12}
+                  mt={12}
+                >
                   UI/UX Design
                 </Title>
                 {designSkills.map(({ faIcon, siIcon, skill, stars }, id) => (
@@ -115,7 +176,10 @@ function Resume() {
               </Stack>
             </Grid.Col>
             <Grid.Col span={7}>
-              <Title order={2} fz={16}>
+              <Title
+                order={2}
+                fz={16}
+              >
                 Education
               </Title>
               <Stack gap={0}>
@@ -127,8 +191,17 @@ function Resume() {
                 ))}
               </Stack>
             </Grid.Col>
-            <Grid.Col m={0} py={0} span={5}>
-              <Title order={3} fw={500} fz={12} my={0}>
+            <Grid.Col
+              m={0}
+              py={0}
+              span={5}
+            >
+              <Title
+                order={3}
+                fw={500}
+                fz={12}
+                my={0}
+              >
                 DevOps, CI/CD
               </Title>
               {prodSkills.map(({ faIcon, siIcon, skill, stars }, id) => (

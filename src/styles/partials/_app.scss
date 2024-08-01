@@ -1,10 +1,8 @@
-@use "colors";
+@use 'colors';
 
 @mixin app($gradient-start, $gradient-end) {
   background-attachment: fixed;
   background-blend-mode: darken, soft-light;
-  background-image: url("/assets/stars.avif"),
-    linear-gradient($gradient-start, $gradient-end);
   background-position: center;
   background-size: cover;
   color-scheme: light dark;
@@ -15,8 +13,11 @@
   padding: 12px 0;
   text-align: center;
   text-rendering: optimizeLegibility;
-  transition: background-image 0.5s ease, background-color 0.5s ease,
-    background-blend-mode 0.5s ease, color 0.5s ease-out;
+  transition:
+    background-image 0.5s ease,
+    background-color 0.5s ease,
+    background-blend-mode 0.5s ease,
+    color 0.5s ease-out;
   width: 100%;
 }
 
