@@ -1,4 +1,4 @@
-@use "colors";
+@use 'colors';
 
 @mixin anchor-text($color, $color-onhover, $shadow-onhover) {
   color: $color;
@@ -25,6 +25,6 @@
   @include anchor-text(
     colors.$violet-light-1,
     colors.$violet-light-2,
-    2px 2px 2px #b9cf
+    0 0 0 #b9cf
   );
 }

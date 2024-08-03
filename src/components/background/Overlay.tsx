@@ -1,13 +1,12 @@
 export default function Overlay() {
   return (
     <div
+      className='overlay'
       style={{
         color: 'transparent',
         width: '100vw',
         height: '100vh',
-        backgroundColor: '#190758',
         position: 'fixed',
-        opacity: 0.667,
         zIndex: 1,
       }}
     >

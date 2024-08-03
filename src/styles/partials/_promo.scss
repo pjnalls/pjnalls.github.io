@@ -1,7 +1,12 @@
-@use "colors";
+@use 'colors';
 
 @mixin styled {
   border: none;
   background-color: transparent;
   color: colors.$faint-gold;
+}
+@mixin styled--light {
+  border: none;
+  background-color: transparent;
+  color: colors.$dark-gold;
 }
