@@ -47,9 +47,8 @@ function Home() {
           fw={400}
           order={2}
           fz={20}
-          lts={2}
         >
-          React Native Developer
+          Frontend Mobile and Web Developer
         </Title>
         <Stack
           className='promo'
@@ -63,9 +62,9 @@ function Home() {
           >
             🧬🧑‍💻🔬 with Experience in
             <br />
-            React, React Native, Angular, iOS,
+            React, React Native, and TypeScript
             <br />
-            Android & Web Development 🍎🤖⚛️
+            Development 🍎🤖⚛️
             <br />
           </Text>
         </Stack>
