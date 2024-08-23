@@ -1,24 +1,33 @@
-import { Flex, Stack } from "@mantine/core";
-import { works } from "../../../shared/index.fixtures";
-import Work from "./Work";
-import { useState } from "react";
+import { Button, Flex, Image, Stack, Text, Title } from '@mantine/core';
+import { works } from '../../../shared/index.fixtures';
+import Work from './Work';
+import { useState } from 'react';
+import { IconArrowUp } from '@tabler/icons-react';
 
 function Showcase() {
-  const [url, setUrl] = useState(works[0].workUrl);
-  const handleWorkOnClick = (url: string) => {
-    setUrl(url);
+  const [url] = useState(works[0].workUrl);
+  const handleWorkOnClick = (hash: string) => {
+    location.hash = `#${hash}`;
   };
+
   return (
-    <Stack align="center">
-      <Flex gap={16} justify="center" wrap={"wrap"}>
+    <Stack align='center'>
+      <Flex
+        gap={16}
+        justify='center'
+        wrap={'wrap'}
+        mb={64}
+      >
         {works.map(
           (
             { name, ingredients, description, imgSrc, workUrl, githubUrl },
             index
           ) => (
-            <div 
+            <div
               key={`work-${index}`}
-              onClick={() => handleWorkOnClick(workUrl)}
+              onClick={() => {
+                handleWorkOnClick(name.toLowerCase());
+              }}
             >
               <Work
                 {...{
@@ -30,9 +39,9 @@ function Showcase() {
                   url,
                   githubUrl,
                   style: {
-                    height: "fit-content",
-                    width: "calc(33dvw - 24px)",
-                    maxWidth: "calc(240px - 12px)"
+                    height: 'fit-content',
+                    width: 'calc(33dvw - 24px)',
+                    maxWidth: 'calc(240px - 12px)',
                   },
                 }}
               />
@@ -40,18 +49,34 @@ function Showcase() {
           )
         )}
       </Flex>
-      <iframe
-        id="showcase"
-        loading="lazy"
-        title="Work Showcase"
-        src={url}
-        style={{
-          borderRadius: "8px",
-          height: "60vh",
-          width: "100%",
-          maxWidth: "768px",
-        }}
-      ></iframe>
+      {works.map(({ name, fullDescription, previewImgSrc }) => (
+        <div
+          style={{
+            height: '100vh',
+            alignContent: 'center',
+            justifyContent: 'center',
+          }}
+          id={name.toLowerCase()}
+        >
+          <Title order={2}>{name}</Title>
+          <Text>{fullDescription}</Text>
+          <br />
+          <Image
+            src={previewImgSrc}
+            style={{ maxWidth: 720 }}
+          />
+          <br />
+          <Button
+            style={{ backgroundColor: 'transparent' }}
+            onClick={() => {
+              handleWorkOnClick('');
+            }}
+          >
+            <IconArrowUp />
+            <Text>Scroll to Top</Text>
+          </Button>
+        </div>
+      ))}
     </Stack>
   );
 }

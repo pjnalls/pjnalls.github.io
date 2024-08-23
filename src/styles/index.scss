@@ -7,6 +7,10 @@
 
 @import './partials/paragraph';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: colors.$dark-1 !important;
   overflow-x: hidden;

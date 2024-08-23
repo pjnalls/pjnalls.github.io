@@ -1,6 +1,6 @@
-import { MantineStyleProp } from "@mantine/core";
-import * as FaReactIcons from "react-icons/fa";
-import * as SiReactIcons from "react-icons/si";
+import { MantineStyleProp } from '@mantine/core';
+import * as FaReactIcons from 'react-icons/fa';
+import * as SiReactIcons from 'react-icons/si';
 
 export type NavLinkProps = { label: string; route: string; href: string };
 export type ProfessionProps = {
@@ -23,12 +23,14 @@ export type SkillProps = {
 };
 export type WorkProps = {
   description: string;
+  fullDescription?: string;
   name: string;
   githubUrl: string;
   imgSrc: string;
+  previewImgSrc?: string;
   ingredients: SkillProps[];
   style?: MantineStyleProp;
-  workUrl: string;
+  workUrl?: string;
   url?: string;
 };
 export type CertProps = {
@@ -38,9 +40,9 @@ export type CertProps = {
   imgUrl: string;
   issuer: string;
   certUrl?: string;
-}
+};
 export type LanguageProps = {
   languageCode: string;
   languageLabel: string;
   selfIntro: string;
-}
+};
