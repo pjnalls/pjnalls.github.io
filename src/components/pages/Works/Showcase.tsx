@@ -53,9 +53,9 @@ function Showcase() {
         <div
           key={name}
           style={{
-            height: '100vh',
             alignContent: 'center',
             justifyContent: 'center',
+            marginBottom: 240,
           }}
           id={name.toLowerCase()}
         >
