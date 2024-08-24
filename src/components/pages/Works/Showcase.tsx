@@ -1,4 +1,4 @@
-import { Button, Flex, Image, Stack, Text, Title } from '@mantine/core';
+import { Anchor, Button, Flex, Image, Stack, Text, Title } from '@mantine/core';
 import { works } from '../../../shared/index.fixtures';
 import Work from './Work';
 import { useState } from 'react';
@@ -49,8 +49,9 @@ function Showcase() {
           )
         )}
       </Flex>
-      {works.map(({ name, fullDescription, previewImgSrc }) => (
+      {works.map(({ name, fullDescription, previewImgSrc, githubUrl }) => (
         <div
+          key={name}
           style={{
             height: '100vh',
             alignContent: 'center',
@@ -66,10 +67,21 @@ function Showcase() {
             style={{ maxWidth: 720 }}
           />
           <br />
+          <Text>Access the GitHub repo for this project here:</Text>
+          <Text>
+            <Anchor
+              href={githubUrl}
+              className='anchor-text'
+            >
+              {githubUrl}
+            </Anchor>
+          </Text>
+          <br />
           <Button
+            className='scroll-to-top'
             style={{ backgroundColor: 'transparent' }}
             onClick={() => {
-              handleWorkOnClick('');
+              handleWorkOnClick('my-projects');
             }}
           >
             <IconArrowUp />

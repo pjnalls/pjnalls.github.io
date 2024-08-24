@@ -16,6 +16,7 @@ function Works() {
       style={{ zIndex: 2 }}
     >
       <Stack
+        id={'my-projects'}
         className='works'
         gap={0}
         px={24}

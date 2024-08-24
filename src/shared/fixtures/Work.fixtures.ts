@@ -40,6 +40,6 @@ export const works: Array<WorkProps> = [
       '⚡🦸🦹 "Superextended" Material UI (MUI) component library',
     imgSrc: '/assets/works/supermaterial/logo.svg',
     previewImgSrc: '/assets/works/supermaterial/preview.avif',
-    githubUrl: 'https://github.com/pjnalls/Supermaterial',
+    githubUrl: 'https://github.com/pjnalls/Supermaterial/',
   },
 ];

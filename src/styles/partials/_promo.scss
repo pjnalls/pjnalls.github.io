@@ -3,10 +3,10 @@
 @mixin styled {
   border: none;
   background-color: transparent;
-  color: colors.$faint-gold;
+  color: colors.$faint-rose;
 }
 @mixin styled--light {
   border: none;
   background-color: transparent;
-  color: colors.$dark-gold;
+  color: colors.$dark-rose;
 }
