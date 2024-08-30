@@ -57,6 +57,7 @@ function Showcase() {
             justifyContent: 'center',
             paddingTop: 24,
             marginBottom: 200,
+            maxWidth: 720,
           }}
           id={name.toLowerCase()}
         >

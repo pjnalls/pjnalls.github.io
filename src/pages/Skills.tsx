@@ -20,6 +20,7 @@ function Skills() {
         style={{ margin: '0 auto' }}
         maw={'768px'}
         px={24}
+        mt={80}
       >
         <Title
           fw={500}

@@ -17,66 +17,72 @@ function Home() {
     >
       <Card
         className='home'
-        py={'calc(50dvh - 348px)'}
-        w={'calc(100dvw - 24px)'}
+        style={{
+          height: '100vh',
+        }}
       >
-        <Center>
-          <NavLink
-            className='anchor-avatar'
-            to={'/about'}
-            style={{ paddingBottom: 12, paddingTop: 12, width: 120 }}
-          >
-            <Image
-              src={avatar}
-              className='avatar'
-              alt="Preston's photo"
-              width={'120px'}
-              height={'120px'}
-            />
-          </NavLink>
-        </Center>
-        <Title
-          fw={400}
-          fz={48}
-          lts={0.6}
-          order={1}
-        >
-          Preston Nalls
-        </Title>
-        <Title
-          fw={400}
-          order={2}
-          fz={20}
-        >
-          Frontend Mobile and Web Developer
-        </Title>
         <Stack
-          className='promo'
           gap={0}
-          my={24}
+          style={{ margin: 'auto' }}
         >
-          <Text
-            fw={400}
-            lts={-0.4}
-            size='xl'
+          <Center>
+            <NavLink
+              className='anchor-avatar'
+              to={'/about'}
+              style={{ paddingBottom: 12, paddingTop: 12, width: 120 }}
+            >
+              <Image
+                src={avatar}
+                className='avatar'
+                alt="Preston's photo"
+                width={'120px'}
+                height={'120px'}
+              />
+            </NavLink>
+          </Center>
+          <Title
+            fw={500}
+            fz={48}
+            lts={0.6}
+            order={1}
+            my={12}
           >
-            🧬🧑‍💻🔬 with Experience in
-            <br />
-            React, React Native, and TypeScript
-            <br />
-            Development 🍎🤖⚛️
-            <br />
+            Preston Nalls
+          </Title>
+          <Title
+            fw={400}
+            order={2}
+            fz={20}
+          >
+            Frontend Mobile and Web Developer
+          </Title>
+          <Stack
+            className='promo'
+            gap={0}
+            mt={4}
+          >
+            <Text
+              fw={400}
+              fz={20}
+            >
+              React, React Native, TypeScript
+              <br />
+            </Text>
+          </Stack>
+          <Text
+            lts={-0.2}
+            mt={24}
+            fw={300}
+          >
+            <NavLink
+              className='anchor-text'
+              style={{ fontWeight: 400, textAlign: 'left' }}
+              to={'/projects'}
+            >
+              View my projects here.
+            </NavLink>
           </Text>
         </Stack>
-        <Text lts={-0.2}>
-          <NavLink
-            className='anchor-text'
-            style={{ fontWeight: 600, textAlign: 'left' }}
-            to={'/projects'}
-          >
-            View my projects here.
-          </NavLink>
-        </Text>
       </Card>
     </motion.main>
   );

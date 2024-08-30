@@ -28,7 +28,7 @@ function App() {
   return (
     <AppShell
       className='app'
-      header={{ height: 60 }}
+      header={{ height: 60, offset: false }}
       navbar={{
         width: 300,
         breakpoint: 'sm',
@@ -36,6 +36,7 @@ function App() {
       }}
       p={0}
       m={0}
+      style={{ position: 'fixed' }}
     >
       <Particles />
       {/* <OneLoveText /> */}
@@ -44,7 +45,10 @@ function App() {
       <AppShell.Header w={'100dvw'}>
         <Header {...{ mobileOpened, toggleMobile }} />
       </AppShell.Header>
-      <AppShell.Navbar p='lg'>
+      <AppShell.Navbar
+        p='lg'
+        mt={60}
+      >
         <Navbar {...{ handleActiveNavToggle }} />
         <Footer />
       </AppShell.Navbar>

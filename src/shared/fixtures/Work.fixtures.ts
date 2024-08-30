@@ -16,6 +16,20 @@ export const works: Array<WorkProps> = [
     githubUrl: 'https://github.com/pjnalls/ai-less-youtube/',
   },
   {
+    name: 'Habit AppLit',
+    ingredients: [
+      { skill: 'React Native', siIcon: 'SiReact' },
+      { skill: 'Expo', siIcon: 'SiExpo' },
+      { skill: 'TypeScript', siIcon: 'SiTypescript' },
+    ],
+    description: "📆🔥📈 a 'lit'tle habit tracker app",
+    fullDescription:
+      "📆🔥📈 a 'lit'tle habit tracker app for creation, tracking, and streak-visualization of habits for iOS, Android, and the Web",
+    imgSrc: '/assets/works/habit-applit/icon.png',
+    previewImgSrc: '/assets/works/habit-applit/preview.avif',
+    githubUrl: 'https://github.com/pjnalls/habit-applit/',
+  },
+  {
     name: 'iTunes',
     ingredients: [
       { skill: 'React Native', siIcon: 'SiReact' },
@@ -27,19 +41,5 @@ export const works: Array<WorkProps> = [
     imgSrc: '/assets/works/itunes/favicon.png',
     previewImgSrc: '/assets/works/itunes/preview.avif',
     githubUrl: 'https://github.com/pjnalls/itunes/',
-  },
-  {
-    name: 'Supermaterial',
-    ingredients: [
-      { skill: 'React', siIcon: 'SiReact' },
-      { skill: 'TypeScript', siIcon: 'SiTypescript' },
-      { skill: 'Storybook', siIcon: 'SiStorybook' },
-    ],
-    description: '⚡🦸🦹 "Superextended" component library',
-    fullDescription:
-      '⚡🦸🦹 "Superextended" Material UI (MUI) component library',
-    imgSrc: '/assets/works/supermaterial/logo.svg',
-    previewImgSrc: '/assets/works/supermaterial/preview.avif',
-    githubUrl: 'https://github.com/pjnalls/Supermaterial/',
   },
 ];

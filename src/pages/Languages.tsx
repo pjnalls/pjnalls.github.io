@@ -21,6 +21,7 @@ function Languages() {
         ta={'left'}
         w={'calc(100vw - 24px)'}
         maw={480}
+        mt={80}
       >
         <Title
           fw={500}

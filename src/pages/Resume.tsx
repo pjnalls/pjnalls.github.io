@@ -27,6 +27,7 @@ function Resume() {
         px={0}
         maw={420}
         size={'xs'}
+        mt={80}
       >
         <Title
           fw={500}
