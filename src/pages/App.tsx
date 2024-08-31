@@ -36,7 +36,6 @@ function App() {
       }}
       p={0}
       m={0}
-      style={{ position: 'fixed' }}
     >
       <Particles />
       {/* <OneLoveText /> */}
@@ -56,6 +55,7 @@ function App() {
         <Center
           style={{
             zIndex: 9,
+            overflow: 'auto',
           }}
         >
           <AnimatePresence mode='wait'>
