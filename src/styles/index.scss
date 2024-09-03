@@ -116,8 +116,15 @@ span {
 .mantine-Accordion-control {
   transition: all 0.3s ease;
 }
-.mantine-Accordion-control:hover {
+.mantine-Accordion-control:hover,
+.mantine-Card-root {
+  transition: all 0.3s ease;
   background-color: #101c2f90;
+}
+
+.mantine-Card-root:hover {
+  transform: scale(1.1);
+  background-color: #101c2fb0;
 }
 
 .overlay {
@@ -132,7 +139,14 @@ span {
   .scroll-to-top * {
     color: colors.$violet-light-1;
   }
-
+  .mantine-Card-root {
+    transition: all 0.3s ease;
+    background-color: #ffecfa90;
+  }
+  .mantine-Card-root:hover {
+    transform: scale(1.1);
+    background-color: #ffecfab0;
+  }
   .overlay {
     background-color: colors.$light-1;
     opacity: 0.88;
