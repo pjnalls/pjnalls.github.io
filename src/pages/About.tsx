@@ -36,11 +36,11 @@ function About() {
           Welcome to my portfolio website!
           <br />
           <br />
-          👷 I've worked on teams and as an individual contributor to
-          successfully deliver robust React Native applications, enhancing user
-          experiences across web and mobile platforms. My proficiency in React,
-          React Native, and TypeScript, coupled with my artistic background, has
-          positioned me uniquely in the tech industry.
+          👷 I have 7+ years of frontend software development experience and am
+          currently only accepting contracts for React Native and React
+          development and will continue to do so as I transition at this time
+          into a postgraduate researcher role as a doctoral candidate applicant
+          in behavioral, ecological, and quantitative economics.
           <br />
           <br />
           💼 Please feel free to look around while you're here.
