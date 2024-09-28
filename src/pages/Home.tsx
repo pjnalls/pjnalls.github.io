@@ -65,7 +65,7 @@ function Home() {
               fw={400}
               fz={20}
             >
-              React, React Native, TypeScript
+              React Native, React, TypeScript
               <br />
             </Text>
           </Stack>
