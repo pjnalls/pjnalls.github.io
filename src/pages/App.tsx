@@ -10,12 +10,12 @@ import About from './About';
 import Resume from './Resume';
 import Projects from './Projects';
 import PageNotFound from './404';
-import OneLove from './OneLove';
 import Skills from './Skills';
 import Languages from './Languages';
 import Earth from '@/src/components/background/Earth';
 import Particles from '@/src/components/background/Particles';
 import Overlay from '@/src/components/background/Overlay';
+import Contact from './Contact';
 
 function App() {
   const location = useLocation();
@@ -100,8 +100,8 @@ function App() {
                 element={<Projects />}
               />
               <Route
-                path='/onelove'
-                element={<OneLove />}
+                path='/contact'
+                element={<Contact />}
               />
               <Route
                 path='/*'

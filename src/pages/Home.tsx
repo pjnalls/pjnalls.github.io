@@ -52,9 +52,9 @@ function Home() {
           <Title
             fw={400}
             order={2}
-            fz={20}
+            fz={24}
           >
-            Frontend Mobile and Web Developer
+            React Native Engineer
           </Title>
           <Stack
             className='promo'
@@ -63,9 +63,9 @@ function Home() {
           >
             <Text
               fw={400}
-              fz={20}
+              fz={16}
             >
-              React Native, React, TypeScript
+              Trilingual | #OpenToStudy Quantum Neural Networks | Autodidact
               <br />
             </Text>
           </Stack>

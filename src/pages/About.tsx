@@ -42,6 +42,14 @@ function About() {
           a doctoral candidate applicant.
           <br />
           <br />
+          🦄 I consider myself a quite the unicorn as I'm interested to great
+          depths in all aspect of STEAM (science, technology, engineering, art,
+          and mathematics) such as currently and actively seeking to improve my
+          frontend mobile and web software development expertise in React
+          Native, understanding of quantum computers and neural networks, and my
+          second language Japanese and third language Mandarin.
+          <br />
+          <br />
           💼 Please feel free to look around while you're here.
           <br />
           Thank you for visting!
