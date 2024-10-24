@@ -51,9 +51,18 @@ export const certs: CertProps[] = [
   },
   {
     alt: '數位轉型趨勢-跨平台 APP DIY 實作課程',
-    name: 'Certificate of Completion',
-    description: '我重新學習了如何使用 Facebook 官方開發框架 React Native 。',
+    name: 'Course Certificate of Completion',
+    description: '我重新學習如何使用 Facebook 官方開發框架 React Native 了。',
     issuer: 'Udemy',
     imgUrl: '/assets/certifications/app-diy.avif',
+    certUrl: 'https://ude.my/UC-4f4116b8-0ac6-4da7-aa76-2455b1c06ebb/',
+  },
+  {
+    alt: '徹底學會 Python 從初學到進階',
+    name: 'Course Certificate of Completion',
+    description: '我從零開始學習Python，自行打造出一個小遊戲了。',
+    issuer: 'Udemy',
+    imgUrl: '/assets/certifications/python-starter.avif',
+    certUrl: 'https://www.ude.my/UC-86475c49-15da-4212-956c-eb2a9000f54f/',
   },
 ];
