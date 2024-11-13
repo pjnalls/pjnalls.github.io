@@ -37,17 +37,27 @@ function About() {
           <br />
           <br />
           👷 I have 7+ years of frontend software development experience and am
-          currently only accepting contracts for React Native and React
-          development and will continue to do so as I transition at this time as
-          a doctoral candidate applicant.
+          currently only accepting contracts for React Native development
+          opportunities but am open to a postgraduate degree program.
           <br />
           <br />
-          🦄 I consider myself a quite the unicorn as I'm interested to great
-          depths in all aspect of STEAM (science, technology, engineering, art,
-          and mathematics) such as currently and actively seeking to improve my
-          frontend mobile and web software development expertise in React
-          Native, understanding of quantum computers and neural networks, and my
-          second language Japanese and third language Mandarin.
+          ☯️ I'm interested to great depths in all aspects of STEAM (science,
+          technology, engineering, art, and mathematics).
+          <br />
+          Moreover, I consider art in it's both simultaneously novel and useful
+          forms to be the quantum mechanical medium fundamental to the rigorous
+          study of nature and the creative process for the greatest discoveries
+          of the universe.
+          <br />
+          <br />
+          🧬 In a more practical sense related to STEAM, I'm currently and
+          actively seeking opportunities to study quantum physics (for science),
+          taking the time to understand quantum computers and machine learning
+          (for technology), improving my frontend mobile and web software
+          development expertise in React Native (for engineering), finding
+          articulate expression via my second language Japanese and third
+          language Mandarin (for art), and solving quantum-logical problems with
+          classic logical states on three-dimensional planes (for mathematics).
           <br />
           <br />
           💼 Please feel free to look around while you're here.

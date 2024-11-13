@@ -50,10 +50,28 @@ export const certs: CertProps[] = [
     imgUrl: '/assets/certifications/chinese-cert.avif',
   },
   {
+    alt: '機器學習A 到Z',
+    name: 'Course Certificate of Completion',
+    description:
+      '我建構全面的機器學習知識框架，並用Python和R建構不同的機器學習模型了。',
+    issuer: 'Udemy',
+    imgUrl: '/assets/certifications/ml-a-to-z.avif',
+    certUrl: 'https://www.ude.my/UC-abd1e5b8-2645-409d-881d-b9698cbb45b9/',
+  },
+  {
+    alt: '徹底學會 Python 從初學到進階',
+    name: 'Course Certificate of Completion',
+    description: '我從零開始學習Python，自行打造出一個小遊戲了。',
+    issuer: 'Udemy',
+    imgUrl: '/assets/certifications/python-starter.avif',
+    certUrl: 'https://www.ude.my/UC-86475c49-15da-4212-956c-eb2a9000f54f/',
+  },
+  {
     alt: '數位轉型趨勢-跨平台 APP DIY 實作課程',
-    name: 'Certificate of Completion',
-    description: '我重新學習了如何使用 Facebook 官方開發框架 React Native 。',
+    name: 'Course Certificate of Completion',
+    description: '我重新學習如何使用 Facebook 官方開發框架 React Native 了。',
     issuer: 'Udemy',
     imgUrl: '/assets/certifications/app-diy.avif',
+    certUrl: 'https://ude.my/UC-4f4116b8-0ac6-4da7-aa76-2455b1c06ebb/',
   },
 ];

@@ -16,6 +16,7 @@ import Earth from '@/src/components/background/Earth';
 import Particles from '@/src/components/background/Particles';
 import Overlay from '@/src/components/background/Overlay';
 import Contact from './Contact';
+// import Blog from './Blog/Blog';
 
 function App() {
   const location = useLocation();
@@ -99,6 +100,10 @@ function App() {
                 path='/projects'
                 element={<Projects />}
               />
+              {/*<Route
+                path='/blog'
+                element={<Blog />}
+              />*/}
               <Route
                 path='/contact'
                 element={<Contact />}

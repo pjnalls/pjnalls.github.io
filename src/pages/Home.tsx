@@ -23,7 +23,7 @@ function Home() {
       >
         <Stack
           gap={0}
-          style={{ margin: 'auto' }}
+          style={{ margin: 'auto', textAlign: 'center' }}
         >
           <Center>
             <NavLink
@@ -65,7 +65,7 @@ function Home() {
               fw={400}
               fz={16}
             >
-              Trilingual | #OpenToStudy Quantum Neural Networks | Autodidact
+              #OpenToWork
               <br />
             </Text>
           </Stack>
