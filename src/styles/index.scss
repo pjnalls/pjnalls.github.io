@@ -132,60 +132,60 @@ span {
   opacity: 0.667;
 }
 
-@media (prefers-color-scheme: light) {
-  * {
-    color: colors.$dark-1;
-  }
-  .scroll-to-top * {
-    color: colors.$violet-light-1;
-  }
-  .mantine-Card-root {
-    transition: all 0.3s ease;
-    background-color: #ffecfa90;
-  }
-  .mantine-Card-root:hover {
-    transform: scale(1.1);
-    background-color: #ffecfab0;
-  }
-  .overlay {
-    background-color: colors.$light-1;
-    opacity: 0.88;
-  }
-  .active,
-  .anchor-text {
-    @include anchor.styled-text--light;
-    &:hover {
-      text-shadow: #fff;
-    }
-  }
-  .active,
-  .mantine-Accordion-label {
-    color: colors.$violet-light-2;
-  }
+// @media (prefers-color-scheme: light) {
+//   * {
+//     color: colors.$dark-1;
+//   }
+//   .scroll-to-top * {
+//     color: colors.$violet-light-1;
+//   }
+//   .mantine-Card-root {
+//     transition: all 0.3s ease;
+//     background-color: #ffecfa90;
+//   }
+//   .mantine-Card-root:hover {
+//     transform: scale(1.1);
+//     background-color: #ffecfab0;
+//   }
+//   .overlay {
+//     background-color: colors.$light-1;
+//     opacity: 0.88;
+//   }
+//   .active,
+//   .anchor-text {
+//     @include anchor.styled-text--light;
+//     &:hover {
+//       text-shadow: #fff;
+//     }
+//   }
+//   .active,
+//   .mantine-Accordion-label {
+//     color: colors.$violet-light-2;
+//   }
 
-  .promo {
-    @include promo.styled--light;
-  }
+//   .promo {
+//     @include promo.styled--light;
+//   }
 
-  @media (max-width: 768px) {
-    nav {
-      background: linear-gradient(to bottom, #e9dfffcf, #ffdff0cf) !important;
-      box-shadow: 0 0 20px linear-gradient(to bottom, #e9dfffcf, #ffdff0cf) !important;
-    }
-    .footer {
-      @include footer.styled--light;
-    }
-  }
+//   @media (max-width: 768px) {
+//     nav {
+//       background: linear-gradient(to bottom, #e9dfffcf, #ffdff0cf) !important;
+//       box-shadow: 0 0 20px linear-gradient(to bottom, #e9dfffcf, #ffdff0cf) !important;
+//     }
+//     .footer {
+//       @include footer.styled--light;
+//     }
+//   }
 
-  hr {
-    border-top: 1px solid colors.$dark-1;
-  }
-  .resume,
-  .work,
-  .cert {
-    background-color: #fff0fc90;
-  }
-  .footer {
-    @include footer.styled--light;
-  }
-}
+//   hr {
+//     border-top: 1px solid colors.$dark-1;
+//   }
+//   .resume,
+//   .work,
+//   .cert {
+//     background-color: #fff0fc90;
+//   }
+//   .footer {
+//     @include footer.styled--light;
+//   }
+// }

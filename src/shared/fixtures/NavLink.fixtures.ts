@@ -7,5 +7,6 @@ export const navLinks: Array<NavLinkProps> = [
   { label: 'Languages', route: 'languages', href: '/languages' },
   { label: 'Résumé', route: 'resume', href: '/resume' },
   { label: 'Projects', route: 'projects', href: '/projects' },
+  // { label: 'Blog', route: 'blog', href: '/blog' },
   { label: 'Contact', route: 'contact', href: '/contact' },
 ];

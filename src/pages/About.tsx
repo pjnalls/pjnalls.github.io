@@ -32,25 +32,30 @@ function About() {
           ta={'left'}
           my={'lg'}
         >
-          🏡 Hi, I'm Preston. <br />
+          Hi, I'm Preston. <br />
           Welcome to my portfolio website!
           <br />
           <br />
-          👷 I have 7+ years of frontend software development experience and am
-          currently only accepting contracts for React Native and React
-          development and will continue to do so as I transition at this time as
-          a doctoral candidate applicant.
+          I have 7+ years of frontend software development experience and am
+          currently building cross-platform Expo apps in React Native and
+          TypeScript for iOS, Android, and the Web.
+          <br />
+          Some other JavaScript libraries I use for my projects are Tailwind CSS
+          and NativeWind for inline styling.
           <br />
           <br />
-          🦄 I consider myself a quite the unicorn as I'm interested to great
-          depths in all aspect of STEAM (science, technology, engineering, art,
-          and mathematics) such as currently and actively seeking to improve my
-          frontend mobile and web software development expertise in React
-          Native, understanding of quantum computers and neural networks, and my
-          second language Japanese and third language Mandarin.
+          Along with frontend web and mobile development expertise, I can use
+          Figma to create most of my designs and assets for my projects.
           <br />
           <br />
-          💼 Please feel free to look around while you're here.
+          I'm currently seeking new React Native job opportunities in the
+          Nashville Metropolitan Area either hybrid or onsite or opportunities
+          which are remote as well.
+          <br />
+          <br />
+          Please direct message on LinkedIn if you're a recruiter and would like
+          to discuss further.
+          <br />
           <br />
           Thank you for visting!
         </Text>
