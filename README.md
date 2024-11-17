@@ -1,179 +1,68 @@
-# Preston's Portfolio ([pjnalls.github.io](pjnalls.github.io))
+# Astro Starter Kit: Blog
 
-🏡💼🧑‍💻 My homepage
-
-## Basic Frontend Dev Solution Steps
-
-### 1. 🏗️ build: create new vite project
-
-#### (1️⃣) run `npm create vite@latest . -- --template react-ts` from root of new repo for GitHub Pages
-
-#### (2️⃣) answer one prompt and choose option to display infomation below:
-
-```
-✔ Current directory is not empty. Please choose how to proceed:
-› Ignore files and continue
-
-Scaffolding project in ~/problemesolvers.github.io...
-
-Done. Now run:
-
-  npm install
-  npm run dev
+```sh
+npm create astro@latest -- --template blog
 ```
 
-### 2. 🏗️ build: add Mantine components library and React Router
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
 
-#### (1️⃣) Run `npm i @mantine/core @mantine/hooks react-router react-router-dom` from the root of the repo.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-#### (2️⃣) Go to [https://mantine.dev/getting-started/](https://mantine.dev/getting-started/) to see how setup Mantine for a React project.
+![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
 
-#### (3️⃣) Refer to [https://reactrouter.com/en/main/start/tutorial](https://reactrouter.com/en/main/start/tutorial) to see different recipes for setting up routing for your React app.'
+Features:
 
-#### (4️⃣) Refer to [https://github.com/problemesolvers/problemesolvers.github.io](https://github.com/problemesolvers/problemesolvers.github.io) for an example of navigation for a React app using Mantine and React Router.
+- ✅ Minimal styling (make it your own!)
+- ✅ 100/100 Lighthouse performance
+- ✅ SEO-friendly with canonical URLs and OpenGraph data
+- ✅ Sitemap support
+- ✅ RSS Feed support
+- ✅ Markdown & MDX support
 
-### 3. 🆕 feat: add `useDocumentTitle` Mantine hook to make `title` of SPA dynamically accessible
+## 🚀 Project Structure
 
-```tsx
-import { Container, Text } from "@mantine/core";
-import { useDocumentTitle } from "@mantine/hooks";
-import "../styles/components/About.scss";
+Inside of your Astro project, you'll see the following folders and files:
 
-function About() {
-  useDocumentTitle("About | Portfolio");
-
-  return (
-    <Container className="about" size={"xs"}>
-      <Text ta={"left"}>{/** ... */}</Text>
-    </Container>
-  );
-}
-
-export default About;
+```text
+├── public/
+├── src/
+│   ├── components/
+│   ├── content/
+│   ├── layouts/
+│   └── pages/
+├── astro.config.mjs
+├── README.md
+├── package.json
+└── tsconfig.json
 ```
 
-### 4. 🐞 fix: add `404.html` redirect
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-⚡️🐞🧑‍🏫 [Follow steps here](https://github.com/pjnalls/pages-404-fix/blob/main/README.md#github-pages-404-error-page-fix) for how to resolve a common 404 error when deploying a SPA (single-page application) as static content to GitHub Pages
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-### 5. 🆕 feat: add `vite-plugin-pwa`
+The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
 
-#### Refer to [https://www.npmjs.com/package/vite-plugin-pwa](https://www.npmjs.com/package/vite-plugin-pwa) for a "Zero-config PWA Framework-agnostic Plugin for Vite".
+Any static assets, like images, can be placed in the `public/` directory.
 
-#### Run `npm i vite-plugin-pwa` from the root of the repo.
+## 🧞 Commands
 
-#### `vite.config.ts` for reference of PWA plugin:
+All commands are run from the root of the project, from a terminal:
 
-```ts
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import { VitePWA, VitePWAOptions } from "vite-plugin-pwa";
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-const manifest: VitePWAOptions = {
-  registerType: "prompt",
-  includeAssets: ["favicon.ico", "apple-touc-icon.png", "masked-icon.svg"],
-  manifest: {
-    name: "Preston's Portfolio",
-    short_name: "pjnalls.github.io",
-    start_url: "/",
-    description:
-      "🧬🧑‍💻🔬 Portfolio website of a senior software engineer with experience in iOS, Android, Web, .NET, Angular, React and React Native development 🍎🤖⚛️ ♥️ #OneLove 🌏🌎🌍",
-    icons: [
-      {
-        src: "/assets/pwa/manifest-icon-192.maskable.png",
-        sizes: "192x192",
-        type: "image/png",
-      },
-      {
-        src: "/assets/pwa/manifest-icon-512.maskable.png",
-        sizes: "512x512",
-        type: "image/png",
-      },
-      {
-        src: "/assets/pwa/apple-icon-180.png",
-        sizes: "180x180",
-        type: "image/png",
-      },
-      {
-        src: "/assets/pwa/manifest-icon-512.maskable.png",
-        sizes: "512x512",
-        type: "image/png",
-      },
-    ],
-    theme_color: "#e9dfff",
-    background_color: "#190444",
-    display: "standalone",
-    scope: "/",
-    orientation: "portrait",
-  },
-  injectRegister: false,
-  minify: false,
-  workbox: {},
-  injectManifest: {},
-  includeManifestIcons: false,
-  disable: false,
-};
+## 👀 Want to learn more?
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react(), VitePWA(manifest)],
-});
-```
+Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
-_Note: an asset generator can be used to create the images for your PWA's manifest (e.g., `npx pwa-asset-generator`)_
+## Credit
 
-### 6. 🏗️ build: add `~/.github/workflows/deploy.yml` workflow and the follow code to deploy `main` with GitHub Actions.
-
-```yml
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
-
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set up Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: "npm"
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload dist repository
-          path: "./dist"
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
-```
+This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).

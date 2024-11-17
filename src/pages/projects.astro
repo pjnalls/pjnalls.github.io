@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<header>
+  <script is:inline src="/fouc-resolver.js"></script>
+</header>
+
+<Layout
+  title="My Projects"
+  description="What I'm currently building"
+  pubDate={new Date('November 16 2024')}
+  heroImage="/blog-placeholder-about.jpg"
+>
+  <p class="text-center">⚠️ This page is under construction. 👷</p>
+  <p>
+    Please <a>visit my GitHub page</a> as a detour to view what I'm currently working
+    on.
+  </p>
+</Layout>
