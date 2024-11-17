@@ -1,30 +1,48 @@
 ---
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_ABOUT_TITLE, SITE_DESCRIPTION } from '../consts';
+
 import Layout from '../layouts/BlogPost.astro';
 ---
 
-<header>
-  <script is:inline src="/fouc-resolver.js"></script>
-</header>
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline src="/fouc-resolver.js"></script>
+    <BaseHead title={SITE_ABOUT_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <header>
+      <script is:inline src="/fouc-resolver.js"></script>
+    </header>
 
-<Layout
-  title="About Me"
-  description="Get to know more about me"
-  pubDate={new Date('November 16 2024')}
-  heroImage="/profile-picture.avif"
->
-  <p
-    class="text-transparent bg-clip-text bg-gradient-to-b from-[#49346a] to-[#6e408a] dark:from-[#41a2cb] dark:to-[#b0a3df]"
-  >
-    As I mentioned on the homepage, my name is Preston and I have 7+ years of
-    frontend web and mobile application development experience and am currently
-    building cross-platform Expo apps in React Native and TypeScript for iOS,
-    Android, and the Web. <br />Some other JavaScript libraries I use for my
-    projects are Tailwind CSS and NativeWind for inline styling.<br /><br
-    />Along with frontend development expertise, I can use Figma
-    to create most of my designs and assets for my projects.<br /><br />I'm
-    currently seeking new React Native job opportunities in the Nashville
-    Metropolitan Area either hybrid or onsite or opportunities which are remote
-    as well.<br /><br />Please direct message on LinkedIn if you're a recruiter
-    and would like to discuss further.
-  </p>
-</Layout>
+    <Layout
+      title="About Me"
+      description="Get to know more about me"
+      pubDate={new Date('November 16 2024')}
+      heroImage="/profile-picture.avif"
+    >
+      <p
+        class="text-transparent bg-clip-text bg-gradient-to-b from-[#49346a] to-[#6e408a] dark:from-[#41a2cb] dark:to-[#b0a3df]"
+      >
+        As I mentioned on the homepage, my name is Preston and I have 7+ years
+        of frontend web and mobile application development experience and am
+        currently building cross-platform Expo apps in React Native and
+        TypeScript for iOS, Android, and the Web. <br />Some other JavaScript
+        libraries I use for my projects are Tailwind CSS and NativeWind for
+        inline styling.<br /><br />Along with frontend development expertise, I
+        can use Figma to create most of my designs and assets for my projects.<br
+        /><br />I'm currently seeking new React Native job opportunities in the
+        Nashville Metropolitan Area either hybrid or onsite or opportunities
+        which are remote as well.<br /><br />Please direct message on LinkedIn
+        if you're a recruiter and would like to discuss further.
+      </p>
+    </Layout>
+  </body>
+</html>

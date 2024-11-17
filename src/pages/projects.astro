@@ -1,20 +1,148 @@
 ---
+import { Image } from 'astro:assets';
+
+import youtubeImage from '../assets/project-youtube.avif';
+import habitApplitImage from '../assets/project-habit-applit.avif';
+import itunesImage from '../assets/project-itunes.avif';
+
 import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<header>
-  <script is:inline src="/fouc-resolver.js"></script>
-</header>
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline src="/fouc-resolver.js"></script>
+    <BaseHead title={SITE_PROJECTS_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <header>
+      <script is:inline src="/fouc-resolver.js"></script>
+    </header>
 
-<Layout
-  title="My Projects"
-  description="What I'm currently building"
-  pubDate={new Date('November 16 2024')}
-  heroImage="/blog-placeholder-about.jpg"
->
-  <p class="text-center">⚠️ This page is under construction. 👷</p>
-  <p>
-    Please <a>visit my GitHub page</a> as a detour to view what I'm currently working
-    on.
-  </p>
-</Layout>
+    <Layout
+      title="My Projects"
+      description="What I'm currently building"
+      pubDate={new Date('November 16 2024')}
+      heroImage="/project-banner.avif"
+    >
+      <div
+        class="text-transparent bg-clip-text bg-gradient-to-b from-[#19102a] to-[#6e408a] dark:from-[#61d2fb] dark:to-[#b0a3df]"
+      >
+        <span class="text-5xl" id="projects"
+          ><strong>React Native Apps I've Built</strong></span
+        >
+        <br />
+        <ul class="mb-24">
+          <li><a href="#project-1">• YouTube Clone</a></li>
+          <li><a href="#project-2">• Habit AppLit</a></li>
+          <li><a href="#project-3">• Classic iTunes</a></li>
+        </ul>
+        <span class="text-5xl" id="project-1"
+          ><strong>YouTube Clone</strong></span
+        >
+        <br />
+        <span class="text-4xl">Ingredients</span>
+        <ul>
+          <li>• React Native</li>
+          <li>• Expo</li>
+          <li>• Expo Router</li>
+          <li>• YouTube Data API</li>
+          <li>• TypeScript</li>
+        </ul>
+        <br />
+        Code available here:
+        <a href="https://github.com/pjnalls/youtube/" target="_blank"
+          >https://github.com/pjnalls/youtube/</a
+        >.
+        <br />
+        Screens:
+        <Image
+          src={youtubeImage}
+          alt="Youtube Clone Project"
+          loading="lazy"
+          width={1370}
+          height={1604}
+        />
+        <p class="text-center my-8">
+          <a href="#projects">Scroll to Top ⬆</a>
+        </p>
+        <br />
+        <span class="text-5xl" id="project-2"
+          ><strong>Habit Applit</strong></span
+        >
+        <br />
+        <span class="text-4xl">Ingredients</span>
+        <ul>
+          <li>• React Native</li>
+          <li>• React Native Gifted Charts</li>
+          <li>• React Native Linear Gradient</li>
+          <li>• Expo</li>
+          <li>• Expo Router</li>
+          <li>• AsyncStorage</li>
+          <li>• TypeScript</li>
+        </ul>
+        <br />
+        Code available here:
+        <a href="https://github.com/pjnalls/habit-applit/" target="_blank"
+          >https://github.com/pjnalls/habit-applit/</a
+        >.
+        <br />
+        Screens:
+        <Image
+          src={habitApplitImage}
+          alt="Habit AppLit Project"
+          loading="lazy"
+          width={1370}
+          height={1616}
+        />
+        <p class="text-center my-8">
+          <a href="#projects">Scroll to Top ⬆</a>
+        </p>
+        <br />
+        <span class="text-5xl" id="project-3"
+          ><strong>Classic iTunes</strong></span
+        >
+        <br />
+        <span class="text-4xl">Ingredients</span>
+        <ul>
+          <li>• React Native</li>
+          <li>• React Native Track Player</li>
+          <li>• Shaka Player</li>
+          <li>• Expo</li>
+          <li>• TypeScript</li>
+        </ul>
+        <br />
+        Code available here:
+        <a href="https://github.com/pjnalls/itunes/" target="_blank"
+          >https://github.com/pjnalls/itunes/</a
+        >.
+        <br />
+        Screens:
+        <Image
+          src={itunesImage}
+          alt="iTunes Clone Project"
+          loading="lazy"
+          width={1370}
+          height={803}
+        />
+        <p class="text-center my-8">
+          <a href="#projects">Scroll to Top ⬆</a>
+        </p>
+        <br />
+        <p class="text-center">
+          Please also <a href="https://github.com/pjnalls/" target="_blank"
+            >visit my GitHub profile</a
+          > to view what I'm currently working on.
+        </p>
+      </div>
+    </Layout>
+  </body>
+</html>

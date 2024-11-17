@@ -5,14 +5,12 @@ import { FaReact } from 'react-icons/fa';
 import { SiTypescript } from 'react-icons/si';
 import { SiExpo } from 'react-icons/si';
 
-import iphoneImage from '../assets/rn-ios.jpg';
-import androidImage from '../assets/rn-android.jpg';
-import desktopImage from '../assets/rn-desktop.jpg';
+import homeImage from '../assets/project-homepage.avif';
 
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
@@ -25,7 +23,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       rel="stylesheet"
     />
     <script is:inline src="/fouc-resolver.js"></script>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={SITE_HOME_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body
     class="dark:bg-gradient-to-b dark:from-[#19102a] dark:to-[#2a1a38] dark:text-[#61d2fb]"
@@ -70,21 +68,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
           </p>
           <div class="flex flex-row mx-auto">
             <Image
-              src={iphoneImage}
-              alt="iPhone"
-              class="w-[120px] h-[227.78px]"
-              loading="eager"
-            />
-            <Image
-              src={androidImage}
-              alt="Android"
-              class="w-[120px] h-[215.46px]"
-              loading="eager"
-            />
-            <Image
-              src={desktopImage}
-              alt="Browser"
-              class="w-[180px] h-[269.02px]"
+              src={homeImage}
+              alt="Home Project"
+              width={1370}
+              height={802}
               loading="eager"
             />
           </div>
