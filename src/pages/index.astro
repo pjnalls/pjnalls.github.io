@@ -1,4 +1,14 @@
 ---
+import { Image } from 'astro:assets';
+
+import { FaReact } from 'react-icons/fa';
+import { SiTypescript } from 'react-icons/si';
+import { SiExpo } from 'react-icons/si';
+
+import iphoneImage from '../assets/rn-ios.jpg';
+import androidImage from '../assets/rn-android.jpg';
+import desktopImage from '../assets/rn-desktop.jpg';
+
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -7,44 +17,80 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline src="/fouc-resolver.js"></script>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body
+    class="dark:bg-gradient-to-b dark:from-[#19102a] dark:to-[#2a1a38] dark:text-[#61d2fb]"
+  >
+    <Header />
+
+    <main>
+      <div class="flex flex-row flex-wrap gap-0">
+        <div class="flex flex-col gap-2 justify-center w-full">
+          <h1 class="title text-center dark:text-[#61d2fb]">
+            P<span class="text-5xl">RESTON</span><br />N<span class="text-5xl"
+              >ALLS</span
+            >
+          </h1>
+          <div class="w-[360px] h-[4px] bg-[#19102a] dark:bg-[#61d2fb] mx-auto">
+          </div>
+          <p class="mt-2 text-center tracking-widest">React Native Engineer</p>
+          <div class="mb-4 flex flex-row justify-center">
+            <FaReact size={60} className="mr-[-8px]" />
+            <div class="h-[60px] w-[2px] bg-[#19102a] mx-[30px]"></div>
+            <SiTypescript size={60} />
+            <div class="h-[60px] w-[2px] bg-[#19102a] mx-[30px]"></div>
+            <SiExpo size={60} />
+          </div>
+          <p
+            class="text-transparent bg-clip-text bg-gradient-to-b from-[#49346a] to-[#6e408a] dark:from-[#41a2cb] dark:to-[#b0a3df]"
+          >
+            Hi, I'm Preston, and welcome to my portfolio website!
+
+            <br />I'm a frontend web and mobile application engineer with 7+
+            years of tech industry experience and enjoy writing cross-platform
+            UI code in React Native and TypeScript.
+            <br />
+            <br />Please feel free to use the navigation bar above to learn more
+            about who I am, what I'm currently working on, an what I'm writing
+            about at the moment.
+            <br />
+            <br />
+            <span class="font-bold"
+              >This is a cross-platform YouTube clone I built </span
+			  ><span class="text-black">✨</span><span class="font-bold">:</span>
+          </p>
+          <div class="flex flex-row mx-auto">
+            <Image
+              src={iphoneImage}
+              alt="iPhone"
+              class="w-[120px] h-[227.78px]"
+              loading="eager"
+            />
+            <Image
+              src={androidImage}
+              alt="Android"
+              class="w-[120px] h-[215.46px]"
+              loading="eager"
+            />
+            <Image
+              src={desktopImage}
+              alt="Browser"
+              class="w-[180px] h-[269.02px]"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </main>
+  </body>
 </html>

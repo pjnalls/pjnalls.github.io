@@ -15,6 +15,10 @@ const post = Astro.props;
 const { Content } = await post.render();
 ---
 
+<header>
+	<script is:inline src="/fouc-resolver.js"></script>
+</header>
+
 <BlogPost {...post.data}>
 	<Content />
 </BlogPost>
