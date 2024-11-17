@@ -9,9 +9,9 @@ import { SITE_TITLE } from '../consts';
 
 <header>
   <nav
-    class="dark:text-[#61d2fb] dark:bg-[#19102a] text-[#19102a] bg-[#61d2fb] mx-[-20px] px-[24px]"
+    class="dark:text-[#61d2fb] dark:bg-[#19102a] text-[#19102a] bg-[#61d2fb] px-[24px] w-full"
   >
-    <h2 class="dark:text-[#61d2fb]"><a href="/">{SITE_TITLE}</a></h2>
+    <h2 class="dark:text-[#61d2fb] header"><a href="/">{SITE_TITLE}</a></h2>
     <div class="internal-links">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/projects">Projects</HeaderLink>
@@ -42,7 +42,6 @@ import { SITE_TITLE } from '../consts';
   <style>
     header {
       margin: 0;
-      padding: 0 1em;
       background: white;
       box-shadow: 0 2px 8px rgba(var(--black), 5%);
     }
