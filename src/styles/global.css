@@ -11,6 +11,12 @@
 html {
   scroll-behavior: smooth;
 }
+html.dark * a {
+  color: #d1c0fb;
+}
+html * a {
+  color: #6c48ac;
+}
 
 :root {
   --accent: #3178c6;
