@@ -14,7 +14,7 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark:bg-black bg-white">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,39 +45,46 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
           <p class="mt-2 text-center tracking-widest">React Native Engineer</p>
           <div class="mb-4 flex flex-row justify-center">
             <FaReact size={60} className="mr-[-8px]" />
-            <div class="h-[60px] w-[2px] bg-[#19102a] mx-[30px]"></div>
+            <div class="h-[60px] w-[2px] bg-[#19102a] dark:bg-[#61d2fb] mx-[30px]"></div>
             <SiTypescript size={60} />
-            <div class="h-[60px] w-[2px] bg-[#19102a] mx-[30px]"></div>
+            <div class="h-[60px] w-[2px] bg-[#19102a] dark:bg-[#61d2fb] mx-[30px]"></div>
             <SiExpo size={60} />
           </div>
-          <p
+          <div
             class="text-transparent bg-clip-text bg-gradient-to-b from-[#49346a] to-[#6e408a] dark:from-[#41a2cb] dark:to-[#b0a3df]"
           >
-            Hi, I'm Preston, and welcome to my portfolio website!
+            <p>
+              Hi, I'm Preston, and welcome to my portfolio website!
 
-            <br />I'm a frontend web and mobile application engineer with 7+
-            years of tech industry experience and enjoy building Expo apps in
-            React Native and TypeScript.
-            <br />
-            <br />Please use the navigation bar above to learn more about who I
-            am, what I'm currently working on, an what I'm writing about at the
-            moment.
-            <br />
-            <br />
-            <span class="font-bold"
-              >This is a cross-platform YouTube clone I built
-            </span><span class="text-black">✨</span><span class="font-bold"
-              >:</span
-            >
-          </p>
-          <div class="flex flex-row mx-auto">
-            <Image
-              src={homeImage}
-              alt="Home Project"
-              width={1370}
-              height={802}
-              loading="eager"
-            />
+              <br />I'm a frontend web and mobile application engineer with 7+
+              years of tech industry experience and enjoy building Expo apps in
+              React Native and TypeScript.
+              <br />
+              <br />Please use the navigation bar above to learn more about who
+              I am, what I'm currently working on, an what I'm writing about at
+              the moment.
+              <br />
+              <br />
+              <span class="font-bold"
+                >This is a cross-platform YouTube clone I built
+              </span><span class="text-black">✨</span><span class="font-bold"
+                >:</span
+              >
+            </p>
+            <div class="flex flex-row mx-auto">
+              <Image
+                src={homeImage}
+                alt="Home Project"
+                width={1370}
+                height={802}
+                loading="eager"
+              />
+            </div>
+            <p class="text-center">
+              Please view my React Native projects <a
+                href="/projects">here</a
+              >.
+            </p>
           </div>
         </div>
       </div>
