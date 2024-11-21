@@ -127,8 +127,11 @@ img {
 }
 code {
   padding: 2px 5px;
-  background-color: rgb(var(--gray-light));
+  background-color: #8a80d9;
   border-radius: 2px;
+}
+html.dark * code {
+  background-color: #4a4069;
 }
 pre {
   padding: 1.5em;
