@@ -2,7 +2,7 @@
 title: 'Type Inference'
 description: 'Here we look at some of the benefits of using type inference over type declaration.'
 pubDate: 'Nov 21 2024'
-heroImage: '/type-inference.jpg'
+heroImage: '/posts/type-inference.jpg'
 ---
 
 Type inference, to me, alone is enough of a reason to switch from using JavaScript to using TypeScript 🟨 → 🟦

@@ -2,7 +2,7 @@
 title: 'React for the Wind'
 description: 'Here we look briefly how both React and Tailwind CSS combinded can create rich developer experiences.'
 pubDate: 'Nov 20 2024'
-heroImage: '/react-for-the-wind.jpg'
+heroImage: '/posts/react-for-the-wind.jpg'
 ---
 
 React gives us the gift of JSX. Tailwind CSS, functional styling.

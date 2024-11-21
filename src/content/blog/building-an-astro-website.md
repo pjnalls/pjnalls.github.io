@@ -2,7 +2,7 @@
 title: 'Building an Astro Website'
 description: 'Here I reflect on my experience of developing a multi-page app with Astro.'
 pubDate: 'Nov 17 2024'
-heroImage: '/building-an-astro-website.jpg'
+heroImage: '/posts/building-an-astro-website.jpg'
 ---
 
 I'm burning the midnight oil tonight rewriting my portfolio website 🌙
