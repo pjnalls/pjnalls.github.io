@@ -2,10 +2,11 @@
 title: 'Type Inference'
 description: 'Here we look at some of the benefits of using type inference over type declaration.'
 pubDate: 'Nov 21 2024'
+updatedDate: 'Nov 23 2024'
 heroImage: '/posts/type-inference.jpg'
 ---
 
-Type inference, to me, alone is enough of a reason to switch from using JavaScript to using TypeScript 🟨 → 🟦
+Type inference, to me, is enough of a reason to switch from using JavaScript to using TypeScript 🟨 → 🟦
 
 While it's generally good practice to declare types, interfaces, and/or classes in TypeScript for handling data, maintaining a type may not be so practical—like for i18n internationalization (int'l) data shown above in the screenshot.
 
