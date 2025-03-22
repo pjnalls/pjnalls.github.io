@@ -1,16 +1,16 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 
-import { FaReact } from 'react-icons/fa';
-import { SiTypescript } from 'react-icons/si';
-import { SiExpo } from 'react-icons/si';
+import { FaReact } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { SiExpo } from "react-icons/si";
 
-import homeImage from '../assets/project-homepage.avif';
+import homeImage from "../assets/project-homepage.avif";
 
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_HOME_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
@@ -42,23 +42,32 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
             class="md:w-[360px] w-[80vw] h-[4px] bg-[#19102a] dark:bg-[#61d2fb] mx-auto"
           >
           </div>
-          <p class="mt-2 text-center tracking-widest">Senior Software Engineer • Tutor</p>
+          <p class="mt-2 text-center tracking-widest">
+            Senior Software Engineer • Tutor
+          </p>
           <div class="mb-4 flex flex-row justify-center">
             <FaReact size={60} className="mr-[-8px]" />
-            <div class="h-[60px] w-[2px] bg-[#19102a] dark:bg-[#61d2fb] mx-[30px]"></div>
+            <div
+              class="h-[60px] w-[2px] bg-[#19102a] dark:bg-[#61d2fb] mx-[30px]"
+            >
+            </div>
             <SiTypescript size={60} />
-            <div class="h-[60px] w-[2px] bg-[#19102a] dark:bg-[#61d2fb] mx-[30px]"></div>
+            <div
+              class="h-[60px] w-[2px] bg-[#19102a] dark:bg-[#61d2fb] mx-[30px]"
+            >
+            </div>
             <SiExpo size={60} />
           </div>
           <div
             class="text-transparent bg-clip-text bg-gradient-to-b from-[#49346a] to-[#6e408a] dark:from-[#41a2cb] dark:to-[#b0a3df]"
           >
             <p>
-              Hi, I'm Preston, and welcome to my portfolio website!
+              Hi, I'm Preston, and welcome to my portfolio and blog website!
 
               <br />I'm a frontend web and mobile application engineer with 7+
-              years of tech industry experience and enjoy building Expo apps in
-              React Native and TypeScript.
+              years of tech industry experience, a tutor with over 500+ hours of
+              teaching experience, and enjoy building Expo apps in React Native
+              and TypeScript.
               <br />
               <br />Please use the navigation bar above to learn more about who
               I am, what I'm currently working on, an what I'm writing about at
@@ -81,9 +90,7 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
               />
             </div>
             <p class="text-center">
-              Please view my React Native projects <a
-                href="/projects">here</a
-              >.
+              Please view my React Native projects <a href="/projects">here</a>.
             </p>
           </div>
         </div>
