@@ -39,6 +39,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         max-width: calc(100% - 2em);
         margin: auto;
         padding: 1em;
+        color: transparent;
+        background-clip: text;
       }
       .post-title {
         margin-bottom: 1em;
@@ -78,7 +80,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
             )
           }
         </div>
-        <div class="prose">
+        <div
+          class="prose text-transparent bg-clip-text bg-gradient-to-b from-[#49346a] to-[#6e408a] dark:from-[#41a2cb] dark:to-[#b0a3df]"
+        >
           <div class="post-title">
             <div class="date">
               <FormattedDate date={pubDate} />
