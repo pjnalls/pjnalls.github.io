@@ -21,11 +21,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     />
     <BaseHead title={title} description={description} />
     <style>
-      main {
-        width: calc(100% - 2em);
-        max-width: 100%;
-        margin: 0;
-      }
+
       .hero-image {
         width: 100%;
       }
@@ -64,7 +60,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     class="dark:bg-gradient-to-b dark:from-[#19102a] dark:to-[#2a1a38] dark:text-[#61d2fb]"
   >
     <Header />
-    <main>
+    <main class="px-8 mx-auto max-w-screen-lg w-full">
       <article>
         <div class="hero-image">
           {
