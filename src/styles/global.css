@@ -10,16 +10,16 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #61d2fb;
+  background-color: #61dfff;
 }
 html.dark {
   background-color: #19102a;
 }
 html.dark * a {
-  color: #d1c0fb;
+  color: #d0c2ff;
 }
 html * a {
-  color: #6c48ac;
+  color: #4c3a6f;
 }
 
 :root {
@@ -29,7 +29,7 @@ html * a {
   --gray: 96, 115, 159;
   --gray-light: 52, 125, 149;
   --gray-dark: 34, 41, 57;
-  --gray-gradient: #61d2fb, #9aa9ee;
+  --gray-gradient: #61d2ff, #9aa9ee;
   --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
     0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
 }
@@ -131,11 +131,11 @@ img {
 }
 code {
   padding: 2px 5px;
-  background-color: #8a80d9;
+  background-color: #8aaaf9;
   border-radius: 2px;
 }
 html.dark * code {
-  background-color: #4a4069;
+  background-color: #406a89;
 }
 pre {
   padding: 1.5em;

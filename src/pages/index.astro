@@ -1,10 +1,6 @@
 ---
 import { Image } from 'astro:assets';
 
-import { FaReact } from 'react-icons/fa';
-import { SiTypescript } from 'react-icons/si';
-import { SiExpo } from 'react-icons/si';
-
 import homeImage from '../assets/project-homepage.avif';
 
 import BaseHead from '../components/BaseHead.astro';
@@ -26,43 +22,21 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
     <BaseHead title={SITE_HOME_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body
-    class="dark:bg-gradient-to-b dark:from-[#19102a] dark:to-[#2a1a38] dark:text-[#61d2fb]"
+    class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#61d2ff] dark:from-[#173458] dark:to-[#1B553b] bg-gradient-to-b from-[#67a4f8] to-[#6Bf5ab]"
   >
     <Header />
 
     <main>
       <div class="flex flex-row flex-wrap gap-0">
-        <div class="flex flex-col gap-2 justify-center w-full">
-          <h1 class="title text-center dark:text-[#61d2fb]">
-            P<span class="text-5xl">RESTON</span><br />N<span class="text-5xl"
-              >ALLS</span
-            >
-          </h1>
-          <div
-            class="md:w-[360px] w-[80vw] h-[4px] bg-[#19102a] dark:bg-[#61d2fb] mx-auto"
-          >
-          </div>
-          <p class="mt-2 text-center tracking-widest">
-            MS in IT @ <br />University of the People
-          </p>
-          <div class="mb-4 flex flex-row justify-center">
-            <FaReact size={60} className="mr-[-8px]" />
-            <div
-              class="h-[60px] w-[2px] bg-[#19102a] dark:bg-[#61d2fb] mx-[30px]"
-            >
-            </div>
-            <SiTypescript size={60} />
-            <div
-              class="h-[60px] w-[2px] bg-[#19102a] dark:bg-[#61d2fb] mx-[30px]"
-            >
-            </div>
-            <SiExpo size={60} />
-          </div>
-          <div
-            class="text-transparent bg-clip-text bg-gradient-to-b from-[#49346a] to-[#6e408a] dark:from-[#41a2cb] dark:to-[#b0a3df]"
-          >
+        <div class="flex flex-col gap-8 justify-center w-full">
+          <img
+            src="/banner.png"
+            alt="Home Page Image"
+            class="object-cover h-72"
+          />
+          <div>
             <p>
-              Hi, I'm Preston, and welcome to my portfolio and blog website!
+              Hi 👋, I'm Preston. Welcome to my portfolio and blog website!
               <br />
               <br />Please use the navigation bar above to learn more about who
               I am, what I'm currently working on, and what I'm writing about at
@@ -85,7 +59,7 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
               />
             </div>
             <p class="text-center">
-              Please view my React Native projects <a href="/projects">here</a>.
+              Please feel free to view my React Native projects <a href="/projects">here</a>.
             </p>
           </div>
         </div>
