@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 
+import nlpFromScratchImage from '../assets/project-nlp.avif';
 import youtubeImage from '../assets/project-youtube.avif';
 import habitApplitImage from '../assets/project-habit-applit.avif';
 import itunesImage from '../assets/project-itunes.avif';
@@ -32,13 +33,43 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
       description="What I'm currently building"
       pubDate={new Date('November 17 2024')}
       updatedDate={new Date('November 19, 2024')}
-      heroImage="/projects.avif"
-    >
-      <div
-        
-      >
+      heroImage="/projects.avif">
+      <div>
+      <span class="text-5xl" id="project-1"
+          ><strong>NLP From Scratch</strong></span
+        >
+        <br />
+        <span class="text-4xl">Ingredients</span>
+        <ul>
+          <li>• PyTorch</li>
+          <li>• NumPy</li>
+          <li>• Matplotlib</li>
+          <li>• Deep Learning</li>
+          <li>• Neural Networks</li>
+          <li>• Natural Language Processing (NLP)</li>
+          <li>• Python</li>
+        </ul>
+        <br />
+        Code available here:
+        <a href="https://github.com/pjnalls/ml_projects/tree/main/nlp_from_scratch/" target="_blank"
+          >https://github.com/pjnalls/ml_projects/tree/main/nlp_from_scratch/</a
+        >.
+        <br />
+        Screens:
+        <Image
+          src={nlpFromScratchImage}
+          alt="Youtube Clone Project"
+          loading="lazy"
+          width={360}
+          height={360}
+          class="mx-auto"
+        />
+        <p class="text-center my-8">
+          <a href="#projects">Scroll to Top ⬆</a>
+        </p>
+        <br />
         <span class="text-5xl" id="projects"
-          ><strong>React Native Apps I've Built</strong></span
+          ><strong>Cross-Platform Apps I've Built</strong></span
         >
         <br />
         <ul class="mb-24">
