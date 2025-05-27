@@ -73,6 +73,11 @@ main {
   margin: auto;
   padding: 3em 1em;
 }
+@media (max-width: 768px) {
+  main {
+    max-width: calc(100% - 0.5em);
+  }
+}
 h1,
 h2,
 h3,
