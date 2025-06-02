@@ -33,9 +33,10 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
       description="What I'm currently building"
       pubDate={new Date('November 17 2024')}
       updatedDate={new Date('November 19, 2024')}
-      heroImage="/projects.avif">
+      heroImage="/projects.avif"
+    >
       <div>
-      <span class="text-5xl" id="project-1"
+        <span class="text-5xl" id="project-1"
           ><strong>NLP From Scratch</strong></span
         >
         <br />
@@ -51,11 +52,13 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
         </ul>
         <br />
         Code available here:
-        <a href="https://github.com/pjnalls/ml_projects/tree/main/nlp_from_scratch/" target="_blank"
+        <a
+          href="https://github.com/pjnalls/ml_projects/tree/main/nlp_from_scratch/"
+          target="_blank"
           >https://github.com/pjnalls/ml_projects/tree/main/nlp_from_scratch/</a
         >.
         <br />
-        Screens:
+        Logo:
         <Image
           src={nlpFromScratchImage}
           alt="Youtube Clone Project"
@@ -65,7 +68,11 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           class="mx-auto"
         />
         <p class="text-center my-8">
-          <a href="#projects">Scroll to Top ⬆</a>
+          <a
+            href="/projects"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#6e408a] dark:border-[#d0c2ff] text-white px-4 py-2 rounded-md mb-8"
+            style="text-decoration: none;">Scroll to Top ⬆</a
+          >
         </p>
         <br />
         <span class="text-5xl" id="projects"
@@ -104,7 +111,11 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           height={1604}
         />
         <p class="text-center my-8">
-          <a href="#projects">Scroll to Top ⬆</a>
+          <a
+            href="/projects"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#6e408a] dark:border-[#d0c2ff] text-white px-4 py-2 rounded-md mb-8"
+            style="text-decoration: none;">Scroll to Top ⬆</a
+          >
         </p>
         <br />
         <span class="text-5xl" id="project-2"
@@ -136,7 +147,11 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           height={1616}
         />
         <p class="text-center my-8">
-          <a href="#projects">Scroll to Top ⬆</a>
+          <a
+            href="/projects"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#6e408a] dark:border-[#d0c2ff] text-white px-4 py-2 rounded-md mb-8"
+            style="text-decoration: none;">Scroll to Top ⬆</a
+          >
         </p>
         <br />
         <span class="text-5xl" id="project-3"
@@ -166,7 +181,11 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           height={803}
         />
         <p class="text-center my-8">
-          <a href="#projects">Scroll to Top ⬆</a>
+          <a
+            href="/projects"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#6e408a] dark:border-[#d0c2ff] text-white px-4 py-2 rounded-md mb-8"
+            style="text-decoration: none;">Scroll to Top ⬆</a
+          >
         </p>
         <br />
         <p class="text-center">
@@ -178,3 +197,9 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
     </Layout>
   </body>
 </html>
+
+<style>
+  a {
+    color: inherit;
+  }
+</style>

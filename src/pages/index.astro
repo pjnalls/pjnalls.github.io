@@ -1,9 +1,6 @@
 ---
 import { Image } from 'astro:assets';
 
-import expoProjectImage from '../assets/project-homepage.avif';
-import mlProjectsImage from '../assets/project-ml.avif';
-
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -29,7 +26,7 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
 
     <main>
       <div class="flex flex-row flex-wrap gap-0">
-        <div class="flex flex-col gap-8 justify-center w-full">
+        <div class="flex flex-col gap-8 justify-center w-full items-center">
           <Image
             src="/banner.avif"
             alt="home page promotion image"
@@ -38,57 +35,35 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
             width={1584}
             height={438}
           />
-          <div>
-            <p>
-              Hi 👋, I'm Preston. Welcome to my portfolio and blog website!
-              <br />
-              <br />Please use the navigation bar above to learn more about who
-              I am, what I'm currently working on, and what I'm writing about at
-              the moment.
-            </p>
-            <p>
-              <span class="font-bold">
-                Here are some machine learning (ML) projects I'm developing 🧠:
-              </span>
-            </p>
-            <div class="flex flex-row items-center justify-center">
-              <a href="https://github.com/pjnalls/ml_projects" target="_blank">
-                <Image
-                  src={mlProjectsImage}
-                  alt="image of a machine learning project"
-                  loading="eager"
-                  width={360}
-                  height={360}
-                />
+          <div class="flex flex-col gap-0 items-center">
+            <h1 class="text-4xl font-bold mb-0">
+              Hey there! 👋 I'm Preston.
+            </h1>
+            <h2 class="text-2xl font-medium mb-4">
+              Welcome to my portfolio and blog website.
+            </h2>
+              <p>
+                Please use the navigation bar above to learn more about who I
+                am, what I'm currently working on, and what I'm writing about at
+                the moment.
+              </p>
+              <a
+                href="/projects"
+                class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#6e408a] dark:border-[#d0c2ff] text-white px-4 py-2 rounded-md mb-8"
+                style="text-decoration: none;"
+              >
+                View Projects
               </a>
-            </div>
-            <br />
-            <br />
-            <p>
-              <span class="font-bold">
-                Here is a cross-platform YouTube clone I built ✨:
-              </span>
-            </p>
-            <div class="flex flex-row mx-auto">
-              <a href="https://github.com/pjnalls/youtube" target="_blank">
-                <Image
-                  src={expoProjectImage}
-                  alt="image of a Expo project"
-                  width={1370}
-                  height={802}
-                  loading="eager"
-                />
-              </a>
-            </div>
           </div>
-          <p class="text-center">
-            Please feel free to view all my projects <a href="/projects"
-              href="/projects">here</a
-            >.
-          </p>
         </div>
+        <Footer />
       </div>
     </main>
-    <Footer />
   </body>
 </html>
+
+<style>
+  a {
+    color: inherit;
+  }
+</style>

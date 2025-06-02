@@ -65,6 +65,7 @@ body {
   color: rgb(var(--gray-dark));
   font-size: 20px;
   line-height: 1.7;
+  min-height: 100vh;
 }
 main {
   width: 720px;
