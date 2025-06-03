@@ -39,7 +39,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       }
       .post-title {
         margin-bottom: 1em;
-        padding: 1em 0;
+        padding: 2.5em 0;
         text-align: center;
         line-height: 1;
       }
@@ -80,7 +80,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
           }
         </div>
         <div>
-          <div class="post-title">
+          <div class="post-title" id={title.toLowerCase().replace(/ /g, '-')}>
             <div class="date">
               <FormattedDate date={pubDate} />
               {
