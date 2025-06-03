@@ -57,7 +57,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  background: linear-gradient(var(--gray-gradient)) no-repeat;
+  background: #67a4f8;
   background-size: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -65,7 +65,7 @@ body {
   color: rgb(var(--gray-dark));
   font-size: 20px;
   line-height: 1.7;
-  margin-top: 48px;
+  margin-top: 64px;
 }
 main {
   width: 720px;
