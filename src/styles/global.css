@@ -10,10 +10,10 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #61dfff;
+  background-color: #67a4f8;
 }
 html.dark {
-  background-color: #19102a;
+  background-color: #173458;
 }
 html.dark * a {
   color: #d0c2ff;
@@ -29,7 +29,7 @@ html * a {
   --gray: 96, 115, 159;
   --gray-light: 52, 125, 149;
   --gray-dark: 34, 41, 57;
-  --gray-gradient: #61d2ff, #9aa9ee;
+  --gray-gradient: #aae2ff, #9aa9ee;
   --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
     0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
 }
@@ -66,6 +66,7 @@ body {
   font-size: 20px;
   line-height: 1.7;
   min-height: 100vh;
+  margin-top: 64px;
 }
 main {
   width: 720px;

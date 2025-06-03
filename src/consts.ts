@@ -7,4 +7,4 @@ export const SITE_PROJECTS_TITLE = "Preston's Portfolio and Blog | Projects";
 export const SITE_BLOG_TITLE = "Preston's Portfolio and Blog | Blog";
 export const SITE_ABOUT_TITLE = "Preston's Portfolio and Blog | About";
 export const SITE_DESCRIPTION =
-  'This is the portfolio and blog website of Preston Nalls, a Master of Science in Information Technology postgraduate at the University of the People and ex-software engineer building Good C.O. Index';
+  'This is the portfolio and blog website of Preston Nalls, a Master of Science in Information Technology postgraduate at the University of the People and full-stack, cross-platform, and machine learning ex-software engineer.';
