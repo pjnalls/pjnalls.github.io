@@ -58,7 +58,6 @@ body {
   padding: 0;
   text-align: left;
   background: #67a4f8;
-  background-size: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
   overflow-x: hidden;
@@ -193,4 +192,8 @@ hr {
   clip-path: inset(50%);
   /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
   white-space: nowrap;
+}
+
+.bg-gradient-pjnalls {
+  height: 100vh;
 }
