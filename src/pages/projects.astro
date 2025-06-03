@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 
 import nlpFromScratchImage from '../assets/project-nlp.avif';
+import goodCoIndexImage from '../assets/project-goodcoindex.avif';
 import youtubeImage from '../assets/project-youtube.avif';
 import habitApplitImage from '../assets/project-habit-applit.avif';
 import itunesImage from '../assets/project-itunes.avif';
@@ -37,15 +38,76 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
     >
       <div>
         <ul class="mb-24">
+          <li><a href="#project-z">• GoodCoIndex</a></li>
           <li><a href="#project-0">• NLP From Scratch</a></li>
           <li><a href="#project-1">• YouTube Clone</a></li>
           <li><a href="#project-2">• Habit AppLit</a></li>
           <li><a href="#project-3">• Classic iTunes</a></li>
         </ul>
+        <span class="text-5xl pt-24" id="project-z"
+          ><strong>GoodCoIndex</strong></span
+        >
+        <p>
+          The Good Computing Opportunities Index: A full-stack, cross-platform
+          search engine application with machine learning that provides
+          developers with opportunities to compute for good, supporting iOS,
+          Android, and the Web.
+        </p>
+        <span class="text-4xl">Ingredients</span>
+        <ul>
+          <li>• Django</li>
+          <li>• NumPy</li>
+          <li>• Python</li>
+          <li>• Redis</li>
+          <li>• Expo</li>
+          <li>• Expo Router</li>
+          <li>• NativeWind</li>
+          <li>• React Native</li>
+          <li>• Tailwind CSS</li>
+          <li>• TypeScript</li>
+        </ul>
+        <br />
+        <img alt="GoodCodIndex Skill Icons" src="https://skillicons.dev/icons?i=django,python,redis,react,tailwind,typescript" />
+        <br />
+        Code available here:
+        <a
+          href="https://github.com/pjnalls/goodcoindex"
+          target="_blank"
+          rel="noopener noreferrer"
+          >https://github.com/pjnalls/goodcoindex</a
+        >.
+        <br />
+        Logo:
+        <Image
+          src={goodCoIndexImage}
+          alt="GoodCoIndex"
+          loading="lazy"
+          width={360}
+          height={360}
+          class="mx-auto"
+        />
+        <p class="text-center my-8">
+          <a
+            href="/projects"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8"
+            style="text-decoration: none;">Scroll to Top ⬆</a
+          >
+        </p>
+        <br />
         <span class="text-5xl pt-24" id="project-0"
           ><strong>NLP From Scratch</strong></span
         >
-        <br />
+        <p>
+          A walkthrough of an NLP character-level Recurrent Neural Network (RNN)
+          and translation with a sequence-to-sequence network and attention
+          provided by the PyTorch community that is available here:
+          <a
+            href="https://github.com/pjnalls/nlp_from_scratch"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://github.com/pjnalls/nlp_from_scratch</a
+          >.
+        </p>
         <span class="text-4xl">Ingredients</span>
         <ul>
           <li>• PyTorch</li>
@@ -56,6 +118,8 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           <li>• Natural Language Processing (NLP)</li>
           <li>• Python</li>
         </ul>
+        <br />
+        <img alt="NLP From Scratch Skill Icons" src="https://skillicons.dev/icons?i=pytorch,python" />
         <br />
         Code available here:
         <a
@@ -76,7 +140,7 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
         <p class="text-center my-8">
           <a
             href="/projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#6e408a] dark:border-[#d0c2ff] text-white px-6 py-3 rounded-md mb-8"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8"
             style="text-decoration: none;">Scroll to Top ⬆</a
           >
         </p>
@@ -84,7 +148,10 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
         <span class="text-5xl pt-24" id="project-1"
           ><strong>YouTube Clone</strong></span
         >
-        <br />
+        <p>
+          A YouTube video search clone built with Expo and React Native for iOS,
+          Android, and the Web.
+        </p>
         <span class="text-4xl">Ingredients</span>
         <ul>
           <li>• React Native</li>
@@ -93,6 +160,8 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           <li>• YouTube Data API</li>
           <li>• TypeScript</li>
         </ul>
+        <br />
+        <img alt="YouTube Clone Skill Icons" src="https://skillicons.dev/icons?i=react,typescript" />
         <br />
         Code available here:
         <a href="https://github.com/pjnalls/youtube/" target="_blank"
@@ -110,7 +179,7 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
         <p class="text-center my-8">
           <a
             href="/projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#6e408a] dark:border-[#d0c2ff] text-white px-6 py-3 rounded-md mb-8"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8"
             style="text-decoration: none;">Scroll to Top ⬆</a
           >
         </p>
@@ -118,7 +187,10 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
         <span class="text-5xl pt-24" id="project-2"
           ><strong>Habit AppLit</strong></span
         >
-        <br />
+        <p>
+          A 'lit'tle habit tracker app for creation, tracking, and
+          streak-visualization of habits for iOS, Android, and the Web.
+        </p>
         <span class="text-4xl">Ingredients</span>
         <ul>
           <li>• React Native</li>
@@ -129,6 +201,8 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           <li>• AsyncStorage</li>
           <li>• TypeScript</li>
         </ul>
+        <br />
+        <img alt="Habit AppLit Skill Icons" src="https://skillicons.dev/icons?i=react,typescript" />
         <br />
         Code available here:
         <a href="https://github.com/pjnalls/habit-applit/" target="_blank"
@@ -146,7 +220,7 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
         <p class="text-center my-8">
           <a
             href="/projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#6e408a] dark:border-[#d0c2ff] text-white px-6 py-3 rounded-md mb-8"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8"
             style="text-decoration: none;">Scroll to Top ⬆</a
           >
         </p>
@@ -154,7 +228,10 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
         <span class="text-5xl pt-24" id="project-3"
           ><strong>Classic iTunes</strong></span
         >
-        <br />
+        <p>
+          An iTunes clone built with Expo and React Native for iOS, Android, and
+          the Web.
+        </p>
         <span class="text-4xl">Ingredients</span>
         <ul>
           <li>• React Native</li>
@@ -163,6 +240,8 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           <li>• Expo</li>
           <li>• TypeScript</li>
         </ul>
+        <br />
+        <img alt="iTunes Clone Skill Icons" src="https://skillicons.dev/icons?i=react,typescript" />
         <br />
         Code available here:
         <a href="https://github.com/pjnalls/itunes/" target="_blank"
@@ -180,7 +259,7 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
         <p class="text-center my-8">
           <a
             href="/projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#6e408a] dark:border-[#d0c2ff] text-white px-6 py-3 rounded-md mb-8"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8"
             style="text-decoration: none;">Scroll to Top ⬆</a
           >
         </p>

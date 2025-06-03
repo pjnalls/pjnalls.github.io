@@ -86,11 +86,13 @@ const posts = (await getCollection('blog')).sort(
       }
     </style>
   </head>
-  <body
-    class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#67a4f8] dark:from-[#173458] dark:to-[#1B553b] bg-gradient-to-b from-[#67a4f8] to-[#6Bf5ab]"
-  >
+  <body>
+    <div
+      class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#173458] dark:to-[#1B553b] bg-gradient-to-b from-[#67a4f8] to-[#6Bf5ab] fixed z-0 w-full h-full"
+    >
+    </div>
     <Header />
-    <main>
+    <main class="px-8 mx-auto max-w-screen-lg w-full relative z-10">
       <section>
         <ul>
           {
