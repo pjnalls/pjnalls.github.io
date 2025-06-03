@@ -67,7 +67,6 @@ body {
   margin-top: 64px;
 }
 main {
-  width: 720px;
   height: auto;
   max-width: calc(100% - 2em);
   margin: auto;

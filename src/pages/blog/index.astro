@@ -23,9 +23,6 @@ const posts = (await getCollection('blog')).sort(
     <script is:inline src="/fouc-resolver.js"></script>
     <BaseHead title={SITE_BLOG_TITLE} description={SITE_DESCRIPTION} />
     <style>
-      main {
-        width: 960px;
-      }
       ul {
         display: flex;
         flex-wrap: wrap;
@@ -91,11 +88,11 @@ const posts = (await getCollection('blog')).sort(
     class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1B553b] bg-[#6Bf5ab]"
   >
     <div
-      class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#173458] dark:to-[#1B553b] bg-gradient-to-b from-[#67a4f8] to-[#6Bf5ab] fixed z-0  top-16 w-full h-[calc(100vh-64px)]"
+      class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#173458] dark:to-[#1B553b] bg-gradient-to-b from-[#67a4f8] to-[#6Bf5ab] fixed z-0 xs:top-[94px] sm:top-[72px] top-[70px] w-full xs:h-[calc(100vh-94px)] md:h-[calc(100vh-72px)] h-[calc(100vh-70px)]"
     >
     </div>
     <Header />
-    <main class="relative z-10 mt-16">
+    <main class="relative z-10 mt-16 max-w-screen-lg mx-auto">
       <section>
         <ul>
           {
