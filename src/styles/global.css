@@ -64,13 +64,14 @@ body {
   color: rgb(var(--gray-dark));
   font-size: 20px;
   line-height: 1.7;
-  margin-top: 64px;
 }
 main {
   height: auto;
   max-width: calc(100% - 2em);
   margin: auto;
   padding: 3em 1em;
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
 }
 @media (max-width: 768px) {
   main {
