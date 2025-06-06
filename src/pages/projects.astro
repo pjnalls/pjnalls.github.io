@@ -21,7 +21,8 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <script is:inline src="/fouc-resolver.js"></script>
+    <script is:inline src="/scripts/fouc-resolver.js"></script>
+    <script is:inline src="/scripts/scroll-to-top.js"></script>
     <BaseHead title={SITE_PROJECTS_TITLE} description={SITE_DESCRIPTION} />
   </head>
 
@@ -29,7 +30,7 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
     class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1B553b] bg-[#6Bf5ab]"
   >
     <header>
-      <script is:inline src="/fouc-resolver.js"></script>
+      <script is:inline src="/scripts/fouc-resolver.js"></script>
     </header>
 
     <Layout
@@ -91,10 +92,10 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           height={360}
           class="mx-auto"
         />
-        <p class="text-center my-8">
+        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
           <a
             href="#my-projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8 cursor-pointer"
             style="text-decoration: none;">Scroll to Top ⬆</a
           >
         </p>
@@ -145,10 +146,10 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           height={360}
           class="mx-auto"
         />
-        <p class="text-center my-8">
+        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
           <a
             href="#my-projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8 cursor-pointer"
             style="text-decoration: none;">Scroll to Top ⬆</a
           >
         </p>
@@ -187,10 +188,10 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           width={1370}
           height={1604}
         />
-        <p class="text-center my-8">
+        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
           <a
             href="#my-projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8 cursor-pointer"
             style="text-decoration: none;">Scroll to Top ⬆</a
           >
         </p>
@@ -231,7 +232,7 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           width={1370}
           height={1616}
         />
-        <p class="text-center my-8">
+        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
           <a
             href="#my-projects"
             class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8"
@@ -273,7 +274,7 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           width={1370}
           height={803}
         />
-        <p class="text-center my-8">
+        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
           <a
             href="#my-projects"
             class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8"
@@ -296,3 +297,5 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
     color: inherit;
   }
 </style>
+
+<script></script>
