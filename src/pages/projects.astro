@@ -6,6 +6,7 @@ import goodCoIndexImage from '../assets/project-goodcoindex.avif';
 import youtubeImage from '../assets/project-youtube.avif';
 import habitApplitImage from '../assets/project-habit-applit.avif';
 import itunesImage from '../assets/project-itunes.avif';
+import jobDemandImage from '../assets/project-jobdemand.avif';
 
 import Layout from '../layouts/BlogPost.astro';
 import BaseHead from '../components/BaseHead.astro';
@@ -42,12 +43,60 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
     >
       <div>
         <ul class="mb-24">
+          <li><a href="#project-y">• Jobdemand</a></li>
           <li><a href="#project-z">• GoodCoIndex</a></li>
           <li><a href="#project-0">• NLP From Scratch</a></li>
           <li><a href="#project-1">• YouTube Clone</a></li>
           <li><a href="#project-2">• Habit AppLit</a></li>
           <li><a href="#project-3">• Classic iTunes</a></li>
         </ul>
+        <span class="text-5xl pt-24" id="project-y"
+          ><strong>Jobdemand</strong></span
+        >
+        <p>
+          A project that creates a visualization of the demand for each job the
+          user picks to help them see what jobs are most in demand.
+        </p>
+        <span class="text-4xl">Ingredients</span>
+        <ul>
+          <li>• Python</li>
+          <li>• Matplotlib</li>
+          <li>• Pandas</li>
+          <li>• Requests</li>
+          <li>• Data Analysis</li>
+          <li>• Data Visualization</li>
+          <li>• Statistics</li>
+          <li>• Mathematics</li>
+        </ul>
+        <br />
+        <img
+          alt="JobDemand Skill Icons"
+          src="https://skillicons.dev/icons?i=python"
+        />
+        <br />
+        Code available here:
+        <a
+          href="https://github.com/pjnalls/jobdemand"
+          target="_blank"
+          rel="noopener noreferrer">https://github.com/pjnalls/jobdemand</a
+        >.
+        <br />
+        Screenshot:
+        <Image
+          src={jobDemandImage}
+          alt="JobDemand Project"
+          loading="lazy"
+          width={1370}
+          height={1604}
+        />
+        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
+          <a
+            href="#my-projects"
+            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-4 border-[#6e408a] dark:border-[#d0c2ff] text-white p-4 rounded-md mb-8 cursor-pointer"
+            style="text-decoration: none;">Scroll to Top ⬆</a
+          >
+        </p>
+        <br />
         <span class="text-5xl pt-24" id="project-z"
           ><strong>GoodCoIndex</strong></span
         >
