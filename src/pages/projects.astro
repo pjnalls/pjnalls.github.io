@@ -6,7 +6,8 @@ import goodCoIndexImage from '../assets/project-goodcoindex.avif';
 import youtubeImage from '../assets/project-youtube.avif';
 import habitApplitImage from '../assets/project-habit-applit.avif';
 import itunesImage from '../assets/project-itunes.avif';
-import jobDemandImage from '../assets/project-jobdemand.avif';
+import jobDemandTable from '../assets/project-jd-table.avif';
+import jobDemandChart from '../assets/project-jd-chart.avif';
 
 import Layout from '../layouts/BlogPost.astro';
 import BaseHead from '../components/BaseHead.astro';
@@ -85,14 +86,25 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           rel="noopener noreferrer">https://jobdemand.app</a
         >.
         <br />
-        Screenshot:
-        <Image
-          src={jobDemandImage}
-          alt="JobDemand Project"
-          loading="lazy"
-          width={1370}
-          height={1604}
-        />
+        Screenshots:
+        <div class="flex flex-row gap-4 w-[calc(100%-16px)]">
+          <Image
+            src={jobDemandTable}
+            alt="JobDemand Project Table"
+            loading="lazy"
+            width={685}
+            height={802}
+            class="w-1/2"
+          />
+          <Image
+            src={jobDemandChart}
+            alt="JobDemand Project Chart"
+            loading="lazy"
+            width={685}
+            height={802}
+            class="w-1/2"
+          />
+        </div>
         <p class="text-center my-8" onclick="scrollToProjectsHeader()">
           <a
             href="#my-projects"
