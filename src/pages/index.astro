@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -20,28 +18,35 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
     <BaseHead title={SITE_HOME_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body
-    class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1B553b] bg-[#6Bf5ab]"
-  ><div
+    class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1B553b] bg-[#6Bf5ab] h-screen flex flex-1"
+    ><div
       class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#173458] dark:to-[#1B553b] bg-gradient-to-b from-[#67a4f8] to-[#6Bf5ab] fixed z-0 xs:top-[94px] sm:top-[72px] top-[70px] w-full xs:h-[calc(100vh-94px)] md:h-[calc(100vh-72px)] h-[calc(100vh-70px)]"
     >
     </div>
     <Header />
-    <main class="relative z-10 mt-16 max-w-screen-lg mx-auto">
-      <div class="flex flex-row flex-wrap gap-0">
-        <div class="flex flex-col gap-8 justify-center w-full items-center">
-          <Image
-            src="/banner.png"
-            alt="home page promotion image"
-            class="object-cover sm:h-72 xs:h-44 h-36"
-            loading="eager"
-            width={1584}
-            height={438}
-          />
-          <div class="flex flex-col gap-0 items-center">
-            <h1 class="text-4xl font-bold mb-0">Hey there! 👋 I'm Preston.</h1>
-            <h2 class="text-2xl font-medium mb-4">
+    <div
+      class="self-center justify-center items-center mx-auto dark:from-[#173458] dark:bg-[#1B553b] bg-[#67a4f8]"
+    >
+      <main class="relative z-10 mt-16 max-w-screen-lg mx-auto flex-1">
+        <div class="flex flex-row flex-wrap gap-0 mt-[128px]">
+          <div class="flex flex-col gap-2 justify-center w-full items-center">
+            <div class="flex flex-col gap-0 items-center">
+              <h1 class="text-5xl font-bold ">Preston Nalls</h1>
+              <h2 class="text-2xl font-medium">
+                Curious 🔬 | Creative 🎨 | Caring 💖
+              </h2>
+            </div>
+            <img
+              alt="Skill Icons"
+              class="w-2/3"
+              src="https://skillicons.dev/icons?i=git,html,js,tailwind,dart,react,css,ts,sass,astro,vite,figma,github,markdown,pytorch,tensorflow,linux,py,nodejs,django,mongodb,windows,flutter,cpp,apple,bash,express,mysql&perline=14"
+            />
+          </div>
+          <div class="flex flex-col gap-0 items-center mt-16">
+            <h2 class="text-4xl font-bold mb-0">Hey there! 👋 I'm Preston.</h2>
+            <h3 class="text-2xl font-medium mb-4">
               Welcome to my portfolio and blog website.
-            </h2>
+            </h3>
             <p>
               Please use the navigation bar above to learn more about who I am,
               what I'm currently working on, and what I'm writing about at the
@@ -57,8 +62,8 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
           </div>
         </div>
         <Footer />
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
 
