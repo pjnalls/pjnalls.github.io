@@ -1,18 +1,19 @@
 ---
-title: 'Skill Icons'
-description: 'This is a post about skillicons.dev.'
-pubDate: 'June 11 2025'
-updatedDate: 'June 11 2025'
-heroImage: '/posts/skillicons.png'
+title: 'My 1st Term at UoPeople'
+description: "Here's a post about my first term results at UoPeople."
+pubDate: 'June 12 2025'
+updatedDate: 'June 12 2025'
+heroImage: '/posts/my-first-term-at-uopeople.png'
 ---
 
-Looking to spruce up your GitHub profile?
+I successfully completed my first term at the [University of the People](https://www.uopeople.edu/). I'm tremendously grateful to have the privilege of studying here.
 
-[Skillicons.dev](https://skillicons.dev/) may be what you're looking for. 
+So far, everyone at the university—the staff, colleagues, professors, and the president—has made a significant impression on me.
 
-Add sleek icons easily to your profile README, as shown below, to show recruiters and hiring managers who visit your profile what you can do.
+Furthermore, the university's mission of making higher education affordable for all, regardless of their country of origin, deeply resonates with me and many others.
 
-📖 Learn how to add a profile README [here](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).<br/>
-👀 View what my profile looks like with my profile README [here](https://github.com/pjnalls).<br/>
-🧑‍💻 Check out the raw Markdown code for my profile README [here](https://raw.githubusercontent.com/pjnalls/pjnalls/refs/heads/main/README.md).<br/>
-🔍 Find your Skill Icons [here](https://skillicons.dev/).
+It's no wonder a segment on PBS NewsHour was dedicated to the university.
+
+I'm so proud of my university and all that it's accomplishing for the People.
+
+Now, on to my second term, starting next Thursday! ✨
