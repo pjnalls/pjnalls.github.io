@@ -10,7 +10,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #67a4f8;
+  background-color: #61dbfb;
 }
 html.dark {
   background-color: #173458;
@@ -57,7 +57,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  background: #67a4f8;
+  background: #61dbfb;
   word-wrap: break-word;
   overflow-wrap: break-word;
   overflow-x: hidden;
