@@ -11,15 +11,15 @@ import { SITE_TITLE } from '../consts';
   <nav
     class="dark:text-[#aae2ff] text-[#19102a] dark:bg-[#173458] bg-[#61dbfb] px-[24px] py-2 w-full fixed top-0 z-20"
   >
-    <h2 class="dark:text-[#aae2ff] header"><a href="/">{SITE_TITLE}</a></h2>
-    <div class="internal-links">
+    <h2 class="dark:text-[#aae2ff] header md:w-1/3 flex justify-start"><a href="/">{SITE_TITLE}</a></h2>
+    <div class="internal-links flex justify-center md:w-1/3">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/projects">Projects</HeaderLink>
       <HeaderLink href="/blog">Blog</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
       <ThemeToggle client:load />
     </div>
-    <div class="social-links">
+    <div class="social-links md:w-1/3 flex justify-end">
       <a href="https://www.linkedin.com/in/pjnalls/" target="_blank">
         <span class="sr-only">Connect with Preston on LinkedIn</span>
         <FaLinkedin size={32} />
