@@ -3,7 +3,7 @@ title: 'My First Term at UoPeople'
 description: "Here's a post about my first term results at UoPeople."
 pubDate: 'June 12 2025'
 updatedDate: 'June 12 2025'
-heroImage: '/posts/my-first-term-at-uopeople.png'
+heroImage: '/posts/my-first-term-at-uopeople.jpg'
 ---
 
 I successfully completed my first term at the [University of the People](https://www.uopeople.edu/). I'm tremendously grateful to have the privilege of studying here.
