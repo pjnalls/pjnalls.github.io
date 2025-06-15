@@ -27,7 +27,7 @@ export default function ThemeToggle() {
   }, [theme]);
 
   return (
-    <button onClick={handleClick} className='inline-block align-middle'>
+    <button onClick={handleClick} className='inline-block align-middle mt-[-7px]'>
       <span className="sr-only">Light and Dark Theme Switch</span>
       {theme === 'light' ? <FaMoon size={24}/> : <IoIosSunny size={24}/>}
     </button>
