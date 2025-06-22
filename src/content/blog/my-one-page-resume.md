@@ -2,7 +2,7 @@
 title: 'My One-Page Resume'
 description: 'This is a post about a one-page resume I designed recently.'
 pubDate: 'June 10 2025'
-updatedDate: 'June 11 2025'
+updatedDate: 'June 22 2025'
 heroImage: '/posts/my-one-page-resume.png'
 ---
 
