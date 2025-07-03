@@ -2,6 +2,7 @@
 title: Don't Vibe Code; Edit
 description: In this article, we learn about a new term called "vibe coding", why it should be avoided, and what it's alternative should be.
 pubDate: 'Mar 8 2025'
+updatedDate: 'July 3 2025'
 heroImage: '/posts/dont-vibe-code-edit.jpg'
 ---
 
@@ -18,3 +19,6 @@ There’s a term for generating code yet not verifying it: “vibe coding”.
 I watched a video of Apple co-founder Steve Wozniak sharing some of his thoughts about AI with a reporter that, and I paraphrase, he thinks it’s great for people to be like editors who check what AI generates and pass its content along or reject its content entirely.
 
 I ultimately view AI as an assistant, and I’m adopting this perspective as I think it’s healthier than thinking AI has free rein. I’m doing it because I believe people and LLMs can be at their best, complement one another, and work together 🧑🤝🤖
+
+Reference:
+https://en.m.wikipedia.org/wiki/Vibe_coding
