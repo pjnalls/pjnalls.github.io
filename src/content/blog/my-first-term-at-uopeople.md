@@ -2,7 +2,6 @@
 title: 'My First Term at UoPeople'
 description: "Here's a post about my first term results at UoPeople."
 pubDate: 'June 12 2025'
-updatedDate: 'June 12 2025'
 heroImage: '/posts/my-first-term-at-uopeople.jpg'
 ---
 

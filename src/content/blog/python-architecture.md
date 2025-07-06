@@ -2,7 +2,6 @@
 title: 'Python Architecture'
 description: "This is an article about a potential template for Python data science architecture."
 pubDate: 'June 13 2025'
-updatedDate: 'June 13 2025'
 heroImage: '/posts/python-architecture.png'
 ---
 

@@ -2,7 +2,6 @@
 title: 'Build You Own X'
 description: "Here I share a link and explanation of repo that can help developers become better software engineers."
 pubDate: 'June 15 2025'
-updatedDate: 'June 15 2025'
 heroImage: '/posts/build-your-own-x.jpg'
 ---
 

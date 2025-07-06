@@ -2,7 +2,6 @@
 title: 'Deploying Vite App to GitHub Pages'
 description: "In this post, I share how to successfully deploy a Vite app to GitHub Pages."
 pubDate: 'July 1 2025'
-updatedDate: 'July 1 2025'
 heroImage: '/posts/deploying-vite-app-to-github-pages.jpg'
 ---
 I spent 4+ hours last night trying to deploy a React + Vite app to GitHub Pages, and finally figured out how to do so successfully. Here are the steps I followed:
