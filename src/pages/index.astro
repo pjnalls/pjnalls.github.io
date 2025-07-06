@@ -16,6 +16,19 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
     />
     <script is:inline src="/scripts/fouc-resolver.js"></script>
     <BaseHead title={SITE_HOME_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      a {
+        color: #903af0 !important;
+        transition: opacity 0.2s ease-in-out !important;
+      }
+      a:hover {
+        opacity: 0.5 !important;
+        text-decoration: underline !important;
+      }
+      a:visited {
+        color: #600aa0 !important;
+      }
+    </style>
   </head>
   <body
     class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1B553b] bg-[#6Bf5ab] h-screen flex flex-1"
@@ -31,20 +44,20 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
         <div class="flex flex-row flex-wrap gap-0 mt-[128px]">
           <div class="flex flex-col gap-2 justify-center w-full items-center">
             <div class="flex flex-col gap-0 items-center">
-              <h1 class="text-5xl font-bold ">Preston Nalls</h1>
-              <h2 class="text-2xl font-medium">
+              <h1 class="sm:text-5xl text-4xl font-bold ">Preston Nalls</h1>
+              <h2 class="md:text-2xl sm:text-lg text-base font-medium">
                 Curious 🔬 | Creative 🎨 | Caring 💖
               </h2>
             </div>
             <img
               alt="Skill Icons"
-              class="w-2/3"
+              class="w-full md:w-2/3"
               src="https://skillicons.dev/icons?i=git,html,js,tailwind,go,react,css,ts,sass,astro,vite,figma,github,markdown,pytorch,tensorflow,java,linux,py,nodejs,django,mongodb,windows,cpp,apple,bash,express,mysql&perline=14"
             />
           </div>
           <div class="flex flex-col gap-0 items-center mt-16">
-            <h2 class="text-4xl font-bold mb-0">Hey there! 👋 I'm Preston.</h2>
-            <h3 class="text-2xl font-medium mb-4">
+            <h2 class="md:text-4xl sm:text-2xl text-xl font-bold mb-0">Hey there! 👋 I'm Preston.</h2>
+            <h3 class="md:text-2xl sm:text-lg text-sm font-medium mb-4">
               Welcome to my portfolio and blog website.
             </h3>
             <p>

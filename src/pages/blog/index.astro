@@ -81,6 +81,17 @@ const posts = (await getCollection('blog')).sort(
           font-size: 1.563em;
         }
       }
+      a {
+        color: #903af0 !important;
+        transition: opacity 0.2s ease-in-out !important;
+      }
+      a:hover {
+        opacity: 0.5 !important;
+        text-decoration: underline !important;
+      }
+      a:visited {
+        color: #600aa0 !important;
+      }
     </style>
   </head>
 
