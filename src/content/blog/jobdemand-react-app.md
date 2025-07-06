@@ -2,7 +2,6 @@
 title: 'Jobdemand React App'
 description: 'Here I share a Vite + React web app I built one day to show users what jobs they pick are in demand.'
 pubDate: 'June 9 2025'
-updatedDate: 'June 9 2025'
 heroImage: '/posts/jobdemand-react-app.jpg'
 ---
 

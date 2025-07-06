@@ -2,7 +2,6 @@
 title: 'Anki & SRS'
 description: "This is an article about Anki and Spaced Repetition Software (SRS) for smart flashcards."
 pubDate: 'June 14 2025'
-updatedDate: 'June 14 2025'
 heroImage: '/posts/anki-and-srs.jpg'
 ---
 
