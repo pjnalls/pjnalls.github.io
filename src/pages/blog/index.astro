@@ -82,15 +82,11 @@ const posts = (await getCollection('blog')).sort(
         }
       }
       a {
-        color: #903af0 !important;
         transition: opacity 0.2s ease-in-out !important;
       }
       a:hover {
         opacity: 0.5 !important;
         text-decoration: underline !important;
-      }
-      a:visited {
-        color: #600aa0 !important;
       }
     </style>
   </head>
@@ -109,7 +105,7 @@ const posts = (await getCollection('blog')).sort(
           {
             posts.map((post) => (
               <li>
-                <a href={`/blog/${post.slug}/`}>
+                <a href={`/blog/${post.slug}/`} class="!text-[#aa4acf] dark:!text-[#d0a0ff]">
                   <img
                     width={720}
                     height={360}
