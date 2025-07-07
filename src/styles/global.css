@@ -16,10 +16,10 @@ html.dark {
   background-color: #173458;
 }
 html.dark * a {
-  color: #d0c2ff;
+  color: #d0a0ff;
 }
 html * a {
-  color: #4c3a6f;
+  color: #aa4acf;
 }
 
 :root {
