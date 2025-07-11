@@ -9,12 +9,12 @@ I'm excited to share that, as of today, I've taught 1k+ lessons on Preply since 
 
 I'm so thankful to various students around the world who gave me many opportunities to set out to fulfill a certain role I feel I'm responsible for as a tutor:
 
-Someone who creates a comfortable environment to practice conversational English and learn to build web and mobile apps, as much as possible, consistently, and confidently.
+Someone who creates a comfortable environment for students to practice conversational English and learn to build web and mobile apps, as much as possible, consistently, and confidently.
 
-Without the students that have come across my path, none of this would be possible.
+Without the students I crossed paths with, this wouldn't be possible.
 
 Many students come and go, but many stay for a while.
-Many students become like best friends, as we smile and laugh together each lesson.
+Many students become like best friends, as we laugh and have fun together each lesson.
 
 Moreover, one student in particular has been with me since the beginning, and they are now one of my best friends.
 
