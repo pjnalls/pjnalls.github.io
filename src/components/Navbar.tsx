@@ -23,8 +23,8 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
             ?.split('/')
             .slice(2, -1)
             .map((folder, index) => (
-              <>
-                <li key={`${folder}-${index}`}>
+              <span key={`${folder}-${index}`} className="flex flex-row gap-2">
+                <li>
                   <span>
                     {folder
                       .split(' ')
@@ -43,7 +43,7 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
                 <li>
                   <span>&gt;</span>
                 </li>
-              </>
+              </span>
             ))}
           <li>
             <a href={`/blog/${post.slug}`} className="dark:!text-pink-100">
@@ -52,16 +52,17 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
           </li>
         </ul>
       </nav>
-
+            
       <div
-        className={`md:hidden block h-screen w-full bg-[#173458] fixed z-10 opacity-0 transition-opacity duration-300 ease-in-out ${isOpen && '!opacity-60'}`}
+        className={`md:hidden hidden h-screen w-full bg-[#173458] fixed z-10 opacity-0 transition-opacity duration-300 ease-in-out ${isOpen && '!opacity-60 block'}`}
       ></div>
       <ul
         className={`w-[240px] p-2 m-0 bg-[#61dbfb] dark:bg-[#173458] z-20 block md:hidden h-screen fixed overflow-y-auto translate-x-[-240px] transition-transform duration-300 ease-in-out ${isOpen && 'translate-x-[0px]'}`}
       >
-        <h2 className="text-lg font-normal">Posts</h2>
-        {blog.map((post) => (
+        <h2 className="text-lg font-normal">osts</h2>
+        {blog.map((post, index) => (
           <a
+            key={`sidenav-${index}-${post.slug}`}
             href={`/blog/${post.slug}/`}
             className="!text-[#aa4acf] dark:!text-[#d0a0ff]"
           >
