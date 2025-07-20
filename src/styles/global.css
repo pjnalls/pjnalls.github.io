@@ -4,16 +4,16 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-* {
+ * {
   transition: all 0.26s ease;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: #61dbfb;
+  background-color: #6Bf5ab;
 }
 html.dark {
-  background-color: #173458;
+  background-color: #1B553b;
 }
 html.dark * a {
   color: #d0a0ff;
@@ -30,30 +30,13 @@ html * a {
   --gray-light: 52, 125, 149;
   --gray-dark: 34, 41, 57;
   --gray-gradient: #aae2ff, #9aa9ee;
-  --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
-    0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
-}
-@font-face {
-  font-family: 'Atkinson';
-  src: url('/fonts/atkinson-regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Atkinson';
-  src: url('/fonts/atkinson-bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
 .title {
-  font-family: 'Roboto Slab', serif;
   font-weight: 500;
   line-height: 1.12;
 }
 body {
-  font-family: 'Atkinson', sans-serif;
+  font-family: 'inter', 'inter Fallback' system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
   text-align: left;
@@ -69,13 +52,15 @@ main {
   height: auto;
   max-width: calc(100% - 2em);
   margin: auto;
-  padding: 3em 2em;
+  padding: 0;
   content-visibility: auto;
   contain-intrinsic-size: 1000px;
 }
 @media (max-width: 768px) {
   main {
-    max-width: calc(100% - 0.5em);
+    max-width: 100%;
+    padding: 1em;
+    margin: 0;
   }
 }
 h1,

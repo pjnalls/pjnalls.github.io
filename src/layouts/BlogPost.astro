@@ -1,14 +1,15 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
+import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const isBlogPost = !['Blog', 'My Projects', 'About Me'].includes(Astro.props.title)
 ---
 
 <html lang="en">
@@ -65,12 +66,17 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   <body
     class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1B553b] bg-[#6Bf5ab]"
   >
-    <div
-      class="h-fulldark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#173458] dark:to-[#1B553b] bg-gradient-to-b from-[#61dbfb] to-[#6Bf5ab] fixed z-0 xs:top-[94px] sm:top-[72px] top-[70px] w-full xs:h-[calc(100vh-94px)] md:h-[calc(100vh-72px)] h-[calc(100vh-70px)]"
+    {
+      !isBlogPost && (
+        <>
+          <Header />
+          <div class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#173458] dark:to-[#1B553b] bg-gradient-to-b from-[#61dbfb] to-[#6Bf5ab] fixed z-0 xs:top-[94px] sm:top-[72px] top-[70px] w-full xs:h-[calc(100vh-94px)] md:h-[calc(100vh-72px)] h-[calc(100vh-70px)]"></div>
+        </>
+      )
+    }
+    <main
+      class={`md:!px-[2em] !px-[1em] mx-auto ${isBlogPost ? 'md:mt-4 mt-0' : 'md:mt-36 mt-36'} max-w-screen-lg w-full relative z-10 bg-transparent`}
     >
-    </div>
-    <Header />
-    <main class="px-[2em] mx-auto mt-16 max-w-screen-lg w-full relative z-10">
       <article>
         <div class="hero-image">
           {
@@ -105,6 +111,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         </div>
       </article>
     </main>
-    <Footer />
+    {
+      !isBlogPost && <Footer />
+    }
   </body>
 </html>

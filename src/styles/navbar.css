@@ -1,0 +1,120 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #61dbfb;
+    color: #113a5b;
+    padding: 0 0.5em;
+    padding-right: 1em;
+    gap: 0.5em;
+    align-items: center;
+    z-index: 1000;
+    top: 60px;
+    width: 100%;
+}
+
+html.dark .navbar {
+    background-color: #173458;
+    color: #aae2ff;
+}
+
+.navbar-brand {
+    font-size: 1.8em;
+    font-weight: bold;
+    position: relative;
+    z-index: 3000;
+    color: #113a5b;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.4em;
+    }
+}
+/* Galaxy Fold */
+@media (max-width: 345px) {
+    .navbar-brand {
+        font-size: 1.2em;
+    }
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* For desktop view */
+}
+.nav-links li {
+    margin-left: 25px;
+}
+.nav-links a {
+    color: #113a5b;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+    display: none; /* Hidden on desktop */
+    flex-direction: column;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    z-index: 10000; /* Ensure it's above other content */
+}
+.hamburger .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #113a5b;
+    margin: 4px 0;
+    transition: all 0.3s ease-in-out;
+}
+html.dark .hamburger .bar {
+    background-color: #aae2ff;
+}
+
+.nav-links.active {
+    display: flex; /* Show when active */
+    transform: translateY(0);
+}
+
+/* Mobile Menu Styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        position: relative;
+        z-index: 2000;
+        flex-direction: column;
+        width: 100%;
+        background-color: darkmagenta;
+        position: absolute;
+        top: -50vh; /* Adjust based on navbar height */
+        left: 0;
+        padding: 15px 0;
+        border-top: 2px solid #ccc;
+        transition: top 0.5s ease-in-out, border-top 0.5s ease-in-out;
+    }
+    .nav-links.active {
+        border-top: 2px solid #cccf;
+        top: 82px; /* Adjust based on navbar height */
+    }
+    .nav-links li {
+        margin: 10px 20px;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on mobile */
+    }
+    /* Hamburger Animation */
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+}
