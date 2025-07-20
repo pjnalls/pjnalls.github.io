@@ -52,7 +52,6 @@ main {
   height: auto;
   max-width: calc(100% - 2em);
   margin: auto;
-  padding: 0;
   content-visibility: auto;
   contain-intrinsic-size: 1000px;
 }
