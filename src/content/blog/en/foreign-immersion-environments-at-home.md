@@ -1,6 +1,6 @@
 ---
 title: 'Foreign Immerision Environments at Home'
-description: "Here I share a language-learning method I usually share with English-language learners who often ask me how I learn languages"
+description: "Here is a language-learning method I usually share with English-language learners who often ask me how I learn languages"
 pubDate: 'July 25 2025'
 heroImage: '/posts/foreign-immersion-environments-at-home.jpg'
 ---

@@ -9,6 +9,8 @@ import FormattedDate from '../../components/FormattedDate.astro';
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+
+const lang = 'en';
 ---
 
 <!doctype html>
@@ -104,10 +106,10 @@ const posts = (await getCollection('blog')).sort(
         <ul>
           {
             posts.map((post) => (
-              <li class="relative z-20">
+              <li class={`relative z-20 ${post?.filePath?.includes(`/${lang}/`) ? 'block' : 'hidden'}`}>
                 <a
                   href={`/blog/${post.slug}/`}
-                  class="!text-[#aa4acf] dark:!text-[#d0a0ff]"
+                  class={`!text-[#aa4acf] dark:!text-[#d0a0ff]`}
                 >
                   <img
                     width={720}
