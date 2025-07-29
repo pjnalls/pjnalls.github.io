@@ -105,8 +105,8 @@ const lang = 'en';
       <section>
         <ul>
           {
-            posts.map((post) => (
-              <li class={`relative z-20 ${post?.filePath?.includes(`/${lang}/`) ? 'block' : 'hidden'}`}>
+            posts.filter((post) => post?.filePath?.includes(`/${lang}/`)).map((post) => (
+              <li class={`relative z-20`}>
                 <a
                   href={`/blog/${post.slug}/`}
                   class={`!text-[#aa4acf] dark:!text-[#d0a0ff]`}
