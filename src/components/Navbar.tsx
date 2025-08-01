@@ -23,9 +23,9 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
             ?.split('/')
             .slice(2, -1)
             .map((folder, index) => (
-              <span key={`${folder}-${index}`} className="flex flex-row gap-2">
+              <span key={`${folder}-${index}`} className="flex flex-row gap-2 justify-center items-center">
                 <li>
-                  <span>
+                  <span className="text-sm">
                     {folder
                       .split(' ')
                       .map((word) =>
@@ -40,13 +40,13 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
                       .join(' ')}
                   </span>
                 </li>
-                <li>
+                <li className="text-sm">
                   <span>&gt;</span>
                 </li>
               </span>
             ))}
           <li>
-            <a href={`/blog/${post.slug}`} className="dark:!text-pink-100">
+            <a href={`/blog/${post.slug}`} className="dark:!text-pink-100 text-sm">
               {post?.data?.title}
             </a>
           </li>
