@@ -1,7 +1,7 @@
 ---
 title: 'El ambiente de inmersión en tu casa'
 description: "Aquí hay un método de aprendizaje de idiomas que suelo compartir con estudiantes de inglés que a menudo me preguntan cómo aprendo idiomas."
-pubDate: 'July 27 2025'
+pubDate: 'July 28 2025'
 heroImage: '/posts/foreign-immersion-environments-at-home.jpg'
 ---
 Hablo regularmente 4 idiomas recientemente —japonés, español, mandarín e inglés— y los estudiantes de idiomas a menudo me preguntan sobre mi enfoque para aprenderlos. Aquí hay un par de consejos que suelo compartir:
