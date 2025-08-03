@@ -4,13 +4,13 @@ description: "Here I share an update of how it took me less than 20 hours of Spa
 pubDate: 'August 2 2025'
 heroImage: '/posts/after-20-spanish-lesson-hours.jpg'
 ---
-Only 20 hours of Preply conversational Spanish lessons and my Spanish immersion environment at home did more for me than 5 years of studying Spanish in school as a child! 🤯
+Just 20 hours of Preply conversational Spanish lessons and my Spanish immersion environment at home did more for me than 5 years of studying Spanish in school as a child! 🤯
 
-I'm telling you. Creating a "town" (see link to article below) in the target language we're learning around us—even if we don't live in the country where that target language originates from—it works. 
+I'm telling you. Creating a "town" (see link to article below) in the target language we're learning around us—even if we don't live in the country where that target language originates—it works. 
 
 This "town" method of constantly and consistently inputing and outputting languages I'm learning works well for me, so much so that I can have conversational language lessons *monolingually* without relying on English at all.
 
-It worked in about 2 years for my Mandarin.<br/>
+It worked in about 2 years for my Mandarin.
 Now, I realized today it worked in only about *2 months* for my Spanish! 😲 
 
 ---

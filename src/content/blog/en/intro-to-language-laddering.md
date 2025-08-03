@@ -4,11 +4,11 @@ description: "In this article, I give you a brief introduction to Language Ladde
 pubDate: 'August 2 2025'
 heroImage: '/posts/intro-to-language-laddering.jpg'
 ---
-A great reason to learn a 2nd, 3rd, 4th language etc., depending on the languages you want to learn, is you can strengthen your one while you learn another. This is called "language laddering". 🪜
+A great reason to learn a 2nd, 3rd, 4th language etc., depending on the languages you want to learn, is you can strengthen one while you learn another. This is called "language laddering". 🪜
 
 This concept is a little complex, so let's use an example.
 
-Let's say your native language is English, and you learned to understand and use Spanish to eventually have no need for English when studying Spanish. 
+Let's say your native language is English, and you learned to understand and use Spanish to eventually have no need for English as an aid for studying Spanish. 
 Congratulations! 🎉 You now can learn, e.g., Portuguese with Spanish. 
 *This* is language laddering. 
 
@@ -18,8 +18,8 @@ In other words, you won't "need" to learn Spanish because you already know it, o
 
 ---
 
-As for myself, I plan to ladder 3 of my languages.<br/>
-Below are some more ideas of how to ladder languages, which I plan to use myself:
+As for me, I plan to ladder 3 of my languages.<br/>
+Below are some more ideas of how to ladder languages, which I plan to use:
 
 🌐 Learn Portuguese with my Spanish.<br/>
 🌐 Learn Cantonese Chinese with my Mandarin Chinese.<br/>
