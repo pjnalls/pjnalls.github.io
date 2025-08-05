@@ -3,7 +3,7 @@ title: 'NLP From Scratch'
 description: "In this post, I share an update for a natural language processing (NLP) model that I built from scratch."
 pubDate: 'June 28 2025'
 updatedDate: 'July 1 2025'
-heroImage: '/posts/nlp_from_scratch.jpg'
+heroImage: '/posts/nlp-from-scratch.jpg'
 ---
 
 I developed an NLP neural network in Python and PyTorch and integrated it into a full-stack TypeScript app today.
