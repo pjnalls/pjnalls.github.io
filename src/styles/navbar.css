@@ -64,7 +64,8 @@ html.dark .navbar {
     background-color: transparent;
     border: none;
     padding: 10px;
-    z-index: 10000; /* Ensure it's above other content */
+    position: relative;
+    z-index: 1000; /* Ensure it's above other content */
 }
 .hamburger .bar {
     width: 30px;
@@ -72,6 +73,8 @@ html.dark .navbar {
     background-color: #113a5b;
     margin: 4px 0;
     transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1000;
 }
 html.dark .hamburger .bar {
     background-color: #aae2ff;
@@ -87,7 +90,7 @@ html.dark .hamburger .bar {
     .nav-links {
         display: flex;
         position: relative;
-        z-index: 2000;
+        z-index: 900;
         flex-direction: column;
         width: 100%;
         background-color: darkmagenta;

@@ -12,7 +12,10 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
         <button
           className={`hamburger ${isOpen ? 'active' : ''}`}
           id="hamburger"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => {
+            setIsOpen(!isOpen);
+            console.log(isOpen);
+          }}
           aria-label="Toggle navigation"
         >
           <span className="bar"></span>
@@ -23,7 +26,10 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
             ?.split('/')
             .slice(2, -1)
             .map((folder, index) => (
-              <span key={`${folder}-${index}`} className="flex flex-row gap-2 justify-center items-center">
+              <span
+                key={`${folder}-${index}`}
+                className="flex flex-row gap-2 justify-center items-center"
+              >
                 <li>
                   <span className="text-sm">
                     {folder
@@ -46,19 +52,31 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
               </span>
             ))}
           <li>
-            <a href={`/blog/${post.slug}`} className="dark:!text-pink-100 text-sm">
-              {post?.data?.title}
+            <a
+              href={`/blog/${post.slug}`}
+              className="dark:!text-pink-100 text-sm"
+            >
+              {post?.data?.title.length >= 36
+                ? `${post?.data?.title.slice(
+                    0,
+                    27
+                  )}...${post?.data?.title.slice(-6)}`
+                : post?.data?.title}
             </a>
           </li>
         </ul>
       </nav>
 
       <div
-        className={`md:hidden block invisible h-screen w-full bg-[#173458] fixed z-10 opacity-0 transition-all duration-300 ease-in-out ${isOpen && '!opacity-60 !visible !z-10'}`}
+        className={`md:hidden block invisible h-screen w-full bg-[#173458] fixed z-10 opacity-0 transition-all duration-300 ease-in-out ${
+          isOpen && '!opacity-60 !visible !z-10'
+        }`}
         onClick={() => setIsOpen(false)}
       ></div>
       <ul
-        className={`w-[240px] p-2 m-0 bg-[#61dbfb] dark:bg-[#173458] z-20 block md:hidden h-screen fixed overflow-y-auto translate-x-[-240px] transition-transform duration-300 ease-in-out ${isOpen && 'translate-x-[0px]'}`}
+        className={`w-[240px] p-2 m-0 bg-[#61dbfb] dark:bg-[#173458] z-20 block md:hidden h-screen fixed overflow-y-auto translate-x-[-240px] transition-transform duration-300 ease-in-out ${
+          isOpen && 'translate-x-[0px]'
+        }`}
       >
         <h2 className="text-lg font-normal">Posts</h2>
         {blog

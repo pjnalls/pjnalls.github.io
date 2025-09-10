@@ -37,7 +37,7 @@ const post = Astro.props;
     </div>
   </nav>
   <Suspense>
-    <Navbar post={post} blog={await getCollection('blog')} />
+    <Navbar post={post} blog={await getCollection('blog')} client:load />
   </Suspense>
   <style>
     header {
