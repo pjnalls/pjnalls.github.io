@@ -6,6 +6,7 @@ type Props = CollectionEntry<'blog'>;
 
 const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const lang = 'en';
   return (
     <>
       <nav className={`navbar flex md:hidden`}>
@@ -73,27 +74,29 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
         }`}
         onClick={() => setIsOpen(false)}
       ></div>
-      <ul
-        className={`w-[240px] p-2 m-0 bg-[#61dbfb] dark:bg-[#173458] z-20 block md:hidden h-screen fixed overflow-y-auto translate-x-[-240px] transition-transform duration-300 ease-in-out ${
-          isOpen && 'translate-x-[0px]'
-        }`}
-      >
-        <h2 className="text-lg font-normal">Posts</h2>
-        {blog
-          .sort(
-            (a, b) => a?.data?.pubDate.getTime() - b?.data?.pubDate.getTime()
-          )
-          .reverse()
-          .map((post, index) => (
-            <a
-              key={`sidenav-${index}-${post.slug}`}
-              href={`/blog/${post.slug}/`}
-              className="!text-[#aa4acf] dark:!text-[#d0a0ff]"
-            >
-              <li className="text-sm">• {post.data.title}</li>
-            </a>
-          ))}
-      </ul>
+        <ul
+          className={`w-[240px] p-2 m-0 bg-[#61dbfb] dark:bg-[#173458] z-20 block md:hidden h-screen fixed overflow-y-auto translate-x-[-240px] transition-transform duration-300 ease-in-out ${
+            isOpen && 'translate-x-[0px]'
+          }`}
+        >
+          <h2 className="text-lg font-normal">Posts</h2>
+          {blog
+            .sort(
+              (a, b) => a?.data?.pubDate.getTime() - b?.data?.pubDate.getTime()
+            )
+            .reverse()
+            .map((post, index) => (
+              post?.filePath?.includes(`/${lang}/`) && (
+              <a
+                key={`sidenav-${index}-${post.slug}`}
+                href={`/blog/${post.slug}/`}
+                className="!text-[#aa4acf] dark:!text-[#d0a0ff]"
+              >
+                  <li className="text-sm">• {post.data.title}</li>
+                </a>
+              )
+            ))}
+        </ul>
     </>
   );
 };

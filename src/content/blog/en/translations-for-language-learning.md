@@ -12,6 +12,6 @@ While I still think it's quite valuable to describe a word you're trying to say 
 
 And let's face it, besides highly contextual mediums like video, pictures, body language, etc., an adult, absolute beginner of their target language will most likely rely heavily on translations in the beginning.
 
-However, it's good to take off the "training wheels" at some point and invest the time in monolingual input and output of your target language, e.g., watching Spanish videos with Spanish subtitles once you're ready.
+However, it's good to "take off the training wheels" at some point and invest the time in monolingual input and output of your target language, e.g., watching Spanish videos with Spanish subtitles once you're ready.
 
 Then, once you can understand, speak, and write about 80% of your target language without any assistance from a tutor, a Google Search, etc., you can add some tool-assistance via Google Translate for about 20% or less of the words, expressions, and sentences in your target language that you don't know.
