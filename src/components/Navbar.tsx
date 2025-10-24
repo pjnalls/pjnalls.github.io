@@ -15,7 +15,6 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
           id="hamburger"
           onClick={() => {
             setIsOpen(!isOpen);
-            console.log(isOpen);
           }}
           aria-label="Toggle navigation"
         >

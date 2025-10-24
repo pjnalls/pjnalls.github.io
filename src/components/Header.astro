@@ -4,7 +4,6 @@ import ThemeToggle from './ThemeToggle';
 import { SITE_TITLE } from '../consts';
 import Navbar from './Navbar';
 import { getCollection } from 'astro:content';
-import { Suspense } from 'react';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -36,9 +35,7 @@ const post = Astro.props;
       <ThemeToggle client:load />
     </div>
   </nav>
-  <Suspense>
-    <Navbar post={post} blog={await getCollection('blog')} client:load />
-  </Suspense>
+  <Navbar post={post} blog={await getCollection('blog')} client:only />
   <style>
     header {
       margin: 0;
