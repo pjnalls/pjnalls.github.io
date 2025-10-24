@@ -1,38 +1,23 @@
 ---
 title: 'Building Graphluency in Public #001'
-description: "In this post, I demo and share my first updates for the Graphluency project so far."
-pubDate: 'October 24 2025'
+description: "Here I introduce the Graphluency project and the website I've reserved for it."
+pubDate: 'October 12 2025'
 heroImage: '/posts/building-gp-in-public-1.gif'
 ---
-🎉 Finally, I'm demoing what I've quietly built for about a week! 🙌
+It occurred to me yesterday that the method of language laddering fully realized has what I'm calling "multilingual fluency graphs" that can be constructed for all the languages we speak or at least familiar with. 🤔
 
-After having terrible npm dependency hell, the Graphluency app is in great shape! ☺️
+My hope is that by constructing fluency graphs for n-number languages we know that we can see how people and their spoken languages are deeply connected despite our different cultures, backgrounds, and languages.
 
-I've completed initial development for the UI, Expo Router layouts, index and profile routes, login, Redux state management, and some essential composite and atomic feature and UI components.
+Furthermore, these graphs are for us to see the vast amounts of similarities between languages for us to construct our own intricate multilingual networks, as either polyglots or those of who are trying to be one. 🌏🌍🌎
 
-For this initial phase of development, I wanted to focus on the UI, inspired by my favorite video game. ✨
+Folks, I introduce to you a new project I started building from yesterday and until late in the morning and will be building going forward: [Graphluency.com](https://graphluency.com). 📊
 
-Furthermore, modern app developers use flat color palettes for simple and clean design, but I decided to try to push the limitations of Expo and React Native, using alpha values in colors and gradients. I'll also use animations in future development phases. 
+There's just a fancy placeholder landing page for now GoDaddy helped me create, but I'm currently building a full-stack TypeScript, cross-platform Expo app for Web, iOS, and Android and will keep you all updated with any significant progress.
 
-If you're curious about what technologies I'm using, here are some ingredients I worked with in this phase 🧑‍🍳🤌:<br/>
-✅ TypeScript<br/>
-✅ React<br/>
-✅ React Native<br/>
-✅ Tailwind CSS<br/>
-✅ Redux<br/>
-✅ Expo<br/>
-✅ Jest<br/>
-✅ Babel<br/>
-✅ Nx<br/>
-✅ Node.js<br/>
-✅ Vis.js
+You can find the GitHub repo for the project here: https://github.com/pjnalls/graphluency
 
-I'm far from releasing the first version of the app, yet so much has been done aesthetically, technically, and architecturally this past week that it feels like a significant milestone. 🥳
+...
 
-Stay tuned for more updates on the Graphluency project! 😊
+So far, I've been describing multilingual fluency graphs to students who I give English lessons to, but I haven't found a way until now to visualize the relationships between languages I and they know. ✨
 
-📀 Code available here:<br/>
-https://github.com/pjnalls/graphluency
-
-🌐 Website (a placeholder for now) available here:<br/>
-https://graphluency.com
+So this is exciting, and I'm looking forward to diving into this project!
