@@ -12,6 +12,7 @@ import jobDemandChart from '../assets/project-jd-chart.avif';
 import Layout from '../layouts/BlogPost.astro';
 import BaseHead from '../components/BaseHead.astro';
 import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 ---
 
 <!doctype html>
@@ -38,7 +39,7 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
   </head>
 
   <body
-    class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1B553b] bg-[#6Bf5ab]"
+    class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1f074f] bg-[#cfb7ff]"
   >
     <header>
       <script is:inline src="/scripts/fouc-resolver.js"></script>
@@ -89,7 +90,7 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
             >
           </li>
         </ul>
-        <span class="text-5xl pt-24" id="project-x"
+        <span class="text-5xl mt-24" id="project-x"
           ><strong>Graphluency</strong></span
         >
         <p>
@@ -196,15 +197,11 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
             />
           </div>
         </div>
-        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
-          <a
-            href="#my-projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#b0a2df] rounded-lg text-white p-4 mb-8 cursor-pointer"
-            style="text-decoration: none;">Scroll to Top ⬆</a
-          >
-        </p>
+        
+
+        <ScrollToTopButton id={`scroll-to-top-button-1`} client:load />
         <br />
-        <span class="text-5xl pt-24" id="project-y"
+        <span class="text-5xl mt-24" id="project-y"
           ><strong>Jobdemand</strong></span
         >
         <p>
@@ -261,15 +258,12 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
             class="w-1/2"
           />
         </div>
-        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
-          <a
-            href="#my-projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#b0a2df] rounded-lg text-white p-4 mb-8 cursor-pointer"
-            style="text-decoration: none;">Scroll to Top ⬆</a
-          >
-        </p>
+
+        
+
+        <ScrollToTopButton id={`scroll-to-top-button-2`} client:load />
         <br />
-        <span class="text-5xl pt-24" id="project-z"
+        <span class="text-5xl mt-24" id="project-z"
           ><strong>GoodCoIndex</strong></span
         >
         <p>
@@ -315,15 +309,12 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           height={360}
           class="mx-auto"
         />
-        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
-          <a
-            href="#my-projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#b0a2df] rounded-lg text-white p-4 mb-8 cursor-pointer"
-            style="text-decoration: none;">Scroll to Top ⬆</a
-          >
-        </p>
+
+        
+
+        <ScrollToTopButton id={`scroll-to-top-button-3`} client:load />
         <br />
-        <span class="text-5xl pt-24" id="project-0"
+        <span class="text-5xl mt-24" id="project-0"
           ><strong>NLP From Scratch</strong></span
         >
         <p>
@@ -367,15 +358,12 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           height={1604}
           class="mx-auto"
         />
-        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
-          <a
-            href="#my-projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#b0a2df] rounded-lg text-white p-4 mb-8 cursor-pointer"
-            style="text-decoration: none;">Scroll to Top ⬆</a
-          >
-        </p>
+
+        
+
+        <ScrollToTopButton id={`scroll-to-top-button-4`} client:load />
         <br />
-        <span class="text-5xl pt-24" id="project-1"
+        <span class="text-5xl mt-24" id="project-1"
           ><strong>YouTube Clone</strong></span
         >
         <p>
@@ -413,15 +401,12 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           width={1370}
           height={1604}
         />
-        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
-          <a
-            href="#my-projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#b0a2df] rounded-lg text-white p-4 mb-8 cursor-pointer"
-            style="text-decoration: none;">Scroll to Top ⬆</a
-          >
-        </p>
+
+        
+
+        <ScrollToTopButton id={`scroll-to-top-button-5`} client:load />
         <br />
-        <span class="text-5xl pt-24" id="project-2"
+        <span class="text-5xl mt-24" id="project-2"
           ><strong>Habit AppLit</strong></span
         >
         <p>
@@ -461,16 +446,10 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           width={1370}
           height={1616}
         />
-        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
-          <a
-            href="#my-projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#b0a2df] rounded-lg text-white p-4 mb-8"
-            style="text-decoration: none;">Scroll to Top ⬆</a
-          >
-        </p>
+
+        <ScrollToTopButton id={`scroll-to-top-button-6`} client:load />
         <br />
-        <span class="text-5xl pt-24" id="project-3"
-          ><strong>Classic iTunes</strong></span
+        <span class="text-5xl mt-24" id="project-3"><strong>Classic iTunes</strong></span
         >
         <p>
           An iTunes clone built with Expo and React Native for iOS, Android, and
@@ -507,13 +486,10 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
           width={1370}
           height={803}
         />
-        <p class="text-center my-8" onclick="scrollToProjectsHeader()">
-          <a
-            href="#my-projects"
-            class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#b0a2df] rounded-lg text-white p-4 mb-8"
-            style="text-decoration: none;">Scroll to Top ⬆</a
-          >
-        </p>
+
+        
+
+        <ScrollToTopButton id={`scroll-to-top-button-7`} client:load />
         <br />
         <p class="text-center">
           Please also <a
@@ -533,5 +509,3 @@ import { SITE_PROJECTS_TITLE, SITE_DESCRIPTION } from '../consts';
     color: inherit;
   }
 </style>
-
-<script></script>

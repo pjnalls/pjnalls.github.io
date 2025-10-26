@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import { SITE_BLOG_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
+import Background from '../../components/Background.astro';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -94,43 +95,49 @@ const lang = 'en';
   </head>
 
   <body
-    class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1B553b] bg-[#6Bf5ab]"
+    class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1f074f] bg-[#cfb7ff]"
   >
     <div
-      class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#173458] dark:to-[#1B553b] bg-gradient-to-b from-[#61dbfb] to-[#6Bf5ab] fixed z-0 xs:top-[94px] sm:top-[72px] top-[70px] w-full xs:h-[calc(100vh-94px)] md:h-[calc(100vh-72px)] h-[calc(100vh-70px)]"
+      class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#262c4c] dark:to-[#1f074f] bg-gradient-to-b from-[#d6dcfd] to-[#cfb7ff] fixed z-0 xs:top-[94px] sm:top-[72px] top-[70px] w-full xs:h-[calc(100vh-94px)] md:h-[calc(100vh-72px)] h-[calc(100vh-70px)]"
     >
     </div>
     <Header />
-    <main
-      class="relative z-10 mt-36 max-w-screen-lg mx-auto md:px-[2em] px-[1em]"
-    >
-    <h1 class="text-[#19102a] dark:text-[#61d2fb] title text-center !mb-[0.5em]">Most Recent Posts</h1>
-      <ul>
-        {
-          posts
-            .filter((post) => post?.filePath?.includes(`/${lang}/`))
-            .map((post) => (
-              <li class={`relative z-20`}>
-                <a
-                  href={`/blog/${post.slug}/`}
-                  class={`!text-[#aa4acf] dark:!text-[#d0a0ff]`}
-                >
-                  <img
-                    width={720}
-                    height={360}
-                    src={post.data.heroImage}
-                    alt={post.data.title}
-                  />
-                  <h4 class="title text-center">{post.data.title}</h4>
-                  <p class="date text-center">
-                    <FormattedDate date={post.data.pubDate} />
-                  </p>
-                </a>
-              </li>
-            ))
-        }
-      </ul>
-    </main>
-    <Footer />
+    <Background>
+      <main
+        class="relative z-10 pt-36 max-w-screen-lg mx-auto md:px-[2em] px-[1em]"
+      >
+        <h1
+          class="text-[#19102a] dark:text-[#61d2fb] title text-center !mb-[0.5em]"
+        >
+          Most Recent Posts
+        </h1>
+        <ul>
+          {
+            posts
+              .filter((post) => post?.filePath?.includes(`/${lang}/`))
+              .map((post) => (
+                <li class={`relative z-20`}>
+                  <a
+                    href={`/blog/${post.slug}/`}
+                    class={`!text-[#aa4acf] dark:!text-[#d0a0ff]`}
+                  >
+                    <img
+                      width={720}
+                      height={360}
+                      src={post.data.heroImage}
+                      alt={post.data.title}
+                    />
+                    <h4 class="title text-center">{post.data.title}</h4>
+                    <p class="date text-center">
+                      <FormattedDate date={post.data.pubDate} />
+                    </p>
+                  </a>
+                </li>
+              ))
+          }
+        </ul>
+      </main>
+      <Footer />
+    </Background>
   </body>
 </html>

@@ -1,6 +1,6 @@
 /* Navbar Styling */
 .navbar {
-    background-color: #61dbfb;
+    background-color: #d6dcfd;
     color: #113a5b;
     padding: 0 0.5em;
     padding-right: 1em;
@@ -12,7 +12,7 @@
 }
 
 html.dark .navbar {
-    background-color: #173458;
+    background-color: #262c4c;
     color: #aae2ff;
 }
 

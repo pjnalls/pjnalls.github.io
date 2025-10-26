@@ -5,11 +5,14 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
 import Header from '../components/Header.astro';
+import Background from '../components/Background.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
-const isBlogPost = !['Blog', 'My Projects', 'About Me'].includes(Astro.props.title)
+const isBlogPost = !['Blog', 'My Projects', 'About Me'].includes(
+  Astro.props.title
+);
 ---
 
 <html lang="en">
@@ -58,55 +61,104 @@ const isBlogPost = !['Blog', 'My Projects', 'About Me'].includes(Astro.props.tit
   </head>
 
   <body
-    class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1B553b] bg-[#6Bf5ab]"
+    class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1f074f] bg-[#cfb7ff]"
   >
+    {
+      !isBlogPost && (
+        <div class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#262c4c] dark:to-[#1f074f] bg-gradient-to-b from-[#d6dcfd] to-[#cfb7ff] fixed z-0 xs:top-[94px] sm:top-[72px] top-[70px] w-full xs:h-[calc(100vh-94px)] md:h-[calc(100vh-72px)] h-[calc(100vh-70px)]"></div>
+      )
+    }
     {
       !isBlogPost && (
         <>
           <Header />
-          <div class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#173458] dark:to-[#1B553b] bg-gradient-to-b from-[#61dbfb] to-[#6Bf5ab] fixed z-0 xs:top-[94px] sm:top-[72px] top-[70px] w-full xs:h-[calc(100vh-94px)] md:h-[calc(100vh-72px)] h-[calc(100vh-70px)]"></div>
+          <div class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#262c4c] dark:to-[#1f074f] bg-gradient-to-b from-[#d6dcfd] to-[#cfb7ff] fixed z-0 xs:top-[94px] sm:top-[72px] top-[70px] w-full xs:h-[calc(100vh-94px)] md:h-[calc(100vh-72px)] h-[calc(100vh-70px)]" />
         </>
       )
     }
-    <main
-      class={`md:!px-[2em] !px-[1em] mx-auto ${isBlogPost ? 'md:mt-4 mt-0' : 'md:mt-36 mt-36'} max-w-screen-lg w-full relative z-10 bg-transparent`}
-    >
-      <article>
-        <div class="hero-image">
-          {
-            heroImage && (
-              <Image
-                width={1020}
-                height={510}
-                src={heroImage}
-                alt="Blog Post"
-                class="shadow-none"
-                loading="eager"
-              />
-            )
-          }
-        </div>
-        <div>
-          <div class="post-title" id={title.toLowerCase().replace(/ /g, '-')}>
-            <div class="date">
-              <FormattedDate date={pubDate} />
-              {
-                updatedDate && (
-                  <div class="last-updated-on">
-                    Last updated on <FormattedDate date={updatedDate} />
-                  </div>
-                )
-              }
-            </div>
-            <h1 class="text-[#19102a] dark:text-[#61d2fb] title">{title}</h1>
-            <hr />
-          </div>
-          <slot />
-        </div>
-      </article>
-    </main>
     {
-      !isBlogPost && <Footer />
+      !isBlogPost ? (
+        <Background>
+          <main
+            class={`md:!px-[2em] !px-[1em] mx-auto ${isBlogPost ? 'md:mt-4 mt-0' : 'md:pt-36 pt-36'} max-w-screen-lg w-full relative z-10 bg-transparent`}
+          >
+            <article>
+              <div class="hero-image pt-8">
+                {heroImage && (
+                  <Image
+                    width={1020}
+                    height={510}
+                    src={heroImage}
+                    alt="Blog Post"
+                    class="shadow-none"
+                    loading="eager"
+                  />
+                )}
+              </div>
+              <div>
+                <div
+                  class="post-title"
+                  id={title.toLowerCase().replace(/ /g, '-')}
+                >
+                  <div class="date">
+                    <FormattedDate date={pubDate} />
+                    {updatedDate && (
+                      <div class="last-updated-on">
+                        Last updated on <FormattedDate date={updatedDate} />
+                      </div>
+                    )}
+                  </div>
+                  <h1 class="text-[#19102a] dark:text-[#61d2fb] title">
+                    {title}
+                  </h1>
+                  <hr />
+                </div>
+                <slot />
+              </div>
+            </article>
+          </main>
+          {!isBlogPost && <Footer />}
+        </Background>
+      ) : (
+        <main
+          class={`md:!px-[2em] !px-[1em] mx-auto ${isBlogPost ? 'md:mt-4 mt-0' : 'md:mt-16 mt-16'} max-w-screen-lg w-full relative z-10 bg-transparent`}
+        >
+          <article class="w-full">
+            <div class="hero-image">
+              {heroImage && (
+                <Image
+                  width={1020}
+                  height={510}
+                  src={heroImage}
+                  alt="Blog Post"
+                  class="shadow-none"
+                  loading="eager"
+                />
+              )}
+            </div>
+            <div>
+              <div
+                class="post-title"
+                id={title.toLowerCase().replace(/ /g, '-')}
+              >
+                <div class="date">
+                  <FormattedDate date={pubDate} />
+                  {updatedDate && (
+                    <div class="last-updated-on">
+                      Last updated on <FormattedDate date={updatedDate} />
+                    </div>
+                  )}
+                </div>
+                <h1 class="text-[#19102a] dark:text-[#61d2fb] title">
+                  {title}
+                </h1>
+                <hr />
+              </div>
+              <slot />
+            </div>
+          </article>
+        </main>
+      )
     }
   </body>
 </html>

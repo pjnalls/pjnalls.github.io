@@ -68,13 +68,13 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
       </nav>
 
       <div
-        className={`md:hidden block invisible h-screen w-full bg-[#173458] fixed z-10 opacity-0 transition-all duration-300 ease-in-out ${
+        className={`md:hidden block invisible h-screen w-full bg-[#262c4c] fixed z-10 opacity-0 transition-all duration-300 ease-in-out ${
           isOpen && '!opacity-60 !visible !z-10'
         }`}
         onClick={() => setIsOpen(false)}
       ></div>
         <ul
-          className={`w-[240px] p-2 m-0 bg-[#61dbfb] dark:bg-[#173458] z-20 block md:hidden h-screen fixed overflow-y-auto translate-x-[-240px] transition-transform duration-300 ease-in-out ${
+          className={`w-[240px] p-2 m-0 bg-[#d6dcfd] dark:bg-[#262c4c] z-20 block md:hidden h-screen fixed overflow-y-auto translate-x-[-240px] transition-transform duration-300 ease-in-out ${
             isOpen && 'translate-x-[0px]'
           }`}
         >

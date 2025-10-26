@@ -1,6 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
+import Background from '../components/Background.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
@@ -14,10 +15,11 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <script is:inline src="/scripts/fouc-resolver.js"></script>
     <BaseHead title={SITE_HOME_TITLE} description={SITE_DESCRIPTION} />
     <style>
-     a {
+      a {
         transition: opacity 0.2s ease-in-out !important;
       }
       a:hover {
@@ -27,55 +29,64 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
     </style>
   </head>
   <body
-    class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1B553b] bg-[#6Bf5ab] h-screen flex flex-1"
-    ><div
-      class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#173458] dark:to-[#1B553b] bg-gradient-to-b from-[#61dbfb] to-[#6Bf5ab] fixed z-0 xs:top-[94px] sm:top-[72px] top-[70px] w-full xs:h-[calc(100vh-94px)] md:h-[calc(100vh-72px)] h-[calc(100vh-70px)]"
-    >
-    </div>
+    class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1f074f] bg-[#cfb7ff]"
+  >
     <Header />
-    <div
-      class="self-center justify-center items-center mx-auto dark:from-[#173458] dark:bg-[#1B553b] bg-[#61dbfb]"
-    >
-      <main class="relative z-10 mt-16 max-w-screen-lg mx-auto flex-1 md:px-[2em] px-[1em]">
-        <div class="flex flex-row flex-wrap gap-0 mt-[128px]">
-          <div class="flex flex-col gap-2 justify-center w-full items-center">
-            <div class="flex flex-col gap-0 items-center">
-              <h1 class="sm:text-5xl text-4xl font-bold ">Preston Nalls</h1>
-              <h2 class="md:text-2xl sm:text-lg text-base font-medium">
-                Curious 🔬 | Creative 🎨 | Caring 💖
-              </h2>
+    <div class="mt-[-52px]">
+      <Background>
+        <main
+          class="relative z-10 mt-16 max-w-screen-lg mx-auto flex-1 md:px-[2em] px-[1em] center"
+        >
+          <div class="flex flex-col gap-0 mt-[128px]">
+            <div class="flex flex-col gap-2 justify-center w-full items-center">
+              <div class="flex flex-col gap-0 items-center">
+                <h1 class="sm:text-6xl text-5xl font-bol name-in-cursive">Preston Nalls</h1>
+                <h2 class="md:text-2xl sm:text-lg text-base">
+                  Software Engineer • Polyglot • Tutor • Postgraduate
+                </h2>
+              </div>
+              <img
+                alt="Skill Icons"
+                class="w-full md:w-2/3"
+                src="https://skillicons.dev/icons?i=git,html,js,tailwind,react,css,ts,sass,astro,vite,figma,github,markdown,pytorch,linux,py,nodejs,mongodb,windows,postgres,redux,apple,bash,express&perline=12"
+              />
             </div>
-            <img
-              alt="Skill Icons"
-              class="w-full md:w-2/3"
-              src="https://skillicons.dev/icons?i=git,html,js,tailwind,react,css,ts,sass,astro,vite,figma,github,markdown,pytorch,linux,py,nodejs,mongodb,windows,postgres,redux,apple,bash,express&perline=12"
-            />
+            <div class="flex flex-row mx-auto">
+              <h2 class="text-[48px] md:text-[64px] mt-4">🌏 🌍 🌎</h2>
+            </div>
+            <div class="flex flex-col gap-0 items-center mt-8">
+              <h2 class="md:text-4xl sm:text-2xl text-xl font-bold mb-0">
+                Hey there! 👋 I'm Preston.
+              </h2>
+              <h3 class="md:text-2xl sm:text-lg text-sm mb-4">
+                Welcome to my portfolio and blog website.
+              </h3>
+              <button
+                id="toProjects"
+                class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#b0a2df] rounded-lg dark:border-[#d0c2ff] dark:text-white px-4 py-2 mb-6 hover:opacity-80 hover:scale-95 hover:brightness-90"
+                style="text-decoration: none;"
+              >
+                View Projects
+              </button>
+            </div>
           </div>
-          <div class="flex flex-row mx-auto">
-            <h2 class="text-[48px] md:text-[64px] mt-4">🌏 🌍 🌎</h2>
-          </div>
-          <div class="flex flex-col gap-0 items-center mt-16">
-            <h2 class="md:text-4xl sm:text-2xl text-xl font-bold mb-0">Hey there! 👋 I'm Preston.</h2>
-            <h3 class="md:text-2xl sm:text-lg text-sm font-medium mb-4">
-              Welcome to my portfolio and blog website.
-            </h3>
-            <p>
-              Please use the navigation bar above to learn more about who I am,
-              what I'm currently working on, and what I'm writing about at the
-              moment.
-            </p>
-            <a
-              href="/projects"
-              class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#b0a2df] rounded-lg dark:border-[#d0c2ff] text-white px-4 py-2 mb-6"
-              style="text-decoration: none;"
-            >
-              View Projects
-            </a>
-          </div>
-        </div>
-        <Footer />
-      </main>
+          <Footer />
+        </main>
+      </Background>
     </div>
+
+    <script>
+      // 1. Get a reference to the button element
+      const button = document.getElementById('toProjects');
+
+      // 2. Define the function to execute on click
+      function handleClick() {
+        window.location.href = '/projects';
+      }
+
+      // 3. Attach the event listener
+      button?.addEventListener('click', handleClick);
+    </script>
   </body>
 </html>
 
