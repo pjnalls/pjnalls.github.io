@@ -41,3 +41,16 @@ const { title, description, image = '/banner.png' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Icons -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<!-- Author / Date -->
+<meta name="author" content="Preston Nalls" />
+<meta property="article:author" content="Preston Nalls" />
+<meta property="article:published_time" content="2025-10-26T05:30:00Z" />
+

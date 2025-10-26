@@ -65,7 +65,7 @@ const isBlogPost = !['Blog', 'My Projects', 'About Me'].includes(
   >
     {
       !isBlogPost && (
-        <div class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#262c4c] dark:to-[#1f074f] bg-gradient-to-b from-[#d6dcfd] to-[#cfb7ff] fixed z-0 xs:top-[94px] sm:top-[72px] top-[70px] w-full xs:h-[calc(100vh-94px)] md:h-[calc(100vh-72px)] h-[calc(100vh-70px)]"></div>
+        <div class="dark:bg-gradient-to-b text-[#113a5b] dark:text-[#aae2ff] dark:from-[#262c4c] dark:to-[#1f074f] bg-gradient-to-b from-[#d6dcfd] to-[#cfb7ff] fixed z-0 xs:top-[94px] sm:top-[72px] top-[70px] w-full xs:h-[calc(100vh-94px)] md:h-[calc(100vh-72px)] h-[calc(100vh-70px)]" />
       )
     }
     {
@@ -117,7 +117,13 @@ const isBlogPost = !['Blog', 'My Projects', 'About Me'].includes(
               </div>
             </article>
           </main>
-          {!isBlogPost && <Footer />}
+          {!isBlogPost && (
+            <>
+              <br />
+              <br />
+              <Footer />
+            </>
+          )}
         </Background>
       ) : (
         <main
