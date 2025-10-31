@@ -8,6 +8,7 @@
     align-items: center;
     z-index: 1000;
     top: 60px;
+    height: 42px;
     width: 100%;
 }
 
@@ -63,8 +64,9 @@ html.dark .navbar {
     cursor: pointer;
     background-color: transparent;
     border: none;
-    padding: 10px;
+    padding: 12px;
     position: relative;
+    margin-top: -12px;
     z-index: 1000; /* Ensure it's above other content */
 }
 .hamburger .bar {

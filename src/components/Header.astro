@@ -20,14 +20,14 @@ const post = Astro.props;
 
 <header class="m-0 p-0 fixed top-0 w-full z-20">
   <nav
-    class="dark:text-[#aae2ff] text-[#19102a] dark:bg-[#262c4c] bg-[#d6dcfd] px-2 py-2 w-full z-20"
+    class="dark:text-[#aae2ff] text-[#19102a] dark:bg-[#262c4c] bg-[#d6dcfd] px-2 h-[16px] md:h-[76px] w-full z-20"
   >
     <h2
       class="dark:text-[#aae2ff] md:w-2/3 md:!py-4 hidden md:flex justify-start text-xl md:text-2xl"
     >
       <a href="/">🏘️ {SITE_TITLE}</a>
     </h2>
-    <div class="internal-links flex justify-center md:w-1/3">
+    <div class="internal-links flex justify-end md:w-1/3 w-full fixed md:relative md:p-0 py-2 px-[24px] top-2 md:top-0">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/projects">Projects</HeaderLink>
       <HeaderLink href="/blog">Blog</HeaderLink>
