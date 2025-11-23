@@ -4,7 +4,7 @@ import type { CollectionEntry } from 'astro:content';
 
 type Props = CollectionEntry<'blog'>;
 
-const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
+const Navbar = ({ blog }: { post: Props; blog: Props[] }) => {
   const [isOpen, setIsOpen] = useState(false);
   const lang = 'en';
   return (
