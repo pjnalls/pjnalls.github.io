@@ -21,7 +21,7 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
           <span className="bar"></span>
           <span className="bar"></span>
         </button>
-        <ul className="flex flex-row gap-2">
+        {/* <ul className="flex flex-row gap-2">
           {post?.filePath
             ?.split('/')
             .slice(2, -1)
@@ -64,7 +64,7 @@ const Navbar = ({ post, blog }: { post: Props; blog: Props[] }) => {
                 : post?.data?.title}
             </a>
           </li>
-        </ul>
+        </ul> */}
       </nav>
 
       <div
