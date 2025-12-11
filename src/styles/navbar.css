@@ -17,6 +17,13 @@ html.dark .navbar {
     color: #aae2ff;
 }
 
+.navbar-index {
+    background-color: transparent;
+}
+html.dark .navbar-index {
+    background-color: transparent;
+}
+
 .navbar-brand {
     font-size: 1.8em;
     font-weight: bold;

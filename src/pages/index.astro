@@ -1,9 +1,10 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Background from '../components/Background.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
+import { HeroBackground } from '../components/HeroBackground';
+import Background from '../components/Background.astro';
+import HeaderIndex from '../components/HeaderIndex.astro';
 ---
 
 <!doctype html>
@@ -15,7 +16,10 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
     <script is:inline src="/scripts/fouc-resolver.js"></script>
     <BaseHead title={SITE_HOME_TITLE} description={SITE_DESCRIPTION} />
     <style>
@@ -31,49 +35,51 @@ import { SITE_HOME_TITLE, SITE_DESCRIPTION } from '../consts';
   <body
     class="text-[#113a5b] dark:text-[#aae2ff] dark:bg-[#1f074f] bg-[#cfb7ff]"
   >
-    <Header />
-    <div class="mt-[-70px] md:mt-[-52px]">
-      <Background>
-        <main
-          class="relative z-10 mt-16 max-w-screen-lg mx-auto flex-1 md:px-[2em] px-[1em] center"
-        >
-          <div class="flex flex-col gap-0 mt-[128px]">
-            <div class="flex flex-col gap-2 justify-center w-full items-center">
-              <div class="flex flex-col gap-0 items-center">
-                <h1 class="sm:text-6xl text-5xl font-bol name-in-cursive">Preston Nalls</h1>
-                <h2 class="md:text-2xl sm:text-lg text-base text-center">
-                  Sr. SWE (8yrs) | React • React Native • Tailwind CSS • Expo
-                </h2>
-              </div>
-              <img
-                alt="Skill Icons"
-                class="w-full md:w-2/3"
-                src="https://skillicons.dev/icons?i=git,html,js,tailwind,react,css,ts,sass,astro,vite,figma,github,markdown,pytorch,linux,py,nodejs,mongodb,windows,postgres,redux,apple,bash,express&perline=12"
-              />
-            </div>
-            <div class="flex flex-row mx-auto">
-              <h2 class="text-[48px] md:text-[64px] mt-4">🌏 🌍 🌎</h2>
-            </div>
-            <div class="flex flex-col gap-0 items-center mt-8">
-              <h2 class="md:text-4xl sm:text-2xl text-xl font-bold mb-0">
-                Hey there! 👋 I'm Preston.
+    <HeaderIndex />
+    <div class="mt-[-60px] md:mt-[-48px] flex h-[100vh] justify-center items-center">
+      <Background />
+      <HeroBackground client:only />
+      <main
+        class="relative z-10 mt-16 max-w-screen-lg mx-auto flex md:px-[2em] px-[1em] justify-center flex-col items-center"
+      >
+        <div class="flex flex-col gap-0 mt-[64px]">
+          <div class="flex flex-col gap-0 justify-center w-full items-center">
+            <div class="flex flex-col gap-0 items-center">
+              <h1 class="sm:text-6xl text-5xl font-bol name-in-cursive">
+                Preston Nalls
+              </h1>
+              <h2 class="md:text-2xl sm:text-lg text-base text-center">
+                Sr. SWE (8yrs+) | React • React Native • Tailwind • TypeScript
               </h2>
-              <h3 class="md:text-2xl sm:text-lg text-sm mb-4">
-                Welcome to my portfolio and blog website.
-              </h3>
-              <button
-                id="toProjects"
-                class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#b0a2df] rounded-lg dark:border-[#d0c2ff] dark:text-white px-4 py-2 hover:opacity-80 hover:scale-95 hover:brightness-90"
-                style="text-decoration: none;"
-              >
-                View Projects
-              </button>
             </div>
+            <img
+              alt="Skill Icons"
+              class="w-full sm:w-2/3"
+              src="https://skillicons.dev/icons?i=git,html,js,tailwind,react,css,ts,sass,astro,vite,figma,github,markdown,pytorch,linux,py,nodejs,mongodb,windows,postgres,redux,apple,bash,express&perline=12"
+            />
           </div>
-          <br />
-          <Footer />
-        </main>
-      </Background>
+          <div class="flex flex-row mx-auto">
+            <h2 class="text-[24px] md:text-[48px] mt-2">🌏 🌍 🌎</h2>
+          </div>
+          <div class="flex flex-col gap-0 items-center mt-2">
+            <h2 class="md:text-4xl sm:text-2xl text-xl font-bold mb-0">
+              Hey there! 👋 I'm Preston.
+            </h2>
+            <h3 class="md:text-2xl sm:text-lg text-sm mb-4">
+              Welcome to my portfolio and blog website.
+            </h3>
+            <button
+              id="toProjects"
+              class="bg-[#d0c2ff] dark:bg-[#6e408a] border-2 border-[#b0a2df] rounded-lg dark:border-[#d0c2ff] dark:text-white px-4 py-2 hover:opacity-80 hover:scale-95 hover:brightness-90"
+              style="text-decoration: none;"
+            >
+              View Projects
+            </button>
+          </div>
+        </div>
+        <br />
+        <Footer />
+      </main>
     </div>
 
     <script>

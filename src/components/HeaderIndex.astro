@@ -1,0 +1,81 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import ThemeToggle from './ThemeToggle';
+import { SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
+import NavbarIndex from './NavbarIndex';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+
+type Props = any;
+
+const post = Astro.props;
+---
+
+<header class="m-0 p-0 fixed top-0 w-full z-20">
+  <nav
+    class="dark:text-[#aae2ff] text-[#19102a] bg-transparent px-2 h-[16px] md:h-[76px] w-full z-20"
+  >
+    <h2
+      class="dark:text-[#aae2ff] md:w-2/3 md:!py-4 hidden md:flex justify-start text-xl md:text-2xl"
+    >
+      <a href="/">🏘️ {SITE_TITLE}</a>
+    </h2>
+    <div class="internal-links flex justify-end md:w-1/3 w-full fixed md:relative md:p-0 py-2 px-[24px] top-2 md:top-0">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/projects">Projects</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/about">About</HeaderLink>
+      <ThemeToggle client:load />
+    </div>
+  </nav>
+  <NavbarIndex post={post} blog={await getCollection('blog')} client:only />
+  <style>
+    header {
+      margin: 0;
+      background: transparent;
+    }
+    h2 {
+      margin: 0;
+      padding: 0;
+      font-weight: 600;
+    }
+
+    h2 a,
+    h2 a.active {
+      text-decoration: none;
+    }
+    nav {
+      padding-top: 0.4em;
+      padding-right: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav a {
+      padding: 0 0.5em;
+      color: var(--black);
+      border-bottom: 4px solid transparent;
+      text-decoration: none;
+    }
+    nav a.active {
+      text-decoration: none;
+      border-bottom-color: var(--accent);
+    }
+    .social-links,
+    .social-links a {
+      display: flex;
+    }
+    @media (max-width: 720px) {
+      .social-links {
+        display: none;
+      }
+    }
+  </style>
+</header>
