@@ -5,7 +5,7 @@ export const HeroBackground = () => {
     <>
       <div className="relative bg-transparent">
         <ReactPlayer
-          src="/hero-movie.mp4"
+          src="https://youtu.be/j80ezKNLyxM"
           playing={true}
           loop={true}
           muted={true}
