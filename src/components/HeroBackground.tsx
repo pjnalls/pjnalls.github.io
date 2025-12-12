@@ -14,7 +14,10 @@ export const HeroBackground = () => {
           className="z-0 fixed mx-auto top-[0vh] xs:[0vh] sm:top-[0vh] md:top-[0vh] lg:top-[0vh] bg-transparent"
         />
       </div>
-      <div className="z-10 fixed mx-auto w-full h-full bg-[#cfb7ffb0] dark:bg-[#1f074fb0] top-0"></div>
+      <div
+        className="z-10 fixed mx-auto bg-[#cfb7ffb0] dark:bg-[#1f074fb0] top-0"
+        style={{ width: '100%', height: 'auto', aspectRatio: '16/9' }}
+      ></div>
     </>
   );
 };
